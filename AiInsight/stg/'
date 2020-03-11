@@ -1,0 +1,73 @@
+#######################################################
+#定义变量
+#######################################################
+#模块名称
+folder="dns"
+#目标表名
+target_table_name1 ="dns_up_data"
+target_table_name2 ="dns_down_data"
+#######################################################
+#脚本开始
+#######################################################
+#运行日期
+( echo $1 | grep "\<[0-9]\{8\}\>" -q ) && { v_cycle=$1; }
+[ ! $v_cycle ] && { v_cycle=`cat /AiInsight/config/pyparameter`; }
+#数据日期
+etl_cycle=`date -d "$v_cycle -1 day " +%Y%m%d`
+#生成目录
+load_dir="${folder}/${target_table_name}/${v_cycle}"
+rm -rf /home/ftpuser/bak/swxw/dns/before/${etl_cycle}
+rm -rf /home/ftpuser/bak/swxw/dns/after5/${etl_cycle}
+rm -rf /home/ftpuser/bak/swxw/dns/after8/${etl_cycle}
+mkdir -p /home/ftpuser/bak/swxw/dns/before/${etl_cycle}
+mkdir -p /home/ftpuser/bak/swxw/dns/after5/${etl_cycle}
+mkdir -p /home/ftpuser/bak/swxw/dns/after8/${etl_cycle}
+#连接22服务器，从ftp将数据下载到22.
+ssh jsgd5  "nohup sh /AiInsight/collection/dnsTo21.sh ${v_cycle} 1> /AiInsight/collection/dnsTo21.log 2>&1 &"
+
+#scp -rp root@111.208.67.22:/opt/data/stg_data/${etl_cycle}/* /home/ftpuser/bak/swxw/before/${etl_cycle}/
+
+#检测文件是否生成
+while [ ! -f /home/ftpuser/bak/swxw/dns/before/${etl_cycle}/025_01_${etl_cycle}2359.gz ]; do
+    date
+    echo "sleep to wait for finishing collection from jsgd5"
+    sleep 50
+done
+echo "数据成功复制到21服务器"
+
+cd /home/ftpuser/bak/swxw/dns/before/${etl_cycle}/
+cp /home/ftpuser/bak/swxw/dns/length.jar ./
+
+for i in {00..23}
+do
+for j in {00..59}
+do
+echo 025_01_${etl_cycle}${i}${j}
+gzip -cd 025_01_${etl_cycle}${i}${j}.gz > 025_01_${etl_cycle}${i}${j}.txt
+java -jar length.jar ${etl_cycle} ${i} ${j}
+done
+done
+
+rm -rf /home/ftpuser/bak/swxw/before/${etl_cycle}/*.txt
+
+#cd /home/ftpuser/bak/swxw/dns/after5/${etl_cycle}/
+#rm -rf *.txt
+#cd /home/ftpuser/bak/swxw/dns/after8/${etl_cycle}/
+#rm -rf *.txt
+#加载到stg表中
+su - hdfs <<EOF
+hive -e "LOAD DATA LOCAL INPATH '/home/ftpuser/bak/swxw/dns/after5/${etl_cycle}/*.txt' OVERWRITE INTO TABLE ${target_table_name1} PARTITION(PT_TIME='${etl_cycle}');"
+exit;
+EOF
+
+su - hdfs <<EOF
+hive -e "LOAD DATA LOCAL INPATH '/home/ftpuser/bak/swxw/dns/after8/${etl_cycle}/*.txt' OVERWRITE INTO TABLE ${target_table_name2} PARTITION(PT_TIME='${etl_cycle}');"
+exit;
+EOF
+
+cd /home/ftpuser/bak/swxw/dns/after5/${etl_cycle}/
+rm -rf *.txt
+cd /home/ftpuser/bak/swxw/dns/after8/${etl_cycle}/
+rm -rf *.txt
+
+

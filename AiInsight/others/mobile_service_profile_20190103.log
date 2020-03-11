@@ -1,0 +1,7020 @@
+[2019-01-03T07:00:01+0800]:[INFO]:网络状况
+[2019-01-03T07:00:01+0800]:[INFO]:------------------------------------------------------------
+PING bigdata.jscndata.com (118.25.80.57) 56(84) bytes of data.
+64 bytes from 118.25.80.57: icmp_seq=1 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=2 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=3 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=4 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=5 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=6 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=7 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=8 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=9 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=10 ttl=51 time=14.1 ms
+
+--- bigdata.jscndata.com ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9050ms
+rtt min/avg/max/mdev = 14.142/14.188/14.247/0.162 ms
+[2019-01-03T07:00:11+0800]:[INFO]:------------------------------------------------------------
+[2019-01-03T07:00:11+0800]:[INFO]:mysql运行状况
+[2019-01-03T07:00:11+0800]:[INFO]:------------------------------------------------------------
+--------------
+/usr/bin/mysql  Ver 14.14 Distrib 5.1.73, for redhat-linux-gnu (x86_64) using readline 5.1
+
+Connection id:		1795
+Current database:	st
+Current user:		st@103.30.99.246
+SSL:			Not in use
+Current pager:		stdout
+Using outfile:		''
+Using delimiter:	;
+Server version:		5.5.5-10.2.6-MariaDB-log Source distribution
+Protocol version:	10
+Connection:		bigdata.jscndata.com via TCP/IP
+Server characterset:	utf8
+Db     characterset:	utf8
+Client characterset:	latin1
+Conn.  characterset:	latin1
+TCP port:		4289
+Uptime:			54 days 13 hours 12 min 58 sec
+
+Threads: 8  Questions: 1368857  Slow queries: 0  Opens: 246  Flush tables: 1  Open tables: 76  Queries per second avg: 0.290
+--------------
+
+------------------------------------------------------------
+------------------------------------------------------------
+Variable_name	Value
+Aborted_clients	16
+Aborted_connects	20
+Access_denied_errors	0
+Acl_column_grants	0
+Acl_database_grants	2
+Acl_function_grants	0
+Acl_procedure_grants	0
+Acl_proxy_users	2
+Acl_role_grants	0
+Acl_roles	0
+Acl_table_grants	0
+Acl_users	8
+Aria_pagecache_blocks_not_flushed	0
+Aria_pagecache_blocks_unused	15706
+Aria_pagecache_blocks_used	14
+Aria_pagecache_read_requests	8435
+Aria_pagecache_reads	467
+Aria_pagecache_write_requests	972
+Aria_pagecache_writes	0
+Aria_transaction_log_syncs	0
+Binlog_commits	2654
+Binlog_group_commits	2654
+Binlog_group_commit_trigger_count	0
+Binlog_group_commit_trigger_lock_wait	0
+Binlog_group_commit_trigger_timeout	0
+Binlog_snapshot_file	mysql-bin.000002
+Binlog_snapshot_position	995092500
+Binlog_bytes_written	995099844
+Binlog_cache_disk_use	1302
+Binlog_cache_use	2654
+Binlog_stmt_cache_disk_use	0
+Binlog_stmt_cache_use	0
+Busy_time	0.000000
+Bytes_received	572786299
+Bytes_sent	149221190
+Com_admin_commands	4510
+Com_alter_db	0
+Com_alter_db_upgrade	0
+Com_alter_event	0
+Com_alter_function	0
+Com_alter_procedure	0
+Com_alter_server	0
+Com_alter_table	53
+Com_alter_tablespace	0
+Com_alter_user	0
+Com_analyze	0
+Com_assign_to_keycache	0
+Com_begin	0
+Com_binlog	0
+Com_call_procedure	0
+Com_change_db	12
+Com_change_master	0
+Com_check	0
+Com_checksum	0
+Com_commit	1359
+Com_compound_sql	0
+Com_create_db	0
+Com_create_event	0
+Com_create_function	0
+Com_create_index	4
+Com_create_procedure	0
+Com_create_role	0
+Com_create_server	0
+Com_create_table	80
+Com_create_temporary_table	0
+Com_create_trigger	0
+Com_create_udf	0
+Com_create_user	0
+Com_create_view	13
+Com_dealloc_sql	0
+Com_delete	8
+Com_delete_multi	0
+Com_do	0
+Com_drop_db	0
+Com_drop_event	0
+Com_drop_function	0
+Com_drop_index	0
+Com_drop_procedure	0
+Com_drop_role	0
+Com_drop_server	0
+Com_drop_table	42
+Com_drop_temporary_table	0
+Com_drop_trigger	0
+Com_drop_user	0
+Com_drop_view	24
+Com_empty_query	0
+Com_execute_immediate	0
+Com_execute_sql	0
+Com_flush	1
+Com_get_diagnostics	0
+Com_grant	2
+Com_grant_role	0
+Com_ha_close	0
+Com_ha_open	0
+Com_ha_read	0
+Com_help	0
+Com_insert	1289839
+Com_insert_select	2
+Com_install_plugin	0
+Com_kill	0
+Com_load	0
+Com_lock_tables	0
+Com_multi	0
+Com_optimize	0
+Com_preload_keys	0
+Com_prepare_sql	0
+Com_purge	0
+Com_purge_before_date	0
+Com_release_savepoint	0
+Com_rename_table	0
+Com_rename_user	0
+Com_repair	0
+Com_replace	0
+Com_replace_select	0
+Com_reset	0
+Com_resignal	0
+Com_revoke	0
+Com_revoke_all	0
+Com_revoke_role	0
+Com_rollback	11
+Com_rollback_to_savepoint	0
+Com_savepoint	0
+Com_select	69959
+Com_set_option	5019
+Com_show_authors	0
+Com_show_binlog_events	0
+Com_show_binlogs	0
+Com_show_charsets	14
+Com_show_collations	14
+Com_show_contributors	0
+Com_show_create_db	0
+Com_show_create_event	0
+Com_show_create_func	0
+Com_show_create_proc	0
+Com_show_create_table	41
+Com_show_create_trigger	0
+Com_show_create_user	0
+Com_show_databases	21
+Com_show_engine_logs	0
+Com_show_engine_mutex	0
+Com_show_engine_status	0
+Com_show_errors	0
+Com_show_events	0
+Com_show_explain	0
+Com_show_fields	119
+Com_show_function_status	0
+Com_show_generic	0
+Com_show_grants	0
+Com_show_keys	0
+Com_show_master_status	0
+Com_show_open_tables	0
+Com_show_plugins	0
+Com_show_privileges	0
+Com_show_procedure_status	0
+Com_show_processlist	97
+Com_show_profile	0
+Com_show_profiles	0
+Com_show_relaylog_events	0
+Com_show_slave_hosts	0
+Com_show_slave_status	0
+Com_show_status	193
+Com_show_storage_engines	14
+Com_show_table_status	39
+Com_show_tables	40
+Com_show_triggers	0
+Com_show_variables	35
+Com_show_warnings	3
+Com_shutdown	0
+Com_signal	0
+Com_start_all_slaves	0
+Com_start_slave	0
+Com_stmt_close	0
+Com_stmt_execute	30541
+Com_stmt_fetch	0
+Com_stmt_prepare	98
+Com_stmt_reprepare	0
+Com_stmt_reset	0
+Com_stmt_send_long_data	0
+Com_stop_all_slaves	0
+Com_stop_slave	0
+Com_truncate	6
+Com_uninstall_plugin	0
+Com_unlock_tables	0
+Com_update	6
+Com_update_multi	0
+Com_xa_commit	0
+Com_xa_end	0
+Com_xa_prepare	0
+Com_xa_recover	0
+Com_xa_rollback	0
+Com_xa_start	0
+Compression	OFF
+Connection_errors_accept	0
+Connection_errors_internal	0
+Connection_errors_max_connections	0
+Connection_errors_peer_address	1
+Connection_errors_select	0
+Connection_errors_tcpwrap	0
+Connections	1796
+Cpu_time	0.000000
+Created_tmp_disk_tables	503
+Created_tmp_files	45
+Created_tmp_tables	2244
+Delayed_errors	0
+Delayed_insert_threads	0
+Delayed_writes	0
+Delete_scan	6
+Empty_queries	4518
+Executed_events	0
+Executed_triggers	0
+Feature_check_constraint	0
+Feature_delay_key_write	0
+Feature_dynamic_columns	0
+Feature_fulltext	0
+Feature_gis	0
+Feature_locale	0
+Feature_subquery	1489
+Feature_timezone	2
+Feature_trigger	0
+Feature_window_functions	155
+Feature_xml	0
+Flush_commands	1
+Handler_commit	2586577
+Handler_delete	89414
+Handler_discover	5
+Handler_external_lock	0
+Handler_icp_attempts	606441
+Handler_icp_match	252197
+Handler_mrr_init	0
+Handler_mrr_key_refills	0
+Handler_mrr_rowid_refills	0
+Handler_prepare	2580144
+Handler_read_first	378
+Handler_read_key	5452
+Handler_read_last	23
+Handler_read_next	326993
+Handler_read_prev	244
+Handler_read_retry	0
+Handler_read_rnd	744895
+Handler_read_rnd_deleted	1
+Handler_read_rnd_next	32372785
+Handler_rollback	1207
+Handler_savepoint	0
+Handler_savepoint_rollback	0
+Handler_tmp_update	3123
+Handler_tmp_write	292807
+Handler_update	231086
+Handler_write	2013876
+Innodb_buffer_pool_dump_status	Dumping of buffer pool not started
+Innodb_buffer_pool_load_status	Buffer pool(s) load completed at 181109 17:47:28
+Innodb_buffer_pool_resize_status	
+Innodb_buffer_pool_pages_data	6851
+Innodb_buffer_pool_bytes_data	112246784
+Innodb_buffer_pool_pages_dirty	0
+Innodb_buffer_pool_bytes_dirty	0
+Innodb_buffer_pool_pages_flushed	28326
+Innodb_buffer_pool_pages_free	1024
+Innodb_buffer_pool_pages_misc	317
+Innodb_buffer_pool_pages_total	8192
+Innodb_buffer_pool_read_ahead_rnd	0
+Innodb_buffer_pool_read_ahead	22267
+Innodb_buffer_pool_read_ahead_evicted	48
+Innodb_buffer_pool_read_requests	45517746
+Innodb_buffer_pool_reads	19147
+Innodb_buffer_pool_wait_free	619
+Innodb_buffer_pool_write_requests	7161639
+Innodb_data_fsyncs	18956
+Innodb_data_pending_fsyncs	0
+Innodb_data_pending_reads	0
+Innodb_data_pending_writes	0
+Innodb_data_read	687114752
+Innodb_data_reads	42063
+Innodb_data_writes	84262
+Innodb_data_written	2749925376
+Innodb_dblwr_pages_written	65020
+Innodb_dblwr_writes	5242
+Innodb_log_waits	0
+Innodb_log_write_requests	1223727
+Innodb_log_writes	10466
+Innodb_os_log_fsyncs	8268
+Innodb_os_log_pending_fsyncs	0
+Innodb_os_log_pending_writes	0
+Innodb_os_log_written	615801856
+Innodb_page_size	16384
+Innodb_pages_created	34856
+Innodb_pages_read	41933
+Innodb_pages0_read	36
+Innodb_pages_written	65151
+Innodb_row_lock_current_waits	0
+Innodb_row_lock_time	0
+Innodb_row_lock_time_avg	0
+Innodb_row_lock_time_max	0
+Innodb_row_lock_waits	0
+Innodb_rows_deleted	89414
+Innodb_rows_inserted	2013874
+Innodb_rows_read	32127698
+Innodb_rows_updated	3893
+Innodb_system_rows_deleted	0
+Innodb_system_rows_inserted	0
+Innodb_system_rows_read	0
+Innodb_system_rows_updated	0
+Innodb_num_open_files	48
+Innodb_truncated_status_writes	0
+Innodb_available_undo_logs	128
+Innodb_page_compression_saved	0
+Innodb_num_index_pages_written	0
+Innodb_num_non_index_pages_written	0
+Innodb_num_pages_page_compressed	0
+Innodb_num_page_compressed_trim_op	0
+Innodb_num_pages_page_decompressed	0
+Innodb_num_pages_page_compression_error	0
+Innodb_num_pages_encrypted	0
+Innodb_num_pages_decrypted	0
+Innodb_have_lz4	OFF
+Innodb_have_lzo	OFF
+Innodb_have_lzma	OFF
+Innodb_have_bzip2	OFF
+Innodb_have_snappy	OFF
+Innodb_have_punch_hole	ON
+Innodb_defragment_compression_failures	0
+Innodb_defragment_failures	0
+Innodb_defragment_count	0
+Innodb_onlineddl_rowlog_rows	0
+Innodb_onlineddl_rowlog_pct_used	0
+Innodb_onlineddl_pct_progress	0
+Innodb_secondary_index_triggered_cluster_reads	258061
+Innodb_secondary_index_triggered_cluster_reads_avoided	0
+Innodb_encryption_rotation_pages_read_from_cache	0
+Innodb_encryption_rotation_pages_read_from_disk	0
+Innodb_encryption_rotation_pages_modified	0
+Innodb_encryption_rotation_pages_flushed	0
+Innodb_encryption_rotation_estimated_iops	0
+Innodb_encryption_key_rotation_list_length	0
+Innodb_scrub_background_page_reorganizations	0
+Innodb_scrub_background_page_splits	0
+Innodb_scrub_background_page_split_failures_underflow	0
+Innodb_scrub_background_page_split_failures_out_of_filespace	0
+Innodb_scrub_background_page_split_failures_missing_index	0
+Innodb_scrub_background_page_split_failures_unknown	0
+Innodb_scrub_log	0
+Innodb_encryption_num_key_requests	0
+Key_blocks_not_flushed	0
+Key_blocks_unused	43354
+Key_blocks_used	4
+Key_blocks_warm	0
+Key_read_requests	1492
+Key_reads	4
+Key_write_requests	4
+Key_writes	4
+Last_query_cost	0.000000
+Master_gtid_wait_count	0
+Master_gtid_wait_time	0
+Master_gtid_wait_timeouts	0
+Max_statement_time_exceeded	0
+Max_used_connections	12
+Memory_used	329209040
+Not_flushed_delayed_rows	0
+Open_files	37
+Open_streams	0
+Open_table_definitions	66
+Open_tables	76
+Opened_files	2717
+Opened_plugin_libraries	0
+Opened_table_definitions	358
+Opened_tables	246
+Opened_views	177
+Performance_schema_accounts_lost	0
+Performance_schema_cond_classes_lost	0
+Performance_schema_cond_instances_lost	0
+Performance_schema_digest_lost	0
+Performance_schema_file_classes_lost	0
+Performance_schema_file_handles_lost	0
+Performance_schema_file_instances_lost	0
+Performance_schema_hosts_lost	0
+Performance_schema_locker_lost	0
+Performance_schema_mutex_classes_lost	0
+Performance_schema_mutex_instances_lost	0
+Performance_schema_rwlock_classes_lost	0
+Performance_schema_rwlock_instances_lost	0
+Performance_schema_session_connect_attrs_lost	0
+Performance_schema_socket_classes_lost	0
+Performance_schema_socket_instances_lost	0
+Performance_schema_stage_classes_lost	0
+Performance_schema_statement_classes_lost	0
+Performance_schema_table_handles_lost	0
+Performance_schema_table_instances_lost	0
+Performance_schema_thread_classes_lost	0
+Performance_schema_thread_instances_lost	0
+Performance_schema_users_lost	0
+Prepared_stmt_count	0
+Qcache_free_blocks	564
+Qcache_free_memory	131351360
+Qcache_hits	57248
+Qcache_inserts	4734
+Qcache_lowmem_prunes	0
+Qcache_not_cached	7075
+Qcache_queries_in_cache	912
+Qcache_total_blocks	2419
+Queries	1368858
+Questions	1368760
+Rows_read	32128530
+Rows_sent	1206976
+Rows_tmp_read	1267255
+Rpl_status	AUTH_MASTER
+Select_full_join	2175
+Select_full_range_join	0
+Select_range	46
+Select_range_check	0
+Select_scan	7140
+Slave_connections	0
+Slave_heartbeat_period	0.000
+Slave_open_temp_tables	0
+Slave_received_heartbeats	0
+Slave_retried_transactions	0
+Slave_running	OFF
+Slave_skipped_errors	0
+Slaves_connected	0
+Slaves_running	0
+Slow_launch_threads	0
+Slow_queries	0
+Sort_merge_passes	0
+Sort_priority_queue_sorts	1951
+Sort_range	316
+Sort_rows	303248
+Sort_scan	4120
+Ssl_accept_renegotiates	0
+Ssl_accepts	0
+Ssl_callback_cache_hits	0
+Ssl_cipher	
+Ssl_cipher_list	
+Ssl_client_connects	0
+Ssl_connect_renegotiates	0
+Ssl_ctx_verify_depth	0
+Ssl_ctx_verify_mode	0
+Ssl_default_timeout	0
+Ssl_finished_accepts	0
+Ssl_finished_connects	0
+Ssl_server_not_after	
+Ssl_server_not_before	
+Ssl_session_cache_hits	0
+Ssl_session_cache_misses	0
+Ssl_session_cache_mode	NONE
+Ssl_session_cache_overflows	0
+Ssl_session_cache_size	0
+Ssl_session_cache_timeouts	0
+Ssl_sessions_reused	0
+Ssl_used_session_cache_entries	0
+Ssl_verify_depth	0
+Ssl_verify_mode	0
+Ssl_version	
+Subquery_cache_hit	0
+Subquery_cache_miss	0
+Syncs	3040
+Table_locks_immediate	597
+Table_locks_waited	0
+Tc_log_max_pages_used	0
+Tc_log_page_size	0
+Tc_log_page_waits	0
+Threadpool_idle_threads	0
+Threadpool_threads	0
+Threads_cached	0
+Threads_connected	1
+Threads_created	1482
+Threads_running	1
+Update_scan	4
+Uptime	4713178
+Uptime_since_flush_status	4713178
+wsrep_cluster_conf_id	18446744073709551615
+wsrep_cluster_size	0
+wsrep_cluster_state_uuid	
+wsrep_cluster_status	Disconnected
+wsrep_connected	OFF
+wsrep_local_bf_aborts	0
+wsrep_local_index	18446744073709551615
+wsrep_provider_name	
+wsrep_provider_vendor	
+wsrep_provider_version	
+wsrep_ready	OFF
+wsrep_thread_count	0
+------------------------------------------------------------
+------------------------------------------------------------
+Id	User	Host	db	Command	Time	State	Info	Progress
+1	system user		NULL	Daemon	NULL		NULL	0.000
+2	system user		NULL	Daemon	NULL		NULL	0.000
+4	system user		NULL	Daemon	NULL		NULL	0.000
+3	system user		NULL	Daemon	NULL		NULL	0.000
+5	system user		NULL	Daemon	NULL	InnoDB shutdown handler	NULL	0.000
+1795	st	103.30.99.246:36592	st	Query	0	init	show full processlist	0.000
+current_timestamp
+2019-01-03 07:00:23
+current_timestamp
+2019-01-03 07:00:23
+area	userCnt
+??	712184
+??	414033
+??	353826
+??	248518
+??	203926
+??	201735
+??	170354
+??	161062
+??	133160
+??	130233
+??	105563
+??	91905
+???	73518
+current_timestamp
+2019-01-03 07:00:23
+statsDt	lanArpu
+1	25.38
+2	26.41
+3	22.62
+4	22.62
+5	22.48
+6	25.09
+7	25.78
+8	23.67
+9	23.67
+10	23.67
+11	23.67
+current_timestamp
+2019-01-03 07:00:23
+area	lanArpu
+??	27.46
+??	26.22
+??	24.75
+??	24.57
+??	24.41
+??	24.06
+???	23.70
+??	23.57
+??	22.50
+??	21.72
+??	21.46
+??	21.25
+??	20.51
+current_timestamp
+2019-01-03 07:00:23
+[2019-01-03T07:10:01+0800]:[INFO]:网络状况
+[2019-01-03T07:10:01+0800]:[INFO]:------------------------------------------------------------
+PING bigdata.jscndata.com (118.25.80.57) 56(84) bytes of data.
+64 bytes from 118.25.80.57: icmp_seq=1 ttl=51 time=14.4 ms
+64 bytes from 118.25.80.57: icmp_seq=2 ttl=51 time=14.5 ms
+64 bytes from 118.25.80.57: icmp_seq=3 ttl=51 time=14.9 ms
+64 bytes from 118.25.80.57: icmp_seq=4 ttl=51 time=14.4 ms
+64 bytes from 118.25.80.57: icmp_seq=5 ttl=51 time=14.5 ms
+64 bytes from 118.25.80.57: icmp_seq=6 ttl=51 time=14.6 ms
+64 bytes from 118.25.80.57: icmp_seq=7 ttl=51 time=14.8 ms
+64 bytes from 118.25.80.57: icmp_seq=8 ttl=51 time=14.8 ms
+64 bytes from 118.25.80.57: icmp_seq=9 ttl=51 time=14.5 ms
+64 bytes from 118.25.80.57: icmp_seq=10 ttl=51 time=14.4 ms
+
+--- bigdata.jscndata.com ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9023ms
+rtt min/avg/max/mdev = 14.408/14.621/14.941/0.182 ms
+[2019-01-03T07:10:10+0800]:[INFO]:------------------------------------------------------------
+[2019-01-03T07:10:10+0800]:[INFO]:mysql运行状况
+[2019-01-03T07:10:10+0800]:[INFO]:------------------------------------------------------------
+--------------
+/usr/bin/mysql  Ver 14.14 Distrib 5.1.73, for redhat-linux-gnu (x86_64) using readline 5.1
+
+Connection id:		1796
+Current database:	st
+Current user:		st@103.30.99.246
+SSL:			Not in use
+Current pager:		stdout
+Using outfile:		''
+Using delimiter:	;
+Server version:		5.5.5-10.2.6-MariaDB-log Source distribution
+Protocol version:	10
+Connection:		bigdata.jscndata.com via TCP/IP
+Server characterset:	utf8
+Db     characterset:	utf8
+Client characterset:	latin1
+Conn.  characterset:	latin1
+TCP port:		4289
+Uptime:			54 days 13 hours 22 min 57 sec
+
+Threads: 8  Questions: 1368874  Slow queries: 0  Opens: 246  Flush tables: 1  Open tables: 76  Queries per second avg: 0.290
+--------------
+
+------------------------------------------------------------
+------------------------------------------------------------
+Variable_name	Value
+Aborted_clients	16
+Aborted_connects	20
+Access_denied_errors	0
+Acl_column_grants	0
+Acl_database_grants	2
+Acl_function_grants	0
+Acl_procedure_grants	0
+Acl_proxy_users	2
+Acl_role_grants	0
+Acl_roles	0
+Acl_table_grants	0
+Acl_users	8
+Aria_pagecache_blocks_not_flushed	0
+Aria_pagecache_blocks_unused	15706
+Aria_pagecache_blocks_used	14
+Aria_pagecache_read_requests	8435
+Aria_pagecache_reads	467
+Aria_pagecache_write_requests	972
+Aria_pagecache_writes	0
+Aria_transaction_log_syncs	0
+Binlog_commits	2654
+Binlog_group_commits	2654
+Binlog_group_commit_trigger_count	0
+Binlog_group_commit_trigger_lock_wait	0
+Binlog_group_commit_trigger_timeout	0
+Binlog_snapshot_file	mysql-bin.000002
+Binlog_snapshot_position	995092500
+Binlog_bytes_written	995099844
+Binlog_cache_disk_use	1302
+Binlog_cache_use	2654
+Binlog_stmt_cache_disk_use	0
+Binlog_stmt_cache_use	0
+Busy_time	0.000000
+Bytes_received	572788143
+Bytes_sent	149238235
+Com_admin_commands	4510
+Com_alter_db	0
+Com_alter_db_upgrade	0
+Com_alter_event	0
+Com_alter_function	0
+Com_alter_procedure	0
+Com_alter_server	0
+Com_alter_table	53
+Com_alter_tablespace	0
+Com_alter_user	0
+Com_analyze	0
+Com_assign_to_keycache	0
+Com_begin	0
+Com_binlog	0
+Com_call_procedure	0
+Com_change_db	12
+Com_change_master	0
+Com_check	0
+Com_checksum	0
+Com_commit	1359
+Com_compound_sql	0
+Com_create_db	0
+Com_create_event	0
+Com_create_function	0
+Com_create_index	4
+Com_create_procedure	0
+Com_create_role	0
+Com_create_server	0
+Com_create_table	80
+Com_create_temporary_table	0
+Com_create_trigger	0
+Com_create_udf	0
+Com_create_user	0
+Com_create_view	13
+Com_dealloc_sql	0
+Com_delete	8
+Com_delete_multi	0
+Com_do	0
+Com_drop_db	0
+Com_drop_event	0
+Com_drop_function	0
+Com_drop_index	0
+Com_drop_procedure	0
+Com_drop_role	0
+Com_drop_server	0
+Com_drop_table	42
+Com_drop_temporary_table	0
+Com_drop_trigger	0
+Com_drop_user	0
+Com_drop_view	24
+Com_empty_query	0
+Com_execute_immediate	0
+Com_execute_sql	0
+Com_flush	1
+Com_get_diagnostics	0
+Com_grant	2
+Com_grant_role	0
+Com_ha_close	0
+Com_ha_open	0
+Com_ha_read	0
+Com_help	0
+Com_insert	1289839
+Com_insert_select	2
+Com_install_plugin	0
+Com_kill	0
+Com_load	0
+Com_lock_tables	0
+Com_multi	0
+Com_optimize	0
+Com_preload_keys	0
+Com_prepare_sql	0
+Com_purge	0
+Com_purge_before_date	0
+Com_release_savepoint	0
+Com_rename_table	0
+Com_rename_user	0
+Com_repair	0
+Com_replace	0
+Com_replace_select	0
+Com_reset	0
+Com_resignal	0
+Com_revoke	0
+Com_revoke_all	0
+Com_revoke_role	0
+Com_rollback	11
+Com_rollback_to_savepoint	0
+Com_savepoint	0
+Com_select	69973
+Com_set_option	5019
+Com_show_authors	0
+Com_show_binlog_events	0
+Com_show_binlogs	0
+Com_show_charsets	14
+Com_show_collations	14
+Com_show_contributors	0
+Com_show_create_db	0
+Com_show_create_event	0
+Com_show_create_func	0
+Com_show_create_proc	0
+Com_show_create_table	41
+Com_show_create_trigger	0
+Com_show_create_user	0
+Com_show_databases	21
+Com_show_engine_logs	0
+Com_show_engine_mutex	0
+Com_show_engine_status	0
+Com_show_errors	0
+Com_show_events	0
+Com_show_explain	0
+Com_show_fields	119
+Com_show_function_status	0
+Com_show_generic	0
+Com_show_grants	0
+Com_show_keys	0
+Com_show_master_status	0
+Com_show_open_tables	0
+Com_show_plugins	0
+Com_show_privileges	0
+Com_show_procedure_status	0
+Com_show_processlist	98
+Com_show_profile	0
+Com_show_profiles	0
+Com_show_relaylog_events	0
+Com_show_slave_hosts	0
+Com_show_slave_status	0
+Com_show_status	195
+Com_show_storage_engines	14
+Com_show_table_status	39
+Com_show_tables	40
+Com_show_triggers	0
+Com_show_variables	35
+Com_show_warnings	3
+Com_shutdown	0
+Com_signal	0
+Com_start_all_slaves	0
+Com_start_slave	0
+Com_stmt_close	0
+Com_stmt_execute	30541
+Com_stmt_fetch	0
+Com_stmt_prepare	98
+Com_stmt_reprepare	0
+Com_stmt_reset	0
+Com_stmt_send_long_data	0
+Com_stop_all_slaves	0
+Com_stop_slave	0
+Com_truncate	6
+Com_uninstall_plugin	0
+Com_unlock_tables	0
+Com_update	6
+Com_update_multi	0
+Com_xa_commit	0
+Com_xa_end	0
+Com_xa_prepare	0
+Com_xa_recover	0
+Com_xa_rollback	0
+Com_xa_start	0
+Compression	OFF
+Connection_errors_accept	0
+Connection_errors_internal	0
+Connection_errors_max_connections	0
+Connection_errors_peer_address	1
+Connection_errors_select	0
+Connection_errors_tcpwrap	0
+Connections	1797
+Cpu_time	0.000000
+Created_tmp_disk_tables	503
+Created_tmp_files	45
+Created_tmp_tables	2247
+Delayed_errors	0
+Delayed_insert_threads	0
+Delayed_writes	0
+Delete_scan	6
+Empty_queries	4519
+Executed_events	0
+Executed_triggers	0
+Feature_check_constraint	0
+Feature_delay_key_write	0
+Feature_dynamic_columns	0
+Feature_fulltext	0
+Feature_gis	0
+Feature_locale	0
+Feature_subquery	1489
+Feature_timezone	2
+Feature_trigger	0
+Feature_window_functions	155
+Feature_xml	0
+Flush_commands	1
+Handler_commit	2586579
+Handler_delete	89414
+Handler_discover	5
+Handler_external_lock	0
+Handler_icp_attempts	606441
+Handler_icp_match	252197
+Handler_mrr_init	0
+Handler_mrr_key_refills	0
+Handler_mrr_rowid_refills	0
+Handler_prepare	2580144
+Handler_read_first	378
+Handler_read_key	5452
+Handler_read_last	23
+Handler_read_next	326993
+Handler_read_prev	244
+Handler_read_retry	0
+Handler_read_rnd	744921
+Handler_read_rnd_deleted	1
+Handler_read_rnd_next	32407769
+Handler_rollback	1207
+Handler_savepoint	0
+Handler_savepoint_rollback	0
+Handler_tmp_update	3123
+Handler_tmp_write	293312
+Handler_update	231086
+Handler_write	2013876
+Innodb_buffer_pool_dump_status	Dumping of buffer pool not started
+Innodb_buffer_pool_load_status	Buffer pool(s) load completed at 181109 17:47:28
+Innodb_buffer_pool_resize_status	
+Innodb_buffer_pool_pages_data	6851
+Innodb_buffer_pool_bytes_data	112246784
+Innodb_buffer_pool_pages_dirty	0
+Innodb_buffer_pool_bytes_dirty	0
+Innodb_buffer_pool_pages_flushed	28326
+Innodb_buffer_pool_pages_free	1024
+Innodb_buffer_pool_pages_misc	317
+Innodb_buffer_pool_pages_total	8192
+Innodb_buffer_pool_read_ahead_rnd	0
+Innodb_buffer_pool_read_ahead	22267
+Innodb_buffer_pool_read_ahead_evicted	48
+Innodb_buffer_pool_read_requests	45552337
+Innodb_buffer_pool_reads	19147
+Innodb_buffer_pool_wait_free	619
+Innodb_buffer_pool_write_requests	7161639
+Innodb_data_fsyncs	18956
+Innodb_data_pending_fsyncs	0
+Innodb_data_pending_reads	0
+Innodb_data_pending_writes	0
+Innodb_data_read	687114752
+Innodb_data_reads	42063
+Innodb_data_writes	84262
+Innodb_data_written	2749925376
+Innodb_dblwr_pages_written	65020
+Innodb_dblwr_writes	5242
+Innodb_log_waits	0
+Innodb_log_write_requests	1223727
+Innodb_log_writes	10466
+Innodb_os_log_fsyncs	8268
+Innodb_os_log_pending_fsyncs	0
+Innodb_os_log_pending_writes	0
+Innodb_os_log_written	615801856
+Innodb_page_size	16384
+Innodb_pages_created	34856
+Innodb_pages_read	41933
+Innodb_pages0_read	36
+Innodb_pages_written	65151
+Innodb_row_lock_current_waits	0
+Innodb_row_lock_time	0
+Innodb_row_lock_time_avg	0
+Innodb_row_lock_time_max	0
+Innodb_row_lock_waits	0
+Innodb_rows_deleted	89414
+Innodb_rows_inserted	2013874
+Innodb_rows_read	32161962
+Innodb_rows_updated	3893
+Innodb_system_rows_deleted	0
+Innodb_system_rows_inserted	0
+Innodb_system_rows_read	0
+Innodb_system_rows_updated	0
+Innodb_num_open_files	48
+Innodb_truncated_status_writes	0
+Innodb_available_undo_logs	128
+Innodb_page_compression_saved	0
+Innodb_num_index_pages_written	0
+Innodb_num_non_index_pages_written	0
+Innodb_num_pages_page_compressed	0
+Innodb_num_page_compressed_trim_op	0
+Innodb_num_pages_page_decompressed	0
+Innodb_num_pages_page_compression_error	0
+Innodb_num_pages_encrypted	0
+Innodb_num_pages_decrypted	0
+Innodb_have_lz4	OFF
+Innodb_have_lzo	OFF
+Innodb_have_lzma	OFF
+Innodb_have_bzip2	OFF
+Innodb_have_snappy	OFF
+Innodb_have_punch_hole	ON
+Innodb_defragment_compression_failures	0
+Innodb_defragment_failures	0
+Innodb_defragment_count	0
+Innodb_onlineddl_rowlog_rows	0
+Innodb_onlineddl_rowlog_pct_used	0
+Innodb_onlineddl_pct_progress	0
+Innodb_secondary_index_triggered_cluster_reads	258061
+Innodb_secondary_index_triggered_cluster_reads_avoided	0
+Innodb_encryption_rotation_pages_read_from_cache	0
+Innodb_encryption_rotation_pages_read_from_disk	0
+Innodb_encryption_rotation_pages_modified	0
+Innodb_encryption_rotation_pages_flushed	0
+Innodb_encryption_rotation_estimated_iops	0
+Innodb_encryption_key_rotation_list_length	0
+Innodb_scrub_background_page_reorganizations	0
+Innodb_scrub_background_page_splits	0
+Innodb_scrub_background_page_split_failures_underflow	0
+Innodb_scrub_background_page_split_failures_out_of_filespace	0
+Innodb_scrub_background_page_split_failures_missing_index	0
+Innodb_scrub_background_page_split_failures_unknown	0
+Innodb_scrub_log	0
+Innodb_encryption_num_key_requests	0
+Key_blocks_not_flushed	0
+Key_blocks_unused	43354
+Key_blocks_used	4
+Key_blocks_warm	0
+Key_read_requests	1492
+Key_reads	4
+Key_write_requests	4
+Key_writes	4
+Last_query_cost	0.000000
+Master_gtid_wait_count	0
+Master_gtid_wait_time	0
+Master_gtid_wait_timeouts	0
+Max_statement_time_exceeded	0
+Max_used_connections	12
+Memory_used	329209040
+Not_flushed_delayed_rows	0
+Open_files	37
+Open_streams	0
+Open_table_definitions	66
+Open_tables	76
+Opened_files	2717
+Opened_plugin_libraries	0
+Opened_table_definitions	358
+Opened_tables	246
+Opened_views	177
+Performance_schema_accounts_lost	0
+Performance_schema_cond_classes_lost	0
+Performance_schema_cond_instances_lost	0
+Performance_schema_digest_lost	0
+Performance_schema_file_classes_lost	0
+Performance_schema_file_handles_lost	0
+Performance_schema_file_instances_lost	0
+Performance_schema_hosts_lost	0
+Performance_schema_locker_lost	0
+Performance_schema_mutex_classes_lost	0
+Performance_schema_mutex_instances_lost	0
+Performance_schema_rwlock_classes_lost	0
+Performance_schema_rwlock_instances_lost	0
+Performance_schema_session_connect_attrs_lost	0
+Performance_schema_socket_classes_lost	0
+Performance_schema_socket_instances_lost	0
+Performance_schema_stage_classes_lost	0
+Performance_schema_statement_classes_lost	0
+Performance_schema_table_handles_lost	0
+Performance_schema_table_instances_lost	0
+Performance_schema_thread_classes_lost	0
+Performance_schema_thread_instances_lost	0
+Performance_schema_users_lost	0
+Prepared_stmt_count	0
+Qcache_free_blocks	562
+Qcache_free_memory	131348936
+Qcache_hits	57250
+Qcache_inserts	4736
+Qcache_lowmem_prunes	0
+Qcache_not_cached	7085
+Qcache_queries_in_cache	914
+Qcache_total_blocks	2421
+Queries	1368875
+Questions	1368777
+Rows_read	32162794
+Rows_sent	1207502
+Rows_tmp_read	1267786
+Rpl_status	AUTH_MASTER
+Select_full_join	2179
+Select_full_range_join	0
+Select_range	46
+Select_range_check	0
+Select_scan	7143
+Slave_connections	0
+Slave_heartbeat_period	0.000
+Slave_open_temp_tables	0
+Slave_received_heartbeats	0
+Slave_retried_transactions	0
+Slave_running	OFF
+Slave_skipped_errors	0
+Slaves_connected	0
+Slaves_running	0
+Slow_launch_threads	0
+Slow_queries	0
+Sort_merge_passes	0
+Sort_priority_queue_sorts	1951
+Sort_range	316
+Sort_rows	303274
+Sort_scan	4122
+Ssl_accept_renegotiates	0
+Ssl_accepts	0
+Ssl_callback_cache_hits	0
+Ssl_cipher	
+Ssl_cipher_list	
+Ssl_client_connects	0
+Ssl_connect_renegotiates	0
+Ssl_ctx_verify_depth	0
+Ssl_ctx_verify_mode	0
+Ssl_default_timeout	0
+Ssl_finished_accepts	0
+Ssl_finished_connects	0
+Ssl_server_not_after	
+Ssl_server_not_before	
+Ssl_session_cache_hits	0
+Ssl_session_cache_misses	0
+Ssl_session_cache_mode	NONE
+Ssl_session_cache_overflows	0
+Ssl_session_cache_size	0
+Ssl_session_cache_timeouts	0
+Ssl_sessions_reused	0
+Ssl_used_session_cache_entries	0
+Ssl_verify_depth	0
+Ssl_verify_mode	0
+Ssl_version	
+Subquery_cache_hit	0
+Subquery_cache_miss	0
+Syncs	3040
+Table_locks_immediate	597
+Table_locks_waited	0
+Tc_log_max_pages_used	0
+Tc_log_page_size	0
+Tc_log_page_waits	0
+Threadpool_idle_threads	0
+Threadpool_threads	0
+Threads_cached	0
+Threads_connected	1
+Threads_created	1483
+Threads_running	1
+Update_scan	4
+Uptime	4713777
+Uptime_since_flush_status	4713777
+wsrep_cluster_conf_id	18446744073709551615
+wsrep_cluster_size	0
+wsrep_cluster_state_uuid	
+wsrep_cluster_status	Disconnected
+wsrep_connected	OFF
+wsrep_local_bf_aborts	0
+wsrep_local_index	18446744073709551615
+wsrep_provider_name	
+wsrep_provider_vendor	
+wsrep_provider_version	
+wsrep_ready	OFF
+wsrep_thread_count	0
+------------------------------------------------------------
+------------------------------------------------------------
+Id	User	Host	db	Command	Time	State	Info	Progress
+1	system user		NULL	Daemon	NULL		NULL	0.000
+2	system user		NULL	Daemon	NULL		NULL	0.000
+4	system user		NULL	Daemon	NULL		NULL	0.000
+3	system user		NULL	Daemon	NULL		NULL	0.000
+5	system user		NULL	Daemon	NULL	InnoDB shutdown handler	NULL	0.000
+1796	st	103.30.99.246:29227	st	Query	0	init	show full processlist	0.000
+current_timestamp
+2019-01-03 07:10:23
+current_timestamp
+2019-01-03 07:10:23
+area	userCnt
+??	712184
+??	414033
+??	353826
+??	248518
+??	203926
+??	201735
+??	170354
+??	161062
+??	133160
+??	130233
+??	105563
+??	91905
+???	73518
+current_timestamp
+2019-01-03 07:10:23
+statsDt	lanArpu
+1	25.38
+2	26.41
+3	22.62
+4	22.62
+5	22.48
+6	25.09
+7	25.78
+8	23.67
+9	23.67
+10	23.67
+11	23.67
+current_timestamp
+2019-01-03 07:10:23
+area	lanArpu
+??	27.46
+??	26.22
+??	24.75
+??	24.57
+??	24.41
+??	24.06
+???	23.70
+??	23.57
+??	22.50
+??	21.72
+??	21.46
+??	21.25
+??	20.51
+current_timestamp
+2019-01-03 07:10:23
+[2019-01-03T07:20:02+0800]:[INFO]:网络状况
+[2019-01-03T07:20:02+0800]:[INFO]:------------------------------------------------------------
+PING bigdata.jscndata.com (118.25.80.57) 56(84) bytes of data.
+64 bytes from 118.25.80.57: icmp_seq=1 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=2 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=3 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=4 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=5 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=6 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=7 ttl=51 time=14.0 ms
+64 bytes from 118.25.80.57: icmp_seq=8 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=9 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=10 ttl=51 time=14.1 ms
+
+--- bigdata.jscndata.com ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9024ms
+rtt min/avg/max/mdev = 14.077/14.162/14.286/0.058 ms
+[2019-01-03T07:20:11+0800]:[INFO]:------------------------------------------------------------
+[2019-01-03T07:20:11+0800]:[INFO]:mysql运行状况
+[2019-01-03T07:20:11+0800]:[INFO]:------------------------------------------------------------
+--------------
+/usr/bin/mysql  Ver 14.14 Distrib 5.1.73, for redhat-linux-gnu (x86_64) using readline 5.1
+
+Connection id:		1797
+Current database:	st
+Current user:		st@103.30.99.246
+SSL:			Not in use
+Current pager:		stdout
+Using outfile:		''
+Using delimiter:	;
+Server version:		5.5.5-10.2.6-MariaDB-log Source distribution
+Protocol version:	10
+Connection:		bigdata.jscndata.com via TCP/IP
+Server characterset:	utf8
+Db     characterset:	utf8
+Client characterset:	latin1
+Conn.  characterset:	latin1
+TCP port:		4289
+Uptime:			54 days 13 hours 32 min 57 sec
+
+Threads: 8  Questions: 1368891  Slow queries: 0  Opens: 246  Flush tables: 1  Open tables: 76  Queries per second avg: 0.290
+--------------
+
+------------------------------------------------------------
+------------------------------------------------------------
+Variable_name	Value
+Aborted_clients	16
+Aborted_connects	20
+Access_denied_errors	0
+Acl_column_grants	0
+Acl_database_grants	2
+Acl_function_grants	0
+Acl_procedure_grants	0
+Acl_proxy_users	2
+Acl_role_grants	0
+Acl_roles	0
+Acl_table_grants	0
+Acl_users	8
+Aria_pagecache_blocks_not_flushed	0
+Aria_pagecache_blocks_unused	15706
+Aria_pagecache_blocks_used	14
+Aria_pagecache_read_requests	8435
+Aria_pagecache_reads	467
+Aria_pagecache_write_requests	972
+Aria_pagecache_writes	0
+Aria_transaction_log_syncs	0
+Binlog_commits	2654
+Binlog_group_commits	2654
+Binlog_group_commit_trigger_count	0
+Binlog_group_commit_trigger_lock_wait	0
+Binlog_group_commit_trigger_timeout	0
+Binlog_snapshot_file	mysql-bin.000002
+Binlog_snapshot_position	995092500
+Binlog_bytes_written	995099844
+Binlog_cache_disk_use	1302
+Binlog_cache_use	2654
+Binlog_stmt_cache_disk_use	0
+Binlog_stmt_cache_use	0
+Busy_time	0.000000
+Bytes_received	572789987
+Bytes_sent	149255280
+Com_admin_commands	4510
+Com_alter_db	0
+Com_alter_db_upgrade	0
+Com_alter_event	0
+Com_alter_function	0
+Com_alter_procedure	0
+Com_alter_server	0
+Com_alter_table	53
+Com_alter_tablespace	0
+Com_alter_user	0
+Com_analyze	0
+Com_assign_to_keycache	0
+Com_begin	0
+Com_binlog	0
+Com_call_procedure	0
+Com_change_db	12
+Com_change_master	0
+Com_check	0
+Com_checksum	0
+Com_commit	1359
+Com_compound_sql	0
+Com_create_db	0
+Com_create_event	0
+Com_create_function	0
+Com_create_index	4
+Com_create_procedure	0
+Com_create_role	0
+Com_create_server	0
+Com_create_table	80
+Com_create_temporary_table	0
+Com_create_trigger	0
+Com_create_udf	0
+Com_create_user	0
+Com_create_view	13
+Com_dealloc_sql	0
+Com_delete	8
+Com_delete_multi	0
+Com_do	0
+Com_drop_db	0
+Com_drop_event	0
+Com_drop_function	0
+Com_drop_index	0
+Com_drop_procedure	0
+Com_drop_role	0
+Com_drop_server	0
+Com_drop_table	42
+Com_drop_temporary_table	0
+Com_drop_trigger	0
+Com_drop_user	0
+Com_drop_view	24
+Com_empty_query	0
+Com_execute_immediate	0
+Com_execute_sql	0
+Com_flush	1
+Com_get_diagnostics	0
+Com_grant	2
+Com_grant_role	0
+Com_ha_close	0
+Com_ha_open	0
+Com_ha_read	0
+Com_help	0
+Com_insert	1289839
+Com_insert_select	2
+Com_install_plugin	0
+Com_kill	0
+Com_load	0
+Com_lock_tables	0
+Com_multi	0
+Com_optimize	0
+Com_preload_keys	0
+Com_prepare_sql	0
+Com_purge	0
+Com_purge_before_date	0
+Com_release_savepoint	0
+Com_rename_table	0
+Com_rename_user	0
+Com_repair	0
+Com_replace	0
+Com_replace_select	0
+Com_reset	0
+Com_resignal	0
+Com_revoke	0
+Com_revoke_all	0
+Com_revoke_role	0
+Com_rollback	11
+Com_rollback_to_savepoint	0
+Com_savepoint	0
+Com_select	69987
+Com_set_option	5019
+Com_show_authors	0
+Com_show_binlog_events	0
+Com_show_binlogs	0
+Com_show_charsets	14
+Com_show_collations	14
+Com_show_contributors	0
+Com_show_create_db	0
+Com_show_create_event	0
+Com_show_create_func	0
+Com_show_create_proc	0
+Com_show_create_table	41
+Com_show_create_trigger	0
+Com_show_create_user	0
+Com_show_databases	21
+Com_show_engine_logs	0
+Com_show_engine_mutex	0
+Com_show_engine_status	0
+Com_show_errors	0
+Com_show_events	0
+Com_show_explain	0
+Com_show_fields	119
+Com_show_function_status	0
+Com_show_generic	0
+Com_show_grants	0
+Com_show_keys	0
+Com_show_master_status	0
+Com_show_open_tables	0
+Com_show_plugins	0
+Com_show_privileges	0
+Com_show_procedure_status	0
+Com_show_processlist	99
+Com_show_profile	0
+Com_show_profiles	0
+Com_show_relaylog_events	0
+Com_show_slave_hosts	0
+Com_show_slave_status	0
+Com_show_status	197
+Com_show_storage_engines	14
+Com_show_table_status	39
+Com_show_tables	40
+Com_show_triggers	0
+Com_show_variables	35
+Com_show_warnings	3
+Com_shutdown	0
+Com_signal	0
+Com_start_all_slaves	0
+Com_start_slave	0
+Com_stmt_close	0
+Com_stmt_execute	30541
+Com_stmt_fetch	0
+Com_stmt_prepare	98
+Com_stmt_reprepare	0
+Com_stmt_reset	0
+Com_stmt_send_long_data	0
+Com_stop_all_slaves	0
+Com_stop_slave	0
+Com_truncate	6
+Com_uninstall_plugin	0
+Com_unlock_tables	0
+Com_update	6
+Com_update_multi	0
+Com_xa_commit	0
+Com_xa_end	0
+Com_xa_prepare	0
+Com_xa_recover	0
+Com_xa_rollback	0
+Com_xa_start	0
+Compression	OFF
+Connection_errors_accept	0
+Connection_errors_internal	0
+Connection_errors_max_connections	0
+Connection_errors_peer_address	1
+Connection_errors_select	0
+Connection_errors_tcpwrap	0
+Connections	1798
+Cpu_time	0.000000
+Created_tmp_disk_tables	503
+Created_tmp_files	45
+Created_tmp_tables	2248
+Delayed_errors	0
+Delayed_insert_threads	0
+Delayed_writes	0
+Delete_scan	6
+Empty_queries	4520
+Executed_events	0
+Executed_triggers	0
+Feature_check_constraint	0
+Feature_delay_key_write	0
+Feature_dynamic_columns	0
+Feature_fulltext	0
+Feature_gis	0
+Feature_locale	0
+Feature_subquery	1489
+Feature_timezone	2
+Feature_trigger	0
+Feature_window_functions	155
+Feature_xml	0
+Flush_commands	1
+Handler_commit	2586579
+Handler_delete	89414
+Handler_discover	5
+Handler_external_lock	0
+Handler_icp_attempts	606441
+Handler_icp_match	252197
+Handler_mrr_init	0
+Handler_mrr_key_refills	0
+Handler_mrr_rowid_refills	0
+Handler_prepare	2580144
+Handler_read_first	378
+Handler_read_key	5452
+Handler_read_last	23
+Handler_read_next	326993
+Handler_read_prev	244
+Handler_read_retry	0
+Handler_read_rnd	744921
+Handler_read_rnd_deleted	1
+Handler_read_rnd_next	32408249
+Handler_rollback	1207
+Handler_savepoint	0
+Handler_savepoint_rollback	0
+Handler_tmp_update	3123
+Handler_tmp_write	293791
+Handler_update	231086
+Handler_write	2013876
+Innodb_buffer_pool_dump_status	Dumping of buffer pool not started
+Innodb_buffer_pool_load_status	Buffer pool(s) load completed at 181109 17:47:28
+Innodb_buffer_pool_resize_status	
+Innodb_buffer_pool_pages_data	6851
+Innodb_buffer_pool_bytes_data	112246784
+Innodb_buffer_pool_pages_dirty	0
+Innodb_buffer_pool_bytes_dirty	0
+Innodb_buffer_pool_pages_flushed	28326
+Innodb_buffer_pool_pages_free	1024
+Innodb_buffer_pool_pages_misc	317
+Innodb_buffer_pool_pages_total	8192
+Innodb_buffer_pool_read_ahead_rnd	0
+Innodb_buffer_pool_read_ahead	22267
+Innodb_buffer_pool_read_ahead_evicted	48
+Innodb_buffer_pool_read_requests	45552337
+Innodb_buffer_pool_reads	19147
+Innodb_buffer_pool_wait_free	619
+Innodb_buffer_pool_write_requests	7161639
+Innodb_data_fsyncs	18956
+Innodb_data_pending_fsyncs	0
+Innodb_data_pending_reads	0
+Innodb_data_pending_writes	0
+Innodb_data_read	687114752
+Innodb_data_reads	42063
+Innodb_data_writes	84262
+Innodb_data_written	2749925376
+Innodb_dblwr_pages_written	65020
+Innodb_dblwr_writes	5242
+Innodb_log_waits	0
+Innodb_log_write_requests	1223727
+Innodb_log_writes	10466
+Innodb_os_log_fsyncs	8268
+Innodb_os_log_pending_fsyncs	0
+Innodb_os_log_pending_writes	0
+Innodb_os_log_written	615801856
+Innodb_page_size	16384
+Innodb_pages_created	34856
+Innodb_pages_read	41933
+Innodb_pages0_read	36
+Innodb_pages_written	65151
+Innodb_row_lock_current_waits	0
+Innodb_row_lock_time	0
+Innodb_row_lock_time_avg	0
+Innodb_row_lock_time_max	0
+Innodb_row_lock_waits	0
+Innodb_rows_deleted	89414
+Innodb_rows_inserted	2013874
+Innodb_rows_read	32161962
+Innodb_rows_updated	3893
+Innodb_system_rows_deleted	0
+Innodb_system_rows_inserted	0
+Innodb_system_rows_read	0
+Innodb_system_rows_updated	0
+Innodb_num_open_files	48
+Innodb_truncated_status_writes	0
+Innodb_available_undo_logs	128
+Innodb_page_compression_saved	0
+Innodb_num_index_pages_written	0
+Innodb_num_non_index_pages_written	0
+Innodb_num_pages_page_compressed	0
+Innodb_num_page_compressed_trim_op	0
+Innodb_num_pages_page_decompressed	0
+Innodb_num_pages_page_compression_error	0
+Innodb_num_pages_encrypted	0
+Innodb_num_pages_decrypted	0
+Innodb_have_lz4	OFF
+Innodb_have_lzo	OFF
+Innodb_have_lzma	OFF
+Innodb_have_bzip2	OFF
+Innodb_have_snappy	OFF
+Innodb_have_punch_hole	ON
+Innodb_defragment_compression_failures	0
+Innodb_defragment_failures	0
+Innodb_defragment_count	0
+Innodb_onlineddl_rowlog_rows	0
+Innodb_onlineddl_rowlog_pct_used	0
+Innodb_onlineddl_pct_progress	0
+Innodb_secondary_index_triggered_cluster_reads	258061
+Innodb_secondary_index_triggered_cluster_reads_avoided	0
+Innodb_encryption_rotation_pages_read_from_cache	0
+Innodb_encryption_rotation_pages_read_from_disk	0
+Innodb_encryption_rotation_pages_modified	0
+Innodb_encryption_rotation_pages_flushed	0
+Innodb_encryption_rotation_estimated_iops	0
+Innodb_encryption_key_rotation_list_length	0
+Innodb_scrub_background_page_reorganizations	0
+Innodb_scrub_background_page_splits	0
+Innodb_scrub_background_page_split_failures_underflow	0
+Innodb_scrub_background_page_split_failures_out_of_filespace	0
+Innodb_scrub_background_page_split_failures_missing_index	0
+Innodb_scrub_background_page_split_failures_unknown	0
+Innodb_scrub_log	0
+Innodb_encryption_num_key_requests	0
+Key_blocks_not_flushed	0
+Key_blocks_unused	43354
+Key_blocks_used	4
+Key_blocks_warm	0
+Key_read_requests	1492
+Key_reads	4
+Key_write_requests	4
+Key_writes	4
+Last_query_cost	0.000000
+Master_gtid_wait_count	0
+Master_gtid_wait_time	0
+Master_gtid_wait_timeouts	0
+Max_statement_time_exceeded	0
+Max_used_connections	12
+Memory_used	329209040
+Not_flushed_delayed_rows	0
+Open_files	37
+Open_streams	0
+Open_table_definitions	66
+Open_tables	76
+Opened_files	2717
+Opened_plugin_libraries	0
+Opened_table_definitions	358
+Opened_tables	246
+Opened_views	177
+Performance_schema_accounts_lost	0
+Performance_schema_cond_classes_lost	0
+Performance_schema_cond_instances_lost	0
+Performance_schema_digest_lost	0
+Performance_schema_file_classes_lost	0
+Performance_schema_file_handles_lost	0
+Performance_schema_file_instances_lost	0
+Performance_schema_hosts_lost	0
+Performance_schema_locker_lost	0
+Performance_schema_mutex_classes_lost	0
+Performance_schema_mutex_instances_lost	0
+Performance_schema_rwlock_classes_lost	0
+Performance_schema_rwlock_instances_lost	0
+Performance_schema_session_connect_attrs_lost	0
+Performance_schema_socket_classes_lost	0
+Performance_schema_socket_instances_lost	0
+Performance_schema_stage_classes_lost	0
+Performance_schema_statement_classes_lost	0
+Performance_schema_table_handles_lost	0
+Performance_schema_table_instances_lost	0
+Performance_schema_thread_classes_lost	0
+Performance_schema_thread_instances_lost	0
+Performance_schema_users_lost	0
+Prepared_stmt_count	0
+Qcache_free_blocks	562
+Qcache_free_memory	131348936
+Qcache_hits	57254
+Qcache_inserts	4736
+Qcache_lowmem_prunes	0
+Qcache_not_cached	7095
+Qcache_queries_in_cache	914
+Qcache_total_blocks	2421
+Queries	1368892
+Questions	1368794
+Rows_read	32162794
+Rows_sent	1208028
+Rows_tmp_read	1268265
+Rpl_status	AUTH_MASTER
+Select_full_join	2179
+Select_full_range_join	0
+Select_range	46
+Select_range_check	0
+Select_scan	7144
+Slave_connections	0
+Slave_heartbeat_period	0.000
+Slave_open_temp_tables	0
+Slave_received_heartbeats	0
+Slave_retried_transactions	0
+Slave_running	OFF
+Slave_skipped_errors	0
+Slaves_connected	0
+Slaves_running	0
+Slow_launch_threads	0
+Slow_queries	0
+Sort_merge_passes	0
+Sort_priority_queue_sorts	1951
+Sort_range	316
+Sort_rows	303274
+Sort_scan	4122
+Ssl_accept_renegotiates	0
+Ssl_accepts	0
+Ssl_callback_cache_hits	0
+Ssl_cipher	
+Ssl_cipher_list	
+Ssl_client_connects	0
+Ssl_connect_renegotiates	0
+Ssl_ctx_verify_depth	0
+Ssl_ctx_verify_mode	0
+Ssl_default_timeout	0
+Ssl_finished_accepts	0
+Ssl_finished_connects	0
+Ssl_server_not_after	
+Ssl_server_not_before	
+Ssl_session_cache_hits	0
+Ssl_session_cache_misses	0
+Ssl_session_cache_mode	NONE
+Ssl_session_cache_overflows	0
+Ssl_session_cache_size	0
+Ssl_session_cache_timeouts	0
+Ssl_sessions_reused	0
+Ssl_used_session_cache_entries	0
+Ssl_verify_depth	0
+Ssl_verify_mode	0
+Ssl_version	
+Subquery_cache_hit	0
+Subquery_cache_miss	0
+Syncs	3040
+Table_locks_immediate	597
+Table_locks_waited	0
+Tc_log_max_pages_used	0
+Tc_log_page_size	0
+Tc_log_page_waits	0
+Threadpool_idle_threads	0
+Threadpool_threads	0
+Threads_cached	0
+Threads_connected	1
+Threads_created	1484
+Threads_running	1
+Update_scan	4
+Uptime	4714377
+Uptime_since_flush_status	4714377
+wsrep_cluster_conf_id	18446744073709551615
+wsrep_cluster_size	0
+wsrep_cluster_state_uuid	
+wsrep_cluster_status	Disconnected
+wsrep_connected	OFF
+wsrep_local_bf_aborts	0
+wsrep_local_index	18446744073709551615
+wsrep_provider_name	
+wsrep_provider_vendor	
+wsrep_provider_version	
+wsrep_ready	OFF
+wsrep_thread_count	0
+------------------------------------------------------------
+------------------------------------------------------------
+Id	User	Host	db	Command	Time	State	Info	Progress
+1	system user		NULL	Daemon	NULL		NULL	0.000
+2	system user		NULL	Daemon	NULL		NULL	0.000
+4	system user		NULL	Daemon	NULL		NULL	0.000
+3	system user		NULL	Daemon	NULL		NULL	0.000
+5	system user		NULL	Daemon	NULL	InnoDB shutdown handler	NULL	0.000
+1797	st	103.30.99.246:18875	st	Query	0	init	show full processlist	0.000
+current_timestamp
+2019-01-03 07:20:22
+current_timestamp
+2019-01-03 07:20:22
+area	userCnt
+??	712184
+??	414033
+??	353826
+??	248518
+??	203926
+??	201735
+??	170354
+??	161062
+??	133160
+??	130233
+??	105563
+??	91905
+???	73518
+current_timestamp
+2019-01-03 07:20:22
+statsDt	lanArpu
+1	25.38
+2	26.41
+3	22.62
+4	22.62
+5	22.48
+6	25.09
+7	25.78
+8	23.67
+9	23.67
+10	23.67
+11	23.67
+current_timestamp
+2019-01-03 07:20:22
+area	lanArpu
+??	27.46
+??	26.22
+??	24.75
+??	24.57
+??	24.41
+??	24.06
+???	23.70
+??	23.57
+??	22.50
+??	21.72
+??	21.46
+??	21.25
+??	20.51
+current_timestamp
+2019-01-03 07:20:22
+[2019-01-03T07:30:01+0800]:[INFO]:网络状况
+[2019-01-03T07:30:01+0800]:[INFO]:------------------------------------------------------------
+PING bigdata.jscndata.com (118.25.80.57) 56(84) bytes of data.
+64 bytes from 118.25.80.57: icmp_seq=1 ttl=51 time=14.3 ms
+64 bytes from 118.25.80.57: icmp_seq=2 ttl=51 time=14.0 ms
+64 bytes from 118.25.80.57: icmp_seq=3 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=4 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=5 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=6 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=7 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=8 ttl=51 time=14.3 ms
+64 bytes from 118.25.80.57: icmp_seq=9 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=10 ttl=51 time=14.1 ms
+
+--- bigdata.jscndata.com ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9022ms
+rtt min/avg/max/mdev = 14.096/14.187/14.358/0.173 ms
+[2019-01-03T07:30:10+0800]:[INFO]:------------------------------------------------------------
+[2019-01-03T07:30:10+0800]:[INFO]:mysql运行状况
+[2019-01-03T07:30:10+0800]:[INFO]:------------------------------------------------------------
+--------------
+/usr/bin/mysql  Ver 14.14 Distrib 5.1.73, for redhat-linux-gnu (x86_64) using readline 5.1
+
+Connection id:		1798
+Current database:	st
+Current user:		st@103.30.99.246
+SSL:			Not in use
+Current pager:		stdout
+Using outfile:		''
+Using delimiter:	;
+Server version:		5.5.5-10.2.6-MariaDB-log Source distribution
+Protocol version:	10
+Connection:		bigdata.jscndata.com via TCP/IP
+Server characterset:	utf8
+Db     characterset:	utf8
+Client characterset:	latin1
+Conn.  characterset:	latin1
+TCP port:		4289
+Uptime:			54 days 13 hours 42 min 57 sec
+
+Threads: 8  Questions: 1368908  Slow queries: 0  Opens: 246  Flush tables: 1  Open tables: 76  Queries per second avg: 0.290
+--------------
+
+------------------------------------------------------------
+------------------------------------------------------------
+Variable_name	Value
+Aborted_clients	16
+Aborted_connects	20
+Access_denied_errors	0
+Acl_column_grants	0
+Acl_database_grants	2
+Acl_function_grants	0
+Acl_procedure_grants	0
+Acl_proxy_users	2
+Acl_role_grants	0
+Acl_roles	0
+Acl_table_grants	0
+Acl_users	8
+Aria_pagecache_blocks_not_flushed	0
+Aria_pagecache_blocks_unused	15706
+Aria_pagecache_blocks_used	14
+Aria_pagecache_read_requests	8435
+Aria_pagecache_reads	467
+Aria_pagecache_write_requests	972
+Aria_pagecache_writes	0
+Aria_transaction_log_syncs	0
+Binlog_commits	2654
+Binlog_group_commits	2654
+Binlog_group_commit_trigger_count	0
+Binlog_group_commit_trigger_lock_wait	0
+Binlog_group_commit_trigger_timeout	0
+Binlog_snapshot_file	mysql-bin.000002
+Binlog_snapshot_position	995092500
+Binlog_bytes_written	995099844
+Binlog_cache_disk_use	1302
+Binlog_cache_use	2654
+Binlog_stmt_cache_disk_use	0
+Binlog_stmt_cache_use	0
+Busy_time	0.000000
+Bytes_received	572791831
+Bytes_sent	149272325
+Com_admin_commands	4510
+Com_alter_db	0
+Com_alter_db_upgrade	0
+Com_alter_event	0
+Com_alter_function	0
+Com_alter_procedure	0
+Com_alter_server	0
+Com_alter_table	53
+Com_alter_tablespace	0
+Com_alter_user	0
+Com_analyze	0
+Com_assign_to_keycache	0
+Com_begin	0
+Com_binlog	0
+Com_call_procedure	0
+Com_change_db	12
+Com_change_master	0
+Com_check	0
+Com_checksum	0
+Com_commit	1359
+Com_compound_sql	0
+Com_create_db	0
+Com_create_event	0
+Com_create_function	0
+Com_create_index	4
+Com_create_procedure	0
+Com_create_role	0
+Com_create_server	0
+Com_create_table	80
+Com_create_temporary_table	0
+Com_create_trigger	0
+Com_create_udf	0
+Com_create_user	0
+Com_create_view	13
+Com_dealloc_sql	0
+Com_delete	8
+Com_delete_multi	0
+Com_do	0
+Com_drop_db	0
+Com_drop_event	0
+Com_drop_function	0
+Com_drop_index	0
+Com_drop_procedure	0
+Com_drop_role	0
+Com_drop_server	0
+Com_drop_table	42
+Com_drop_temporary_table	0
+Com_drop_trigger	0
+Com_drop_user	0
+Com_drop_view	24
+Com_empty_query	0
+Com_execute_immediate	0
+Com_execute_sql	0
+Com_flush	1
+Com_get_diagnostics	0
+Com_grant	2
+Com_grant_role	0
+Com_ha_close	0
+Com_ha_open	0
+Com_ha_read	0
+Com_help	0
+Com_insert	1289839
+Com_insert_select	2
+Com_install_plugin	0
+Com_kill	0
+Com_load	0
+Com_lock_tables	0
+Com_multi	0
+Com_optimize	0
+Com_preload_keys	0
+Com_prepare_sql	0
+Com_purge	0
+Com_purge_before_date	0
+Com_release_savepoint	0
+Com_rename_table	0
+Com_rename_user	0
+Com_repair	0
+Com_replace	0
+Com_replace_select	0
+Com_reset	0
+Com_resignal	0
+Com_revoke	0
+Com_revoke_all	0
+Com_revoke_role	0
+Com_rollback	11
+Com_rollback_to_savepoint	0
+Com_savepoint	0
+Com_select	70001
+Com_set_option	5019
+Com_show_authors	0
+Com_show_binlog_events	0
+Com_show_binlogs	0
+Com_show_charsets	14
+Com_show_collations	14
+Com_show_contributors	0
+Com_show_create_db	0
+Com_show_create_event	0
+Com_show_create_func	0
+Com_show_create_proc	0
+Com_show_create_table	41
+Com_show_create_trigger	0
+Com_show_create_user	0
+Com_show_databases	21
+Com_show_engine_logs	0
+Com_show_engine_mutex	0
+Com_show_engine_status	0
+Com_show_errors	0
+Com_show_events	0
+Com_show_explain	0
+Com_show_fields	119
+Com_show_function_status	0
+Com_show_generic	0
+Com_show_grants	0
+Com_show_keys	0
+Com_show_master_status	0
+Com_show_open_tables	0
+Com_show_plugins	0
+Com_show_privileges	0
+Com_show_procedure_status	0
+Com_show_processlist	100
+Com_show_profile	0
+Com_show_profiles	0
+Com_show_relaylog_events	0
+Com_show_slave_hosts	0
+Com_show_slave_status	0
+Com_show_status	199
+Com_show_storage_engines	14
+Com_show_table_status	39
+Com_show_tables	40
+Com_show_triggers	0
+Com_show_variables	35
+Com_show_warnings	3
+Com_shutdown	0
+Com_signal	0
+Com_start_all_slaves	0
+Com_start_slave	0
+Com_stmt_close	0
+Com_stmt_execute	30541
+Com_stmt_fetch	0
+Com_stmt_prepare	98
+Com_stmt_reprepare	0
+Com_stmt_reset	0
+Com_stmt_send_long_data	0
+Com_stop_all_slaves	0
+Com_stop_slave	0
+Com_truncate	6
+Com_uninstall_plugin	0
+Com_unlock_tables	0
+Com_update	6
+Com_update_multi	0
+Com_xa_commit	0
+Com_xa_end	0
+Com_xa_prepare	0
+Com_xa_recover	0
+Com_xa_rollback	0
+Com_xa_start	0
+Compression	OFF
+Connection_errors_accept	0
+Connection_errors_internal	0
+Connection_errors_max_connections	0
+Connection_errors_peer_address	1
+Connection_errors_select	0
+Connection_errors_tcpwrap	0
+Connections	1799
+Cpu_time	0.000000
+Created_tmp_disk_tables	503
+Created_tmp_files	45
+Created_tmp_tables	2249
+Delayed_errors	0
+Delayed_insert_threads	0
+Delayed_writes	0
+Delete_scan	6
+Empty_queries	4521
+Executed_events	0
+Executed_triggers	0
+Feature_check_constraint	0
+Feature_delay_key_write	0
+Feature_dynamic_columns	0
+Feature_fulltext	0
+Feature_gis	0
+Feature_locale	0
+Feature_subquery	1489
+Feature_timezone	2
+Feature_trigger	0
+Feature_window_functions	155
+Feature_xml	0
+Flush_commands	1
+Handler_commit	2586579
+Handler_delete	89414
+Handler_discover	5
+Handler_external_lock	0
+Handler_icp_attempts	606441
+Handler_icp_match	252197
+Handler_mrr_init	0
+Handler_mrr_key_refills	0
+Handler_mrr_rowid_refills	0
+Handler_prepare	2580144
+Handler_read_first	378
+Handler_read_key	5452
+Handler_read_last	23
+Handler_read_next	326993
+Handler_read_prev	244
+Handler_read_retry	0
+Handler_read_rnd	744921
+Handler_read_rnd_deleted	1
+Handler_read_rnd_next	32408729
+Handler_rollback	1207
+Handler_savepoint	0
+Handler_savepoint_rollback	0
+Handler_tmp_update	3123
+Handler_tmp_write	294270
+Handler_update	231086
+Handler_write	2013876
+Innodb_buffer_pool_dump_status	Dumping of buffer pool not started
+Innodb_buffer_pool_load_status	Buffer pool(s) load completed at 181109 17:47:28
+Innodb_buffer_pool_resize_status	
+Innodb_buffer_pool_pages_data	6851
+Innodb_buffer_pool_bytes_data	112246784
+Innodb_buffer_pool_pages_dirty	0
+Innodb_buffer_pool_bytes_dirty	0
+Innodb_buffer_pool_pages_flushed	28326
+Innodb_buffer_pool_pages_free	1024
+Innodb_buffer_pool_pages_misc	317
+Innodb_buffer_pool_pages_total	8192
+Innodb_buffer_pool_read_ahead_rnd	0
+Innodb_buffer_pool_read_ahead	22267
+Innodb_buffer_pool_read_ahead_evicted	48
+Innodb_buffer_pool_read_requests	45552337
+Innodb_buffer_pool_reads	19147
+Innodb_buffer_pool_wait_free	619
+Innodb_buffer_pool_write_requests	7161639
+Innodb_data_fsyncs	18956
+Innodb_data_pending_fsyncs	0
+Innodb_data_pending_reads	0
+Innodb_data_pending_writes	0
+Innodb_data_read	687114752
+Innodb_data_reads	42063
+Innodb_data_writes	84262
+Innodb_data_written	2749925376
+Innodb_dblwr_pages_written	65020
+Innodb_dblwr_writes	5242
+Innodb_log_waits	0
+Innodb_log_write_requests	1223727
+Innodb_log_writes	10466
+Innodb_os_log_fsyncs	8268
+Innodb_os_log_pending_fsyncs	0
+Innodb_os_log_pending_writes	0
+Innodb_os_log_written	615801856
+Innodb_page_size	16384
+Innodb_pages_created	34856
+Innodb_pages_read	41933
+Innodb_pages0_read	36
+Innodb_pages_written	65151
+Innodb_row_lock_current_waits	0
+Innodb_row_lock_time	0
+Innodb_row_lock_time_avg	0
+Innodb_row_lock_time_max	0
+Innodb_row_lock_waits	0
+Innodb_rows_deleted	89414
+Innodb_rows_inserted	2013874
+Innodb_rows_read	32161962
+Innodb_rows_updated	3893
+Innodb_system_rows_deleted	0
+Innodb_system_rows_inserted	0
+Innodb_system_rows_read	0
+Innodb_system_rows_updated	0
+Innodb_num_open_files	48
+Innodb_truncated_status_writes	0
+Innodb_available_undo_logs	128
+Innodb_page_compression_saved	0
+Innodb_num_index_pages_written	0
+Innodb_num_non_index_pages_written	0
+Innodb_num_pages_page_compressed	0
+Innodb_num_page_compressed_trim_op	0
+Innodb_num_pages_page_decompressed	0
+Innodb_num_pages_page_compression_error	0
+Innodb_num_pages_encrypted	0
+Innodb_num_pages_decrypted	0
+Innodb_have_lz4	OFF
+Innodb_have_lzo	OFF
+Innodb_have_lzma	OFF
+Innodb_have_bzip2	OFF
+Innodb_have_snappy	OFF
+Innodb_have_punch_hole	ON
+Innodb_defragment_compression_failures	0
+Innodb_defragment_failures	0
+Innodb_defragment_count	0
+Innodb_onlineddl_rowlog_rows	0
+Innodb_onlineddl_rowlog_pct_used	0
+Innodb_onlineddl_pct_progress	0
+Innodb_secondary_index_triggered_cluster_reads	258061
+Innodb_secondary_index_triggered_cluster_reads_avoided	0
+Innodb_encryption_rotation_pages_read_from_cache	0
+Innodb_encryption_rotation_pages_read_from_disk	0
+Innodb_encryption_rotation_pages_modified	0
+Innodb_encryption_rotation_pages_flushed	0
+Innodb_encryption_rotation_estimated_iops	0
+Innodb_encryption_key_rotation_list_length	0
+Innodb_scrub_background_page_reorganizations	0
+Innodb_scrub_background_page_splits	0
+Innodb_scrub_background_page_split_failures_underflow	0
+Innodb_scrub_background_page_split_failures_out_of_filespace	0
+Innodb_scrub_background_page_split_failures_missing_index	0
+Innodb_scrub_background_page_split_failures_unknown	0
+Innodb_scrub_log	0
+Innodb_encryption_num_key_requests	0
+Key_blocks_not_flushed	0
+Key_blocks_unused	43354
+Key_blocks_used	4
+Key_blocks_warm	0
+Key_read_requests	1492
+Key_reads	4
+Key_write_requests	4
+Key_writes	4
+Last_query_cost	0.000000
+Master_gtid_wait_count	0
+Master_gtid_wait_time	0
+Master_gtid_wait_timeouts	0
+Max_statement_time_exceeded	0
+Max_used_connections	12
+Memory_used	329209040
+Not_flushed_delayed_rows	0
+Open_files	37
+Open_streams	0
+Open_table_definitions	66
+Open_tables	76
+Opened_files	2717
+Opened_plugin_libraries	0
+Opened_table_definitions	358
+Opened_tables	246
+Opened_views	177
+Performance_schema_accounts_lost	0
+Performance_schema_cond_classes_lost	0
+Performance_schema_cond_instances_lost	0
+Performance_schema_digest_lost	0
+Performance_schema_file_classes_lost	0
+Performance_schema_file_handles_lost	0
+Performance_schema_file_instances_lost	0
+Performance_schema_hosts_lost	0
+Performance_schema_locker_lost	0
+Performance_schema_mutex_classes_lost	0
+Performance_schema_mutex_instances_lost	0
+Performance_schema_rwlock_classes_lost	0
+Performance_schema_rwlock_instances_lost	0
+Performance_schema_session_connect_attrs_lost	0
+Performance_schema_socket_classes_lost	0
+Performance_schema_socket_instances_lost	0
+Performance_schema_stage_classes_lost	0
+Performance_schema_statement_classes_lost	0
+Performance_schema_table_handles_lost	0
+Performance_schema_table_instances_lost	0
+Performance_schema_thread_classes_lost	0
+Performance_schema_thread_instances_lost	0
+Performance_schema_users_lost	0
+Prepared_stmt_count	0
+Qcache_free_blocks	562
+Qcache_free_memory	131348936
+Qcache_hits	57258
+Qcache_inserts	4736
+Qcache_lowmem_prunes	0
+Qcache_not_cached	7105
+Qcache_queries_in_cache	914
+Qcache_total_blocks	2421
+Queries	1368909
+Questions	1368811
+Rows_read	32162794
+Rows_sent	1208554
+Rows_tmp_read	1268744
+Rpl_status	AUTH_MASTER
+Select_full_join	2179
+Select_full_range_join	0
+Select_range	46
+Select_range_check	0
+Select_scan	7145
+Slave_connections	0
+Slave_heartbeat_period	0.000
+Slave_open_temp_tables	0
+Slave_received_heartbeats	0
+Slave_retried_transactions	0
+Slave_running	OFF
+Slave_skipped_errors	0
+Slaves_connected	0
+Slaves_running	0
+Slow_launch_threads	0
+Slow_queries	0
+Sort_merge_passes	0
+Sort_priority_queue_sorts	1951
+Sort_range	316
+Sort_rows	303274
+Sort_scan	4122
+Ssl_accept_renegotiates	0
+Ssl_accepts	0
+Ssl_callback_cache_hits	0
+Ssl_cipher	
+Ssl_cipher_list	
+Ssl_client_connects	0
+Ssl_connect_renegotiates	0
+Ssl_ctx_verify_depth	0
+Ssl_ctx_verify_mode	0
+Ssl_default_timeout	0
+Ssl_finished_accepts	0
+Ssl_finished_connects	0
+Ssl_server_not_after	
+Ssl_server_not_before	
+Ssl_session_cache_hits	0
+Ssl_session_cache_misses	0
+Ssl_session_cache_mode	NONE
+Ssl_session_cache_overflows	0
+Ssl_session_cache_size	0
+Ssl_session_cache_timeouts	0
+Ssl_sessions_reused	0
+Ssl_used_session_cache_entries	0
+Ssl_verify_depth	0
+Ssl_verify_mode	0
+Ssl_version	
+Subquery_cache_hit	0
+Subquery_cache_miss	0
+Syncs	3040
+Table_locks_immediate	597
+Table_locks_waited	0
+Tc_log_max_pages_used	0
+Tc_log_page_size	0
+Tc_log_page_waits	0
+Threadpool_idle_threads	0
+Threadpool_threads	0
+Threads_cached	0
+Threads_connected	1
+Threads_created	1485
+Threads_running	1
+Update_scan	4
+Uptime	4714977
+Uptime_since_flush_status	4714977
+wsrep_cluster_conf_id	18446744073709551615
+wsrep_cluster_size	0
+wsrep_cluster_state_uuid	
+wsrep_cluster_status	Disconnected
+wsrep_connected	OFF
+wsrep_local_bf_aborts	0
+wsrep_local_index	18446744073709551615
+wsrep_provider_name	
+wsrep_provider_vendor	
+wsrep_provider_version	
+wsrep_ready	OFF
+wsrep_thread_count	0
+------------------------------------------------------------
+------------------------------------------------------------
+Id	User	Host	db	Command	Time	State	Info	Progress
+1	system user		NULL	Daemon	NULL		NULL	0.000
+2	system user		NULL	Daemon	NULL		NULL	0.000
+4	system user		NULL	Daemon	NULL		NULL	0.000
+3	system user		NULL	Daemon	NULL		NULL	0.000
+5	system user		NULL	Daemon	NULL	InnoDB shutdown handler	NULL	0.000
+1798	st	103.30.99.246:7148	st	Query	0	init	show full processlist	0.000
+current_timestamp
+2019-01-03 07:30:22
+current_timestamp
+2019-01-03 07:30:22
+area	userCnt
+??	712184
+??	414033
+??	353826
+??	248518
+??	203926
+??	201735
+??	170354
+??	161062
+??	133160
+??	130233
+??	105563
+??	91905
+???	73518
+current_timestamp
+2019-01-03 07:30:22
+statsDt	lanArpu
+1	25.38
+2	26.41
+3	22.62
+4	22.62
+5	22.48
+6	25.09
+7	25.78
+8	23.67
+9	23.67
+10	23.67
+11	23.67
+current_timestamp
+2019-01-03 07:30:22
+area	lanArpu
+??	27.46
+??	26.22
+??	24.75
+??	24.57
+??	24.41
+??	24.06
+???	23.70
+??	23.57
+??	22.50
+??	21.72
+??	21.46
+??	21.25
+??	20.51
+current_timestamp
+2019-01-03 07:30:22
+[2019-01-03T07:40:01+0800]:[INFO]:网络状况
+[2019-01-03T07:40:01+0800]:[INFO]:------------------------------------------------------------
+PING bigdata.jscndata.com (118.25.80.57) 56(84) bytes of data.
+64 bytes from 118.25.80.57: icmp_seq=1 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=2 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=3 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=4 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=5 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=6 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=7 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=8 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=9 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=10 ttl=51 time=14.2 ms
+
+--- bigdata.jscndata.com ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9024ms
+rtt min/avg/max/mdev = 14.116/14.180/14.263/0.116 ms
+[2019-01-03T07:40:10+0800]:[INFO]:------------------------------------------------------------
+[2019-01-03T07:40:10+0800]:[INFO]:mysql运行状况
+[2019-01-03T07:40:10+0800]:[INFO]:------------------------------------------------------------
+--------------
+/usr/bin/mysql  Ver 14.14 Distrib 5.1.73, for redhat-linux-gnu (x86_64) using readline 5.1
+
+Connection id:		1799
+Current database:	st
+Current user:		st@103.30.99.246
+SSL:			Not in use
+Current pager:		stdout
+Using outfile:		''
+Using delimiter:	;
+Server version:		5.5.5-10.2.6-MariaDB-log Source distribution
+Protocol version:	10
+Connection:		bigdata.jscndata.com via TCP/IP
+Server characterset:	utf8
+Db     characterset:	utf8
+Client characterset:	latin1
+Conn.  characterset:	latin1
+TCP port:		4289
+Uptime:			54 days 13 hours 52 min 56 sec
+
+Threads: 8  Questions: 1368925  Slow queries: 0  Opens: 246  Flush tables: 1  Open tables: 76  Queries per second avg: 0.290
+--------------
+
+------------------------------------------------------------
+------------------------------------------------------------
+Variable_name	Value
+Aborted_clients	16
+Aborted_connects	20
+Access_denied_errors	0
+Acl_column_grants	0
+Acl_database_grants	2
+Acl_function_grants	0
+Acl_procedure_grants	0
+Acl_proxy_users	2
+Acl_role_grants	0
+Acl_roles	0
+Acl_table_grants	0
+Acl_users	8
+Aria_pagecache_blocks_not_flushed	0
+Aria_pagecache_blocks_unused	15706
+Aria_pagecache_blocks_used	14
+Aria_pagecache_read_requests	8435
+Aria_pagecache_reads	467
+Aria_pagecache_write_requests	972
+Aria_pagecache_writes	0
+Aria_transaction_log_syncs	0
+Binlog_commits	2654
+Binlog_group_commits	2654
+Binlog_group_commit_trigger_count	0
+Binlog_group_commit_trigger_lock_wait	0
+Binlog_group_commit_trigger_timeout	0
+Binlog_snapshot_file	mysql-bin.000002
+Binlog_snapshot_position	995092500
+Binlog_bytes_written	995099844
+Binlog_cache_disk_use	1302
+Binlog_cache_use	2654
+Binlog_stmt_cache_disk_use	0
+Binlog_stmt_cache_use	0
+Busy_time	0.000000
+Bytes_received	572793675
+Bytes_sent	149289370
+Com_admin_commands	4510
+Com_alter_db	0
+Com_alter_db_upgrade	0
+Com_alter_event	0
+Com_alter_function	0
+Com_alter_procedure	0
+Com_alter_server	0
+Com_alter_table	53
+Com_alter_tablespace	0
+Com_alter_user	0
+Com_analyze	0
+Com_assign_to_keycache	0
+Com_begin	0
+Com_binlog	0
+Com_call_procedure	0
+Com_change_db	12
+Com_change_master	0
+Com_check	0
+Com_checksum	0
+Com_commit	1359
+Com_compound_sql	0
+Com_create_db	0
+Com_create_event	0
+Com_create_function	0
+Com_create_index	4
+Com_create_procedure	0
+Com_create_role	0
+Com_create_server	0
+Com_create_table	80
+Com_create_temporary_table	0
+Com_create_trigger	0
+Com_create_udf	0
+Com_create_user	0
+Com_create_view	13
+Com_dealloc_sql	0
+Com_delete	8
+Com_delete_multi	0
+Com_do	0
+Com_drop_db	0
+Com_drop_event	0
+Com_drop_function	0
+Com_drop_index	0
+Com_drop_procedure	0
+Com_drop_role	0
+Com_drop_server	0
+Com_drop_table	42
+Com_drop_temporary_table	0
+Com_drop_trigger	0
+Com_drop_user	0
+Com_drop_view	24
+Com_empty_query	0
+Com_execute_immediate	0
+Com_execute_sql	0
+Com_flush	1
+Com_get_diagnostics	0
+Com_grant	2
+Com_grant_role	0
+Com_ha_close	0
+Com_ha_open	0
+Com_ha_read	0
+Com_help	0
+Com_insert	1289839
+Com_insert_select	2
+Com_install_plugin	0
+Com_kill	0
+Com_load	0
+Com_lock_tables	0
+Com_multi	0
+Com_optimize	0
+Com_preload_keys	0
+Com_prepare_sql	0
+Com_purge	0
+Com_purge_before_date	0
+Com_release_savepoint	0
+Com_rename_table	0
+Com_rename_user	0
+Com_repair	0
+Com_replace	0
+Com_replace_select	0
+Com_reset	0
+Com_resignal	0
+Com_revoke	0
+Com_revoke_all	0
+Com_revoke_role	0
+Com_rollback	11
+Com_rollback_to_savepoint	0
+Com_savepoint	0
+Com_select	70015
+Com_set_option	5019
+Com_show_authors	0
+Com_show_binlog_events	0
+Com_show_binlogs	0
+Com_show_charsets	14
+Com_show_collations	14
+Com_show_contributors	0
+Com_show_create_db	0
+Com_show_create_event	0
+Com_show_create_func	0
+Com_show_create_proc	0
+Com_show_create_table	41
+Com_show_create_trigger	0
+Com_show_create_user	0
+Com_show_databases	21
+Com_show_engine_logs	0
+Com_show_engine_mutex	0
+Com_show_engine_status	0
+Com_show_errors	0
+Com_show_events	0
+Com_show_explain	0
+Com_show_fields	119
+Com_show_function_status	0
+Com_show_generic	0
+Com_show_grants	0
+Com_show_keys	0
+Com_show_master_status	0
+Com_show_open_tables	0
+Com_show_plugins	0
+Com_show_privileges	0
+Com_show_procedure_status	0
+Com_show_processlist	101
+Com_show_profile	0
+Com_show_profiles	0
+Com_show_relaylog_events	0
+Com_show_slave_hosts	0
+Com_show_slave_status	0
+Com_show_status	201
+Com_show_storage_engines	14
+Com_show_table_status	39
+Com_show_tables	40
+Com_show_triggers	0
+Com_show_variables	35
+Com_show_warnings	3
+Com_shutdown	0
+Com_signal	0
+Com_start_all_slaves	0
+Com_start_slave	0
+Com_stmt_close	0
+Com_stmt_execute	30541
+Com_stmt_fetch	0
+Com_stmt_prepare	98
+Com_stmt_reprepare	0
+Com_stmt_reset	0
+Com_stmt_send_long_data	0
+Com_stop_all_slaves	0
+Com_stop_slave	0
+Com_truncate	6
+Com_uninstall_plugin	0
+Com_unlock_tables	0
+Com_update	6
+Com_update_multi	0
+Com_xa_commit	0
+Com_xa_end	0
+Com_xa_prepare	0
+Com_xa_recover	0
+Com_xa_rollback	0
+Com_xa_start	0
+Compression	OFF
+Connection_errors_accept	0
+Connection_errors_internal	0
+Connection_errors_max_connections	0
+Connection_errors_peer_address	1
+Connection_errors_select	0
+Connection_errors_tcpwrap	0
+Connections	1800
+Cpu_time	0.000000
+Created_tmp_disk_tables	503
+Created_tmp_files	45
+Created_tmp_tables	2250
+Delayed_errors	0
+Delayed_insert_threads	0
+Delayed_writes	0
+Delete_scan	6
+Empty_queries	4522
+Executed_events	0
+Executed_triggers	0
+Feature_check_constraint	0
+Feature_delay_key_write	0
+Feature_dynamic_columns	0
+Feature_fulltext	0
+Feature_gis	0
+Feature_locale	0
+Feature_subquery	1489
+Feature_timezone	2
+Feature_trigger	0
+Feature_window_functions	155
+Feature_xml	0
+Flush_commands	1
+Handler_commit	2586579
+Handler_delete	89414
+Handler_discover	5
+Handler_external_lock	0
+Handler_icp_attempts	606441
+Handler_icp_match	252197
+Handler_mrr_init	0
+Handler_mrr_key_refills	0
+Handler_mrr_rowid_refills	0
+Handler_prepare	2580144
+Handler_read_first	378
+Handler_read_key	5452
+Handler_read_last	23
+Handler_read_next	326993
+Handler_read_prev	244
+Handler_read_retry	0
+Handler_read_rnd	744921
+Handler_read_rnd_deleted	1
+Handler_read_rnd_next	32409209
+Handler_rollback	1207
+Handler_savepoint	0
+Handler_savepoint_rollback	0
+Handler_tmp_update	3123
+Handler_tmp_write	294749
+Handler_update	231086
+Handler_write	2013876
+Innodb_buffer_pool_dump_status	Dumping of buffer pool not started
+Innodb_buffer_pool_load_status	Buffer pool(s) load completed at 181109 17:47:28
+Innodb_buffer_pool_resize_status	
+Innodb_buffer_pool_pages_data	6851
+Innodb_buffer_pool_bytes_data	112246784
+Innodb_buffer_pool_pages_dirty	0
+Innodb_buffer_pool_bytes_dirty	0
+Innodb_buffer_pool_pages_flushed	28326
+Innodb_buffer_pool_pages_free	1024
+Innodb_buffer_pool_pages_misc	317
+Innodb_buffer_pool_pages_total	8192
+Innodb_buffer_pool_read_ahead_rnd	0
+Innodb_buffer_pool_read_ahead	22267
+Innodb_buffer_pool_read_ahead_evicted	48
+Innodb_buffer_pool_read_requests	45552337
+Innodb_buffer_pool_reads	19147
+Innodb_buffer_pool_wait_free	619
+Innodb_buffer_pool_write_requests	7161639
+Innodb_data_fsyncs	18956
+Innodb_data_pending_fsyncs	0
+Innodb_data_pending_reads	0
+Innodb_data_pending_writes	0
+Innodb_data_read	687114752
+Innodb_data_reads	42063
+Innodb_data_writes	84262
+Innodb_data_written	2749925376
+Innodb_dblwr_pages_written	65020
+Innodb_dblwr_writes	5242
+Innodb_log_waits	0
+Innodb_log_write_requests	1223727
+Innodb_log_writes	10466
+Innodb_os_log_fsyncs	8268
+Innodb_os_log_pending_fsyncs	0
+Innodb_os_log_pending_writes	0
+Innodb_os_log_written	615801856
+Innodb_page_size	16384
+Innodb_pages_created	34856
+Innodb_pages_read	41933
+Innodb_pages0_read	36
+Innodb_pages_written	65151
+Innodb_row_lock_current_waits	0
+Innodb_row_lock_time	0
+Innodb_row_lock_time_avg	0
+Innodb_row_lock_time_max	0
+Innodb_row_lock_waits	0
+Innodb_rows_deleted	89414
+Innodb_rows_inserted	2013874
+Innodb_rows_read	32161962
+Innodb_rows_updated	3893
+Innodb_system_rows_deleted	0
+Innodb_system_rows_inserted	0
+Innodb_system_rows_read	0
+Innodb_system_rows_updated	0
+Innodb_num_open_files	48
+Innodb_truncated_status_writes	0
+Innodb_available_undo_logs	128
+Innodb_page_compression_saved	0
+Innodb_num_index_pages_written	0
+Innodb_num_non_index_pages_written	0
+Innodb_num_pages_page_compressed	0
+Innodb_num_page_compressed_trim_op	0
+Innodb_num_pages_page_decompressed	0
+Innodb_num_pages_page_compression_error	0
+Innodb_num_pages_encrypted	0
+Innodb_num_pages_decrypted	0
+Innodb_have_lz4	OFF
+Innodb_have_lzo	OFF
+Innodb_have_lzma	OFF
+Innodb_have_bzip2	OFF
+Innodb_have_snappy	OFF
+Innodb_have_punch_hole	ON
+Innodb_defragment_compression_failures	0
+Innodb_defragment_failures	0
+Innodb_defragment_count	0
+Innodb_onlineddl_rowlog_rows	0
+Innodb_onlineddl_rowlog_pct_used	0
+Innodb_onlineddl_pct_progress	0
+Innodb_secondary_index_triggered_cluster_reads	258061
+Innodb_secondary_index_triggered_cluster_reads_avoided	0
+Innodb_encryption_rotation_pages_read_from_cache	0
+Innodb_encryption_rotation_pages_read_from_disk	0
+Innodb_encryption_rotation_pages_modified	0
+Innodb_encryption_rotation_pages_flushed	0
+Innodb_encryption_rotation_estimated_iops	0
+Innodb_encryption_key_rotation_list_length	0
+Innodb_scrub_background_page_reorganizations	0
+Innodb_scrub_background_page_splits	0
+Innodb_scrub_background_page_split_failures_underflow	0
+Innodb_scrub_background_page_split_failures_out_of_filespace	0
+Innodb_scrub_background_page_split_failures_missing_index	0
+Innodb_scrub_background_page_split_failures_unknown	0
+Innodb_scrub_log	0
+Innodb_encryption_num_key_requests	0
+Key_blocks_not_flushed	0
+Key_blocks_unused	43354
+Key_blocks_used	4
+Key_blocks_warm	0
+Key_read_requests	1492
+Key_reads	4
+Key_write_requests	4
+Key_writes	4
+Last_query_cost	0.000000
+Master_gtid_wait_count	0
+Master_gtid_wait_time	0
+Master_gtid_wait_timeouts	0
+Max_statement_time_exceeded	0
+Max_used_connections	12
+Memory_used	329209040
+Not_flushed_delayed_rows	0
+Open_files	37
+Open_streams	0
+Open_table_definitions	66
+Open_tables	76
+Opened_files	2717
+Opened_plugin_libraries	0
+Opened_table_definitions	358
+Opened_tables	246
+Opened_views	177
+Performance_schema_accounts_lost	0
+Performance_schema_cond_classes_lost	0
+Performance_schema_cond_instances_lost	0
+Performance_schema_digest_lost	0
+Performance_schema_file_classes_lost	0
+Performance_schema_file_handles_lost	0
+Performance_schema_file_instances_lost	0
+Performance_schema_hosts_lost	0
+Performance_schema_locker_lost	0
+Performance_schema_mutex_classes_lost	0
+Performance_schema_mutex_instances_lost	0
+Performance_schema_rwlock_classes_lost	0
+Performance_schema_rwlock_instances_lost	0
+Performance_schema_session_connect_attrs_lost	0
+Performance_schema_socket_classes_lost	0
+Performance_schema_socket_instances_lost	0
+Performance_schema_stage_classes_lost	0
+Performance_schema_statement_classes_lost	0
+Performance_schema_table_handles_lost	0
+Performance_schema_table_instances_lost	0
+Performance_schema_thread_classes_lost	0
+Performance_schema_thread_instances_lost	0
+Performance_schema_users_lost	0
+Prepared_stmt_count	0
+Qcache_free_blocks	562
+Qcache_free_memory	131348936
+Qcache_hits	57262
+Qcache_inserts	4736
+Qcache_lowmem_prunes	0
+Qcache_not_cached	7115
+Qcache_queries_in_cache	914
+Qcache_total_blocks	2421
+Queries	1368926
+Questions	1368828
+Rows_read	32162794
+Rows_sent	1209080
+Rows_tmp_read	1269223
+Rpl_status	AUTH_MASTER
+Select_full_join	2179
+Select_full_range_join	0
+Select_range	46
+Select_range_check	0
+Select_scan	7146
+Slave_connections	0
+Slave_heartbeat_period	0.000
+Slave_open_temp_tables	0
+Slave_received_heartbeats	0
+Slave_retried_transactions	0
+Slave_running	OFF
+Slave_skipped_errors	0
+Slaves_connected	0
+Slaves_running	0
+Slow_launch_threads	0
+Slow_queries	0
+Sort_merge_passes	0
+Sort_priority_queue_sorts	1951
+Sort_range	316
+Sort_rows	303274
+Sort_scan	4122
+Ssl_accept_renegotiates	0
+Ssl_accepts	0
+Ssl_callback_cache_hits	0
+Ssl_cipher	
+Ssl_cipher_list	
+Ssl_client_connects	0
+Ssl_connect_renegotiates	0
+Ssl_ctx_verify_depth	0
+Ssl_ctx_verify_mode	0
+Ssl_default_timeout	0
+Ssl_finished_accepts	0
+Ssl_finished_connects	0
+Ssl_server_not_after	
+Ssl_server_not_before	
+Ssl_session_cache_hits	0
+Ssl_session_cache_misses	0
+Ssl_session_cache_mode	NONE
+Ssl_session_cache_overflows	0
+Ssl_session_cache_size	0
+Ssl_session_cache_timeouts	0
+Ssl_sessions_reused	0
+Ssl_used_session_cache_entries	0
+Ssl_verify_depth	0
+Ssl_verify_mode	0
+Ssl_version	
+Subquery_cache_hit	0
+Subquery_cache_miss	0
+Syncs	3040
+Table_locks_immediate	597
+Table_locks_waited	0
+Tc_log_max_pages_used	0
+Tc_log_page_size	0
+Tc_log_page_waits	0
+Threadpool_idle_threads	0
+Threadpool_threads	0
+Threads_cached	0
+Threads_connected	1
+Threads_created	1486
+Threads_running	1
+Update_scan	4
+Uptime	4715576
+Uptime_since_flush_status	4715576
+wsrep_cluster_conf_id	18446744073709551615
+wsrep_cluster_size	0
+wsrep_cluster_state_uuid	
+wsrep_cluster_status	Disconnected
+wsrep_connected	OFF
+wsrep_local_bf_aborts	0
+wsrep_local_index	18446744073709551615
+wsrep_provider_name	
+wsrep_provider_vendor	
+wsrep_provider_version	
+wsrep_ready	OFF
+wsrep_thread_count	0
+------------------------------------------------------------
+------------------------------------------------------------
+Id	User	Host	db	Command	Time	State	Info	Progress
+1	system user		NULL	Daemon	NULL		NULL	0.000
+2	system user		NULL	Daemon	NULL		NULL	0.000
+4	system user		NULL	Daemon	NULL		NULL	0.000
+3	system user		NULL	Daemon	NULL		NULL	0.000
+5	system user		NULL	Daemon	NULL	InnoDB shutdown handler	NULL	0.000
+1799	st	103.30.99.246:61929	st	Query	0	init	show full processlist	0.000
+current_timestamp
+2019-01-03 07:40:21
+current_timestamp
+2019-01-03 07:40:21
+area	userCnt
+??	712184
+??	414033
+??	353826
+??	248518
+??	203926
+??	201735
+??	170354
+??	161062
+??	133160
+??	130233
+??	105563
+??	91905
+???	73518
+current_timestamp
+2019-01-03 07:40:21
+statsDt	lanArpu
+1	25.38
+2	26.41
+3	22.62
+4	22.62
+5	22.48
+6	25.09
+7	25.78
+8	23.67
+9	23.67
+10	23.67
+11	23.67
+current_timestamp
+2019-01-03 07:40:21
+area	lanArpu
+??	27.46
+??	26.22
+??	24.75
+??	24.57
+??	24.41
+??	24.06
+???	23.70
+??	23.57
+??	22.50
+??	21.72
+??	21.46
+??	21.25
+??	20.51
+current_timestamp
+2019-01-03 07:40:21
+[2019-01-03T07:50:01+0800]:[INFO]:网络状况
+[2019-01-03T07:50:01+0800]:[INFO]:------------------------------------------------------------
+PING bigdata.jscndata.com (118.25.80.57) 56(84) bytes of data.
+64 bytes from 118.25.80.57: icmp_seq=1 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=2 ttl=51 time=14.0 ms
+64 bytes from 118.25.80.57: icmp_seq=3 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=4 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=5 ttl=51 time=14.0 ms
+64 bytes from 118.25.80.57: icmp_seq=6 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=7 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=8 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=9 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=10 ttl=51 time=14.1 ms
+
+--- bigdata.jscndata.com ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9024ms
+rtt min/avg/max/mdev = 14.088/14.146/14.195/0.097 ms
+[2019-01-03T07:50:10+0800]:[INFO]:------------------------------------------------------------
+[2019-01-03T07:50:10+0800]:[INFO]:mysql运行状况
+[2019-01-03T07:50:10+0800]:[INFO]:------------------------------------------------------------
+--------------
+/usr/bin/mysql  Ver 14.14 Distrib 5.1.73, for redhat-linux-gnu (x86_64) using readline 5.1
+
+Connection id:		1804
+Current database:	st
+Current user:		st@103.30.99.246
+SSL:			Not in use
+Current pager:		stdout
+Using outfile:		''
+Using delimiter:	;
+Server version:		5.5.5-10.2.6-MariaDB-log Source distribution
+Protocol version:	10
+Connection:		bigdata.jscndata.com via TCP/IP
+Server characterset:	utf8
+Db     characterset:	utf8
+Client characterset:	latin1
+Conn.  characterset:	latin1
+TCP port:		4289
+Uptime:			54 days 14 hours 2 min 57 sec
+
+Threads: 12  Questions: 1369027  Slow queries: 0  Opens: 246  Flush tables: 1  Open tables: 76  Queries per second avg: 0.290
+--------------
+
+------------------------------------------------------------
+------------------------------------------------------------
+Variable_name	Value
+Aborted_clients	16
+Aborted_connects	20
+Access_denied_errors	0
+Acl_column_grants	0
+Acl_database_grants	2
+Acl_function_grants	0
+Acl_procedure_grants	0
+Acl_proxy_users	2
+Acl_role_grants	0
+Acl_roles	0
+Acl_table_grants	0
+Acl_users	8
+Aria_pagecache_blocks_not_flushed	0
+Aria_pagecache_blocks_unused	15706
+Aria_pagecache_blocks_used	14
+Aria_pagecache_read_requests	8435
+Aria_pagecache_reads	467
+Aria_pagecache_write_requests	972
+Aria_pagecache_writes	0
+Aria_transaction_log_syncs	0
+Binlog_commits	2655
+Binlog_group_commits	2655
+Binlog_group_commit_trigger_count	0
+Binlog_group_commit_trigger_lock_wait	0
+Binlog_group_commit_trigger_timeout	0
+Binlog_snapshot_file	mysql-bin.000002
+Binlog_snapshot_position	995093212
+Binlog_bytes_written	995100556
+Binlog_cache_disk_use	1302
+Binlog_cache_use	2655
+Binlog_stmt_cache_disk_use	0
+Binlog_stmt_cache_use	0
+Busy_time	0.000000
+Bytes_received	572813900
+Bytes_sent	149414621
+Com_admin_commands	4514
+Com_alter_db	0
+Com_alter_db_upgrade	0
+Com_alter_event	0
+Com_alter_function	0
+Com_alter_procedure	0
+Com_alter_server	0
+Com_alter_table	53
+Com_alter_tablespace	0
+Com_alter_user	0
+Com_analyze	0
+Com_assign_to_keycache	0
+Com_begin	0
+Com_binlog	0
+Com_call_procedure	0
+Com_change_db	12
+Com_change_master	0
+Com_check	0
+Com_checksum	0
+Com_commit	1359
+Com_compound_sql	0
+Com_create_db	0
+Com_create_event	0
+Com_create_function	0
+Com_create_index	4
+Com_create_procedure	0
+Com_create_role	0
+Com_create_server	0
+Com_create_table	80
+Com_create_temporary_table	0
+Com_create_trigger	0
+Com_create_udf	0
+Com_create_user	0
+Com_create_view	13
+Com_dealloc_sql	0
+Com_delete	8
+Com_delete_multi	0
+Com_do	0
+Com_drop_db	0
+Com_drop_event	0
+Com_drop_function	0
+Com_drop_index	0
+Com_drop_procedure	0
+Com_drop_role	0
+Com_drop_server	0
+Com_drop_table	42
+Com_drop_temporary_table	0
+Com_drop_trigger	0
+Com_drop_user	0
+Com_drop_view	24
+Com_empty_query	0
+Com_execute_immediate	0
+Com_execute_sql	0
+Com_flush	1
+Com_get_diagnostics	0
+Com_grant	2
+Com_grant_role	0
+Com_ha_close	0
+Com_ha_open	0
+Com_ha_read	0
+Com_help	0
+Com_insert	1289840
+Com_insert_select	2
+Com_install_plugin	0
+Com_kill	0
+Com_load	0
+Com_lock_tables	0
+Com_multi	0
+Com_optimize	0
+Com_preload_keys	0
+Com_prepare_sql	0
+Com_purge	0
+Com_purge_before_date	0
+Com_release_savepoint	0
+Com_rename_table	0
+Com_rename_user	0
+Com_repair	0
+Com_replace	0
+Com_replace_select	0
+Com_reset	0
+Com_resignal	0
+Com_revoke	0
+Com_revoke_all	0
+Com_revoke_role	0
+Com_rollback	11
+Com_rollback_to_savepoint	0
+Com_savepoint	0
+Com_select	70101
+Com_set_option	5031
+Com_show_authors	0
+Com_show_binlog_events	0
+Com_show_binlogs	0
+Com_show_charsets	14
+Com_show_collations	14
+Com_show_contributors	0
+Com_show_create_db	0
+Com_show_create_event	0
+Com_show_create_func	0
+Com_show_create_proc	0
+Com_show_create_table	41
+Com_show_create_trigger	0
+Com_show_create_user	0
+Com_show_databases	21
+Com_show_engine_logs	0
+Com_show_engine_mutex	0
+Com_show_engine_status	0
+Com_show_errors	0
+Com_show_events	0
+Com_show_explain	0
+Com_show_fields	119
+Com_show_function_status	0
+Com_show_generic	0
+Com_show_grants	0
+Com_show_keys	0
+Com_show_master_status	0
+Com_show_open_tables	0
+Com_show_plugins	0
+Com_show_privileges	0
+Com_show_procedure_status	0
+Com_show_processlist	102
+Com_show_profile	0
+Com_show_profiles	0
+Com_show_relaylog_events	0
+Com_show_slave_hosts	0
+Com_show_slave_status	0
+Com_show_status	203
+Com_show_storage_engines	14
+Com_show_table_status	39
+Com_show_tables	40
+Com_show_triggers	0
+Com_show_variables	35
+Com_show_warnings	3
+Com_shutdown	0
+Com_signal	0
+Com_start_all_slaves	0
+Com_start_slave	0
+Com_stmt_close	0
+Com_stmt_execute	30541
+Com_stmt_fetch	0
+Com_stmt_prepare	98
+Com_stmt_reprepare	0
+Com_stmt_reset	0
+Com_stmt_send_long_data	0
+Com_stop_all_slaves	0
+Com_stop_slave	0
+Com_truncate	6
+Com_uninstall_plugin	0
+Com_unlock_tables	0
+Com_update	6
+Com_update_multi	0
+Com_xa_commit	0
+Com_xa_end	0
+Com_xa_prepare	0
+Com_xa_recover	0
+Com_xa_rollback	0
+Com_xa_start	0
+Compression	OFF
+Connection_errors_accept	0
+Connection_errors_internal	0
+Connection_errors_max_connections	0
+Connection_errors_peer_address	1
+Connection_errors_select	0
+Connection_errors_tcpwrap	0
+Connections	1805
+Cpu_time	0.000000
+Created_tmp_disk_tables	503
+Created_tmp_files	45
+Created_tmp_tables	2251
+Delayed_errors	0
+Delayed_insert_threads	0
+Delayed_writes	0
+Delete_scan	6
+Empty_queries	4523
+Executed_events	0
+Executed_triggers	0
+Feature_check_constraint	0
+Feature_delay_key_write	0
+Feature_dynamic_columns	0
+Feature_fulltext	0
+Feature_gis	0
+Feature_locale	0
+Feature_subquery	1490
+Feature_timezone	2
+Feature_trigger	0
+Feature_window_functions	155
+Feature_xml	0
+Flush_commands	1
+Handler_commit	2586582
+Handler_delete	89414
+Handler_discover	5
+Handler_external_lock	0
+Handler_icp_attempts	606441
+Handler_icp_match	252197
+Handler_mrr_init	0
+Handler_mrr_key_refills	0
+Handler_mrr_rowid_refills	0
+Handler_prepare	2580146
+Handler_read_first	378
+Handler_read_key	5453
+Handler_read_last	23
+Handler_read_next	326993
+Handler_read_prev	244
+Handler_read_retry	0
+Handler_read_rnd	744922
+Handler_read_rnd_deleted	1
+Handler_read_rnd_next	32411017
+Handler_rollback	1207
+Handler_savepoint	0
+Handler_savepoint_rollback	0
+Handler_tmp_update	3123
+Handler_tmp_write	295228
+Handler_update	231086
+Handler_write	2013877
+Innodb_buffer_pool_dump_status	Dumping of buffer pool not started
+Innodb_buffer_pool_load_status	Buffer pool(s) load completed at 181109 17:47:28
+Innodb_buffer_pool_resize_status	
+Innodb_buffer_pool_pages_data	6851
+Innodb_buffer_pool_bytes_data	112246784
+Innodb_buffer_pool_pages_dirty	0
+Innodb_buffer_pool_bytes_dirty	0
+Innodb_buffer_pool_pages_flushed	28326
+Innodb_buffer_pool_pages_free	1024
+Innodb_buffer_pool_pages_misc	317
+Innodb_buffer_pool_pages_total	8192
+Innodb_buffer_pool_read_ahead_rnd	0
+Innodb_buffer_pool_read_ahead	22267
+Innodb_buffer_pool_read_ahead_evicted	48
+Innodb_buffer_pool_read_requests	45552511
+Innodb_buffer_pool_reads	19147
+Innodb_buffer_pool_wait_free	619
+Innodb_buffer_pool_write_requests	7161646
+Innodb_data_fsyncs	18964
+Innodb_data_pending_fsyncs	0
+Innodb_data_pending_reads	0
+Innodb_data_pending_writes	0
+Innodb_data_read	687114752
+Innodb_data_reads	42063
+Innodb_data_writes	84273
+Innodb_data_written	2750060032
+Innodb_dblwr_pages_written	65024
+Innodb_dblwr_writes	5243
+Innodb_log_waits	0
+Innodb_log_write_requests	1223728
+Innodb_log_writes	10470
+Innodb_os_log_fsyncs	8273
+Innodb_os_log_pending_fsyncs	0
+Innodb_os_log_pending_writes	0
+Innodb_os_log_written	615804416
+Innodb_page_size	16384
+Innodb_pages_created	34856
+Innodb_pages_read	41933
+Innodb_pages0_read	36
+Innodb_pages_written	65155
+Innodb_row_lock_current_waits	0
+Innodb_row_lock_time	0
+Innodb_row_lock_time_avg	0
+Innodb_row_lock_time_max	0
+Innodb_row_lock_waits	0
+Innodb_rows_deleted	89414
+Innodb_rows_inserted	2013875
+Innodb_rows_read	32163291
+Innodb_rows_updated	3893
+Innodb_system_rows_deleted	0
+Innodb_system_rows_inserted	0
+Innodb_system_rows_read	0
+Innodb_system_rows_updated	0
+Innodb_num_open_files	48
+Innodb_truncated_status_writes	0
+Innodb_available_undo_logs	128
+Innodb_page_compression_saved	0
+Innodb_num_index_pages_written	0
+Innodb_num_non_index_pages_written	0
+Innodb_num_pages_page_compressed	0
+Innodb_num_page_compressed_trim_op	0
+Innodb_num_pages_page_decompressed	0
+Innodb_num_pages_page_compression_error	0
+Innodb_num_pages_encrypted	0
+Innodb_num_pages_decrypted	0
+Innodb_have_lz4	OFF
+Innodb_have_lzo	OFF
+Innodb_have_lzma	OFF
+Innodb_have_bzip2	OFF
+Innodb_have_snappy	OFF
+Innodb_have_punch_hole	ON
+Innodb_defragment_compression_failures	0
+Innodb_defragment_failures	0
+Innodb_defragment_count	0
+Innodb_onlineddl_rowlog_rows	0
+Innodb_onlineddl_rowlog_pct_used	0
+Innodb_onlineddl_pct_progress	0
+Innodb_secondary_index_triggered_cluster_reads	258061
+Innodb_secondary_index_triggered_cluster_reads_avoided	0
+Innodb_encryption_rotation_pages_read_from_cache	0
+Innodb_encryption_rotation_pages_read_from_disk	0
+Innodb_encryption_rotation_pages_modified	0
+Innodb_encryption_rotation_pages_flushed	0
+Innodb_encryption_rotation_estimated_iops	0
+Innodb_encryption_key_rotation_list_length	0
+Innodb_scrub_background_page_reorganizations	0
+Innodb_scrub_background_page_splits	0
+Innodb_scrub_background_page_split_failures_underflow	0
+Innodb_scrub_background_page_split_failures_out_of_filespace	0
+Innodb_scrub_background_page_split_failures_missing_index	0
+Innodb_scrub_background_page_split_failures_unknown	0
+Innodb_scrub_log	0
+Innodb_encryption_num_key_requests	0
+Key_blocks_not_flushed	0
+Key_blocks_unused	43354
+Key_blocks_used	4
+Key_blocks_warm	0
+Key_read_requests	1492
+Key_reads	4
+Key_write_requests	4
+Key_writes	4
+Last_query_cost	0.000000
+Master_gtid_wait_count	0
+Master_gtid_wait_time	0
+Master_gtid_wait_timeouts	0
+Max_statement_time_exceeded	0
+Max_used_connections	12
+Memory_used	329708176
+Not_flushed_delayed_rows	0
+Open_files	37
+Open_streams	0
+Open_table_definitions	66
+Open_tables	76
+Opened_files	2717
+Opened_plugin_libraries	0
+Opened_table_definitions	358
+Opened_tables	246
+Opened_views	177
+Performance_schema_accounts_lost	0
+Performance_schema_cond_classes_lost	0
+Performance_schema_cond_instances_lost	0
+Performance_schema_digest_lost	0
+Performance_schema_file_classes_lost	0
+Performance_schema_file_handles_lost	0
+Performance_schema_file_instances_lost	0
+Performance_schema_hosts_lost	0
+Performance_schema_locker_lost	0
+Performance_schema_mutex_classes_lost	0
+Performance_schema_mutex_instances_lost	0
+Performance_schema_rwlock_classes_lost	0
+Performance_schema_rwlock_instances_lost	0
+Performance_schema_session_connect_attrs_lost	0
+Performance_schema_socket_classes_lost	0
+Performance_schema_socket_instances_lost	0
+Performance_schema_stage_classes_lost	0
+Performance_schema_statement_classes_lost	0
+Performance_schema_table_handles_lost	0
+Performance_schema_table_instances_lost	0
+Performance_schema_thread_classes_lost	0
+Performance_schema_thread_instances_lost	0
+Performance_schema_users_lost	0
+Prepared_stmt_count	0
+Qcache_free_blocks	562
+Qcache_free_memory	131348936
+Qcache_hits	57325
+Qcache_inserts	4737
+Qcache_lowmem_prunes	0
+Qcache_not_cached	7137
+Qcache_queries_in_cache	914
+Qcache_total_blocks	2421
+Queries	1369028
+Questions	1368930
+Rows_read	32164123
+Rows_sent	1211042
+Rows_tmp_read	1269702
+Rpl_status	AUTH_MASTER
+Select_full_join	2179
+Select_full_range_join	0
+Select_range	46
+Select_range_check	0
+Select_scan	7148
+Slave_connections	0
+Slave_heartbeat_period	0.000
+Slave_open_temp_tables	0
+Slave_received_heartbeats	0
+Slave_retried_transactions	0
+Slave_running	OFF
+Slave_skipped_errors	0
+Slaves_connected	0
+Slaves_running	0
+Slow_launch_threads	0
+Slow_queries	0
+Sort_merge_passes	0
+Sort_priority_queue_sorts	1952
+Sort_range	316
+Sort_rows	303275
+Sort_scan	4123
+Ssl_accept_renegotiates	0
+Ssl_accepts	0
+Ssl_callback_cache_hits	0
+Ssl_cipher	
+Ssl_cipher_list	
+Ssl_client_connects	0
+Ssl_connect_renegotiates	0
+Ssl_ctx_verify_depth	0
+Ssl_ctx_verify_mode	0
+Ssl_default_timeout	0
+Ssl_finished_accepts	0
+Ssl_finished_connects	0
+Ssl_server_not_after	
+Ssl_server_not_before	
+Ssl_session_cache_hits	0
+Ssl_session_cache_misses	0
+Ssl_session_cache_mode	NONE
+Ssl_session_cache_overflows	0
+Ssl_session_cache_size	0
+Ssl_session_cache_timeouts	0
+Ssl_sessions_reused	0
+Ssl_used_session_cache_entries	0
+Ssl_verify_depth	0
+Ssl_verify_mode	0
+Ssl_version	
+Subquery_cache_hit	0
+Subquery_cache_miss	0
+Syncs	3041
+Table_locks_immediate	597
+Table_locks_waited	0
+Tc_log_max_pages_used	0
+Tc_log_page_size	0
+Tc_log_page_waits	0
+Threadpool_idle_threads	0
+Threadpool_threads	0
+Threads_cached	0
+Threads_connected	5
+Threads_created	1490
+Threads_running	1
+Update_scan	4
+Uptime	4716177
+Uptime_since_flush_status	4716177
+wsrep_cluster_conf_id	18446744073709551615
+wsrep_cluster_size	0
+wsrep_cluster_state_uuid	
+wsrep_cluster_status	Disconnected
+wsrep_connected	OFF
+wsrep_local_bf_aborts	0
+wsrep_local_index	18446744073709551615
+wsrep_provider_name	
+wsrep_provider_vendor	
+wsrep_provider_version	
+wsrep_ready	OFF
+wsrep_thread_count	0
+------------------------------------------------------------
+------------------------------------------------------------
+Id	User	Host	db	Command	Time	State	Info	Progress
+1	system user		NULL	Daemon	NULL		NULL	0.000
+2	system user		NULL	Daemon	NULL		NULL	0.000
+4	system user		NULL	Daemon	NULL		NULL	0.000
+3	system user		NULL	Daemon	NULL		NULL	0.000
+5	system user		NULL	Daemon	NULL	InnoDB shutdown handler	NULL	0.000
+1800	portal	172.17.0.8:47926	portal	Sleep	576		NULL	0.000
+1801	st	172.17.0.8:47932	st	Sleep	550		NULL	0.000
+1802	st	172.17.0.8:47940	st	Sleep	550		NULL	0.000
+1803	st	172.17.0.8:47952	st	Sleep	550		NULL	0.000
+1804	st	103.30.99.246:54075	st	Query	0	init	show full processlist	0.000
+current_timestamp
+2019-01-03 07:50:22
+current_timestamp
+2019-01-03 07:50:22
+area	userCnt
+??	712184
+??	414033
+??	353826
+??	248518
+??	203926
+??	201735
+??	170354
+??	161062
+??	133160
+??	130233
+??	105563
+??	91905
+???	73518
+current_timestamp
+2019-01-03 07:50:22
+statsDt	lanArpu
+1	25.38
+2	26.41
+3	22.62
+4	22.62
+5	22.48
+6	25.09
+7	25.78
+8	23.67
+9	23.67
+10	23.67
+11	23.67
+current_timestamp
+2019-01-03 07:50:22
+area	lanArpu
+??	27.46
+??	26.22
+??	24.75
+??	24.57
+??	24.41
+??	24.06
+???	23.70
+??	23.57
+??	22.50
+??	21.72
+??	21.46
+??	21.25
+??	20.51
+current_timestamp
+2019-01-03 07:50:22
+[2019-01-03T08:00:02+0800]:[INFO]:网络状况
+[2019-01-03T08:00:02+0800]:[INFO]:------------------------------------------------------------
+PING bigdata.jscndata.com (118.25.80.57) 56(84) bytes of data.
+64 bytes from 118.25.80.57: icmp_seq=1 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=2 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=3 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=4 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=5 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=6 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=7 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=8 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=9 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=10 ttl=51 time=14.1 ms
+
+--- bigdata.jscndata.com ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9024ms
+rtt min/avg/max/mdev = 14.101/14.158/14.231/0.114 ms
+[2019-01-03T08:00:11+0800]:[INFO]:------------------------------------------------------------
+[2019-01-03T08:00:11+0800]:[INFO]:mysql运行状况
+[2019-01-03T08:00:11+0800]:[INFO]:------------------------------------------------------------
+--------------
+/usr/bin/mysql  Ver 14.14 Distrib 5.1.73, for redhat-linux-gnu (x86_64) using readline 5.1
+
+Connection id:		1805
+Current database:	st
+Current user:		st@103.30.99.246
+SSL:			Not in use
+Current pager:		stdout
+Using outfile:		''
+Using delimiter:	;
+Server version:		5.5.5-10.2.6-MariaDB-log Source distribution
+Protocol version:	10
+Connection:		bigdata.jscndata.com via TCP/IP
+Server characterset:	utf8
+Db     characterset:	utf8
+Client characterset:	latin1
+Conn.  characterset:	latin1
+TCP port:		4289
+Uptime:			54 days 14 hours 12 min 57 sec
+
+Threads: 12  Questions: 1369044  Slow queries: 0  Opens: 246  Flush tables: 1  Open tables: 76  Queries per second avg: 0.290
+--------------
+
+------------------------------------------------------------
+------------------------------------------------------------
+Variable_name	Value
+Aborted_clients	16
+Aborted_connects	20
+Access_denied_errors	0
+Acl_column_grants	0
+Acl_database_grants	2
+Acl_function_grants	0
+Acl_procedure_grants	0
+Acl_proxy_users	2
+Acl_role_grants	0
+Acl_roles	0
+Acl_table_grants	0
+Acl_users	8
+Aria_pagecache_blocks_not_flushed	0
+Aria_pagecache_blocks_unused	15706
+Aria_pagecache_blocks_used	14
+Aria_pagecache_read_requests	8435
+Aria_pagecache_reads	467
+Aria_pagecache_write_requests	972
+Aria_pagecache_writes	0
+Aria_transaction_log_syncs	0
+Binlog_commits	2655
+Binlog_group_commits	2655
+Binlog_group_commit_trigger_count	0
+Binlog_group_commit_trigger_lock_wait	0
+Binlog_group_commit_trigger_timeout	0
+Binlog_snapshot_file	mysql-bin.000002
+Binlog_snapshot_position	995093212
+Binlog_bytes_written	995100556
+Binlog_cache_disk_use	1302
+Binlog_cache_use	2655
+Binlog_stmt_cache_disk_use	0
+Binlog_stmt_cache_use	0
+Busy_time	0.000000
+Bytes_received	572815744
+Bytes_sent	149431876
+Com_admin_commands	4514
+Com_alter_db	0
+Com_alter_db_upgrade	0
+Com_alter_event	0
+Com_alter_function	0
+Com_alter_procedure	0
+Com_alter_server	0
+Com_alter_table	53
+Com_alter_tablespace	0
+Com_alter_user	0
+Com_analyze	0
+Com_assign_to_keycache	0
+Com_begin	0
+Com_binlog	0
+Com_call_procedure	0
+Com_change_db	12
+Com_change_master	0
+Com_check	0
+Com_checksum	0
+Com_commit	1359
+Com_compound_sql	0
+Com_create_db	0
+Com_create_event	0
+Com_create_function	0
+Com_create_index	4
+Com_create_procedure	0
+Com_create_role	0
+Com_create_server	0
+Com_create_table	80
+Com_create_temporary_table	0
+Com_create_trigger	0
+Com_create_udf	0
+Com_create_user	0
+Com_create_view	13
+Com_dealloc_sql	0
+Com_delete	8
+Com_delete_multi	0
+Com_do	0
+Com_drop_db	0
+Com_drop_event	0
+Com_drop_function	0
+Com_drop_index	0
+Com_drop_procedure	0
+Com_drop_role	0
+Com_drop_server	0
+Com_drop_table	42
+Com_drop_temporary_table	0
+Com_drop_trigger	0
+Com_drop_user	0
+Com_drop_view	24
+Com_empty_query	0
+Com_execute_immediate	0
+Com_execute_sql	0
+Com_flush	1
+Com_get_diagnostics	0
+Com_grant	2
+Com_grant_role	0
+Com_ha_close	0
+Com_ha_open	0
+Com_ha_read	0
+Com_help	0
+Com_insert	1289840
+Com_insert_select	2
+Com_install_plugin	0
+Com_kill	0
+Com_load	0
+Com_lock_tables	0
+Com_multi	0
+Com_optimize	0
+Com_preload_keys	0
+Com_prepare_sql	0
+Com_purge	0
+Com_purge_before_date	0
+Com_release_savepoint	0
+Com_rename_table	0
+Com_rename_user	0
+Com_repair	0
+Com_replace	0
+Com_replace_select	0
+Com_reset	0
+Com_resignal	0
+Com_revoke	0
+Com_revoke_all	0
+Com_revoke_role	0
+Com_rollback	11
+Com_rollback_to_savepoint	0
+Com_savepoint	0
+Com_select	70115
+Com_set_option	5031
+Com_show_authors	0
+Com_show_binlog_events	0
+Com_show_binlogs	0
+Com_show_charsets	14
+Com_show_collations	14
+Com_show_contributors	0
+Com_show_create_db	0
+Com_show_create_event	0
+Com_show_create_func	0
+Com_show_create_proc	0
+Com_show_create_table	41
+Com_show_create_trigger	0
+Com_show_create_user	0
+Com_show_databases	21
+Com_show_engine_logs	0
+Com_show_engine_mutex	0
+Com_show_engine_status	0
+Com_show_errors	0
+Com_show_events	0
+Com_show_explain	0
+Com_show_fields	119
+Com_show_function_status	0
+Com_show_generic	0
+Com_show_grants	0
+Com_show_keys	0
+Com_show_master_status	0
+Com_show_open_tables	0
+Com_show_plugins	0
+Com_show_privileges	0
+Com_show_procedure_status	0
+Com_show_processlist	103
+Com_show_profile	0
+Com_show_profiles	0
+Com_show_relaylog_events	0
+Com_show_slave_hosts	0
+Com_show_slave_status	0
+Com_show_status	205
+Com_show_storage_engines	14
+Com_show_table_status	39
+Com_show_tables	40
+Com_show_triggers	0
+Com_show_variables	35
+Com_show_warnings	3
+Com_shutdown	0
+Com_signal	0
+Com_start_all_slaves	0
+Com_start_slave	0
+Com_stmt_close	0
+Com_stmt_execute	30541
+Com_stmt_fetch	0
+Com_stmt_prepare	98
+Com_stmt_reprepare	0
+Com_stmt_reset	0
+Com_stmt_send_long_data	0
+Com_stop_all_slaves	0
+Com_stop_slave	0
+Com_truncate	6
+Com_uninstall_plugin	0
+Com_unlock_tables	0
+Com_update	6
+Com_update_multi	0
+Com_xa_commit	0
+Com_xa_end	0
+Com_xa_prepare	0
+Com_xa_recover	0
+Com_xa_rollback	0
+Com_xa_start	0
+Compression	OFF
+Connection_errors_accept	0
+Connection_errors_internal	0
+Connection_errors_max_connections	0
+Connection_errors_peer_address	1
+Connection_errors_select	0
+Connection_errors_tcpwrap	0
+Connections	1806
+Cpu_time	0.000000
+Created_tmp_disk_tables	503
+Created_tmp_files	45
+Created_tmp_tables	2252
+Delayed_errors	0
+Delayed_insert_threads	0
+Delayed_writes	0
+Delete_scan	6
+Empty_queries	4524
+Executed_events	0
+Executed_triggers	0
+Feature_check_constraint	0
+Feature_delay_key_write	0
+Feature_dynamic_columns	0
+Feature_fulltext	0
+Feature_gis	0
+Feature_locale	0
+Feature_subquery	1490
+Feature_timezone	2
+Feature_trigger	0
+Feature_window_functions	155
+Feature_xml	0
+Flush_commands	1
+Handler_commit	2586582
+Handler_delete	89414
+Handler_discover	5
+Handler_external_lock	0
+Handler_icp_attempts	606441
+Handler_icp_match	252197
+Handler_mrr_init	0
+Handler_mrr_key_refills	0
+Handler_mrr_rowid_refills	0
+Handler_prepare	2580146
+Handler_read_first	378
+Handler_read_key	5453
+Handler_read_last	23
+Handler_read_next	326993
+Handler_read_prev	244
+Handler_read_retry	0
+Handler_read_rnd	744922
+Handler_read_rnd_deleted	1
+Handler_read_rnd_next	32411497
+Handler_rollback	1207
+Handler_savepoint	0
+Handler_savepoint_rollback	0
+Handler_tmp_update	3123
+Handler_tmp_write	295707
+Handler_update	231086
+Handler_write	2013877
+Innodb_buffer_pool_dump_status	Dumping of buffer pool not started
+Innodb_buffer_pool_load_status	Buffer pool(s) load completed at 181109 17:47:28
+Innodb_buffer_pool_resize_status	
+Innodb_buffer_pool_pages_data	6851
+Innodb_buffer_pool_bytes_data	112246784
+Innodb_buffer_pool_pages_dirty	0
+Innodb_buffer_pool_bytes_dirty	0
+Innodb_buffer_pool_pages_flushed	28326
+Innodb_buffer_pool_pages_free	1024
+Innodb_buffer_pool_pages_misc	317
+Innodb_buffer_pool_pages_total	8192
+Innodb_buffer_pool_read_ahead_rnd	0
+Innodb_buffer_pool_read_ahead	22267
+Innodb_buffer_pool_read_ahead_evicted	48
+Innodb_buffer_pool_read_requests	45552511
+Innodb_buffer_pool_reads	19147
+Innodb_buffer_pool_wait_free	619
+Innodb_buffer_pool_write_requests	7161646
+Innodb_data_fsyncs	18964
+Innodb_data_pending_fsyncs	0
+Innodb_data_pending_reads	0
+Innodb_data_pending_writes	0
+Innodb_data_read	687114752
+Innodb_data_reads	42063
+Innodb_data_writes	84273
+Innodb_data_written	2750060032
+Innodb_dblwr_pages_written	65024
+Innodb_dblwr_writes	5243
+Innodb_log_waits	0
+Innodb_log_write_requests	1223728
+Innodb_log_writes	10470
+Innodb_os_log_fsyncs	8273
+Innodb_os_log_pending_fsyncs	0
+Innodb_os_log_pending_writes	0
+Innodb_os_log_written	615804416
+Innodb_page_size	16384
+Innodb_pages_created	34856
+Innodb_pages_read	41933
+Innodb_pages0_read	36
+Innodb_pages_written	65155
+Innodb_row_lock_current_waits	0
+Innodb_row_lock_time	0
+Innodb_row_lock_time_avg	0
+Innodb_row_lock_time_max	0
+Innodb_row_lock_waits	0
+Innodb_rows_deleted	89414
+Innodb_rows_inserted	2013875
+Innodb_rows_read	32163291
+Innodb_rows_updated	3893
+Innodb_system_rows_deleted	0
+Innodb_system_rows_inserted	0
+Innodb_system_rows_read	0
+Innodb_system_rows_updated	0
+Innodb_num_open_files	48
+Innodb_truncated_status_writes	0
+Innodb_available_undo_logs	128
+Innodb_page_compression_saved	0
+Innodb_num_index_pages_written	0
+Innodb_num_non_index_pages_written	0
+Innodb_num_pages_page_compressed	0
+Innodb_num_page_compressed_trim_op	0
+Innodb_num_pages_page_decompressed	0
+Innodb_num_pages_page_compression_error	0
+Innodb_num_pages_encrypted	0
+Innodb_num_pages_decrypted	0
+Innodb_have_lz4	OFF
+Innodb_have_lzo	OFF
+Innodb_have_lzma	OFF
+Innodb_have_bzip2	OFF
+Innodb_have_snappy	OFF
+Innodb_have_punch_hole	ON
+Innodb_defragment_compression_failures	0
+Innodb_defragment_failures	0
+Innodb_defragment_count	0
+Innodb_onlineddl_rowlog_rows	0
+Innodb_onlineddl_rowlog_pct_used	0
+Innodb_onlineddl_pct_progress	0
+Innodb_secondary_index_triggered_cluster_reads	258061
+Innodb_secondary_index_triggered_cluster_reads_avoided	0
+Innodb_encryption_rotation_pages_read_from_cache	0
+Innodb_encryption_rotation_pages_read_from_disk	0
+Innodb_encryption_rotation_pages_modified	0
+Innodb_encryption_rotation_pages_flushed	0
+Innodb_encryption_rotation_estimated_iops	0
+Innodb_encryption_key_rotation_list_length	0
+Innodb_scrub_background_page_reorganizations	0
+Innodb_scrub_background_page_splits	0
+Innodb_scrub_background_page_split_failures_underflow	0
+Innodb_scrub_background_page_split_failures_out_of_filespace	0
+Innodb_scrub_background_page_split_failures_missing_index	0
+Innodb_scrub_background_page_split_failures_unknown	0
+Innodb_scrub_log	0
+Innodb_encryption_num_key_requests	0
+Key_blocks_not_flushed	0
+Key_blocks_unused	43354
+Key_blocks_used	4
+Key_blocks_warm	0
+Key_read_requests	1492
+Key_reads	4
+Key_write_requests	4
+Key_writes	4
+Last_query_cost	0.000000
+Master_gtid_wait_count	0
+Master_gtid_wait_time	0
+Master_gtid_wait_timeouts	0
+Max_statement_time_exceeded	0
+Max_used_connections	12
+Memory_used	329708176
+Not_flushed_delayed_rows	0
+Open_files	37
+Open_streams	0
+Open_table_definitions	66
+Open_tables	76
+Opened_files	2717
+Opened_plugin_libraries	0
+Opened_table_definitions	358
+Opened_tables	246
+Opened_views	177
+Performance_schema_accounts_lost	0
+Performance_schema_cond_classes_lost	0
+Performance_schema_cond_instances_lost	0
+Performance_schema_digest_lost	0
+Performance_schema_file_classes_lost	0
+Performance_schema_file_handles_lost	0
+Performance_schema_file_instances_lost	0
+Performance_schema_hosts_lost	0
+Performance_schema_locker_lost	0
+Performance_schema_mutex_classes_lost	0
+Performance_schema_mutex_instances_lost	0
+Performance_schema_rwlock_classes_lost	0
+Performance_schema_rwlock_instances_lost	0
+Performance_schema_session_connect_attrs_lost	0
+Performance_schema_socket_classes_lost	0
+Performance_schema_socket_instances_lost	0
+Performance_schema_stage_classes_lost	0
+Performance_schema_statement_classes_lost	0
+Performance_schema_table_handles_lost	0
+Performance_schema_table_instances_lost	0
+Performance_schema_thread_classes_lost	0
+Performance_schema_thread_instances_lost	0
+Performance_schema_users_lost	0
+Prepared_stmt_count	0
+Qcache_free_blocks	562
+Qcache_free_memory	131348936
+Qcache_hits	57329
+Qcache_inserts	4737
+Qcache_lowmem_prunes	0
+Qcache_not_cached	7147
+Qcache_queries_in_cache	914
+Qcache_total_blocks	2421
+Queries	1369045
+Questions	1368947
+Rows_read	32164123
+Rows_sent	1211568
+Rows_tmp_read	1270181
+Rpl_status	AUTH_MASTER
+Select_full_join	2179
+Select_full_range_join	0
+Select_range	46
+Select_range_check	0
+Select_scan	7149
+Slave_connections	0
+Slave_heartbeat_period	0.000
+Slave_open_temp_tables	0
+Slave_received_heartbeats	0
+Slave_retried_transactions	0
+Slave_running	OFF
+Slave_skipped_errors	0
+Slaves_connected	0
+Slaves_running	0
+Slow_launch_threads	0
+Slow_queries	0
+Sort_merge_passes	0
+Sort_priority_queue_sorts	1952
+Sort_range	316
+Sort_rows	303275
+Sort_scan	4123
+Ssl_accept_renegotiates	0
+Ssl_accepts	0
+Ssl_callback_cache_hits	0
+Ssl_cipher	
+Ssl_cipher_list	
+Ssl_client_connects	0
+Ssl_connect_renegotiates	0
+Ssl_ctx_verify_depth	0
+Ssl_ctx_verify_mode	0
+Ssl_default_timeout	0
+Ssl_finished_accepts	0
+Ssl_finished_connects	0
+Ssl_server_not_after	
+Ssl_server_not_before	
+Ssl_session_cache_hits	0
+Ssl_session_cache_misses	0
+Ssl_session_cache_mode	NONE
+Ssl_session_cache_overflows	0
+Ssl_session_cache_size	0
+Ssl_session_cache_timeouts	0
+Ssl_sessions_reused	0
+Ssl_used_session_cache_entries	0
+Ssl_verify_depth	0
+Ssl_verify_mode	0
+Ssl_version	
+Subquery_cache_hit	0
+Subquery_cache_miss	0
+Syncs	3041
+Table_locks_immediate	597
+Table_locks_waited	0
+Tc_log_max_pages_used	0
+Tc_log_page_size	0
+Tc_log_page_waits	0
+Threadpool_idle_threads	0
+Threadpool_threads	0
+Threads_cached	0
+Threads_connected	5
+Threads_created	1491
+Threads_running	1
+Update_scan	4
+Uptime	4716777
+Uptime_since_flush_status	4716777
+wsrep_cluster_conf_id	18446744073709551615
+wsrep_cluster_size	0
+wsrep_cluster_state_uuid	
+wsrep_cluster_status	Disconnected
+wsrep_connected	OFF
+wsrep_local_bf_aborts	0
+wsrep_local_index	18446744073709551615
+wsrep_provider_name	
+wsrep_provider_vendor	
+wsrep_provider_version	
+wsrep_ready	OFF
+wsrep_thread_count	0
+------------------------------------------------------------
+------------------------------------------------------------
+Id	User	Host	db	Command	Time	State	Info	Progress
+1	system user		NULL	Daemon	NULL		NULL	0.000
+2	system user		NULL	Daemon	NULL		NULL	0.000
+4	system user		NULL	Daemon	NULL		NULL	0.000
+3	system user		NULL	Daemon	NULL		NULL	0.000
+5	system user		NULL	Daemon	NULL	InnoDB shutdown handler	NULL	0.000
+1800	portal	172.17.0.8:47926	portal	Sleep	1177		NULL	0.000
+1801	st	172.17.0.8:47932	st	Sleep	1151		NULL	0.000
+1802	st	172.17.0.8:47940	st	Sleep	1151		NULL	0.000
+1803	st	172.17.0.8:47952	st	Sleep	1151		NULL	0.000
+1805	st	103.30.99.246:45527	st	Query	0	init	show full processlist	0.000
+current_timestamp
+2019-01-03 08:00:22
+current_timestamp
+2019-01-03 08:00:22
+area	userCnt
+??	712184
+??	414033
+??	353826
+??	248518
+??	203926
+??	201735
+??	170354
+??	161062
+??	133160
+??	130233
+??	105563
+??	91905
+???	73518
+current_timestamp
+2019-01-03 08:00:22
+statsDt	lanArpu
+1	25.38
+2	26.41
+3	22.62
+4	22.62
+5	22.48
+6	25.09
+7	25.78
+8	23.67
+9	23.67
+10	23.67
+11	23.67
+current_timestamp
+2019-01-03 08:00:22
+area	lanArpu
+??	27.46
+??	26.22
+??	24.75
+??	24.57
+??	24.41
+??	24.06
+???	23.70
+??	23.57
+??	22.50
+??	21.72
+??	21.46
+??	21.25
+??	20.51
+current_timestamp
+2019-01-03 08:00:22
+[2019-01-03T08:10:01+0800]:[INFO]:网络状况
+[2019-01-03T08:10:01+0800]:[INFO]:------------------------------------------------------------
+PING bigdata.jscndata.com (118.25.80.57) 56(84) bytes of data.
+64 bytes from 118.25.80.57: icmp_seq=1 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=2 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=3 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=4 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=5 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=6 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=7 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=8 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=9 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=10 ttl=51 time=14.1 ms
+
+--- bigdata.jscndata.com ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9025ms
+rtt min/avg/max/mdev = 14.107/14.151/14.226/0.081 ms
+[2019-01-03T08:10:10+0800]:[INFO]:------------------------------------------------------------
+[2019-01-03T08:10:10+0800]:[INFO]:mysql运行状况
+[2019-01-03T08:10:10+0800]:[INFO]:------------------------------------------------------------
+--------------
+/usr/bin/mysql  Ver 14.14 Distrib 5.1.73, for redhat-linux-gnu (x86_64) using readline 5.1
+
+Connection id:		1806
+Current database:	st
+Current user:		st@103.30.99.246
+SSL:			Not in use
+Current pager:		stdout
+Using outfile:		''
+Using delimiter:	;
+Server version:		5.5.5-10.2.6-MariaDB-log Source distribution
+Protocol version:	10
+Connection:		bigdata.jscndata.com via TCP/IP
+Server characterset:	utf8
+Db     characterset:	utf8
+Client characterset:	latin1
+Conn.  characterset:	latin1
+TCP port:		4289
+Uptime:			54 days 14 hours 22 min 57 sec
+
+Threads: 12  Questions: 1369061  Slow queries: 0  Opens: 246  Flush tables: 1  Open tables: 76  Queries per second avg: 0.290
+--------------
+
+------------------------------------------------------------
+------------------------------------------------------------
+Variable_name	Value
+Aborted_clients	16
+Aborted_connects	20
+Access_denied_errors	0
+Acl_column_grants	0
+Acl_database_grants	2
+Acl_function_grants	0
+Acl_procedure_grants	0
+Acl_proxy_users	2
+Acl_role_grants	0
+Acl_roles	0
+Acl_table_grants	0
+Acl_users	8
+Aria_pagecache_blocks_not_flushed	0
+Aria_pagecache_blocks_unused	15706
+Aria_pagecache_blocks_used	14
+Aria_pagecache_read_requests	8435
+Aria_pagecache_reads	467
+Aria_pagecache_write_requests	972
+Aria_pagecache_writes	0
+Aria_transaction_log_syncs	0
+Binlog_commits	2655
+Binlog_group_commits	2655
+Binlog_group_commit_trigger_count	0
+Binlog_group_commit_trigger_lock_wait	0
+Binlog_group_commit_trigger_timeout	0
+Binlog_snapshot_file	mysql-bin.000002
+Binlog_snapshot_position	995093212
+Binlog_bytes_written	995100556
+Binlog_cache_disk_use	1302
+Binlog_cache_use	2655
+Binlog_stmt_cache_disk_use	0
+Binlog_stmt_cache_use	0
+Busy_time	0.000000
+Bytes_received	572817588
+Bytes_sent	149449135
+Com_admin_commands	4514
+Com_alter_db	0
+Com_alter_db_upgrade	0
+Com_alter_event	0
+Com_alter_function	0
+Com_alter_procedure	0
+Com_alter_server	0
+Com_alter_table	53
+Com_alter_tablespace	0
+Com_alter_user	0
+Com_analyze	0
+Com_assign_to_keycache	0
+Com_begin	0
+Com_binlog	0
+Com_call_procedure	0
+Com_change_db	12
+Com_change_master	0
+Com_check	0
+Com_checksum	0
+Com_commit	1359
+Com_compound_sql	0
+Com_create_db	0
+Com_create_event	0
+Com_create_function	0
+Com_create_index	4
+Com_create_procedure	0
+Com_create_role	0
+Com_create_server	0
+Com_create_table	80
+Com_create_temporary_table	0
+Com_create_trigger	0
+Com_create_udf	0
+Com_create_user	0
+Com_create_view	13
+Com_dealloc_sql	0
+Com_delete	8
+Com_delete_multi	0
+Com_do	0
+Com_drop_db	0
+Com_drop_event	0
+Com_drop_function	0
+Com_drop_index	0
+Com_drop_procedure	0
+Com_drop_role	0
+Com_drop_server	0
+Com_drop_table	42
+Com_drop_temporary_table	0
+Com_drop_trigger	0
+Com_drop_user	0
+Com_drop_view	24
+Com_empty_query	0
+Com_execute_immediate	0
+Com_execute_sql	0
+Com_flush	1
+Com_get_diagnostics	0
+Com_grant	2
+Com_grant_role	0
+Com_ha_close	0
+Com_ha_open	0
+Com_ha_read	0
+Com_help	0
+Com_insert	1289840
+Com_insert_select	2
+Com_install_plugin	0
+Com_kill	0
+Com_load	0
+Com_lock_tables	0
+Com_multi	0
+Com_optimize	0
+Com_preload_keys	0
+Com_prepare_sql	0
+Com_purge	0
+Com_purge_before_date	0
+Com_release_savepoint	0
+Com_rename_table	0
+Com_rename_user	0
+Com_repair	0
+Com_replace	0
+Com_replace_select	0
+Com_reset	0
+Com_resignal	0
+Com_revoke	0
+Com_revoke_all	0
+Com_revoke_role	0
+Com_rollback	11
+Com_rollback_to_savepoint	0
+Com_savepoint	0
+Com_select	70129
+Com_set_option	5031
+Com_show_authors	0
+Com_show_binlog_events	0
+Com_show_binlogs	0
+Com_show_charsets	14
+Com_show_collations	14
+Com_show_contributors	0
+Com_show_create_db	0
+Com_show_create_event	0
+Com_show_create_func	0
+Com_show_create_proc	0
+Com_show_create_table	41
+Com_show_create_trigger	0
+Com_show_create_user	0
+Com_show_databases	21
+Com_show_engine_logs	0
+Com_show_engine_mutex	0
+Com_show_engine_status	0
+Com_show_errors	0
+Com_show_events	0
+Com_show_explain	0
+Com_show_fields	119
+Com_show_function_status	0
+Com_show_generic	0
+Com_show_grants	0
+Com_show_keys	0
+Com_show_master_status	0
+Com_show_open_tables	0
+Com_show_plugins	0
+Com_show_privileges	0
+Com_show_procedure_status	0
+Com_show_processlist	104
+Com_show_profile	0
+Com_show_profiles	0
+Com_show_relaylog_events	0
+Com_show_slave_hosts	0
+Com_show_slave_status	0
+Com_show_status	207
+Com_show_storage_engines	14
+Com_show_table_status	39
+Com_show_tables	40
+Com_show_triggers	0
+Com_show_variables	35
+Com_show_warnings	3
+Com_shutdown	0
+Com_signal	0
+Com_start_all_slaves	0
+Com_start_slave	0
+Com_stmt_close	0
+Com_stmt_execute	30541
+Com_stmt_fetch	0
+Com_stmt_prepare	98
+Com_stmt_reprepare	0
+Com_stmt_reset	0
+Com_stmt_send_long_data	0
+Com_stop_all_slaves	0
+Com_stop_slave	0
+Com_truncate	6
+Com_uninstall_plugin	0
+Com_unlock_tables	0
+Com_update	6
+Com_update_multi	0
+Com_xa_commit	0
+Com_xa_end	0
+Com_xa_prepare	0
+Com_xa_recover	0
+Com_xa_rollback	0
+Com_xa_start	0
+Compression	OFF
+Connection_errors_accept	0
+Connection_errors_internal	0
+Connection_errors_max_connections	0
+Connection_errors_peer_address	1
+Connection_errors_select	0
+Connection_errors_tcpwrap	0
+Connections	1807
+Cpu_time	0.000000
+Created_tmp_disk_tables	503
+Created_tmp_files	45
+Created_tmp_tables	2253
+Delayed_errors	0
+Delayed_insert_threads	0
+Delayed_writes	0
+Delete_scan	6
+Empty_queries	4525
+Executed_events	0
+Executed_triggers	0
+Feature_check_constraint	0
+Feature_delay_key_write	0
+Feature_dynamic_columns	0
+Feature_fulltext	0
+Feature_gis	0
+Feature_locale	0
+Feature_subquery	1490
+Feature_timezone	2
+Feature_trigger	0
+Feature_window_functions	155
+Feature_xml	0
+Flush_commands	1
+Handler_commit	2586582
+Handler_delete	89414
+Handler_discover	5
+Handler_external_lock	0
+Handler_icp_attempts	606441
+Handler_icp_match	252197
+Handler_mrr_init	0
+Handler_mrr_key_refills	0
+Handler_mrr_rowid_refills	0
+Handler_prepare	2580146
+Handler_read_first	378
+Handler_read_key	5453
+Handler_read_last	23
+Handler_read_next	326993
+Handler_read_prev	244
+Handler_read_retry	0
+Handler_read_rnd	744922
+Handler_read_rnd_deleted	1
+Handler_read_rnd_next	32411977
+Handler_rollback	1207
+Handler_savepoint	0
+Handler_savepoint_rollback	0
+Handler_tmp_update	3123
+Handler_tmp_write	296186
+Handler_update	231086
+Handler_write	2013877
+Innodb_buffer_pool_dump_status	Dumping of buffer pool not started
+Innodb_buffer_pool_load_status	Buffer pool(s) load completed at 181109 17:47:28
+Innodb_buffer_pool_resize_status	
+Innodb_buffer_pool_pages_data	6851
+Innodb_buffer_pool_bytes_data	112246784
+Innodb_buffer_pool_pages_dirty	0
+Innodb_buffer_pool_bytes_dirty	0
+Innodb_buffer_pool_pages_flushed	28326
+Innodb_buffer_pool_pages_free	1024
+Innodb_buffer_pool_pages_misc	317
+Innodb_buffer_pool_pages_total	8192
+Innodb_buffer_pool_read_ahead_rnd	0
+Innodb_buffer_pool_read_ahead	22267
+Innodb_buffer_pool_read_ahead_evicted	48
+Innodb_buffer_pool_read_requests	45552511
+Innodb_buffer_pool_reads	19147
+Innodb_buffer_pool_wait_free	619
+Innodb_buffer_pool_write_requests	7161646
+Innodb_data_fsyncs	18964
+Innodb_data_pending_fsyncs	0
+Innodb_data_pending_reads	0
+Innodb_data_pending_writes	0
+Innodb_data_read	687114752
+Innodb_data_reads	42063
+Innodb_data_writes	84273
+Innodb_data_written	2750060032
+Innodb_dblwr_pages_written	65024
+Innodb_dblwr_writes	5243
+Innodb_log_waits	0
+Innodb_log_write_requests	1223728
+Innodb_log_writes	10470
+Innodb_os_log_fsyncs	8273
+Innodb_os_log_pending_fsyncs	0
+Innodb_os_log_pending_writes	0
+Innodb_os_log_written	615804416
+Innodb_page_size	16384
+Innodb_pages_created	34856
+Innodb_pages_read	41933
+Innodb_pages0_read	36
+Innodb_pages_written	65155
+Innodb_row_lock_current_waits	0
+Innodb_row_lock_time	0
+Innodb_row_lock_time_avg	0
+Innodb_row_lock_time_max	0
+Innodb_row_lock_waits	0
+Innodb_rows_deleted	89414
+Innodb_rows_inserted	2013875
+Innodb_rows_read	32163291
+Innodb_rows_updated	3893
+Innodb_system_rows_deleted	0
+Innodb_system_rows_inserted	0
+Innodb_system_rows_read	0
+Innodb_system_rows_updated	0
+Innodb_num_open_files	48
+Innodb_truncated_status_writes	0
+Innodb_available_undo_logs	128
+Innodb_page_compression_saved	0
+Innodb_num_index_pages_written	0
+Innodb_num_non_index_pages_written	0
+Innodb_num_pages_page_compressed	0
+Innodb_num_page_compressed_trim_op	0
+Innodb_num_pages_page_decompressed	0
+Innodb_num_pages_page_compression_error	0
+Innodb_num_pages_encrypted	0
+Innodb_num_pages_decrypted	0
+Innodb_have_lz4	OFF
+Innodb_have_lzo	OFF
+Innodb_have_lzma	OFF
+Innodb_have_bzip2	OFF
+Innodb_have_snappy	OFF
+Innodb_have_punch_hole	ON
+Innodb_defragment_compression_failures	0
+Innodb_defragment_failures	0
+Innodb_defragment_count	0
+Innodb_onlineddl_rowlog_rows	0
+Innodb_onlineddl_rowlog_pct_used	0
+Innodb_onlineddl_pct_progress	0
+Innodb_secondary_index_triggered_cluster_reads	258061
+Innodb_secondary_index_triggered_cluster_reads_avoided	0
+Innodb_encryption_rotation_pages_read_from_cache	0
+Innodb_encryption_rotation_pages_read_from_disk	0
+Innodb_encryption_rotation_pages_modified	0
+Innodb_encryption_rotation_pages_flushed	0
+Innodb_encryption_rotation_estimated_iops	0
+Innodb_encryption_key_rotation_list_length	0
+Innodb_scrub_background_page_reorganizations	0
+Innodb_scrub_background_page_splits	0
+Innodb_scrub_background_page_split_failures_underflow	0
+Innodb_scrub_background_page_split_failures_out_of_filespace	0
+Innodb_scrub_background_page_split_failures_missing_index	0
+Innodb_scrub_background_page_split_failures_unknown	0
+Innodb_scrub_log	0
+Innodb_encryption_num_key_requests	0
+Key_blocks_not_flushed	0
+Key_blocks_unused	43354
+Key_blocks_used	4
+Key_blocks_warm	0
+Key_read_requests	1492
+Key_reads	4
+Key_write_requests	4
+Key_writes	4
+Last_query_cost	0.000000
+Master_gtid_wait_count	0
+Master_gtid_wait_time	0
+Master_gtid_wait_timeouts	0
+Max_statement_time_exceeded	0
+Max_used_connections	12
+Memory_used	329708176
+Not_flushed_delayed_rows	0
+Open_files	37
+Open_streams	0
+Open_table_definitions	66
+Open_tables	76
+Opened_files	2717
+Opened_plugin_libraries	0
+Opened_table_definitions	358
+Opened_tables	246
+Opened_views	177
+Performance_schema_accounts_lost	0
+Performance_schema_cond_classes_lost	0
+Performance_schema_cond_instances_lost	0
+Performance_schema_digest_lost	0
+Performance_schema_file_classes_lost	0
+Performance_schema_file_handles_lost	0
+Performance_schema_file_instances_lost	0
+Performance_schema_hosts_lost	0
+Performance_schema_locker_lost	0
+Performance_schema_mutex_classes_lost	0
+Performance_schema_mutex_instances_lost	0
+Performance_schema_rwlock_classes_lost	0
+Performance_schema_rwlock_instances_lost	0
+Performance_schema_session_connect_attrs_lost	0
+Performance_schema_socket_classes_lost	0
+Performance_schema_socket_instances_lost	0
+Performance_schema_stage_classes_lost	0
+Performance_schema_statement_classes_lost	0
+Performance_schema_table_handles_lost	0
+Performance_schema_table_instances_lost	0
+Performance_schema_thread_classes_lost	0
+Performance_schema_thread_instances_lost	0
+Performance_schema_users_lost	0
+Prepared_stmt_count	0
+Qcache_free_blocks	562
+Qcache_free_memory	131348936
+Qcache_hits	57333
+Qcache_inserts	4737
+Qcache_lowmem_prunes	0
+Qcache_not_cached	7157
+Qcache_queries_in_cache	914
+Qcache_total_blocks	2421
+Queries	1369062
+Questions	1368964
+Rows_read	32164123
+Rows_sent	1212094
+Rows_tmp_read	1270660
+Rpl_status	AUTH_MASTER
+Select_full_join	2179
+Select_full_range_join	0
+Select_range	46
+Select_range_check	0
+Select_scan	7150
+Slave_connections	0
+Slave_heartbeat_period	0.000
+Slave_open_temp_tables	0
+Slave_received_heartbeats	0
+Slave_retried_transactions	0
+Slave_running	OFF
+Slave_skipped_errors	0
+Slaves_connected	0
+Slaves_running	0
+Slow_launch_threads	0
+Slow_queries	0
+Sort_merge_passes	0
+Sort_priority_queue_sorts	1952
+Sort_range	316
+Sort_rows	303275
+Sort_scan	4123
+Ssl_accept_renegotiates	0
+Ssl_accepts	0
+Ssl_callback_cache_hits	0
+Ssl_cipher	
+Ssl_cipher_list	
+Ssl_client_connects	0
+Ssl_connect_renegotiates	0
+Ssl_ctx_verify_depth	0
+Ssl_ctx_verify_mode	0
+Ssl_default_timeout	0
+Ssl_finished_accepts	0
+Ssl_finished_connects	0
+Ssl_server_not_after	
+Ssl_server_not_before	
+Ssl_session_cache_hits	0
+Ssl_session_cache_misses	0
+Ssl_session_cache_mode	NONE
+Ssl_session_cache_overflows	0
+Ssl_session_cache_size	0
+Ssl_session_cache_timeouts	0
+Ssl_sessions_reused	0
+Ssl_used_session_cache_entries	0
+Ssl_verify_depth	0
+Ssl_verify_mode	0
+Ssl_version	
+Subquery_cache_hit	0
+Subquery_cache_miss	0
+Syncs	3041
+Table_locks_immediate	597
+Table_locks_waited	0
+Tc_log_max_pages_used	0
+Tc_log_page_size	0
+Tc_log_page_waits	0
+Threadpool_idle_threads	0
+Threadpool_threads	0
+Threads_cached	0
+Threads_connected	5
+Threads_created	1492
+Threads_running	1
+Update_scan	4
+Uptime	4717377
+Uptime_since_flush_status	4717377
+wsrep_cluster_conf_id	18446744073709551615
+wsrep_cluster_size	0
+wsrep_cluster_state_uuid	
+wsrep_cluster_status	Disconnected
+wsrep_connected	OFF
+wsrep_local_bf_aborts	0
+wsrep_local_index	18446744073709551615
+wsrep_provider_name	
+wsrep_provider_vendor	
+wsrep_provider_version	
+wsrep_ready	OFF
+wsrep_thread_count	0
+------------------------------------------------------------
+------------------------------------------------------------
+Id	User	Host	db	Command	Time	State	Info	Progress
+1	system user		NULL	Daemon	NULL		NULL	0.000
+2	system user		NULL	Daemon	NULL		NULL	0.000
+4	system user		NULL	Daemon	NULL		NULL	0.000
+3	system user		NULL	Daemon	NULL		NULL	0.000
+5	system user		NULL	Daemon	NULL	InnoDB shutdown handler	NULL	0.000
+1800	portal	172.17.0.8:47926	portal	Sleep	1776		NULL	0.000
+1801	st	172.17.0.8:47932	st	Sleep	1750		NULL	0.000
+1802	st	172.17.0.8:47940	st	Sleep	1750		NULL	0.000
+1803	st	172.17.0.8:47952	st	Sleep	1750		NULL	0.000
+1806	st	103.30.99.246:36613	st	Query	0	init	show full processlist	0.000
+current_timestamp
+2019-01-03 08:10:22
+current_timestamp
+2019-01-03 08:10:22
+area	userCnt
+??	712184
+??	414033
+??	353826
+??	248518
+??	203926
+??	201735
+??	170354
+??	161062
+??	133160
+??	130233
+??	105563
+??	91905
+???	73518
+current_timestamp
+2019-01-03 08:10:22
+statsDt	lanArpu
+1	25.38
+2	26.41
+3	22.62
+4	22.62
+5	22.48
+6	25.09
+7	25.78
+8	23.67
+9	23.67
+10	23.67
+11	23.67
+current_timestamp
+2019-01-03 08:10:22
+area	lanArpu
+??	27.46
+??	26.22
+??	24.75
+??	24.57
+??	24.41
+??	24.06
+???	23.70
+??	23.57
+??	22.50
+??	21.72
+??	21.46
+??	21.25
+??	20.51
+current_timestamp
+2019-01-03 08:10:22
+[2019-01-03T08:20:01+0800]:[INFO]:网络状况
+[2019-01-03T08:20:01+0800]:[INFO]:------------------------------------------------------------
+PING bigdata.jscndata.com (118.25.80.57) 56(84) bytes of data.
+64 bytes from 118.25.80.57: icmp_seq=1 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=2 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=3 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=4 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=5 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=6 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=7 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=8 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=9 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=10 ttl=51 time=14.1 ms
+
+--- bigdata.jscndata.com ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9023ms
+rtt min/avg/max/mdev = 14.101/14.147/14.200/0.060 ms
+[2019-01-03T08:20:10+0800]:[INFO]:------------------------------------------------------------
+[2019-01-03T08:20:10+0800]:[INFO]:mysql运行状况
+[2019-01-03T08:20:10+0800]:[INFO]:------------------------------------------------------------
+--------------
+/usr/bin/mysql  Ver 14.14 Distrib 5.1.73, for redhat-linux-gnu (x86_64) using readline 5.1
+
+Connection id:		1807
+Current database:	st
+Current user:		st@103.30.99.246
+SSL:			Not in use
+Current pager:		stdout
+Using outfile:		''
+Using delimiter:	;
+Server version:		5.5.5-10.2.6-MariaDB-log Source distribution
+Protocol version:	10
+Connection:		bigdata.jscndata.com via TCP/IP
+Server characterset:	utf8
+Db     characterset:	utf8
+Client characterset:	latin1
+Conn.  characterset:	latin1
+TCP port:		4289
+Uptime:			54 days 14 hours 32 min 56 sec
+
+Threads: 8  Questions: 1369082  Slow queries: 0  Opens: 246  Flush tables: 1  Open tables: 76  Queries per second avg: 0.290
+--------------
+
+------------------------------------------------------------
+------------------------------------------------------------
+Variable_name	Value
+Aborted_clients	16
+Aborted_connects	20
+Access_denied_errors	0
+Acl_column_grants	0
+Acl_database_grants	2
+Acl_function_grants	0
+Acl_procedure_grants	0
+Acl_proxy_users	2
+Acl_role_grants	0
+Acl_roles	0
+Acl_table_grants	0
+Acl_users	8
+Aria_pagecache_blocks_not_flushed	0
+Aria_pagecache_blocks_unused	15706
+Aria_pagecache_blocks_used	14
+Aria_pagecache_read_requests	8435
+Aria_pagecache_reads	467
+Aria_pagecache_write_requests	972
+Aria_pagecache_writes	0
+Aria_transaction_log_syncs	0
+Binlog_commits	2655
+Binlog_group_commits	2655
+Binlog_group_commit_trigger_count	0
+Binlog_group_commit_trigger_lock_wait	0
+Binlog_group_commit_trigger_timeout	0
+Binlog_snapshot_file	mysql-bin.000002
+Binlog_snapshot_position	995093212
+Binlog_bytes_written	995100556
+Binlog_cache_disk_use	1302
+Binlog_cache_use	2655
+Binlog_stmt_cache_disk_use	0
+Binlog_stmt_cache_use	0
+Busy_time	0.000000
+Bytes_received	572819452
+Bytes_sent	149466393
+Com_admin_commands	4514
+Com_alter_db	0
+Com_alter_db_upgrade	0
+Com_alter_event	0
+Com_alter_function	0
+Com_alter_procedure	0
+Com_alter_server	0
+Com_alter_table	53
+Com_alter_tablespace	0
+Com_alter_user	0
+Com_analyze	0
+Com_assign_to_keycache	0
+Com_begin	0
+Com_binlog	0
+Com_call_procedure	0
+Com_change_db	12
+Com_change_master	0
+Com_check	0
+Com_checksum	0
+Com_commit	1359
+Com_compound_sql	0
+Com_create_db	0
+Com_create_event	0
+Com_create_function	0
+Com_create_index	4
+Com_create_procedure	0
+Com_create_role	0
+Com_create_server	0
+Com_create_table	80
+Com_create_temporary_table	0
+Com_create_trigger	0
+Com_create_udf	0
+Com_create_user	0
+Com_create_view	13
+Com_dealloc_sql	0
+Com_delete	8
+Com_delete_multi	0
+Com_do	0
+Com_drop_db	0
+Com_drop_event	0
+Com_drop_function	0
+Com_drop_index	0
+Com_drop_procedure	0
+Com_drop_role	0
+Com_drop_server	0
+Com_drop_table	42
+Com_drop_temporary_table	0
+Com_drop_trigger	0
+Com_drop_user	0
+Com_drop_view	24
+Com_empty_query	0
+Com_execute_immediate	0
+Com_execute_sql	0
+Com_flush	1
+Com_get_diagnostics	0
+Com_grant	2
+Com_grant_role	0
+Com_ha_close	0
+Com_ha_open	0
+Com_ha_read	0
+Com_help	0
+Com_insert	1289840
+Com_insert_select	2
+Com_install_plugin	0
+Com_kill	0
+Com_load	0
+Com_lock_tables	0
+Com_multi	0
+Com_optimize	0
+Com_preload_keys	0
+Com_prepare_sql	0
+Com_purge	0
+Com_purge_before_date	0
+Com_release_savepoint	0
+Com_rename_table	0
+Com_rename_user	0
+Com_repair	0
+Com_replace	0
+Com_replace_select	0
+Com_reset	0
+Com_resignal	0
+Com_revoke	0
+Com_revoke_all	0
+Com_revoke_role	0
+Com_rollback	11
+Com_rollback_to_savepoint	0
+Com_savepoint	0
+Com_select	70143
+Com_set_option	5031
+Com_show_authors	0
+Com_show_binlog_events	0
+Com_show_binlogs	0
+Com_show_charsets	14
+Com_show_collations	14
+Com_show_contributors	0
+Com_show_create_db	0
+Com_show_create_event	0
+Com_show_create_func	0
+Com_show_create_proc	0
+Com_show_create_table	41
+Com_show_create_trigger	0
+Com_show_create_user	0
+Com_show_databases	21
+Com_show_engine_logs	0
+Com_show_engine_mutex	0
+Com_show_engine_status	0
+Com_show_errors	0
+Com_show_events	0
+Com_show_explain	0
+Com_show_fields	119
+Com_show_function_status	0
+Com_show_generic	0
+Com_show_grants	0
+Com_show_keys	0
+Com_show_master_status	0
+Com_show_open_tables	0
+Com_show_plugins	0
+Com_show_privileges	0
+Com_show_procedure_status	0
+Com_show_processlist	105
+Com_show_profile	0
+Com_show_profiles	0
+Com_show_relaylog_events	0
+Com_show_slave_hosts	0
+Com_show_slave_status	0
+Com_show_status	209
+Com_show_storage_engines	14
+Com_show_table_status	39
+Com_show_tables	40
+Com_show_triggers	0
+Com_show_variables	35
+Com_show_warnings	3
+Com_shutdown	0
+Com_signal	0
+Com_start_all_slaves	0
+Com_start_slave	0
+Com_stmt_close	0
+Com_stmt_execute	30541
+Com_stmt_fetch	0
+Com_stmt_prepare	98
+Com_stmt_reprepare	0
+Com_stmt_reset	0
+Com_stmt_send_long_data	0
+Com_stop_all_slaves	0
+Com_stop_slave	0
+Com_truncate	6
+Com_uninstall_plugin	0
+Com_unlock_tables	0
+Com_update	6
+Com_update_multi	0
+Com_xa_commit	0
+Com_xa_end	0
+Com_xa_prepare	0
+Com_xa_recover	0
+Com_xa_rollback	0
+Com_xa_start	0
+Compression	OFF
+Connection_errors_accept	0
+Connection_errors_internal	0
+Connection_errors_max_connections	0
+Connection_errors_peer_address	1
+Connection_errors_select	0
+Connection_errors_tcpwrap	0
+Connections	1808
+Cpu_time	0.000000
+Created_tmp_disk_tables	503
+Created_tmp_files	45
+Created_tmp_tables	2254
+Delayed_errors	0
+Delayed_insert_threads	0
+Delayed_writes	0
+Delete_scan	6
+Empty_queries	4526
+Executed_events	0
+Executed_triggers	0
+Feature_check_constraint	0
+Feature_delay_key_write	0
+Feature_dynamic_columns	0
+Feature_fulltext	0
+Feature_gis	0
+Feature_locale	0
+Feature_subquery	1490
+Feature_timezone	2
+Feature_trigger	0
+Feature_window_functions	155
+Feature_xml	0
+Flush_commands	1
+Handler_commit	2586582
+Handler_delete	89414
+Handler_discover	5
+Handler_external_lock	0
+Handler_icp_attempts	606441
+Handler_icp_match	252197
+Handler_mrr_init	0
+Handler_mrr_key_refills	0
+Handler_mrr_rowid_refills	0
+Handler_prepare	2580146
+Handler_read_first	378
+Handler_read_key	5453
+Handler_read_last	23
+Handler_read_next	326993
+Handler_read_prev	244
+Handler_read_retry	0
+Handler_read_rnd	744922
+Handler_read_rnd_deleted	1
+Handler_read_rnd_next	32412457
+Handler_rollback	1207
+Handler_savepoint	0
+Handler_savepoint_rollback	0
+Handler_tmp_update	3123
+Handler_tmp_write	296665
+Handler_update	231086
+Handler_write	2013877
+Innodb_buffer_pool_dump_status	Dumping of buffer pool not started
+Innodb_buffer_pool_load_status	Buffer pool(s) load completed at 181109 17:47:28
+Innodb_buffer_pool_resize_status	
+Innodb_buffer_pool_pages_data	6851
+Innodb_buffer_pool_bytes_data	112246784
+Innodb_buffer_pool_pages_dirty	0
+Innodb_buffer_pool_bytes_dirty	0
+Innodb_buffer_pool_pages_flushed	28326
+Innodb_buffer_pool_pages_free	1024
+Innodb_buffer_pool_pages_misc	317
+Innodb_buffer_pool_pages_total	8192
+Innodb_buffer_pool_read_ahead_rnd	0
+Innodb_buffer_pool_read_ahead	22267
+Innodb_buffer_pool_read_ahead_evicted	48
+Innodb_buffer_pool_read_requests	45552511
+Innodb_buffer_pool_reads	19147
+Innodb_buffer_pool_wait_free	619
+Innodb_buffer_pool_write_requests	7161646
+Innodb_data_fsyncs	18964
+Innodb_data_pending_fsyncs	0
+Innodb_data_pending_reads	0
+Innodb_data_pending_writes	0
+Innodb_data_read	687114752
+Innodb_data_reads	42063
+Innodb_data_writes	84273
+Innodb_data_written	2750060032
+Innodb_dblwr_pages_written	65024
+Innodb_dblwr_writes	5243
+Innodb_log_waits	0
+Innodb_log_write_requests	1223728
+Innodb_log_writes	10470
+Innodb_os_log_fsyncs	8273
+Innodb_os_log_pending_fsyncs	0
+Innodb_os_log_pending_writes	0
+Innodb_os_log_written	615804416
+Innodb_page_size	16384
+Innodb_pages_created	34856
+Innodb_pages_read	41933
+Innodb_pages0_read	36
+Innodb_pages_written	65155
+Innodb_row_lock_current_waits	0
+Innodb_row_lock_time	0
+Innodb_row_lock_time_avg	0
+Innodb_row_lock_time_max	0
+Innodb_row_lock_waits	0
+Innodb_rows_deleted	89414
+Innodb_rows_inserted	2013875
+Innodb_rows_read	32163291
+Innodb_rows_updated	3893
+Innodb_system_rows_deleted	0
+Innodb_system_rows_inserted	0
+Innodb_system_rows_read	0
+Innodb_system_rows_updated	0
+Innodb_num_open_files	48
+Innodb_truncated_status_writes	0
+Innodb_available_undo_logs	128
+Innodb_page_compression_saved	0
+Innodb_num_index_pages_written	0
+Innodb_num_non_index_pages_written	0
+Innodb_num_pages_page_compressed	0
+Innodb_num_page_compressed_trim_op	0
+Innodb_num_pages_page_decompressed	0
+Innodb_num_pages_page_compression_error	0
+Innodb_num_pages_encrypted	0
+Innodb_num_pages_decrypted	0
+Innodb_have_lz4	OFF
+Innodb_have_lzo	OFF
+Innodb_have_lzma	OFF
+Innodb_have_bzip2	OFF
+Innodb_have_snappy	OFF
+Innodb_have_punch_hole	ON
+Innodb_defragment_compression_failures	0
+Innodb_defragment_failures	0
+Innodb_defragment_count	0
+Innodb_onlineddl_rowlog_rows	0
+Innodb_onlineddl_rowlog_pct_used	0
+Innodb_onlineddl_pct_progress	0
+Innodb_secondary_index_triggered_cluster_reads	258061
+Innodb_secondary_index_triggered_cluster_reads_avoided	0
+Innodb_encryption_rotation_pages_read_from_cache	0
+Innodb_encryption_rotation_pages_read_from_disk	0
+Innodb_encryption_rotation_pages_modified	0
+Innodb_encryption_rotation_pages_flushed	0
+Innodb_encryption_rotation_estimated_iops	0
+Innodb_encryption_key_rotation_list_length	0
+Innodb_scrub_background_page_reorganizations	0
+Innodb_scrub_background_page_splits	0
+Innodb_scrub_background_page_split_failures_underflow	0
+Innodb_scrub_background_page_split_failures_out_of_filespace	0
+Innodb_scrub_background_page_split_failures_missing_index	0
+Innodb_scrub_background_page_split_failures_unknown	0
+Innodb_scrub_log	0
+Innodb_encryption_num_key_requests	0
+Key_blocks_not_flushed	0
+Key_blocks_unused	43354
+Key_blocks_used	4
+Key_blocks_warm	0
+Key_read_requests	1492
+Key_reads	4
+Key_write_requests	4
+Key_writes	4
+Last_query_cost	0.000000
+Master_gtid_wait_count	0
+Master_gtid_wait_time	0
+Master_gtid_wait_timeouts	0
+Max_statement_time_exceeded	0
+Max_used_connections	12
+Memory_used	329209040
+Not_flushed_delayed_rows	0
+Open_files	37
+Open_streams	0
+Open_table_definitions	66
+Open_tables	76
+Opened_files	2717
+Opened_plugin_libraries	0
+Opened_table_definitions	358
+Opened_tables	246
+Opened_views	177
+Performance_schema_accounts_lost	0
+Performance_schema_cond_classes_lost	0
+Performance_schema_cond_instances_lost	0
+Performance_schema_digest_lost	0
+Performance_schema_file_classes_lost	0
+Performance_schema_file_handles_lost	0
+Performance_schema_file_instances_lost	0
+Performance_schema_hosts_lost	0
+Performance_schema_locker_lost	0
+Performance_schema_mutex_classes_lost	0
+Performance_schema_mutex_instances_lost	0
+Performance_schema_rwlock_classes_lost	0
+Performance_schema_rwlock_instances_lost	0
+Performance_schema_session_connect_attrs_lost	0
+Performance_schema_socket_classes_lost	0
+Performance_schema_socket_instances_lost	0
+Performance_schema_stage_classes_lost	0
+Performance_schema_statement_classes_lost	0
+Performance_schema_table_handles_lost	0
+Performance_schema_table_instances_lost	0
+Performance_schema_thread_classes_lost	0
+Performance_schema_thread_instances_lost	0
+Performance_schema_users_lost	0
+Prepared_stmt_count	0
+Qcache_free_blocks	562
+Qcache_free_memory	131348936
+Qcache_hits	57337
+Qcache_inserts	4737
+Qcache_lowmem_prunes	0
+Qcache_not_cached	7167
+Qcache_queries_in_cache	914
+Qcache_total_blocks	2421
+Queries	1369083
+Questions	1368985
+Rows_read	32164123
+Rows_sent	1212620
+Rows_tmp_read	1271139
+Rpl_status	AUTH_MASTER
+Select_full_join	2179
+Select_full_range_join	0
+Select_range	46
+Select_range_check	0
+Select_scan	7151
+Slave_connections	0
+Slave_heartbeat_period	0.000
+Slave_open_temp_tables	0
+Slave_received_heartbeats	0
+Slave_retried_transactions	0
+Slave_running	OFF
+Slave_skipped_errors	0
+Slaves_connected	0
+Slaves_running	0
+Slow_launch_threads	0
+Slow_queries	0
+Sort_merge_passes	0
+Sort_priority_queue_sorts	1952
+Sort_range	316
+Sort_rows	303275
+Sort_scan	4123
+Ssl_accept_renegotiates	0
+Ssl_accepts	0
+Ssl_callback_cache_hits	0
+Ssl_cipher	
+Ssl_cipher_list	
+Ssl_client_connects	0
+Ssl_connect_renegotiates	0
+Ssl_ctx_verify_depth	0
+Ssl_ctx_verify_mode	0
+Ssl_default_timeout	0
+Ssl_finished_accepts	0
+Ssl_finished_connects	0
+Ssl_server_not_after	
+Ssl_server_not_before	
+Ssl_session_cache_hits	0
+Ssl_session_cache_misses	0
+Ssl_session_cache_mode	NONE
+Ssl_session_cache_overflows	0
+Ssl_session_cache_size	0
+Ssl_session_cache_timeouts	0
+Ssl_sessions_reused	0
+Ssl_used_session_cache_entries	0
+Ssl_verify_depth	0
+Ssl_verify_mode	0
+Ssl_version	
+Subquery_cache_hit	0
+Subquery_cache_miss	0
+Syncs	3041
+Table_locks_immediate	597
+Table_locks_waited	0
+Tc_log_max_pages_used	0
+Tc_log_page_size	0
+Tc_log_page_waits	0
+Threadpool_idle_threads	0
+Threadpool_threads	0
+Threads_cached	0
+Threads_connected	1
+Threads_created	1493
+Threads_running	1
+Update_scan	4
+Uptime	4717976
+Uptime_since_flush_status	4717976
+wsrep_cluster_conf_id	18446744073709551615
+wsrep_cluster_size	0
+wsrep_cluster_state_uuid	
+wsrep_cluster_status	Disconnected
+wsrep_connected	OFF
+wsrep_local_bf_aborts	0
+wsrep_local_index	18446744073709551615
+wsrep_provider_name	
+wsrep_provider_vendor	
+wsrep_provider_version	
+wsrep_ready	OFF
+wsrep_thread_count	0
+------------------------------------------------------------
+------------------------------------------------------------
+Id	User	Host	db	Command	Time	State	Info	Progress
+1	system user		NULL	Daemon	NULL		NULL	0.000
+2	system user		NULL	Daemon	NULL		NULL	0.000
+4	system user		NULL	Daemon	NULL		NULL	0.000
+3	system user		NULL	Daemon	NULL		NULL	0.000
+5	system user		NULL	Daemon	NULL	InnoDB shutdown handler	NULL	0.000
+1807	st	103.30.99.246:26342	st	Query	0	init	show full processlist	0.000
+current_timestamp
+2019-01-03 08:20:21
+current_timestamp
+2019-01-03 08:20:21
+area	userCnt
+??	712184
+??	414033
+??	353826
+??	248518
+??	203926
+??	201735
+??	170354
+??	161062
+??	133160
+??	130233
+??	105563
+??	91905
+???	73518
+current_timestamp
+2019-01-03 08:20:21
+statsDt	lanArpu
+1	25.38
+2	26.41
+3	22.62
+4	22.62
+5	22.48
+6	25.09
+7	25.78
+8	23.67
+9	23.67
+10	23.67
+11	23.67
+current_timestamp
+2019-01-03 08:20:21
+area	lanArpu
+??	27.46
+??	26.22
+??	24.75
+??	24.57
+??	24.41
+??	24.06
+???	23.70
+??	23.57
+??	22.50
+??	21.72
+??	21.46
+??	21.25
+??	20.51
+current_timestamp
+2019-01-03 08:20:21
+[2019-01-03T08:30:01+0800]:[INFO]:网络状况
+[2019-01-03T08:30:01+0800]:[INFO]:------------------------------------------------------------
+PING bigdata.jscndata.com (118.25.80.57) 56(84) bytes of data.
+64 bytes from 118.25.80.57: icmp_seq=1 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=2 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=3 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=4 ttl=51 time=14.0 ms
+64 bytes from 118.25.80.57: icmp_seq=5 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=6 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=7 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=8 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=9 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=10 ttl=51 time=14.1 ms
+
+--- bigdata.jscndata.com ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9024ms
+rtt min/avg/max/mdev = 14.096/14.176/14.282/0.090 ms
+[2019-01-03T08:30:10+0800]:[INFO]:------------------------------------------------------------
+[2019-01-03T08:30:10+0800]:[INFO]:mysql运行状况
+[2019-01-03T08:30:10+0800]:[INFO]:------------------------------------------------------------
+--------------
+/usr/bin/mysql  Ver 14.14 Distrib 5.1.73, for redhat-linux-gnu (x86_64) using readline 5.1
+
+Connection id:		1808
+Current database:	st
+Current user:		st@103.30.99.246
+SSL:			Not in use
+Current pager:		stdout
+Using outfile:		''
+Using delimiter:	;
+Server version:		5.5.5-10.2.6-MariaDB-log Source distribution
+Protocol version:	10
+Connection:		bigdata.jscndata.com via TCP/IP
+Server characterset:	utf8
+Db     characterset:	utf8
+Client characterset:	latin1
+Conn.  characterset:	latin1
+TCP port:		4289
+Uptime:			54 days 14 hours 42 min 56 sec
+
+Threads: 8  Questions: 1369099  Slow queries: 0  Opens: 246  Flush tables: 1  Open tables: 76  Queries per second avg: 0.290
+--------------
+
+------------------------------------------------------------
+------------------------------------------------------------
+Variable_name	Value
+Aborted_clients	16
+Aborted_connects	20
+Access_denied_errors	0
+Acl_column_grants	0
+Acl_database_grants	2
+Acl_function_grants	0
+Acl_procedure_grants	0
+Acl_proxy_users	2
+Acl_role_grants	0
+Acl_roles	0
+Acl_table_grants	0
+Acl_users	8
+Aria_pagecache_blocks_not_flushed	0
+Aria_pagecache_blocks_unused	15706
+Aria_pagecache_blocks_used	14
+Aria_pagecache_read_requests	8435
+Aria_pagecache_reads	467
+Aria_pagecache_write_requests	972
+Aria_pagecache_writes	0
+Aria_transaction_log_syncs	0
+Binlog_commits	2655
+Binlog_group_commits	2655
+Binlog_group_commit_trigger_count	0
+Binlog_group_commit_trigger_lock_wait	0
+Binlog_group_commit_trigger_timeout	0
+Binlog_snapshot_file	mysql-bin.000002
+Binlog_snapshot_position	995093212
+Binlog_bytes_written	995100556
+Binlog_cache_disk_use	1302
+Binlog_cache_use	2655
+Binlog_stmt_cache_disk_use	0
+Binlog_stmt_cache_use	0
+Busy_time	0.000000
+Bytes_received	572821296
+Bytes_sent	149483439
+Com_admin_commands	4514
+Com_alter_db	0
+Com_alter_db_upgrade	0
+Com_alter_event	0
+Com_alter_function	0
+Com_alter_procedure	0
+Com_alter_server	0
+Com_alter_table	53
+Com_alter_tablespace	0
+Com_alter_user	0
+Com_analyze	0
+Com_assign_to_keycache	0
+Com_begin	0
+Com_binlog	0
+Com_call_procedure	0
+Com_change_db	12
+Com_change_master	0
+Com_check	0
+Com_checksum	0
+Com_commit	1359
+Com_compound_sql	0
+Com_create_db	0
+Com_create_event	0
+Com_create_function	0
+Com_create_index	4
+Com_create_procedure	0
+Com_create_role	0
+Com_create_server	0
+Com_create_table	80
+Com_create_temporary_table	0
+Com_create_trigger	0
+Com_create_udf	0
+Com_create_user	0
+Com_create_view	13
+Com_dealloc_sql	0
+Com_delete	8
+Com_delete_multi	0
+Com_do	0
+Com_drop_db	0
+Com_drop_event	0
+Com_drop_function	0
+Com_drop_index	0
+Com_drop_procedure	0
+Com_drop_role	0
+Com_drop_server	0
+Com_drop_table	42
+Com_drop_temporary_table	0
+Com_drop_trigger	0
+Com_drop_user	0
+Com_drop_view	24
+Com_empty_query	0
+Com_execute_immediate	0
+Com_execute_sql	0
+Com_flush	1
+Com_get_diagnostics	0
+Com_grant	2
+Com_grant_role	0
+Com_ha_close	0
+Com_ha_open	0
+Com_ha_read	0
+Com_help	0
+Com_insert	1289840
+Com_insert_select	2
+Com_install_plugin	0
+Com_kill	0
+Com_load	0
+Com_lock_tables	0
+Com_multi	0
+Com_optimize	0
+Com_preload_keys	0
+Com_prepare_sql	0
+Com_purge	0
+Com_purge_before_date	0
+Com_release_savepoint	0
+Com_rename_table	0
+Com_rename_user	0
+Com_repair	0
+Com_replace	0
+Com_replace_select	0
+Com_reset	0
+Com_resignal	0
+Com_revoke	0
+Com_revoke_all	0
+Com_revoke_role	0
+Com_rollback	11
+Com_rollback_to_savepoint	0
+Com_savepoint	0
+Com_select	70157
+Com_set_option	5031
+Com_show_authors	0
+Com_show_binlog_events	0
+Com_show_binlogs	0
+Com_show_charsets	14
+Com_show_collations	14
+Com_show_contributors	0
+Com_show_create_db	0
+Com_show_create_event	0
+Com_show_create_func	0
+Com_show_create_proc	0
+Com_show_create_table	41
+Com_show_create_trigger	0
+Com_show_create_user	0
+Com_show_databases	21
+Com_show_engine_logs	0
+Com_show_engine_mutex	0
+Com_show_engine_status	0
+Com_show_errors	0
+Com_show_events	0
+Com_show_explain	0
+Com_show_fields	119
+Com_show_function_status	0
+Com_show_generic	0
+Com_show_grants	0
+Com_show_keys	0
+Com_show_master_status	0
+Com_show_open_tables	0
+Com_show_plugins	0
+Com_show_privileges	0
+Com_show_procedure_status	0
+Com_show_processlist	106
+Com_show_profile	0
+Com_show_profiles	0
+Com_show_relaylog_events	0
+Com_show_slave_hosts	0
+Com_show_slave_status	0
+Com_show_status	211
+Com_show_storage_engines	14
+Com_show_table_status	39
+Com_show_tables	40
+Com_show_triggers	0
+Com_show_variables	35
+Com_show_warnings	3
+Com_shutdown	0
+Com_signal	0
+Com_start_all_slaves	0
+Com_start_slave	0
+Com_stmt_close	0
+Com_stmt_execute	30541
+Com_stmt_fetch	0
+Com_stmt_prepare	98
+Com_stmt_reprepare	0
+Com_stmt_reset	0
+Com_stmt_send_long_data	0
+Com_stop_all_slaves	0
+Com_stop_slave	0
+Com_truncate	6
+Com_uninstall_plugin	0
+Com_unlock_tables	0
+Com_update	6
+Com_update_multi	0
+Com_xa_commit	0
+Com_xa_end	0
+Com_xa_prepare	0
+Com_xa_recover	0
+Com_xa_rollback	0
+Com_xa_start	0
+Compression	OFF
+Connection_errors_accept	0
+Connection_errors_internal	0
+Connection_errors_max_connections	0
+Connection_errors_peer_address	1
+Connection_errors_select	0
+Connection_errors_tcpwrap	0
+Connections	1809
+Cpu_time	0.000000
+Created_tmp_disk_tables	503
+Created_tmp_files	45
+Created_tmp_tables	2255
+Delayed_errors	0
+Delayed_insert_threads	0
+Delayed_writes	0
+Delete_scan	6
+Empty_queries	4527
+Executed_events	0
+Executed_triggers	0
+Feature_check_constraint	0
+Feature_delay_key_write	0
+Feature_dynamic_columns	0
+Feature_fulltext	0
+Feature_gis	0
+Feature_locale	0
+Feature_subquery	1490
+Feature_timezone	2
+Feature_trigger	0
+Feature_window_functions	155
+Feature_xml	0
+Flush_commands	1
+Handler_commit	2586582
+Handler_delete	89414
+Handler_discover	5
+Handler_external_lock	0
+Handler_icp_attempts	606441
+Handler_icp_match	252197
+Handler_mrr_init	0
+Handler_mrr_key_refills	0
+Handler_mrr_rowid_refills	0
+Handler_prepare	2580146
+Handler_read_first	378
+Handler_read_key	5453
+Handler_read_last	23
+Handler_read_next	326993
+Handler_read_prev	244
+Handler_read_retry	0
+Handler_read_rnd	744922
+Handler_read_rnd_deleted	1
+Handler_read_rnd_next	32412937
+Handler_rollback	1207
+Handler_savepoint	0
+Handler_savepoint_rollback	0
+Handler_tmp_update	3123
+Handler_tmp_write	297144
+Handler_update	231086
+Handler_write	2013877
+Innodb_buffer_pool_dump_status	Dumping of buffer pool not started
+Innodb_buffer_pool_load_status	Buffer pool(s) load completed at 181109 17:47:28
+Innodb_buffer_pool_resize_status	
+Innodb_buffer_pool_pages_data	6851
+Innodb_buffer_pool_bytes_data	112246784
+Innodb_buffer_pool_pages_dirty	0
+Innodb_buffer_pool_bytes_dirty	0
+Innodb_buffer_pool_pages_flushed	28326
+Innodb_buffer_pool_pages_free	1024
+Innodb_buffer_pool_pages_misc	317
+Innodb_buffer_pool_pages_total	8192
+Innodb_buffer_pool_read_ahead_rnd	0
+Innodb_buffer_pool_read_ahead	22267
+Innodb_buffer_pool_read_ahead_evicted	48
+Innodb_buffer_pool_read_requests	45552511
+Innodb_buffer_pool_reads	19147
+Innodb_buffer_pool_wait_free	619
+Innodb_buffer_pool_write_requests	7161646
+Innodb_data_fsyncs	18964
+Innodb_data_pending_fsyncs	0
+Innodb_data_pending_reads	0
+Innodb_data_pending_writes	0
+Innodb_data_read	687114752
+Innodb_data_reads	42063
+Innodb_data_writes	84273
+Innodb_data_written	2750060032
+Innodb_dblwr_pages_written	65024
+Innodb_dblwr_writes	5243
+Innodb_log_waits	0
+Innodb_log_write_requests	1223728
+Innodb_log_writes	10470
+Innodb_os_log_fsyncs	8273
+Innodb_os_log_pending_fsyncs	0
+Innodb_os_log_pending_writes	0
+Innodb_os_log_written	615804416
+Innodb_page_size	16384
+Innodb_pages_created	34856
+Innodb_pages_read	41933
+Innodb_pages0_read	36
+Innodb_pages_written	65155
+Innodb_row_lock_current_waits	0
+Innodb_row_lock_time	0
+Innodb_row_lock_time_avg	0
+Innodb_row_lock_time_max	0
+Innodb_row_lock_waits	0
+Innodb_rows_deleted	89414
+Innodb_rows_inserted	2013875
+Innodb_rows_read	32163291
+Innodb_rows_updated	3893
+Innodb_system_rows_deleted	0
+Innodb_system_rows_inserted	0
+Innodb_system_rows_read	0
+Innodb_system_rows_updated	0
+Innodb_num_open_files	48
+Innodb_truncated_status_writes	0
+Innodb_available_undo_logs	128
+Innodb_page_compression_saved	0
+Innodb_num_index_pages_written	0
+Innodb_num_non_index_pages_written	0
+Innodb_num_pages_page_compressed	0
+Innodb_num_page_compressed_trim_op	0
+Innodb_num_pages_page_decompressed	0
+Innodb_num_pages_page_compression_error	0
+Innodb_num_pages_encrypted	0
+Innodb_num_pages_decrypted	0
+Innodb_have_lz4	OFF
+Innodb_have_lzo	OFF
+Innodb_have_lzma	OFF
+Innodb_have_bzip2	OFF
+Innodb_have_snappy	OFF
+Innodb_have_punch_hole	ON
+Innodb_defragment_compression_failures	0
+Innodb_defragment_failures	0
+Innodb_defragment_count	0
+Innodb_onlineddl_rowlog_rows	0
+Innodb_onlineddl_rowlog_pct_used	0
+Innodb_onlineddl_pct_progress	0
+Innodb_secondary_index_triggered_cluster_reads	258061
+Innodb_secondary_index_triggered_cluster_reads_avoided	0
+Innodb_encryption_rotation_pages_read_from_cache	0
+Innodb_encryption_rotation_pages_read_from_disk	0
+Innodb_encryption_rotation_pages_modified	0
+Innodb_encryption_rotation_pages_flushed	0
+Innodb_encryption_rotation_estimated_iops	0
+Innodb_encryption_key_rotation_list_length	0
+Innodb_scrub_background_page_reorganizations	0
+Innodb_scrub_background_page_splits	0
+Innodb_scrub_background_page_split_failures_underflow	0
+Innodb_scrub_background_page_split_failures_out_of_filespace	0
+Innodb_scrub_background_page_split_failures_missing_index	0
+Innodb_scrub_background_page_split_failures_unknown	0
+Innodb_scrub_log	0
+Innodb_encryption_num_key_requests	0
+Key_blocks_not_flushed	0
+Key_blocks_unused	43354
+Key_blocks_used	4
+Key_blocks_warm	0
+Key_read_requests	1492
+Key_reads	4
+Key_write_requests	4
+Key_writes	4
+Last_query_cost	0.000000
+Master_gtid_wait_count	0
+Master_gtid_wait_time	0
+Master_gtid_wait_timeouts	0
+Max_statement_time_exceeded	0
+Max_used_connections	12
+Memory_used	329209040
+Not_flushed_delayed_rows	0
+Open_files	37
+Open_streams	0
+Open_table_definitions	66
+Open_tables	76
+Opened_files	2717
+Opened_plugin_libraries	0
+Opened_table_definitions	358
+Opened_tables	246
+Opened_views	177
+Performance_schema_accounts_lost	0
+Performance_schema_cond_classes_lost	0
+Performance_schema_cond_instances_lost	0
+Performance_schema_digest_lost	0
+Performance_schema_file_classes_lost	0
+Performance_schema_file_handles_lost	0
+Performance_schema_file_instances_lost	0
+Performance_schema_hosts_lost	0
+Performance_schema_locker_lost	0
+Performance_schema_mutex_classes_lost	0
+Performance_schema_mutex_instances_lost	0
+Performance_schema_rwlock_classes_lost	0
+Performance_schema_rwlock_instances_lost	0
+Performance_schema_session_connect_attrs_lost	0
+Performance_schema_socket_classes_lost	0
+Performance_schema_socket_instances_lost	0
+Performance_schema_stage_classes_lost	0
+Performance_schema_statement_classes_lost	0
+Performance_schema_table_handles_lost	0
+Performance_schema_table_instances_lost	0
+Performance_schema_thread_classes_lost	0
+Performance_schema_thread_instances_lost	0
+Performance_schema_users_lost	0
+Prepared_stmt_count	0
+Qcache_free_blocks	562
+Qcache_free_memory	131348936
+Qcache_hits	57341
+Qcache_inserts	4737
+Qcache_lowmem_prunes	0
+Qcache_not_cached	7177
+Qcache_queries_in_cache	914
+Qcache_total_blocks	2421
+Queries	1369100
+Questions	1369002
+Rows_read	32164123
+Rows_sent	1213146
+Rows_tmp_read	1271618
+Rpl_status	AUTH_MASTER
+Select_full_join	2179
+Select_full_range_join	0
+Select_range	46
+Select_range_check	0
+Select_scan	7152
+Slave_connections	0
+Slave_heartbeat_period	0.000
+Slave_open_temp_tables	0
+Slave_received_heartbeats	0
+Slave_retried_transactions	0
+Slave_running	OFF
+Slave_skipped_errors	0
+Slaves_connected	0
+Slaves_running	0
+Slow_launch_threads	0
+Slow_queries	0
+Sort_merge_passes	0
+Sort_priority_queue_sorts	1952
+Sort_range	316
+Sort_rows	303275
+Sort_scan	4123
+Ssl_accept_renegotiates	0
+Ssl_accepts	0
+Ssl_callback_cache_hits	0
+Ssl_cipher	
+Ssl_cipher_list	
+Ssl_client_connects	0
+Ssl_connect_renegotiates	0
+Ssl_ctx_verify_depth	0
+Ssl_ctx_verify_mode	0
+Ssl_default_timeout	0
+Ssl_finished_accepts	0
+Ssl_finished_connects	0
+Ssl_server_not_after	
+Ssl_server_not_before	
+Ssl_session_cache_hits	0
+Ssl_session_cache_misses	0
+Ssl_session_cache_mode	NONE
+Ssl_session_cache_overflows	0
+Ssl_session_cache_size	0
+Ssl_session_cache_timeouts	0
+Ssl_sessions_reused	0
+Ssl_used_session_cache_entries	0
+Ssl_verify_depth	0
+Ssl_verify_mode	0
+Ssl_version	
+Subquery_cache_hit	0
+Subquery_cache_miss	0
+Syncs	3041
+Table_locks_immediate	597
+Table_locks_waited	0
+Tc_log_max_pages_used	0
+Tc_log_page_size	0
+Tc_log_page_waits	0
+Threadpool_idle_threads	0
+Threadpool_threads	0
+Threads_cached	0
+Threads_connected	1
+Threads_created	1494
+Threads_running	1
+Update_scan	4
+Uptime	4718576
+Uptime_since_flush_status	4718576
+wsrep_cluster_conf_id	18446744073709551615
+wsrep_cluster_size	0
+wsrep_cluster_state_uuid	
+wsrep_cluster_status	Disconnected
+wsrep_connected	OFF
+wsrep_local_bf_aborts	0
+wsrep_local_index	18446744073709551615
+wsrep_provider_name	
+wsrep_provider_vendor	
+wsrep_provider_version	
+wsrep_ready	OFF
+wsrep_thread_count	0
+------------------------------------------------------------
+------------------------------------------------------------
+Id	User	Host	db	Command	Time	State	Info	Progress
+1	system user		NULL	Daemon	NULL		NULL	0.000
+2	system user		NULL	Daemon	NULL		NULL	0.000
+4	system user		NULL	Daemon	NULL		NULL	0.000
+3	system user		NULL	Daemon	NULL		NULL	0.000
+5	system user		NULL	Daemon	NULL	InnoDB shutdown handler	NULL	0.000
+1808	st	103.30.99.246:15216	st	Query	0	init	show full processlist	0.000
+current_timestamp
+2019-01-03 08:30:21
+current_timestamp
+2019-01-03 08:30:22
+area	userCnt
+??	712184
+??	414033
+??	353826
+??	248518
+??	203926
+??	201735
+??	170354
+??	161062
+??	133160
+??	130233
+??	105563
+??	91905
+???	73518
+current_timestamp
+2019-01-03 08:30:22
+statsDt	lanArpu
+1	25.38
+2	26.41
+3	22.62
+4	22.62
+5	22.48
+6	25.09
+7	25.78
+8	23.67
+9	23.67
+10	23.67
+11	23.67
+current_timestamp
+2019-01-03 08:30:22
+area	lanArpu
+??	27.46
+??	26.22
+??	24.75
+??	24.57
+??	24.41
+??	24.06
+???	23.70
+??	23.57
+??	22.50
+??	21.72
+??	21.46
+??	21.25
+??	20.51
+current_timestamp
+2019-01-03 08:30:22
+[2019-01-03T08:40:01+0800]:[INFO]:网络状况
+[2019-01-03T08:40:01+0800]:[INFO]:------------------------------------------------------------
+PING bigdata.jscndata.com (118.25.80.57) 56(84) bytes of data.
+64 bytes from 118.25.80.57: icmp_seq=1 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=2 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=3 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=4 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=5 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=6 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=7 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=8 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=9 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=10 ttl=51 time=14.2 ms
+
+--- bigdata.jscndata.com ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9022ms
+rtt min/avg/max/mdev = 14.137/14.186/14.225/0.062 ms
+[2019-01-03T08:40:10+0800]:[INFO]:------------------------------------------------------------
+[2019-01-03T08:40:10+0800]:[INFO]:mysql运行状况
+[2019-01-03T08:40:10+0800]:[INFO]:------------------------------------------------------------
+--------------
+/usr/bin/mysql  Ver 14.14 Distrib 5.1.73, for redhat-linux-gnu (x86_64) using readline 5.1
+
+Connection id:		1809
+Current database:	st
+Current user:		st@103.30.99.246
+SSL:			Not in use
+Current pager:		stdout
+Using outfile:		''
+Using delimiter:	;
+Server version:		5.5.5-10.2.6-MariaDB-log Source distribution
+Protocol version:	10
+Connection:		bigdata.jscndata.com via TCP/IP
+Server characterset:	utf8
+Db     characterset:	utf8
+Client characterset:	latin1
+Conn.  characterset:	latin1
+TCP port:		4289
+Uptime:			54 days 14 hours 52 min 58 sec
+
+Threads: 8  Questions: 1369116  Slow queries: 0  Opens: 246  Flush tables: 1  Open tables: 76  Queries per second avg: 0.290
+--------------
+
+------------------------------------------------------------
+------------------------------------------------------------
+Variable_name	Value
+Aborted_clients	16
+Aborted_connects	20
+Access_denied_errors	0
+Acl_column_grants	0
+Acl_database_grants	2
+Acl_function_grants	0
+Acl_procedure_grants	0
+Acl_proxy_users	2
+Acl_role_grants	0
+Acl_roles	0
+Acl_table_grants	0
+Acl_users	8
+Aria_pagecache_blocks_not_flushed	0
+Aria_pagecache_blocks_unused	15706
+Aria_pagecache_blocks_used	14
+Aria_pagecache_read_requests	8435
+Aria_pagecache_reads	467
+Aria_pagecache_write_requests	972
+Aria_pagecache_writes	0
+Aria_transaction_log_syncs	0
+Binlog_commits	2655
+Binlog_group_commits	2655
+Binlog_group_commit_trigger_count	0
+Binlog_group_commit_trigger_lock_wait	0
+Binlog_group_commit_trigger_timeout	0
+Binlog_snapshot_file	mysql-bin.000002
+Binlog_snapshot_position	995093212
+Binlog_bytes_written	995100556
+Binlog_cache_disk_use	1302
+Binlog_cache_use	2655
+Binlog_stmt_cache_disk_use	0
+Binlog_stmt_cache_use	0
+Busy_time	0.000000
+Bytes_received	572823140
+Bytes_sent	149500485
+Com_admin_commands	4514
+Com_alter_db	0
+Com_alter_db_upgrade	0
+Com_alter_event	0
+Com_alter_function	0
+Com_alter_procedure	0
+Com_alter_server	0
+Com_alter_table	53
+Com_alter_tablespace	0
+Com_alter_user	0
+Com_analyze	0
+Com_assign_to_keycache	0
+Com_begin	0
+Com_binlog	0
+Com_call_procedure	0
+Com_change_db	12
+Com_change_master	0
+Com_check	0
+Com_checksum	0
+Com_commit	1359
+Com_compound_sql	0
+Com_create_db	0
+Com_create_event	0
+Com_create_function	0
+Com_create_index	4
+Com_create_procedure	0
+Com_create_role	0
+Com_create_server	0
+Com_create_table	80
+Com_create_temporary_table	0
+Com_create_trigger	0
+Com_create_udf	0
+Com_create_user	0
+Com_create_view	13
+Com_dealloc_sql	0
+Com_delete	8
+Com_delete_multi	0
+Com_do	0
+Com_drop_db	0
+Com_drop_event	0
+Com_drop_function	0
+Com_drop_index	0
+Com_drop_procedure	0
+Com_drop_role	0
+Com_drop_server	0
+Com_drop_table	42
+Com_drop_temporary_table	0
+Com_drop_trigger	0
+Com_drop_user	0
+Com_drop_view	24
+Com_empty_query	0
+Com_execute_immediate	0
+Com_execute_sql	0
+Com_flush	1
+Com_get_diagnostics	0
+Com_grant	2
+Com_grant_role	0
+Com_ha_close	0
+Com_ha_open	0
+Com_ha_read	0
+Com_help	0
+Com_insert	1289840
+Com_insert_select	2
+Com_install_plugin	0
+Com_kill	0
+Com_load	0
+Com_lock_tables	0
+Com_multi	0
+Com_optimize	0
+Com_preload_keys	0
+Com_prepare_sql	0
+Com_purge	0
+Com_purge_before_date	0
+Com_release_savepoint	0
+Com_rename_table	0
+Com_rename_user	0
+Com_repair	0
+Com_replace	0
+Com_replace_select	0
+Com_reset	0
+Com_resignal	0
+Com_revoke	0
+Com_revoke_all	0
+Com_revoke_role	0
+Com_rollback	11
+Com_rollback_to_savepoint	0
+Com_savepoint	0
+Com_select	70171
+Com_set_option	5031
+Com_show_authors	0
+Com_show_binlog_events	0
+Com_show_binlogs	0
+Com_show_charsets	14
+Com_show_collations	14
+Com_show_contributors	0
+Com_show_create_db	0
+Com_show_create_event	0
+Com_show_create_func	0
+Com_show_create_proc	0
+Com_show_create_table	41
+Com_show_create_trigger	0
+Com_show_create_user	0
+Com_show_databases	21
+Com_show_engine_logs	0
+Com_show_engine_mutex	0
+Com_show_engine_status	0
+Com_show_errors	0
+Com_show_events	0
+Com_show_explain	0
+Com_show_fields	119
+Com_show_function_status	0
+Com_show_generic	0
+Com_show_grants	0
+Com_show_keys	0
+Com_show_master_status	0
+Com_show_open_tables	0
+Com_show_plugins	0
+Com_show_privileges	0
+Com_show_procedure_status	0
+Com_show_processlist	107
+Com_show_profile	0
+Com_show_profiles	0
+Com_show_relaylog_events	0
+Com_show_slave_hosts	0
+Com_show_slave_status	0
+Com_show_status	213
+Com_show_storage_engines	14
+Com_show_table_status	39
+Com_show_tables	40
+Com_show_triggers	0
+Com_show_variables	35
+Com_show_warnings	3
+Com_shutdown	0
+Com_signal	0
+Com_start_all_slaves	0
+Com_start_slave	0
+Com_stmt_close	0
+Com_stmt_execute	30541
+Com_stmt_fetch	0
+Com_stmt_prepare	98
+Com_stmt_reprepare	0
+Com_stmt_reset	0
+Com_stmt_send_long_data	0
+Com_stop_all_slaves	0
+Com_stop_slave	0
+Com_truncate	6
+Com_uninstall_plugin	0
+Com_unlock_tables	0
+Com_update	6
+Com_update_multi	0
+Com_xa_commit	0
+Com_xa_end	0
+Com_xa_prepare	0
+Com_xa_recover	0
+Com_xa_rollback	0
+Com_xa_start	0
+Compression	OFF
+Connection_errors_accept	0
+Connection_errors_internal	0
+Connection_errors_max_connections	0
+Connection_errors_peer_address	1
+Connection_errors_select	0
+Connection_errors_tcpwrap	0
+Connections	1810
+Cpu_time	0.000000
+Created_tmp_disk_tables	503
+Created_tmp_files	45
+Created_tmp_tables	2256
+Delayed_errors	0
+Delayed_insert_threads	0
+Delayed_writes	0
+Delete_scan	6
+Empty_queries	4528
+Executed_events	0
+Executed_triggers	0
+Feature_check_constraint	0
+Feature_delay_key_write	0
+Feature_dynamic_columns	0
+Feature_fulltext	0
+Feature_gis	0
+Feature_locale	0
+Feature_subquery	1490
+Feature_timezone	2
+Feature_trigger	0
+Feature_window_functions	155
+Feature_xml	0
+Flush_commands	1
+Handler_commit	2586582
+Handler_delete	89414
+Handler_discover	5
+Handler_external_lock	0
+Handler_icp_attempts	606441
+Handler_icp_match	252197
+Handler_mrr_init	0
+Handler_mrr_key_refills	0
+Handler_mrr_rowid_refills	0
+Handler_prepare	2580146
+Handler_read_first	378
+Handler_read_key	5453
+Handler_read_last	23
+Handler_read_next	326993
+Handler_read_prev	244
+Handler_read_retry	0
+Handler_read_rnd	744922
+Handler_read_rnd_deleted	1
+Handler_read_rnd_next	32413417
+Handler_rollback	1207
+Handler_savepoint	0
+Handler_savepoint_rollback	0
+Handler_tmp_update	3123
+Handler_tmp_write	297623
+Handler_update	231086
+Handler_write	2013877
+Innodb_buffer_pool_dump_status	Dumping of buffer pool not started
+Innodb_buffer_pool_load_status	Buffer pool(s) load completed at 181109 17:47:28
+Innodb_buffer_pool_resize_status	
+Innodb_buffer_pool_pages_data	6851
+Innodb_buffer_pool_bytes_data	112246784
+Innodb_buffer_pool_pages_dirty	0
+Innodb_buffer_pool_bytes_dirty	0
+Innodb_buffer_pool_pages_flushed	28326
+Innodb_buffer_pool_pages_free	1024
+Innodb_buffer_pool_pages_misc	317
+Innodb_buffer_pool_pages_total	8192
+Innodb_buffer_pool_read_ahead_rnd	0
+Innodb_buffer_pool_read_ahead	22267
+Innodb_buffer_pool_read_ahead_evicted	48
+Innodb_buffer_pool_read_requests	45552511
+Innodb_buffer_pool_reads	19147
+Innodb_buffer_pool_wait_free	619
+Innodb_buffer_pool_write_requests	7161646
+Innodb_data_fsyncs	18964
+Innodb_data_pending_fsyncs	0
+Innodb_data_pending_reads	0
+Innodb_data_pending_writes	0
+Innodb_data_read	687114752
+Innodb_data_reads	42063
+Innodb_data_writes	84273
+Innodb_data_written	2750060032
+Innodb_dblwr_pages_written	65024
+Innodb_dblwr_writes	5243
+Innodb_log_waits	0
+Innodb_log_write_requests	1223728
+Innodb_log_writes	10470
+Innodb_os_log_fsyncs	8273
+Innodb_os_log_pending_fsyncs	0
+Innodb_os_log_pending_writes	0
+Innodb_os_log_written	615804416
+Innodb_page_size	16384
+Innodb_pages_created	34856
+Innodb_pages_read	41933
+Innodb_pages0_read	36
+Innodb_pages_written	65155
+Innodb_row_lock_current_waits	0
+Innodb_row_lock_time	0
+Innodb_row_lock_time_avg	0
+Innodb_row_lock_time_max	0
+Innodb_row_lock_waits	0
+Innodb_rows_deleted	89414
+Innodb_rows_inserted	2013875
+Innodb_rows_read	32163291
+Innodb_rows_updated	3893
+Innodb_system_rows_deleted	0
+Innodb_system_rows_inserted	0
+Innodb_system_rows_read	0
+Innodb_system_rows_updated	0
+Innodb_num_open_files	48
+Innodb_truncated_status_writes	0
+Innodb_available_undo_logs	128
+Innodb_page_compression_saved	0
+Innodb_num_index_pages_written	0
+Innodb_num_non_index_pages_written	0
+Innodb_num_pages_page_compressed	0
+Innodb_num_page_compressed_trim_op	0
+Innodb_num_pages_page_decompressed	0
+Innodb_num_pages_page_compression_error	0
+Innodb_num_pages_encrypted	0
+Innodb_num_pages_decrypted	0
+Innodb_have_lz4	OFF
+Innodb_have_lzo	OFF
+Innodb_have_lzma	OFF
+Innodb_have_bzip2	OFF
+Innodb_have_snappy	OFF
+Innodb_have_punch_hole	ON
+Innodb_defragment_compression_failures	0
+Innodb_defragment_failures	0
+Innodb_defragment_count	0
+Innodb_onlineddl_rowlog_rows	0
+Innodb_onlineddl_rowlog_pct_used	0
+Innodb_onlineddl_pct_progress	0
+Innodb_secondary_index_triggered_cluster_reads	258061
+Innodb_secondary_index_triggered_cluster_reads_avoided	0
+Innodb_encryption_rotation_pages_read_from_cache	0
+Innodb_encryption_rotation_pages_read_from_disk	0
+Innodb_encryption_rotation_pages_modified	0
+Innodb_encryption_rotation_pages_flushed	0
+Innodb_encryption_rotation_estimated_iops	0
+Innodb_encryption_key_rotation_list_length	0
+Innodb_scrub_background_page_reorganizations	0
+Innodb_scrub_background_page_splits	0
+Innodb_scrub_background_page_split_failures_underflow	0
+Innodb_scrub_background_page_split_failures_out_of_filespace	0
+Innodb_scrub_background_page_split_failures_missing_index	0
+Innodb_scrub_background_page_split_failures_unknown	0
+Innodb_scrub_log	0
+Innodb_encryption_num_key_requests	0
+Key_blocks_not_flushed	0
+Key_blocks_unused	43354
+Key_blocks_used	4
+Key_blocks_warm	0
+Key_read_requests	1492
+Key_reads	4
+Key_write_requests	4
+Key_writes	4
+Last_query_cost	0.000000
+Master_gtid_wait_count	0
+Master_gtid_wait_time	0
+Master_gtid_wait_timeouts	0
+Max_statement_time_exceeded	0
+Max_used_connections	12
+Memory_used	329209040
+Not_flushed_delayed_rows	0
+Open_files	37
+Open_streams	0
+Open_table_definitions	66
+Open_tables	76
+Opened_files	2717
+Opened_plugin_libraries	0
+Opened_table_definitions	358
+Opened_tables	246
+Opened_views	177
+Performance_schema_accounts_lost	0
+Performance_schema_cond_classes_lost	0
+Performance_schema_cond_instances_lost	0
+Performance_schema_digest_lost	0
+Performance_schema_file_classes_lost	0
+Performance_schema_file_handles_lost	0
+Performance_schema_file_instances_lost	0
+Performance_schema_hosts_lost	0
+Performance_schema_locker_lost	0
+Performance_schema_mutex_classes_lost	0
+Performance_schema_mutex_instances_lost	0
+Performance_schema_rwlock_classes_lost	0
+Performance_schema_rwlock_instances_lost	0
+Performance_schema_session_connect_attrs_lost	0
+Performance_schema_socket_classes_lost	0
+Performance_schema_socket_instances_lost	0
+Performance_schema_stage_classes_lost	0
+Performance_schema_statement_classes_lost	0
+Performance_schema_table_handles_lost	0
+Performance_schema_table_instances_lost	0
+Performance_schema_thread_classes_lost	0
+Performance_schema_thread_instances_lost	0
+Performance_schema_users_lost	0
+Prepared_stmt_count	0
+Qcache_free_blocks	562
+Qcache_free_memory	131348936
+Qcache_hits	57345
+Qcache_inserts	4737
+Qcache_lowmem_prunes	0
+Qcache_not_cached	7187
+Qcache_queries_in_cache	914
+Qcache_total_blocks	2421
+Queries	1369117
+Questions	1369019
+Rows_read	32164123
+Rows_sent	1213672
+Rows_tmp_read	1272097
+Rpl_status	AUTH_MASTER
+Select_full_join	2179
+Select_full_range_join	0
+Select_range	46
+Select_range_check	0
+Select_scan	7153
+Slave_connections	0
+Slave_heartbeat_period	0.000
+Slave_open_temp_tables	0
+Slave_received_heartbeats	0
+Slave_retried_transactions	0
+Slave_running	OFF
+Slave_skipped_errors	0
+Slaves_connected	0
+Slaves_running	0
+Slow_launch_threads	0
+Slow_queries	0
+Sort_merge_passes	0
+Sort_priority_queue_sorts	1952
+Sort_range	316
+Sort_rows	303275
+Sort_scan	4123
+Ssl_accept_renegotiates	0
+Ssl_accepts	0
+Ssl_callback_cache_hits	0
+Ssl_cipher	
+Ssl_cipher_list	
+Ssl_client_connects	0
+Ssl_connect_renegotiates	0
+Ssl_ctx_verify_depth	0
+Ssl_ctx_verify_mode	0
+Ssl_default_timeout	0
+Ssl_finished_accepts	0
+Ssl_finished_connects	0
+Ssl_server_not_after	
+Ssl_server_not_before	
+Ssl_session_cache_hits	0
+Ssl_session_cache_misses	0
+Ssl_session_cache_mode	NONE
+Ssl_session_cache_overflows	0
+Ssl_session_cache_size	0
+Ssl_session_cache_timeouts	0
+Ssl_sessions_reused	0
+Ssl_used_session_cache_entries	0
+Ssl_verify_depth	0
+Ssl_verify_mode	0
+Ssl_version	
+Subquery_cache_hit	0
+Subquery_cache_miss	0
+Syncs	3041
+Table_locks_immediate	597
+Table_locks_waited	0
+Tc_log_max_pages_used	0
+Tc_log_page_size	0
+Tc_log_page_waits	0
+Threadpool_idle_threads	0
+Threadpool_threads	0
+Threads_cached	0
+Threads_connected	1
+Threads_created	1495
+Threads_running	1
+Update_scan	4
+Uptime	4719178
+Uptime_since_flush_status	4719178
+wsrep_cluster_conf_id	18446744073709551615
+wsrep_cluster_size	0
+wsrep_cluster_state_uuid	
+wsrep_cluster_status	Disconnected
+wsrep_connected	OFF
+wsrep_local_bf_aborts	0
+wsrep_local_index	18446744073709551615
+wsrep_provider_name	
+wsrep_provider_vendor	
+wsrep_provider_version	
+wsrep_ready	OFF
+wsrep_thread_count	0
+------------------------------------------------------------
+------------------------------------------------------------
+Id	User	Host	db	Command	Time	State	Info	Progress
+1	system user		NULL	Daemon	NULL		NULL	0.000
+2	system user		NULL	Daemon	NULL		NULL	0.000
+4	system user		NULL	Daemon	NULL		NULL	0.000
+3	system user		NULL	Daemon	NULL		NULL	0.000
+5	system user		NULL	Daemon	NULL	InnoDB shutdown handler	NULL	0.000
+1809	st	103.30.99.246:4366	st	Query	0	init	show full processlist	0.000
+current_timestamp
+2019-01-03 08:40:23
+current_timestamp
+2019-01-03 08:40:23
+area	userCnt
+??	712184
+??	414033
+??	353826
+??	248518
+??	203926
+??	201735
+??	170354
+??	161062
+??	133160
+??	130233
+??	105563
+??	91905
+???	73518
+current_timestamp
+2019-01-03 08:40:23
+statsDt	lanArpu
+1	25.38
+2	26.41
+3	22.62
+4	22.62
+5	22.48
+6	25.09
+7	25.78
+8	23.67
+9	23.67
+10	23.67
+11	23.67
+current_timestamp
+2019-01-03 08:40:23
+area	lanArpu
+??	27.46
+??	26.22
+??	24.75
+??	24.57
+??	24.41
+??	24.06
+???	23.70
+??	23.57
+??	22.50
+??	21.72
+??	21.46
+??	21.25
+??	20.51
+current_timestamp
+2019-01-03 08:40:23
+[2019-01-03T08:50:01+0800]:[INFO]:网络状况
+[2019-01-03T08:50:01+0800]:[INFO]:------------------------------------------------------------
+PING bigdata.jscndata.com (118.25.80.57) 56(84) bytes of data.
+64 bytes from 118.25.80.57: icmp_seq=1 ttl=51 time=14.3 ms
+64 bytes from 118.25.80.57: icmp_seq=2 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=3 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=4 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=5 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=6 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=7 ttl=51 time=14.1 ms
+64 bytes from 118.25.80.57: icmp_seq=8 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=9 ttl=51 time=14.2 ms
+64 bytes from 118.25.80.57: icmp_seq=10 ttl=51 time=14.1 ms
+
+--- bigdata.jscndata.com ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9024ms
+rtt min/avg/max/mdev = 14.143/14.214/14.353/0.059 ms
+[2019-01-03T08:50:10+0800]:[INFO]:------------------------------------------------------------
+[2019-01-03T08:50:10+0800]:[INFO]:mysql运行状况
+[2019-01-03T08:50:10+0800]:[INFO]:------------------------------------------------------------
+--------------
+/usr/bin/mysql  Ver 14.14 Distrib 5.1.73, for redhat-linux-gnu (x86_64) using readline 5.1
+
+Connection id:		1810
+Current database:	st
+Current user:		st@103.30.99.246
+SSL:			Not in use
+Current pager:		stdout
+Using outfile:		''
+Using delimiter:	;
+Server version:		5.5.5-10.2.6-MariaDB-log Source distribution
+Protocol version:	10
+Connection:		bigdata.jscndata.com via TCP/IP
+Server characterset:	utf8
+Db     characterset:	utf8
+Client characterset:	latin1
+Conn.  characterset:	latin1
+TCP port:		4289
+Uptime:			54 days 15 hours 2 min 56 sec
+
+Threads: 8  Questions: 1369133  Slow queries: 0  Opens: 246  Flush tables: 1  Open tables: 76  Queries per second avg: 0.290
+--------------
+
+------------------------------------------------------------
+------------------------------------------------------------
+Variable_name	Value
+Aborted_clients	16
+Aborted_connects	20
+Access_denied_errors	0
+Acl_column_grants	0
+Acl_database_grants	2
+Acl_function_grants	0
+Acl_procedure_grants	0
+Acl_proxy_users	2
+Acl_role_grants	0
+Acl_roles	0
+Acl_table_grants	0
+Acl_users	8
+Aria_pagecache_blocks_not_flushed	0
+Aria_pagecache_blocks_unused	15706
+Aria_pagecache_blocks_used	14
+Aria_pagecache_read_requests	8435
+Aria_pagecache_reads	467
+Aria_pagecache_write_requests	972
+Aria_pagecache_writes	0
+Aria_transaction_log_syncs	0
+Binlog_commits	2655
+Binlog_group_commits	2655
+Binlog_group_commit_trigger_count	0
+Binlog_group_commit_trigger_lock_wait	0
+Binlog_group_commit_trigger_timeout	0
+Binlog_snapshot_file	mysql-bin.000002
+Binlog_snapshot_position	995093212
+Binlog_bytes_written	995100556
+Binlog_cache_disk_use	1302
+Binlog_cache_use	2655
+Binlog_stmt_cache_disk_use	0
+Binlog_stmt_cache_use	0
+Busy_time	0.000000
+Bytes_received	572824984
+Bytes_sent	149517530
+Com_admin_commands	4514
+Com_alter_db	0
+Com_alter_db_upgrade	0
+Com_alter_event	0
+Com_alter_function	0
+Com_alter_procedure	0
+Com_alter_server	0
+Com_alter_table	53
+Com_alter_tablespace	0
+Com_alter_user	0
+Com_analyze	0
+Com_assign_to_keycache	0
+Com_begin	0
+Com_binlog	0
+Com_call_procedure	0
+Com_change_db	12
+Com_change_master	0
+Com_check	0
+Com_checksum	0
+Com_commit	1359
+Com_compound_sql	0
+Com_create_db	0
+Com_create_event	0
+Com_create_function	0
+Com_create_index	4
+Com_create_procedure	0
+Com_create_role	0
+Com_create_server	0
+Com_create_table	80
+Com_create_temporary_table	0
+Com_create_trigger	0
+Com_create_udf	0
+Com_create_user	0
+Com_create_view	13
+Com_dealloc_sql	0
+Com_delete	8
+Com_delete_multi	0
+Com_do	0
+Com_drop_db	0
+Com_drop_event	0
+Com_drop_function	0
+Com_drop_index	0
+Com_drop_procedure	0
+Com_drop_role	0
+Com_drop_server	0
+Com_drop_table	42
+Com_drop_temporary_table	0
+Com_drop_trigger	0
+Com_drop_user	0
+Com_drop_view	24
+Com_empty_query	0
+Com_execute_immediate	0
+Com_execute_sql	0
+Com_flush	1
+Com_get_diagnostics	0
+Com_grant	2
+Com_grant_role	0
+Com_ha_close	0
+Com_ha_open	0
+Com_ha_read	0
+Com_help	0
+Com_insert	1289840
+Com_insert_select	2
+Com_install_plugin	0
+Com_kill	0
+Com_load	0
+Com_lock_tables	0
+Com_multi	0
+Com_optimize	0
+Com_preload_keys	0
+Com_prepare_sql	0
+Com_purge	0
+Com_purge_before_date	0
+Com_release_savepoint	0
+Com_rename_table	0
+Com_rename_user	0
+Com_repair	0
+Com_replace	0
+Com_replace_select	0
+Com_reset	0
+Com_resignal	0
+Com_revoke	0
+Com_revoke_all	0
+Com_revoke_role	0
+Com_rollback	11
+Com_rollback_to_savepoint	0
+Com_savepoint	0
+Com_select	70185
+Com_set_option	5031
+Com_show_authors	0
+Com_show_binlog_events	0
+Com_show_binlogs	0
+Com_show_charsets	14
+Com_show_collations	14
+Com_show_contributors	0
+Com_show_create_db	0
+Com_show_create_event	0
+Com_show_create_func	0
+Com_show_create_proc	0
+Com_show_create_table	41
+Com_show_create_trigger	0
+Com_show_create_user	0
+Com_show_databases	21
+Com_show_engine_logs	0
+Com_show_engine_mutex	0
+Com_show_engine_status	0
+Com_show_errors	0
+Com_show_events	0
+Com_show_explain	0
+Com_show_fields	119
+Com_show_function_status	0
+Com_show_generic	0
+Com_show_grants	0
+Com_show_keys	0
+Com_show_master_status	0
+Com_show_open_tables	0
+Com_show_plugins	0
+Com_show_privileges	0
+Com_show_procedure_status	0
+Com_show_processlist	108
+Com_show_profile	0
+Com_show_profiles	0
+Com_show_relaylog_events	0
+Com_show_slave_hosts	0
+Com_show_slave_status	0
+Com_show_status	215
+Com_show_storage_engines	14
+Com_show_table_status	39
+Com_show_tables	40
+Com_show_triggers	0
+Com_show_variables	35
+Com_show_warnings	3
+Com_shutdown	0
+Com_signal	0
+Com_start_all_slaves	0
+Com_start_slave	0
+Com_stmt_close	0
+Com_stmt_execute	30541
+Com_stmt_fetch	0
+Com_stmt_prepare	98
+Com_stmt_reprepare	0
+Com_stmt_reset	0
+Com_stmt_send_long_data	0
+Com_stop_all_slaves	0
+Com_stop_slave	0
+Com_truncate	6
+Com_uninstall_plugin	0
+Com_unlock_tables	0
+Com_update	6
+Com_update_multi	0
+Com_xa_commit	0
+Com_xa_end	0
+Com_xa_prepare	0
+Com_xa_recover	0
+Com_xa_rollback	0
+Com_xa_start	0
+Compression	OFF
+Connection_errors_accept	0
+Connection_errors_internal	0
+Connection_errors_max_connections	0
+Connection_errors_peer_address	1
+Connection_errors_select	0
+Connection_errors_tcpwrap	0
+Connections	1811
+Cpu_time	0.000000
+Created_tmp_disk_tables	503
+Created_tmp_files	45
+Created_tmp_tables	2257
+Delayed_errors	0
+Delayed_insert_threads	0
+Delayed_writes	0
+Delete_scan	6
+Empty_queries	4529
+Executed_events	0
+Executed_triggers	0
+Feature_check_constraint	0
+Feature_delay_key_write	0
+Feature_dynamic_columns	0
+Feature_fulltext	0
+Feature_gis	0
+Feature_locale	0
+Feature_subquery	1490
+Feature_timezone	2
+Feature_trigger	0
+Feature_window_functions	155
+Feature_xml	0
+Flush_commands	1
+Handler_commit	2586582
+Handler_delete	89414
+Handler_discover	5
+Handler_external_lock	0
+Handler_icp_attempts	606441
+Handler_icp_match	252197
+Handler_mrr_init	0
+Handler_mrr_key_refills	0
+Handler_mrr_rowid_refills	0
+Handler_prepare	2580146
+Handler_read_first	378
+Handler_read_key	5453
+Handler_read_last	23
+Handler_read_next	326993
+Handler_read_prev	244
+Handler_read_retry	0
+Handler_read_rnd	744922
+Handler_read_rnd_deleted	1
+Handler_read_rnd_next	32413897
+Handler_rollback	1207
+Handler_savepoint	0
+Handler_savepoint_rollback	0
+Handler_tmp_update	3123
+Handler_tmp_write	298102
+Handler_update	231086
+Handler_write	2013877
+Innodb_buffer_pool_dump_status	Dumping of buffer pool not started
+Innodb_buffer_pool_load_status	Buffer pool(s) load completed at 181109 17:47:28
+Innodb_buffer_pool_resize_status	
+Innodb_buffer_pool_pages_data	6851
+Innodb_buffer_pool_bytes_data	112246784
+Innodb_buffer_pool_pages_dirty	0
+Innodb_buffer_pool_bytes_dirty	0
+Innodb_buffer_pool_pages_flushed	28326
+Innodb_buffer_pool_pages_free	1024
+Innodb_buffer_pool_pages_misc	317
+Innodb_buffer_pool_pages_total	8192
+Innodb_buffer_pool_read_ahead_rnd	0
+Innodb_buffer_pool_read_ahead	22267
+Innodb_buffer_pool_read_ahead_evicted	48
+Innodb_buffer_pool_read_requests	45552511
+Innodb_buffer_pool_reads	19147
+Innodb_buffer_pool_wait_free	619
+Innodb_buffer_pool_write_requests	7161646
+Innodb_data_fsyncs	18964
+Innodb_data_pending_fsyncs	0
+Innodb_data_pending_reads	0
+Innodb_data_pending_writes	0
+Innodb_data_read	687114752
+Innodb_data_reads	42063
+Innodb_data_writes	84273
+Innodb_data_written	2750060032
+Innodb_dblwr_pages_written	65024
+Innodb_dblwr_writes	5243
+Innodb_log_waits	0
+Innodb_log_write_requests	1223728
+Innodb_log_writes	10470
+Innodb_os_log_fsyncs	8273
+Innodb_os_log_pending_fsyncs	0
+Innodb_os_log_pending_writes	0
+Innodb_os_log_written	615804416
+Innodb_page_size	16384
+Innodb_pages_created	34856
+Innodb_pages_read	41933
+Innodb_pages0_read	36
+Innodb_pages_written	65155
+Innodb_row_lock_current_waits	0
+Innodb_row_lock_time	0
+Innodb_row_lock_time_avg	0
+Innodb_row_lock_time_max	0
+Innodb_row_lock_waits	0
+Innodb_rows_deleted	89414
+Innodb_rows_inserted	2013875
+Innodb_rows_read	32163291
+Innodb_rows_updated	3893
+Innodb_system_rows_deleted	0
+Innodb_system_rows_inserted	0
+Innodb_system_rows_read	0
+Innodb_system_rows_updated	0
+Innodb_num_open_files	48
+Innodb_truncated_status_writes	0
+Innodb_available_undo_logs	128
+Innodb_page_compression_saved	0
+Innodb_num_index_pages_written	0
+Innodb_num_non_index_pages_written	0
+Innodb_num_pages_page_compressed	0
+Innodb_num_page_compressed_trim_op	0
+Innodb_num_pages_page_decompressed	0
+Innodb_num_pages_page_compression_error	0
+Innodb_num_pages_encrypted	0
+Innodb_num_pages_decrypted	0
+Innodb_have_lz4	OFF
+Innodb_have_lzo	OFF
+Innodb_have_lzma	OFF
+Innodb_have_bzip2	OFF
+Innodb_have_snappy	OFF
+Innodb_have_punch_hole	ON
+Innodb_defragment_compression_failures	0
+Innodb_defragment_failures	0
+Innodb_defragment_count	0
+Innodb_onlineddl_rowlog_rows	0
+Innodb_onlineddl_rowlog_pct_used	0
+Innodb_onlineddl_pct_progress	0
+Innodb_secondary_index_triggered_cluster_reads	258061
+Innodb_secondary_index_triggered_cluster_reads_avoided	0
+Innodb_encryption_rotation_pages_read_from_cache	0
+Innodb_encryption_rotation_pages_read_from_disk	0
+Innodb_encryption_rotation_pages_modified	0
+Innodb_encryption_rotation_pages_flushed	0
+Innodb_encryption_rotation_estimated_iops	0
+Innodb_encryption_key_rotation_list_length	0
+Innodb_scrub_background_page_reorganizations	0
+Innodb_scrub_background_page_splits	0
+Innodb_scrub_background_page_split_failures_underflow	0
+Innodb_scrub_background_page_split_failures_out_of_filespace	0
+Innodb_scrub_background_page_split_failures_missing_index	0
+Innodb_scrub_background_page_split_failures_unknown	0
+Innodb_scrub_log	0
+Innodb_encryption_num_key_requests	0
+Key_blocks_not_flushed	0
+Key_blocks_unused	43354
+Key_blocks_used	4
+Key_blocks_warm	0
+Key_read_requests	1492
+Key_reads	4
+Key_write_requests	4
+Key_writes	4
+Last_query_cost	0.000000
+Master_gtid_wait_count	0
+Master_gtid_wait_time	0
+Master_gtid_wait_timeouts	0
+Max_statement_time_exceeded	0
+Max_used_connections	12
+Memory_used	329209040
+Not_flushed_delayed_rows	0
+Open_files	37
+Open_streams	0
+Open_table_definitions	66
+Open_tables	76
+Opened_files	2717
+Opened_plugin_libraries	0
+Opened_table_definitions	358
+Opened_tables	246
+Opened_views	177
+Performance_schema_accounts_lost	0
+Performance_schema_cond_classes_lost	0
+Performance_schema_cond_instances_lost	0
+Performance_schema_digest_lost	0
+Performance_schema_file_classes_lost	0
+Performance_schema_file_handles_lost	0
+Performance_schema_file_instances_lost	0
+Performance_schema_hosts_lost	0
+Performance_schema_locker_lost	0
+Performance_schema_mutex_classes_lost	0
+Performance_schema_mutex_instances_lost	0
+Performance_schema_rwlock_classes_lost	0
+Performance_schema_rwlock_instances_lost	0
+Performance_schema_session_connect_attrs_lost	0
+Performance_schema_socket_classes_lost	0
+Performance_schema_socket_instances_lost	0
+Performance_schema_stage_classes_lost	0
+Performance_schema_statement_classes_lost	0
+Performance_schema_table_handles_lost	0
+Performance_schema_table_instances_lost	0
+Performance_schema_thread_classes_lost	0
+Performance_schema_thread_instances_lost	0
+Performance_schema_users_lost	0
+Prepared_stmt_count	0
+Qcache_free_blocks	562
+Qcache_free_memory	131348936
+Qcache_hits	57349
+Qcache_inserts	4737
+Qcache_lowmem_prunes	0
+Qcache_not_cached	7197
+Qcache_queries_in_cache	914
+Qcache_total_blocks	2421
+Queries	1369134
+Questions	1369036
+Rows_read	32164123
+Rows_sent	1214198
+Rows_tmp_read	1272576
+Rpl_status	AUTH_MASTER
+Select_full_join	2179
+Select_full_range_join	0
+Select_range	46
+Select_range_check	0
+Select_scan	7154
+Slave_connections	0
+Slave_heartbeat_period	0.000
+Slave_open_temp_tables	0
+Slave_received_heartbeats	0
+Slave_retried_transactions	0
+Slave_running	OFF
+Slave_skipped_errors	0
+Slaves_connected	0
+Slaves_running	0
+Slow_launch_threads	0
+Slow_queries	0
+Sort_merge_passes	0
+Sort_priority_queue_sorts	1952
+Sort_range	316
+Sort_rows	303275
+Sort_scan	4123
+Ssl_accept_renegotiates	0
+Ssl_accepts	0
+Ssl_callback_cache_hits	0
+Ssl_cipher	
+Ssl_cipher_list	
+Ssl_client_connects	0
+Ssl_connect_renegotiates	0
+Ssl_ctx_verify_depth	0
+Ssl_ctx_verify_mode	0
+Ssl_default_timeout	0
+Ssl_finished_accepts	0
+Ssl_finished_connects	0
+Ssl_server_not_after	
+Ssl_server_not_before	
+Ssl_session_cache_hits	0
+Ssl_session_cache_misses	0
+Ssl_session_cache_mode	NONE
+Ssl_session_cache_overflows	0
+Ssl_session_cache_size	0
+Ssl_session_cache_timeouts	0
+Ssl_sessions_reused	0
+Ssl_used_session_cache_entries	0
+Ssl_verify_depth	0
+Ssl_verify_mode	0
+Ssl_version	
+Subquery_cache_hit	0
+Subquery_cache_miss	0
+Syncs	3041
+Table_locks_immediate	597
+Table_locks_waited	0
+Tc_log_max_pages_used	0
+Tc_log_page_size	0
+Tc_log_page_waits	0
+Threadpool_idle_threads	0
+Threadpool_threads	0
+Threads_cached	0
+Threads_connected	1
+Threads_created	1496
+Threads_running	1
+Update_scan	4
+Uptime	4719776
+Uptime_since_flush_status	4719776
+wsrep_cluster_conf_id	18446744073709551615
+wsrep_cluster_size	0
+wsrep_cluster_state_uuid	
+wsrep_cluster_status	Disconnected
+wsrep_connected	OFF
+wsrep_local_bf_aborts	0
+wsrep_local_index	18446744073709551615
+wsrep_provider_name	
+wsrep_provider_vendor	
+wsrep_provider_version	
+wsrep_ready	OFF
+wsrep_thread_count	0
+------------------------------------------------------------
+------------------------------------------------------------
+Id	User	Host	db	Command	Time	State	Info	Progress
+1	system user		NULL	Daemon	NULL		NULL	0.000
+2	system user		NULL	Daemon	NULL		NULL	0.000
+4	system user		NULL	Daemon	NULL		NULL	0.000
+3	system user		NULL	Daemon	NULL		NULL	0.000
+5	system user		NULL	Daemon	NULL	InnoDB shutdown handler	NULL	0.000
+1810	st	103.30.99.246:58822	st	Query	0	init	show full processlist	0.000
+current_timestamp
+2019-01-03 08:50:21
+current_timestamp
+2019-01-03 08:50:21
+area	userCnt
+??	712184
+??	414033
+??	353826
+??	248518
+??	203926
+??	201735
+??	170354
+??	161062
+??	133160
+??	130233
+??	105563
+??	91905
+???	73518
+current_timestamp
+2019-01-03 08:50:21
+statsDt	lanArpu
+1	25.38
+2	26.41
+3	22.62
+4	22.62
+5	22.48
+6	25.09
+7	25.78
+8	23.67
+9	23.67
+10	23.67
+11	23.67
+current_timestamp
+2019-01-03 08:50:21
+area	lanArpu
+??	27.46
+??	26.22
+??	24.75
+??	24.57
+??	24.41
+??	24.06
+???	23.70
+??	23.57
+??	22.50
+??	21.72
+??	21.46
+??	21.25
+??	20.51
+current_timestamp
+2019-01-03 08:50:21

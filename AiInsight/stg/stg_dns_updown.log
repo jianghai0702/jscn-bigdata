@@ -1,0 +1,180 @@
+nohup: 忽略输入
+2017年 11月 30日 星期四 16:51:13 CST
+sleep to wait for finishing collection from jsgd5
+2017年 11月 30日 星期四 16:52:03 CST
+sleep to wait for finishing collection from jsgd5
+2017年 11月 30日 星期四 16:52:53 CST
+sleep to wait for finishing collection from jsgd5
+2017年 11月 30日 星期四 16:53:43 CST
+sleep to wait for finishing collection from jsgd5
+2017年 11月 30日 星期四 16:54:33 CST
+sleep to wait for finishing collection from jsgd5
+2017年 11月 30日 星期四 16:55:23 CST
+sleep to wait for finishing collection from jsgd5
+2017年 11月 30日 星期四 16:56:13 CST
+sleep to wait for finishing collection from jsgd5
+2017年 11月 30日 星期四 16:57:03 CST
+sleep to wait for finishing collection from jsgd5
+2017年 11月 30日 星期四 16:57:53 CST
+sleep to wait for finishing collection from jsgd5
+2017年 11月 30日 星期四 16:58:43 CST
+sleep to wait for finishing collection from jsgd5
+2017年 11月 30日 星期四 16:59:33 CST
+sleep to wait for finishing collection from jsgd5
+2017年 11月 30日 星期四 17:00:23 CST
+sleep to wait for finishing collection from jsgd5
+2017年 11月 30日 星期四 17:01:14 CST
+sleep to wait for finishing collection from jsgd5
+2017年 11月 30日 星期四 17:02:04 CST
+sleep to wait for finishing collection from jsgd5
+数据成功复制到21服务器
+00
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-11-30 17:03:15,505 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+Loading data to table default.stg_dns_updown partition (pt_time=20171129, pt_hour=00)
+Moved: 'hdfs://nameservice1/asiainfo/hive/STG/stg_dns_updown/pt_time=20171129/pt_hour=00/total_00.gz' to trash at: hdfs://nameservice1/user/hdfs/.Trash/Current
+Partition default.stg_dns_updown{pt_time=20171129, pt_hour=00} stats: [numFiles=1, numRows=0, totalSize=2362176242, rawDataSize=0]
+OK
+Time taken: 26.142 seconds
+01
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-11-30 17:04:23,492 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+Loading data to table default.stg_dns_updown partition (pt_time=20171129, pt_hour=01)
+Moved: 'hdfs://nameservice1/asiainfo/hive/STG/stg_dns_updown/pt_time=20171129/pt_hour=01/total_01.gz' to trash at: hdfs://nameservice1/user/hdfs/.Trash/Current
+Partition default.stg_dns_updown{pt_time=20171129, pt_hour=01} stats: [numFiles=1, numRows=0, totalSize=2211999335, rawDataSize=0]
+OK
+Time taken: 21.256 seconds
+02
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-11-30 17:04:55,747 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+Loading data to table default.stg_dns_updown partition (pt_time=20171129, pt_hour=02)
+Partition default.stg_dns_updown{pt_time=20171129, pt_hour=02} stats: [numFiles=1, numRows=0, totalSize=454382131, rawDataSize=0]
+OK
+Time taken: 5.639 seconds
+03
+cat: *2017112903*.gz: 没有那个文件或目录
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~total_03.gz为空~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+04
+cat: *2017112904*.gz: 没有那个文件或目录
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~total_04.gz为空~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+05
+cat: *2017112905*.gz: 没有那个文件或目录
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~total_05.gz为空~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+06
+cat: *2017112906*.gz: 没有那个文件或目录
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~total_06.gz为空~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+07
+cat: *2017112907*.gz: 没有那个文件或目录
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~total_07.gz为空~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+08
+cat: *2017112908*.gz: 没有那个文件或目录
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~total_08.gz为空~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+09
+cat: *2017112909*.gz: 没有那个文件或目录
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~total_09.gz为空~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+10
+cat: *2017112910*.gz: 没有那个文件或目录
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~total_10.gz为空~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+11
+cat: *2017112911*.gz: 没有那个文件或目录
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~total_11.gz为空~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+12
+cat: *2017112912*.gz: 没有那个文件或目录
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~total_12.gz为空~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+13
+cat: *2017112913*.gz: 没有那个文件或目录
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~total_13.gz为空~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+14
+cat: *2017112914*.gz: 没有那个文件或目录
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~total_14.gz为空~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+15
+cat: *2017112915*.gz: 没有那个文件或目录
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~total_15.gz为空~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+16
+cat: *2017112916*.gz: 没有那个文件或目录
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~total_16.gz为空~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+17
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-11-30 17:05:14,213 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+Loading data to table default.stg_dns_updown partition (pt_time=20171129, pt_hour=17)
+Partition default.stg_dns_updown{pt_time=20171129, pt_hour=17} stats: [numFiles=1, numRows=0, totalSize=1013933410, rawDataSize=0]
+OK
+Time taken: 10.966 seconds
+18
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-11-30 17:06:07,912 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+Loading data to table default.stg_dns_updown partition (pt_time=20171129, pt_hour=18)
+Moved: 'hdfs://nameservice1/asiainfo/hive/STG/stg_dns_updown/pt_time=20171129/pt_hour=18/total_18.gz' to trash at: hdfs://nameservice1/user/hdfs/.Trash/Current
+Partition default.stg_dns_updown{pt_time=20171129, pt_hour=18} stats: [numFiles=1, numRows=0, totalSize=5714569753, rawDataSize=0]
+OK
+Time taken: 78.711 seconds
+19
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-11-30 17:07:44,830 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+Loading data to table default.stg_dns_updown partition (pt_time=20171129, pt_hour=19)
+Moved: 'hdfs://nameservice1/asiainfo/hive/STG/stg_dns_updown/pt_time=20171129/pt_hour=19/total_19.gz' to trash at: hdfs://nameservice1/user/hdfs/.Trash/Current
+Partition default.stg_dns_updown{pt_time=20171129, pt_hour=19} stats: [numFiles=1, numRows=0, totalSize=2075796724, rawDataSize=0]
+OK
+Time taken: 29.279 seconds
+20
+cat: *2017112920*.gz: 没有那个文件或目录
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~total_20.gz为空~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+21
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-11-30 17:08:58,617 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+Loading data to table default.stg_dns_updown partition (pt_time=20171129, pt_hour=21)
+Moved: 'hdfs://nameservice1/asiainfo/hive/STG/stg_dns_updown/pt_time=20171129/pt_hour=21/total_21.gz' to trash at: hdfs://nameservice1/user/hdfs/.Trash/Current
+Partition default.stg_dns_updown{pt_time=20171129, pt_hour=21} stats: [numFiles=1, numRows=0, totalSize=5868023125, rawDataSize=0]
+OK
+Time taken: 75.635 seconds
+22
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-11-30 17:10:50,939 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+Loading data to table default.stg_dns_updown partition (pt_time=20171129, pt_hour=22)
+Moved: 'hdfs://nameservice1/asiainfo/hive/STG/stg_dns_updown/pt_time=20171129/pt_hour=22/total_22.gz' to trash at: hdfs://nameservice1/user/hdfs/.Trash/Current
+Partition default.stg_dns_updown{pt_time=20171129, pt_hour=22} stats: [numFiles=1, numRows=0, totalSize=5239943747, rawDataSize=0]
+OK
+Time taken: 80.843 seconds
+23
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-11-30 17:12:47,804 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+Loading data to table default.stg_dns_updown partition (pt_time=20171129, pt_hour=23)
+Moved: 'hdfs://nameservice1/asiainfo/hive/STG/stg_dns_updown/pt_time=20171129/pt_hour=23/total_23.gz' to trash at: hdfs://nameservice1/user/hdfs/.Trash/Current
+Partition default.stg_dns_updown{pt_time=20171129, pt_hour=23} stats: [numFiles=1, numRows=0, totalSize=3947540370, rawDataSize=0]
+OK
+Time taken: 38.423 seconds
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-11-30 17:13:40,551 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 1.059 seconds
+2017年 11月 30日 星期四 17:13:45 CST

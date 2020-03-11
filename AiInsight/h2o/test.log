@@ -1,0 +1,712 @@
+20170421
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-05-02 21:23:52,501 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.427 seconds, Fetched: 1 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-05-02 21:24:03,454 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.481 seconds, Fetched: 240 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-05-02 21:24:14,465 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.43 seconds, Fetched: 6 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-05-02 21:24:25,397 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.206 seconds, Fetched: 39955 row(s)
+
+SQL*Plus: Release 11.2.0.4.0 Production on Tue May 2 21:24:32 2017
+
+Copyright (c) 1982, 2013, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> SQL> SQL> 
+1 row deleted.
+
+Elapsed: 00:00:00.00
+SQL> 
+240 rows deleted.
+
+Elapsed: 00:00:00.01
+SQL> 
+6 rows deleted.
+
+Elapsed: 00:00:00.00
+SQL> 
+Table truncated.
+
+Elapsed: 00:00:00.02
+SQL> 
+Commit complete.
+
+Elapsed: 00:00:00.00
+SQL> Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Tue May 2 21:24:32 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 1
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Tue May 2 21:24:32 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 64
+Commit point reached - logical record count 128
+Commit point reached - logical record count 192
+Commit point reached - logical record count 240
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Tue May 2 21:24:32 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 6
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Tue May 2 21:24:32 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 64
+Commit point reached - logical record count 128
+Commit point reached - logical record count 192
+Commit point reached - logical record count 256
+Commit point reached - logical record count 320
+Commit point reached - logical record count 384
+Commit point reached - logical record count 448
+Commit point reached - logical record count 512
+Commit point reached - logical record count 576
+Commit point reached - logical record count 640
+Commit point reached - logical record count 704
+Commit point reached - logical record count 768
+Commit point reached - logical record count 832
+Commit point reached - logical record count 896
+Commit point reached - logical record count 960
+Commit point reached - logical record count 1025
+Commit point reached - logical record count 1089
+Commit point reached - logical record count 1153
+Commit point reached - logical record count 1217
+Commit point reached - logical record count 1281
+Commit point reached - logical record count 1345
+Commit point reached - logical record count 1409
+Commit point reached - logical record count 1473
+Commit point reached - logical record count 1537
+Commit point reached - logical record count 1601
+Commit point reached - logical record count 1665
+Commit point reached - logical record count 1729
+Commit point reached - logical record count 1793
+Commit point reached - logical record count 1857
+Commit point reached - logical record count 1921
+Commit point reached - logical record count 1985
+Commit point reached - logical record count 2049
+Commit point reached - logical record count 2113
+Commit point reached - logical record count 2177
+Commit point reached - logical record count 2241
+Commit point reached - logical record count 2305
+Commit point reached - logical record count 2369
+Commit point reached - logical record count 2433
+Commit point reached - logical record count 2497
+Commit point reached - logical record count 2561
+Commit point reached - logical record count 2625
+Commit point reached - logical record count 2689
+Commit point reached - logical record count 2753
+Commit point reached - logical record count 2817
+Commit point reached - logical record count 2881
+Commit point reached - logical record count 2945
+Commit point reached - logical record count 3009
+Commit point reached - logical record count 3073
+Commit point reached - logical record count 3137
+Commit point reached - logical record count 3201
+Commit point reached - logical record count 3265
+Commit point reached - logical record count 3329
+Commit point reached - logical record count 3393
+Commit point reached - logical record count 3457
+Commit point reached - logical record count 3521
+Commit point reached - logical record count 3585
+Commit point reached - logical record count 3649
+Commit point reached - logical record count 3713
+Commit point reached - logical record count 3777
+Commit point reached - logical record count 3841
+Commit point reached - logical record count 3905
+Commit point reached - logical record count 3969
+Commit point reached - logical record count 4033
+Commit point reached - logical record count 4097
+Commit point reached - logical record count 4161
+Commit point reached - logical record count 4225
+Commit point reached - logical record count 4289
+Commit point reached - logical record count 4353
+Commit point reached - logical record count 4417
+Commit point reached - logical record count 4481
+Commit point reached - logical record count 4545
+Commit point reached - logical record count 4609
+Commit point reached - logical record count 4673
+Commit point reached - logical record count 4737
+Commit point reached - logical record count 4801
+Commit point reached - logical record count 4865
+Commit point reached - logical record count 4929
+Commit point reached - logical record count 4993
+Commit point reached - logical record count 5057
+Commit point reached - logical record count 5121
+Commit point reached - logical record count 5185
+Commit point reached - logical record count 5249
+Commit point reached - logical record count 5313
+Commit point reached - logical record count 5377
+Commit point reached - logical record count 5441
+Commit point reached - logical record count 5505
+Commit point reached - logical record count 5569
+Commit point reached - logical record count 5633
+Commit point reached - logical record count 5697
+Commit point reached - logical record count 5761
+Commit point reached - logical record count 5825
+Commit point reached - logical record count 5889
+Commit point reached - logical record count 5953
+Commit point reached - logical record count 6017
+Commit point reached - logical record count 6081
+Commit point reached - logical record count 6145
+Commit point reached - logical record count 6209
+Commit point reached - logical record count 6273
+Commit point reached - logical record count 6337
+Commit point reached - logical record count 6401
+Commit point reached - logical record count 6465
+Commit point reached - logical record count 6529
+Commit point reached - logical record count 6593
+Commit point reached - logical record count 6657
+Commit point reached - logical record count 6721
+Commit point reached - logical record count 6785
+Commit point reached - logical record count 6849
+Commit point reached - logical record count 6913
+Commit point reached - logical record count 6977
+Commit point reached - logical record count 7041
+Commit point reached - logical record count 7105
+Commit point reached - logical record count 7169
+Commit point reached - logical record count 7233
+Commit point reached - logical record count 7297
+Commit point reached - logical record count 7361
+Commit point reached - logical record count 7425
+Commit point reached - logical record count 7489
+Commit point reached - logical record count 7553
+Commit point reached - logical record count 7617
+Commit point reached - logical record count 7681
+Commit point reached - logical record count 7745
+Commit point reached - logical record count 7809
+Commit point reached - logical record count 7873
+Commit point reached - logical record count 7937
+Commit point reached - logical record count 8001
+Commit point reached - logical record count 8065
+Commit point reached - logical record count 8129
+Commit point reached - logical record count 8193
+Commit point reached - logical record count 8257
+Commit point reached - logical record count 8321
+Commit point reached - logical record count 8385
+Commit point reached - logical record count 8449
+Commit point reached - logical record count 8513
+Commit point reached - logical record count 8577
+Commit point reached - logical record count 8641
+Commit point reached - logical record count 8705
+Commit point reached - logical record count 8769
+Commit point reached - logical record count 8833
+Commit point reached - logical record count 8897
+Commit point reached - logical record count 8961
+Commit point reached - logical record count 9025
+Commit point reached - logical record count 9089
+Commit point reached - logical record count 9153
+Commit point reached - logical record count 9217
+Commit point reached - logical record count 9281
+Commit point reached - logical record count 9345
+Commit point reached - logical record count 9409
+Commit point reached - logical record count 9473
+Commit point reached - logical record count 9537
+Commit point reached - logical record count 9601
+Commit point reached - logical record count 9665
+Commit point reached - logical record count 9729
+Commit point reached - logical record count 9793
+Commit point reached - logical record count 9857
+Commit point reached - logical record count 9921
+Commit point reached - logical record count 9985
+Commit point reached - logical record count 10049
+Commit point reached - logical record count 10113
+Commit point reached - logical record count 10177
+Commit point reached - logical record count 10241
+Commit point reached - logical record count 10305
+Commit point reached - logical record count 10369
+Commit point reached - logical record count 10433
+Commit point reached - logical record count 10497
+Commit point reached - logical record count 10561
+Commit point reached - logical record count 10625
+Commit point reached - logical record count 10689
+Commit point reached - logical record count 10753
+Commit point reached - logical record count 10817
+Commit point reached - logical record count 10881
+Commit point reached - logical record count 10945
+Commit point reached - logical record count 11009
+Commit point reached - logical record count 11073
+Commit point reached - logical record count 11137
+Commit point reached - logical record count 11201
+Commit point reached - logical record count 11265
+Commit point reached - logical record count 11329
+Commit point reached - logical record count 11393
+Commit point reached - logical record count 11457
+Commit point reached - logical record count 11521
+Commit point reached - logical record count 11585
+Commit point reached - logical record count 11649
+Commit point reached - logical record count 11713
+Commit point reached - logical record count 11777
+Commit point reached - logical record count 11841
+Commit point reached - logical record count 11905
+Commit point reached - logical record count 11969
+Commit point reached - logical record count 12033
+Commit point reached - logical record count 12097
+Commit point reached - logical record count 12161
+Commit point reached - logical record count 12225
+Commit point reached - logical record count 12289
+Commit point reached - logical record count 12353
+Commit point reached - logical record count 12417
+Commit point reached - logical record count 12481
+Commit point reached - logical record count 12545
+Commit point reached - logical record count 12609
+Commit point reached - logical record count 12673
+Commit point reached - logical record count 12737
+Commit point reached - logical record count 12801
+Commit point reached - logical record count 12865
+Commit point reached - logical record count 12929
+Commit point reached - logical record count 12993
+Commit point reached - logical record count 13057
+Commit point reached - logical record count 13121
+Commit point reached - logical record count 13185
+Commit point reached - logical record count 13249
+Commit point reached - logical record count 13313
+Commit point reached - logical record count 13377
+Commit point reached - logical record count 13441
+Commit point reached - logical record count 13505
+Commit point reached - logical record count 13569
+Commit point reached - logical record count 13633
+Commit point reached - logical record count 13697
+Commit point reached - logical record count 13761
+Commit point reached - logical record count 13825
+Commit point reached - logical record count 13889
+Commit point reached - logical record count 13953
+Commit point reached - logical record count 14017
+Commit point reached - logical record count 14081
+Commit point reached - logical record count 14145
+Commit point reached - logical record count 14209
+Commit point reached - logical record count 14273
+Commit point reached - logical record count 14337
+Commit point reached - logical record count 14401
+Commit point reached - logical record count 14444
+Commit point reached - logical record count 14508
+Commit point reached - logical record count 14572
+Commit point reached - logical record count 14636
+Commit point reached - logical record count 14700
+Commit point reached - logical record count 14764
+Commit point reached - logical record count 14828
+Commit point reached - logical record count 14892
+Commit point reached - logical record count 14956
+Commit point reached - logical record count 15020
+Commit point reached - logical record count 15084
+Commit point reached - logical record count 15148
+Commit point reached - logical record count 15212
+Commit point reached - logical record count 15276
+Commit point reached - logical record count 15340
+Commit point reached - logical record count 15404
+Commit point reached - logical record count 15468
+Commit point reached - logical record count 15532
+Commit point reached - logical record count 15596
+Commit point reached - logical record count 15660
+Commit point reached - logical record count 15724
+Commit point reached - logical record count 15788
+Commit point reached - logical record count 15852
+Commit point reached - logical record count 15916
+Commit point reached - logical record count 15980
+Commit point reached - logical record count 16044
+Commit point reached - logical record count 16108
+Commit point reached - logical record count 16172
+Commit point reached - logical record count 16236
+Commit point reached - logical record count 16300
+Commit point reached - logical record count 16364
+Commit point reached - logical record count 16428
+Commit point reached - logical record count 16492
+Commit point reached - logical record count 16556
+Commit point reached - logical record count 16620
+Commit point reached - logical record count 16684
+Commit point reached - logical record count 16748
+Commit point reached - logical record count 16812
+Commit point reached - logical record count 16876
+Commit point reached - logical record count 16940
+Commit point reached - logical record count 17004
+Commit point reached - logical record count 17068
+Commit point reached - logical record count 17132
+Commit point reached - logical record count 17196
+Commit point reached - logical record count 17260
+Commit point reached - logical record count 17324
+Commit point reached - logical record count 17388
+Commit point reached - logical record count 17452
+Commit point reached - logical record count 17516
+Commit point reached - logical record count 17580
+Commit point reached - logical record count 17644
+Commit point reached - logical record count 17708
+Commit point reached - logical record count 17772
+Commit point reached - logical record count 17836
+Commit point reached - logical record count 17900
+Commit point reached - logical record count 17964
+Commit point reached - logical record count 18028
+Commit point reached - logical record count 18092
+Commit point reached - logical record count 18156
+Commit point reached - logical record count 18220
+Commit point reached - logical record count 18284
+Commit point reached - logical record count 18348
+Commit point reached - logical record count 18412
+Commit point reached - logical record count 18476
+Commit point reached - logical record count 18540
+Commit point reached - logical record count 18604
+Commit point reached - logical record count 18668
+Commit point reached - logical record count 18732
+Commit point reached - logical record count 18796
+Commit point reached - logical record count 18860
+Commit point reached - logical record count 18924
+Commit point reached - logical record count 18988
+Commit point reached - logical record count 19052
+Commit point reached - logical record count 19116
+Commit point reached - logical record count 19180
+Commit point reached - logical record count 19244
+Commit point reached - logical record count 19308
+Commit point reached - logical record count 19372
+Commit point reached - logical record count 19436
+Commit point reached - logical record count 19500
+Commit point reached - logical record count 19564
+Commit point reached - logical record count 19628
+Commit point reached - logical record count 19692
+Commit point reached - logical record count 19756
+Commit point reached - logical record count 19820
+Commit point reached - logical record count 19884
+Commit point reached - logical record count 19948
+Commit point reached - logical record count 20012
+Commit point reached - logical record count 20076
+Commit point reached - logical record count 20140
+Commit point reached - logical record count 20204
+Commit point reached - logical record count 20268
+Commit point reached - logical record count 20332
+Commit point reached - logical record count 20396
+Commit point reached - logical record count 20460
+Commit point reached - logical record count 20524
+Commit point reached - logical record count 20588
+Commit point reached - logical record count 20652
+Commit point reached - logical record count 20716
+Commit point reached - logical record count 20780
+Commit point reached - logical record count 20844
+Commit point reached - logical record count 20908
+Commit point reached - logical record count 20972
+Commit point reached - logical record count 21036
+Commit point reached - logical record count 21100
+Commit point reached - logical record count 21164
+Commit point reached - logical record count 21228
+Commit point reached - logical record count 21292
+Commit point reached - logical record count 21356
+Commit point reached - logical record count 21420
+Commit point reached - logical record count 21484
+Commit point reached - logical record count 21548
+Commit point reached - logical record count 21612
+Commit point reached - logical record count 21676
+Commit point reached - logical record count 21740
+Commit point reached - logical record count 21804
+Commit point reached - logical record count 21868
+Commit point reached - logical record count 21932
+Commit point reached - logical record count 21996
+Commit point reached - logical record count 22060
+Commit point reached - logical record count 22124
+Commit point reached - logical record count 22188
+Commit point reached - logical record count 22252
+Commit point reached - logical record count 22316
+Commit point reached - logical record count 22380
+Commit point reached - logical record count 22444
+Commit point reached - logical record count 22508
+Commit point reached - logical record count 22572
+Commit point reached - logical record count 22636
+Commit point reached - logical record count 22700
+Commit point reached - logical record count 22764
+Commit point reached - logical record count 22828
+Commit point reached - logical record count 22892
+Commit point reached - logical record count 22956
+Commit point reached - logical record count 23020
+Commit point reached - logical record count 23084
+Commit point reached - logical record count 23148
+Commit point reached - logical record count 23212
+Commit point reached - logical record count 23276
+Commit point reached - logical record count 23340
+Commit point reached - logical record count 23404
+Commit point reached - logical record count 23468
+Commit point reached - logical record count 23532
+Commit point reached - logical record count 23596
+Commit point reached - logical record count 23660
+Commit point reached - logical record count 23724
+Commit point reached - logical record count 23788
+Commit point reached - logical record count 23852
+Commit point reached - logical record count 23916
+Commit point reached - logical record count 23980
+Commit point reached - logical record count 24044
+Commit point reached - logical record count 24108
+Commit point reached - logical record count 24172
+Commit point reached - logical record count 24236
+Commit point reached - logical record count 24300
+Commit point reached - logical record count 24364
+Commit point reached - logical record count 24428
+Commit point reached - logical record count 24492
+Commit point reached - logical record count 24556
+Commit point reached - logical record count 24620
+Commit point reached - logical record count 24684
+Commit point reached - logical record count 24748
+Commit point reached - logical record count 24812
+Commit point reached - logical record count 24876
+Commit point reached - logical record count 24940
+Commit point reached - logical record count 25004
+Commit point reached - logical record count 25068
+Commit point reached - logical record count 25132
+Commit point reached - logical record count 25196
+Commit point reached - logical record count 25260
+Commit point reached - logical record count 25324
+Commit point reached - logical record count 25388
+Commit point reached - logical record count 25452
+Commit point reached - logical record count 25516
+Commit point reached - logical record count 25580
+Commit point reached - logical record count 25644
+Commit point reached - logical record count 25708
+Commit point reached - logical record count 25772
+Commit point reached - logical record count 25836
+Commit point reached - logical record count 25900
+Commit point reached - logical record count 25964
+Commit point reached - logical record count 26028
+Commit point reached - logical record count 26092
+Commit point reached - logical record count 26156
+Commit point reached - logical record count 26220
+Commit point reached - logical record count 26284
+Commit point reached - logical record count 26348
+Commit point reached - logical record count 26412
+Commit point reached - logical record count 26476
+Commit point reached - logical record count 26540
+Commit point reached - logical record count 26604
+Commit point reached - logical record count 26668
+Commit point reached - logical record count 26732
+Commit point reached - logical record count 26796
+Commit point reached - logical record count 26860
+Commit point reached - logical record count 26924
+Commit point reached - logical record count 26988
+Commit point reached - logical record count 27052
+Commit point reached - logical record count 27116
+Commit point reached - logical record count 27180
+Commit point reached - logical record count 27244
+Commit point reached - logical record count 27308
+Commit point reached - logical record count 27372
+Commit point reached - logical record count 27436
+Commit point reached - logical record count 27500
+Commit point reached - logical record count 27564
+Commit point reached - logical record count 27628
+Commit point reached - logical record count 27692
+Commit point reached - logical record count 27756
+Commit point reached - logical record count 27820
+Commit point reached - logical record count 27884
+Commit point reached - logical record count 27948
+Commit point reached - logical record count 28012
+Commit point reached - logical record count 28076
+Commit point reached - logical record count 28140
+Commit point reached - logical record count 28204
+Commit point reached - logical record count 28268
+Commit point reached - logical record count 28332
+Commit point reached - logical record count 28396
+Commit point reached - logical record count 28460
+Commit point reached - logical record count 28524
+Commit point reached - logical record count 28588
+Commit point reached - logical record count 28652
+Commit point reached - logical record count 28716
+Commit point reached - logical record count 28780
+Commit point reached - logical record count 28839
+Commit point reached - logical record count 28903
+Commit point reached - logical record count 28967
+Commit point reached - logical record count 29031
+Commit point reached - logical record count 29095
+Commit point reached - logical record count 29159
+Commit point reached - logical record count 29223
+Commit point reached - logical record count 29287
+Commit point reached - logical record count 29351
+Commit point reached - logical record count 29415
+Commit point reached - logical record count 29479
+Commit point reached - logical record count 29543
+Commit point reached - logical record count 29607
+Commit point reached - logical record count 29671
+Commit point reached - logical record count 29735
+Commit point reached - logical record count 29799
+Commit point reached - logical record count 29863
+Commit point reached - logical record count 29927
+Commit point reached - logical record count 29991
+Commit point reached - logical record count 30055
+Commit point reached - logical record count 30119
+Commit point reached - logical record count 30183
+Commit point reached - logical record count 30247
+Commit point reached - logical record count 30311
+Commit point reached - logical record count 30375
+Commit point reached - logical record count 30439
+Commit point reached - logical record count 30503
+Commit point reached - logical record count 30567
+Commit point reached - logical record count 30631
+Commit point reached - logical record count 30695
+Commit point reached - logical record count 30759
+Commit point reached - logical record count 30823
+Commit point reached - logical record count 30887
+Commit point reached - logical record count 30951
+Commit point reached - logical record count 31015
+Commit point reached - logical record count 31079
+Commit point reached - logical record count 31143
+Commit point reached - logical record count 31207
+Commit point reached - logical record count 31271
+Commit point reached - logical record count 31335
+Commit point reached - logical record count 31399
+Commit point reached - logical record count 31463
+Commit point reached - logical record count 31527
+Commit point reached - logical record count 31591
+Commit point reached - logical record count 31655
+Commit point reached - logical record count 31719
+Commit point reached - logical record count 31783
+Commit point reached - logical record count 31847
+Commit point reached - logical record count 31911
+Commit point reached - logical record count 31975
+Commit point reached - logical record count 32039
+Commit point reached - logical record count 32103
+Commit point reached - logical record count 32167
+Commit point reached - logical record count 32231
+Commit point reached - logical record count 32295
+Commit point reached - logical record count 32359
+Commit point reached - logical record count 32423
+Commit point reached - logical record count 32487
+Commit point reached - logical record count 32551
+Commit point reached - logical record count 32615
+Commit point reached - logical record count 32679
+Commit point reached - logical record count 32743
+Commit point reached - logical record count 32807
+Commit point reached - logical record count 32871
+Commit point reached - logical record count 32935
+Commit point reached - logical record count 32999
+Commit point reached - logical record count 33063
+Commit point reached - logical record count 33127
+Commit point reached - logical record count 33191
+Commit point reached - logical record count 33255
+Commit point reached - logical record count 33319
+Commit point reached - logical record count 33383
+Commit point reached - logical record count 33447
+Commit point reached - logical record count 33511
+Commit point reached - logical record count 33575
+Commit point reached - logical record count 33639
+Commit point reached - logical record count 33703
+Commit point reached - logical record count 33767
+Commit point reached - logical record count 33831
+Commit point reached - logical record count 33895
+Commit point reached - logical record count 33959
+Commit point reached - logical record count 34023
+Commit point reached - logical record count 34087
+Commit point reached - logical record count 34151
+Commit point reached - logical record count 34215
+Commit point reached - logical record count 34279
+Commit point reached - logical record count 34343
+Commit point reached - logical record count 34407
+Commit point reached - logical record count 34471
+Commit point reached - logical record count 34535
+Commit point reached - logical record count 34599
+Commit point reached - logical record count 34663
+Commit point reached - logical record count 34727
+Commit point reached - logical record count 34791
+Commit point reached - logical record count 34855
+Commit point reached - logical record count 34919
+Commit point reached - logical record count 34983
+Commit point reached - logical record count 35047
+Commit point reached - logical record count 35111
+Commit point reached - logical record count 35175
+Commit point reached - logical record count 35239
+Commit point reached - logical record count 35303
+Commit point reached - logical record count 35367
+Commit point reached - logical record count 35431
+Commit point reached - logical record count 35495
+Commit point reached - logical record count 35559
+Commit point reached - logical record count 35623
+Commit point reached - logical record count 35687
+Commit point reached - logical record count 35751
+Commit point reached - logical record count 35815
+Commit point reached - logical record count 35879
+Commit point reached - logical record count 35943
+Commit point reached - logical record count 36007
+Commit point reached - logical record count 36071
+Commit point reached - logical record count 36135
+Commit point reached - logical record count 36199
+Commit point reached - logical record count 36263
+Commit point reached - logical record count 36327
+Commit point reached - logical record count 36391
+Commit point reached - logical record count 36455
+Commit point reached - logical record count 36519
+Commit point reached - logical record count 36583
+Commit point reached - logical record count 36647
+Commit point reached - logical record count 36711
+Commit point reached - logical record count 36775
+Commit point reached - logical record count 36839
+Commit point reached - logical record count 36903
+Commit point reached - logical record count 36967
+Commit point reached - logical record count 37031
+Commit point reached - logical record count 37095
+Commit point reached - logical record count 37159
+Commit point reached - logical record count 37223
+Commit point reached - logical record count 37287
+Commit point reached - logical record count 37351
+Commit point reached - logical record count 37415
+Commit point reached - logical record count 37479
+Commit point reached - logical record count 37543
+Commit point reached - logical record count 37607
+Commit point reached - logical record count 37671
+Commit point reached - logical record count 37735
+Commit point reached - logical record count 37799
+Commit point reached - logical record count 37863
+Commit point reached - logical record count 37927
+Commit point reached - logical record count 37991
+Commit point reached - logical record count 38055
+Commit point reached - logical record count 38119
+Commit point reached - logical record count 38183
+Commit point reached - logical record count 38247
+Commit point reached - logical record count 38311
+Commit point reached - logical record count 38375
+Commit point reached - logical record count 38439
+Commit point reached - logical record count 38503
+Commit point reached - logical record count 38567
+Commit point reached - logical record count 38631
+Commit point reached - logical record count 38695
+Commit point reached - logical record count 38759
+Commit point reached - logical record count 38823
+Commit point reached - logical record count 38887
+Commit point reached - logical record count 38951
+Commit point reached - logical record count 39015
+Commit point reached - logical record count 39079
+Commit point reached - logical record count 39143
+Commit point reached - logical record count 39207
+Commit point reached - logical record count 39271
+Commit point reached - logical record count 39335
+Commit point reached - logical record count 39399
+Commit point reached - logical record count 39463
+Commit point reached - logical record count 39527
+Commit point reached - logical record count 39591
+Commit point reached - logical record count 39655
+Commit point reached - logical record count 39719
+Commit point reached - logical record count 39783
+Commit point reached - logical record count 39847
+Commit point reached - logical record count 39911
+Commit point reached - logical record count 39955

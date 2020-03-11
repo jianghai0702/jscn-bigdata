@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "DWD_DNS_UP_STREAM.py", line 24, in <module>
+    from hqltools import *
+  File "/AiInsight/config/hqltools.py", line 8, in <module>
+    import pyhs2
+ImportError: No module named pyhs2

@@ -1,0 +1,90 @@
+nohup: 忽略输入
+2017-09-16 22:17:42,845 [INFO] {hqltools.py:365} 程序开始执行
+2017-09-16 22:17:43,265 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table st_dns_response_failure_m partition(pt_mon = 201708)
+    select
+       t2.OWN_CORP_STD_ORG_CODE    --标准归属分公司编码
+       ,t3.STD_ORG_NAME    --标准归属分公司名称
+       ,t1.ANSWER_CODE     --应答代码 
+       ,'' ANSWER_NAME     --应答含义 
+       ,sum(COUNT) RESPONSE_COUNT              --失败次数
+       ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date  
+    from dwa_dns_down_stream_d t1 
+   inner join dwa_fact_rpt_ins_prod_mon t2
+      on t1.login_name = t2.login_name
+    left join dim_std_organize t3
+      on t2.own_corp_std_org_code=t3.std_org_code
+   where t2.pt_mon = 201708
+     and substr(t1.pt_time,1,6) = 201708
+     and t1.ANSWER_CODE <> '0'
+   group by t2.OWN_CORP_STD_ORG_CODE
+            ,t3.STD_ORG_NAME
+            ,t1.ANSWER_CODE
+     
+2017-09-16 22:18:55,502 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-16 22:18:55,616 [INFO] {hqltools.py:50} Query sql is:
+insert into table st_dns_response_failure_m partition(pt_mon = 201708)
+select 
+        '10'    --标准归属分公司编码
+       ,'江苏有线'    --标准归属分公司名称
+       ,'下行减上行差异次数' ANSWER_CODE     --应答代码 
+       ,'' ANSWER_NAME     --应答含义 
+       ,t1.count-t2.count RESPONSE_COUNT              --失败次数
+       ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date  
+from (select count(1) as count from dwd_dns_up_stream where substr(pt_time,1,6) = 201708 and pt_time >20170802) t1 --上行
+    ,(select count(1) as count from dwd_dns_down_stream where substr(pt_time,1,6) = 201708 and pt_time >20170802) t2 --下行
+
+  
+2017-09-16 23:54:44,279 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-16 23:54:44,305 [INFO] {hqltools.py:387} 程序执行成功. 删除锁文件 /AiInsight/logs/ST_DNS_RESPONSE_FAILURE_M_20170901.lock
+20170831
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-09-16 23:54:48,845 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.442 seconds, Fetched: 21 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-09-16 23:54:59,855 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.423 seconds, Fetched: 10 row(s)
+
+SQL*Plus: Release 11.2.0.4.0 Production on Sat Sep 16 23:55:06 2017
+
+Copyright (c) 1982, 2013, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> SQL> SQL> 
+21 rows deleted.
+
+Elapsed: 00:00:00.00
+SQL> 
+10 rows deleted.
+
+Elapsed: 00:00:00.00
+SQL> 
+Commit complete.
+
+Elapsed: 00:00:00.00
+SQL> Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Sat Sep 16 23:55:06 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 21
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Sat Sep 16 23:55:06 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 10

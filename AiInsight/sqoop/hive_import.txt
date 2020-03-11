@@ -1,0 +1,41 @@
+#
+# Options file for Sqoop import
+#
+
+
+import
+
+# 压缩 
+-z
+# 运行导数mapper节点（单节点）
+-m
+1
+
+# --direct
+# 连接数据库
+--connect
+jdbc:oracle:thin:@111.208.88.1:1521/jsbi
+# jdbc:oracle:thin:@172.30.170.16:1521/tzcx
+
+--username
+#ZX
+SJGS
+--password
+#zx123
+sjgs123
+
+--verbose
+--hive-import
+--hive-overwrite
+
+# 空字符串转换
+--null-string
+'\\N'
+--null-non-string
+'\\N'
+
+# 剔除源数据中的hive分隔符，避免出现字段错误等分隔符导致的问题
+--hive-drop-import-delims
+
+# 目标目录已经存在时删除目标目录
+--delete-target-dir

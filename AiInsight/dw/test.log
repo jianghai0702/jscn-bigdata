@@ -1,0 +1,59 @@
+nohup: 忽略输入
+2017-09-01 22:54:32,671 [INFO] {hqltools.py:362} 程序开始执行
+2017-09-01 22:54:33,058 [INFO] {hqltools.py:50} Query sql is:
+truncate table s_tmp_dwa_dns_down_stream_d2  
+2017-09-01 22:54:33,174 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-01 22:54:33,255 [INFO] {hqltools.py:50} Query sql is:
+insert into table s_tmp_dwa_dns_down_stream_d2
+          select
+             t1.user_name AS login_name
+             ,t2.answer_code
+             ,t2.analysis_address
+             ,count(1)
+           from (select user_name,acct_start_time,acct_stop_time,client_ip_address
+                   from s_tmp_dwa_dns_down_stream_d1
+                  where substring(acct_start_time,1,8) = 20170804) t1 --在线记录
+           join (select query_time
+                       ,user_address
+                       ,split(analysis_address, ';')[0] as analysis_address
+                       ,answer_code
+                   from dwd_dns_down_stream
+                  where pt_time = 20170804
+                    and pt_hour % 12 = 0
+                 ) t2 --上行数据
+              on t2.user_address = t1.client_ip_address
+          where t1.acct_start_time <= t2.query_time
+            and t1.acct_stop_time >= t2.query_time
+          group by t1.user_name
+                   ,answer_code
+                   ,t2.analysis_address
+       
+2017-09-01 23:01:49,581 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-01 23:01:49,657 [INFO] {hqltools.py:50} Query sql is:
+insert into table s_tmp_dwa_dns_down_stream_d2
+          select
+             t1.user_name AS login_name
+             ,t2.answer_code
+             ,t2.analysis_address
+             ,count(1)
+           from (select user_name,acct_start_time,acct_stop_time,client_ip_address
+                   from s_tmp_dwa_dns_down_stream_d1
+                  where substring(acct_start_time,1,8) = 20170804) t1 --在线记录
+           join (select query_time
+                       ,user_address
+                       ,split(analysis_address, ';')[0] as analysis_address
+                       ,answer_code
+                   from dwd_dns_down_stream
+                  where pt_time = 20170804
+                    and pt_hour % 12 = 1
+                 ) t2 --上行数据
+              on t2.user_address = t1.client_ip_address
+          where t1.acct_start_time <= t2.query_time
+            and t1.acct_stop_time >= t2.query_time
+          group by t1.user_name
+                   ,answer_code
+                   ,t2.analysis_address
+       
+2017-09-01 23:02:57,800 [ERROR] {hqltools.py:55} 程序执行过程中发生异常, 错误信息如下:
+'Error while processing statement: FAILED: Execution Error, return code 2 from org.apache.hadoop.hive.ql.exec.mr.MapRedTask'
+2017-09-01 23:02:57,999 [ERROR] {hqltools.py:58} 程序正在退出. 删除锁文件  /AiInsight/logs/DWA_DNS_DOWN_STREAM_D_20170805.lock

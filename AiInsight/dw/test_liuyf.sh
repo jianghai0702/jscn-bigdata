@@ -1,0 +1,5 @@
+python DWA_DNS_UP_STREAM_D.py 20170807
+sleep 30
+python DWA_DNS_UP_STREAM_D.py 20170808
+sleep 30
+python DWA_DNS_UP_STREAM_D.py 20170809

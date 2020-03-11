@@ -1,0 +1,32 @@
+#
+# Options file for Sqoop export
+#
+
+
+export
+
+# 运行导数mapper节点（单节点）
+#-m
+#1
+
+#--direct
+# 连接数据库
+--connect
+jdbc:mysql://111.208.67.27/st
+# jdbc:oracle:thin:@172.30.170.16:1521/tzcx
+
+--username
+#ZX
+st
+--password
+#zx123
+st
+
+--verbose
+
+
+# 空字符串转换
+--input-null-string
+'\\N'
+--input-null-non-string
+'\\N'

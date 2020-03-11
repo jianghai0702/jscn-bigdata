@@ -1,0 +1,802 @@
+nohup: 忽略输入
+2017-09-03 23:48:10,653 [INFO] {hqltools.py:362} 程序开始执行
+2017-09-03 23:48:24,616 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table st_diff_category_type_summary PARTITION(pt_mon = 201704)
+           select a.OWN_CORP_STD_ORG_CODE
+            ,b.STD_ORG_NAME
+            ,d.parent_id    --栏目id
+            ,e.CATEGORYNAME  --栏目名称
+            ,count(distinct case when a.DATA_SOURCE_CD like '%DR_ISMP%' then user_id else null end)
+            ,sum(case when a.DATA_SOURCE_CD like '%DR_ISMP%' then 1 else 0 end)
+            ,count(distinct case when a.DATA_SOURCE_CD = 'VOD' then user_id else null end)
+            ,sum(case when a.DATA_SOURCE_CD = 'VOD' then 1 else 0 end)
+            ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date--ETL处理时间
+     from dwd_dr_ismp_yyyymm a
+     left join dwd_dim_std_organize b
+       on a.OWN_CORP_STD_ORG_CODE = b.STD_ORG_CODE
+      and b.pt_mon = 201704
+     inner join dwd_vod_movie_master c
+       on a.CONTENT_ID = c.MOVASSETID
+      and c.pt_mon = 201704
+     inner join dwd_vod_category_master d
+       on c.categoryid = d.categoryid
+      and d.pt_mon = 201704
+     inner join dwd_vod_category_master e
+       on d.parent_id = e.categoryid
+      and e.pt_mon = 201704
+     where a.pt_mon = 201704
+      and d.parent_id in('567719','567720','567721')
+     group by a.OWN_CORP_STD_ORG_CODE
+            ,b.STD_ORG_NAME
+            ,d.parent_id
+            ,e.CATEGORYNAME    
+            
+2017-09-03 23:55:18,570 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-03 23:55:18,928 [INFO] {hqltools.py:50} Query sql is:
+insert into table st_diff_category_type_summary PARTITION(pt_mon = 201704)       
+select b.P_STD_ORG_CODE
+      ,c.STD_ORG_NAME
+      ,a.CATEGORY_TYPE_ID
+      ,a.CATEGORY_TYPE_NAME
+      ,sum(a.DR_USER_COUNT)
+      ,sum(a.DR_COUNT)
+      ,sum(a.LB_USER_COUNT)
+      ,sum(a.LB_COUNT)
+      ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date
+from st_diff_category_type_summary a
+inner join dwd_dim_std_organize b
+on a.OWN_CORP_STD_ORG_CODE = b.STD_ORG_CODE
+and b.pt_mon= 201704
+left join dwd_dim_std_organize c
+on b.P_STD_ORG_CODE = c.STD_ORG_CODE
+and c.pt_mon= 201704
+where a.pt_mon = 201704
+group by b.P_STD_ORG_CODE
+      ,c.STD_ORG_NAME
+      ,a.CATEGORY_TYPE_ID
+      ,a.CATEGORY_TYPE_NAME
+    
+2017-09-03 23:57:30,278 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-03 23:57:30,369 [INFO] {hqltools.py:50} Query sql is:
+insert into table st_diff_category_type_summary PARTITION(pt_mon = 201704)       
+select '10'
+      ,'江苏有线'
+      ,a.CATEGORY_TYPE_ID
+      ,a.CATEGORY_TYPE_NAME
+      ,sum(a.DR_USER_COUNT)
+      ,sum(a.DR_COUNT)
+      ,sum(a.LB_USER_COUNT)
+      ,sum(a.LB_COUNT)
+      ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date
+from st_diff_category_type_summary a
+where length(OWN_CORP_STD_ORG_CODE) = 6
+and a.pt_mon = 201704
+group by a.CATEGORY_TYPE_ID
+      ,a.CATEGORY_TYPE_NAME
+    
+2017-09-03 23:58:08,739 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-03 23:58:08,750 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/ST_DIFF_CATEGORY_TYPE_SUMMARY_20170501.lock
+2017-09-03 23:58:08,871 [INFO] {hqltools.py:362} 程序开始执行
+2017-09-03 23:58:09,585 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table st_diff_movie_dr_summary PARTITION(pt_mon = 201704)
+         select a.OWN_CORP_STD_ORG_CODE
+                  ,b.STD_ORG_NAME
+                  ,a.CONTENT_ID --节目ID
+                  ,c.MOVASSETNA --节目名称
+                  ,count(distinct case when a.DATA_SOURCE_CD like '%DR_ISMP%' then user_id else null end)
+                  ,sum(case when a.DATA_SOURCE_CD like '%DR_ISMP%' then 1 else 0 end)
+                  ,count(distinct case when a.DATA_SOURCE_CD = 'VOD' then user_id else null end)
+                  ,sum(case when a.DATA_SOURCE_CD = 'VOD' then 1 else 0 end)
+                  ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date--ETL处理时间
+           from dwd_dr_ismp_yyyymm a
+           left join dwd_dim_std_organize b
+             on a.OWN_CORP_STD_ORG_CODE = b.STD_ORG_CODE
+            and b.pt_mon = 201704
+           left join dwd_vod_movie_master c
+             on a.CONTENT_ID = c.MOVASSETID
+            and c.pt_mon = 201704
+           where a.pt_mon = 201704
+           group by a.OWN_CORP_STD_ORG_CODE
+                  ,b.STD_ORG_NAME
+                  ,a.CONTENT_ID
+                  ,c.MOVASSETNA
+            
+2017-09-04 00:05:22,229 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 00:05:22,313 [INFO] {hqltools.py:50} Query sql is:
+insert into table st_diff_movie_dr_summary PARTITION(pt_mon = 201704)       
+select b.P_STD_ORG_CODE
+      ,c.STD_ORG_NAME
+      ,a.MOVIE_ID
+      ,a.MOVIE_NAME
+      ,sum(a.DR_USER_COUNT)
+      ,sum(a.DR_COUNT)
+      ,sum(a.LB_USER_COUNT)
+      ,sum(a.LB_COUNT)
+      ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date
+from st_diff_movie_dr_summary a
+inner join dwd_dim_std_organize b
+on a.OWN_CORP_STD_ORG_CODE = b.STD_ORG_CODE
+and b.pt_mon= 201704
+left join dwd_dim_std_organize c
+on b.P_STD_ORG_CODE = c.STD_ORG_CODE
+and c.pt_mon= 201704
+where a.pt_mon = 201704
+group by b.P_STD_ORG_CODE
+      ,c.STD_ORG_NAME
+      ,a.MOVIE_ID
+      ,a.MOVIE_NAME
+    
+2017-09-04 00:06:57,204 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 00:06:57,464 [INFO] {hqltools.py:50} Query sql is:
+insert into table st_diff_movie_dr_summary PARTITION(pt_mon = 201704)       
+select '10'
+      ,'江苏有线'
+      ,a.MOVIE_ID
+      ,a.MOVIE_NAME
+      ,sum(a.DR_USER_COUNT)
+      ,sum(a.DR_COUNT)
+      ,sum(a.LB_USER_COUNT)
+      ,sum(a.LB_COUNT)
+      ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date
+from st_diff_movie_dr_summary a
+where length(OWN_CORP_STD_ORG_CODE) = 6
+and a.pt_mon = 201704
+group by a.MOVIE_ID
+      ,a.MOVIE_NAME
+    
+2017-09-04 00:07:41,626 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 00:07:41,647 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/ST_DIFF_MOVIE_DR_SUMMARY_20170501.lock
+2017-09-04 00:07:41,787 [INFO] {hqltools.py:362} 程序开始执行
+2017-09-04 00:07:42,245 [INFO] {hqltools.py:50} Query sql is:
+create table if not exists tmp_st_diff_num_dr_summary1
+            (
+             own_corp_std_org_code   string,
+             user_id                 string,
+             dr_count                int,
+             lb_count                int
+            )
+            stored as rcfile
+            LOCATION '/user/hive/TEMP/tmp_st_diff_num_dr_summary1'
+            
+2017-09-04 00:07:42,353 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 00:07:42,444 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table tmp_st_diff_num_dr_summary1
+select OWN_CORP_STD_ORG_CODE
+,user_id
+,sum(case when a.DATA_SOURCE_CD like '%DR_ISMP%' then 1 else 0 end) dr_count
+,sum(case when a.DATA_SOURCE_CD = 'VOD' then 1 else 0 end) lb_count
+from dwd_dr_ismp_yyyymm a
+where pt_mon= 201704
+group by OWN_CORP_STD_ORG_CODE
+,user_id
+    
+2017-09-04 00:09:35,157 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 00:09:35,371 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table st_diff_num_dr_summary PARTITION(pt_mon = 201704)       
+select a.OWN_CORP_STD_ORG_CODE
+      ,b.STD_ORG_NAME
+      ,a.DR_COUNT_TYPE
+      ,sum(a.DR_USER_COUNT)
+      ,sum(a.LB_USER_COUNT)
+      ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date
+from (
+--点播用户数
+select OWN_CORP_STD_ORG_CODE
+      ,(case when dr_count >0 and dr_count<=3 then '1-3次'
+            when dr_count >3 and dr_count<=5 then '3-5次'
+            when dr_count >5 and dr_count<=10 then '5-10次'
+            when dr_count >10  then '大于10次'
+         else 'null' end) as DR_COUNT_TYPE
+      ,count(1) as DR_USER_COUNT--点播用户数 
+      ,0 as LB_USER_COUNT--回看用户数 
+from tmp_st_diff_num_dr_summary1 t
+where dr_count > 0
+group by OWN_CORP_STD_ORG_CODE
+      ,(case when dr_count >0 and dr_count<=3 then '1-3次'
+            when dr_count >3 and dr_count<=5 then '3-5次'
+            when dr_count >5 and dr_count<=10 then '5-10次'
+            when dr_count >10  then '大于10次'
+         else 'null' end)
+union all 
+--回看用户数
+select OWN_CORP_STD_ORG_CODE
+      ,(case when lb_count >0 and lb_count<=3 then '1-3次'
+            when lb_count >3 and lb_count<=5 then '3-5次'
+            when lb_count >5 and lb_count<=10 then '5-10次'
+            when lb_count >10  then '大于10次'
+         else 'null' end) as DR_COUNT_TYPE
+      ,0 as DR_USER_COUNT--点播用户数
+      ,count(1) as LB_USER_COUNT--回看用户数 
+from tmp_st_diff_num_dr_summary1 t
+where lb_count > 0
+group by OWN_CORP_STD_ORG_CODE
+      ,(case when lb_count >0 and lb_count<=3 then '1-3次'
+            when lb_count >3 and lb_count<=5 then '3-5次'
+            when lb_count >5 and lb_count<=10 then '5-10次'
+            when lb_count >10  then '大于10次'
+         else 'null' end)
+) a
+left join dwd_dim_std_organize b
+on a.OWN_CORP_STD_ORG_CODE = b.STD_ORG_CODE
+and b.pt_mon= 201704
+group by a.OWN_CORP_STD_ORG_CODE
+      ,b.STD_ORG_NAME
+      ,a.DR_COUNT_TYPE
+    
+2017-09-04 00:12:57,068 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 00:12:57,789 [INFO] {hqltools.py:50} Query sql is:
+insert into table st_diff_num_dr_summary PARTITION(pt_mon = 201704)       
+select b.P_STD_ORG_CODE
+      ,c.STD_ORG_NAME
+      ,a.DR_COUNT_TYPE
+      ,sum(a.DR_USER_COUNT)
+      ,sum(a.LB_USER_COUNT)
+      ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date
+from st_diff_num_dr_summary a
+inner join dwd_dim_std_organize b
+on a.OWN_CORP_STD_ORG_CODE = b.STD_ORG_CODE
+and b.pt_mon= 201704
+left join dwd_dim_std_organize c
+on b.P_STD_ORG_CODE = c.STD_ORG_CODE
+and c.pt_mon= 201704
+where a.pt_mon = 201704
+group by b.P_STD_ORG_CODE
+      ,c.STD_ORG_NAME
+      ,a.DR_COUNT_TYPE
+    
+2017-09-04 00:14:19,342 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 00:14:19,446 [INFO] {hqltools.py:50} Query sql is:
+insert into table st_diff_num_dr_summary PARTITION(pt_mon = 201704)       
+select '10'
+      ,'江苏有线'
+      ,a.DR_COUNT_TYPE
+      ,sum(a.DR_USER_COUNT)
+      ,sum(a.LB_USER_COUNT)
+      ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date
+from st_diff_num_dr_summary a
+where length(OWN_CORP_STD_ORG_CODE) = 6
+and a.pt_mon = 201704
+group by a.DR_COUNT_TYPE
+    
+2017-09-04 00:14:44,579 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 00:14:44,643 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/ST_DIFF_NUM_DR_SUMMARY_20170501.lock
+2017-09-04 00:14:44,742 [INFO] {hqltools.py:362} 程序开始执行
+2017-09-04 00:14:45,225 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table st_diff_time_dr_summary PARTITION(pt_mon = 201704)       
+select a.OWN_CORP_STD_ORG_CODE
+       ,b.STD_ORG_NAME
+       ,'99'
+       ,'00:00-23:59'
+       ,count(distinct case when a.DATA_SOURCE_CD like '%DR_ISMP%' then user_id else null end)
+       ,sum(case when a.DATA_SOURCE_CD like '%DR_ISMP%' then 1 else 0 end)
+       ,count(distinct case when a.DATA_SOURCE_CD = 'VOD' then user_id else null end)
+       ,sum(case when a.DATA_SOURCE_CD = 'VOD' then 1 else 0 end)
+       ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date--ETL处理时间
+from dwd_dr_ismp_yyyymm a
+left join dwd_dim_std_organize b
+  on a.OWN_CORP_STD_ORG_CODE = b.STD_ORG_CODE
+ and b.pt_mon = 201704
+where a.pt_mon = 201704
+group by a.OWN_CORP_STD_ORG_CODE
+       ,b.STD_ORG_NAME
+    
+2017-09-04 00:18:45,235 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 00:18:45,325 [INFO] {hqltools.py:50} Query sql is:
+insert into table st_diff_time_dr_summary PARTITION(pt_mon = 201704)  
+select t1.OWN_CORP_STD_ORG_CODE
+       ,t1.STD_ORG_NAME
+       ,t2.std_times_code
+       ,t2.std_times_name
+       ,count(distinct case when t1.DATA_SOURCE_CD = 'DR' then user_id else null end)
+       ,sum(case when t1.DATA_SOURCE_CD = 'DR' then 1 else 0 end)
+       ,count(distinct case when t1.DATA_SOURCE_CD = 'LB' then user_id else null end)
+       ,sum(case when t1.DATA_SOURCE_CD = 'LB' then 1 else 0 end)
+       ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date--ETL处理时间
+FROM 
+(
+select a.OWN_CORP_STD_ORG_CODE
+       ,b.STD_ORG_NAME
+       ,b.p_std_org_code
+       ,user_id
+       ,from_unixtime(unix_timestamp(START_TIME,'yyyy/M/D HH:mm:ss'),'HH') dr_hour
+       ,(case when a.DATA_SOURCE_CD like '%DR_ISMP%' then 'DR'
+             when a.DATA_SOURCE_CD = 'VOD' then 'LB'
+            else '' end) as DATA_SOURCE_CD
+from dwd_dr_ismp_yyyymm a
+left join dwd_dim_std_organize b
+  on a.OWN_CORP_STD_ORG_CODE = b.STD_ORG_CODE
+ and b.pt_mon = 201704
+where a.pt_mon = 201704
+)t1
+,dim_std_times t2
+where cast(t1.dr_hour as int) >= cast(t2.min_value as int)
+and cast(t1.dr_hour as int) < cast(t2.max_value as int)
+and t2.std_times_code in (0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,34,38)
+group by t1.OWN_CORP_STD_ORG_CODE
+       ,t1.STD_ORG_NAME
+       ,t2.std_times_code
+       ,t2.std_times_name
+
+    
+2017-09-04 00:24:00,969 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 00:24:01,324 [INFO] {hqltools.py:50} Query sql is:
+insert into table st_diff_time_dr_summary PARTITION(pt_mon = 201704)       
+select b.P_STD_ORG_CODE
+      ,c.STD_ORG_NAME
+      ,a.std_times_code
+      ,a.std_times_name
+      ,sum(a.DR_USER_COUNT)
+      ,sum(a.DR_COUNT)
+      ,sum(a.LB_USER_COUNT)
+      ,sum(a.LB_COUNT)
+      ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date
+from st_diff_time_dr_summary a
+inner join dwd_dim_std_organize b
+on a.OWN_CORP_STD_ORG_CODE = b.STD_ORG_CODE
+and b.pt_mon= 201704
+left join dwd_dim_std_organize c
+on b.P_STD_ORG_CODE = c.STD_ORG_CODE
+and c.pt_mon= 201704
+where a.pt_mon = 201704
+group by b.P_STD_ORG_CODE
+      ,c.STD_ORG_NAME
+      ,a.std_times_code
+      ,a.std_times_name
+    
+2017-09-04 00:25:55,567 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 00:25:55,665 [INFO] {hqltools.py:50} Query sql is:
+insert into table st_diff_time_dr_summary PARTITION(pt_mon = 201704)       
+select '10'
+      ,'江苏有线'
+      ,a.std_times_code
+      ,a.std_times_name
+      ,sum(a.DR_USER_COUNT)
+      ,sum(a.DR_COUNT)
+      ,sum(a.LB_USER_COUNT)
+      ,sum(a.LB_COUNT)
+      ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date
+from st_diff_time_dr_summary a
+where length(OWN_CORP_STD_ORG_CODE) = 6
+and a.pt_mon = 201704
+group by a.std_times_code
+      ,a.std_times_name
+    
+2017-09-04 00:26:22,724 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 00:26:22,739 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/ST_DIFF_TIME_DR_SUMMARY_20170501.lock
+2017-09-04 00:26:24,118 [INFO] {hqltools.py:362} 程序开始执行
+2017-09-04 00:26:25,984 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table st_diff_category_dr_summary PARTITION(pt_mon = 201705)
+           select a.OWN_CORP_STD_ORG_CODE
+            ,b.STD_ORG_NAME
+            ,c.categoryid    --栏目id
+            ,d.CATEGORYNAME  --栏目名称
+            ,count(distinct case when a.DATA_SOURCE_CD like '%DR_ISMP%' then user_id else null end)
+            ,sum(case when a.DATA_SOURCE_CD like '%DR_ISMP%' then 1 else 0 end)
+            ,count(distinct case when a.DATA_SOURCE_CD = 'VOD' then user_id else null end)
+            ,sum(case when a.DATA_SOURCE_CD = 'VOD' then 1 else 0 end)
+            ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date--ETL处理时间
+     from dwd_dr_ismp_yyyymm a
+     left join dwd_dim_std_organize b
+       on a.OWN_CORP_STD_ORG_CODE = b.STD_ORG_CODE
+      and b.pt_mon = 201705
+     left join dwd_vod_movie_master c
+       on a.CONTENT_ID = c.MOVASSETID
+      and c.pt_mon = 201705
+     left join dwd_vod_category_master d
+       on c.categoryid = d.categoryid
+      and d.pt_mon = 201705
+     where a.pt_mon = 201705
+     group by a.OWN_CORP_STD_ORG_CODE
+            ,b.STD_ORG_NAME
+            ,c.categoryid
+            ,d.CATEGORYNAME    
+            
+2017-09-04 00:39:44,767 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 00:39:45,096 [INFO] {hqltools.py:50} Query sql is:
+insert into table st_diff_category_dr_summary PARTITION(pt_mon = 201705)       
+select b.P_STD_ORG_CODE
+      ,c.STD_ORG_NAME
+      ,a.CATEGORY_ID
+      ,a.CATEGORY_NAME
+      ,sum(a.DR_USER_COUNT)
+      ,sum(a.DR_COUNT)
+      ,sum(a.LB_USER_COUNT)
+      ,sum(a.LB_COUNT)
+      ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date
+from st_diff_category_dr_summary a
+inner join dwd_dim_std_organize b
+on a.OWN_CORP_STD_ORG_CODE = b.STD_ORG_CODE
+and b.pt_mon= 201705
+left join dwd_dim_std_organize c
+on b.P_STD_ORG_CODE = c.STD_ORG_CODE
+and c.pt_mon= 201705
+where a.pt_mon = 201705
+group by b.P_STD_ORG_CODE
+      ,c.STD_ORG_NAME
+      ,a.CATEGORY_ID
+      ,a.CATEGORY_NAME
+    
+2017-09-04 00:40:26,220 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 00:40:27,317 [INFO] {hqltools.py:50} Query sql is:
+insert into table st_diff_category_dr_summary PARTITION(pt_mon = 201705)       
+select '10'
+      ,'江苏有线'
+      ,a.CATEGORY_ID
+      ,a.CATEGORY_NAME
+      ,sum(a.DR_USER_COUNT)
+      ,sum(a.DR_COUNT)
+      ,sum(a.LB_USER_COUNT)
+      ,sum(a.LB_COUNT)
+      ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date
+from st_diff_category_dr_summary a
+where length(OWN_CORP_STD_ORG_CODE) = 6
+and a.pt_mon = 201705
+group by a.CATEGORY_ID
+      ,a.CATEGORY_NAME
+    
+2017-09-04 00:41:11,839 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 00:41:12,144 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/ST_DIFF_CATEGORY_DR_SUMMARY_20170601.lock
+2017-09-04 00:41:19,356 [INFO] {hqltools.py:362} 程序开始执行
+2017-09-04 00:41:31,570 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table st_diff_category_type_summary PARTITION(pt_mon = 201705)
+           select a.OWN_CORP_STD_ORG_CODE
+            ,b.STD_ORG_NAME
+            ,d.parent_id    --栏目id
+            ,e.CATEGORYNAME  --栏目名称
+            ,count(distinct case when a.DATA_SOURCE_CD like '%DR_ISMP%' then user_id else null end)
+            ,sum(case when a.DATA_SOURCE_CD like '%DR_ISMP%' then 1 else 0 end)
+            ,count(distinct case when a.DATA_SOURCE_CD = 'VOD' then user_id else null end)
+            ,sum(case when a.DATA_SOURCE_CD = 'VOD' then 1 else 0 end)
+            ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date--ETL处理时间
+     from dwd_dr_ismp_yyyymm a
+     left join dwd_dim_std_organize b
+       on a.OWN_CORP_STD_ORG_CODE = b.STD_ORG_CODE
+      and b.pt_mon = 201705
+     inner join dwd_vod_movie_master c
+       on a.CONTENT_ID = c.MOVASSETID
+      and c.pt_mon = 201705
+     inner join dwd_vod_category_master d
+       on c.categoryid = d.categoryid
+      and d.pt_mon = 201705
+     inner join dwd_vod_category_master e
+       on d.parent_id = e.categoryid
+      and e.pt_mon = 201705
+     where a.pt_mon = 201705
+      and d.parent_id in('567719','567720','567721')
+     group by a.OWN_CORP_STD_ORG_CODE
+            ,b.STD_ORG_NAME
+            ,d.parent_id
+            ,e.CATEGORYNAME    
+            
+2017-09-04 00:48:21,679 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 00:48:21,764 [INFO] {hqltools.py:50} Query sql is:
+insert into table st_diff_category_type_summary PARTITION(pt_mon = 201705)       
+select b.P_STD_ORG_CODE
+      ,c.STD_ORG_NAME
+      ,a.CATEGORY_TYPE_ID
+      ,a.CATEGORY_TYPE_NAME
+      ,sum(a.DR_USER_COUNT)
+      ,sum(a.DR_COUNT)
+      ,sum(a.LB_USER_COUNT)
+      ,sum(a.LB_COUNT)
+      ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date
+from st_diff_category_type_summary a
+inner join dwd_dim_std_organize b
+on a.OWN_CORP_STD_ORG_CODE = b.STD_ORG_CODE
+and b.pt_mon= 201705
+left join dwd_dim_std_organize c
+on b.P_STD_ORG_CODE = c.STD_ORG_CODE
+and c.pt_mon= 201705
+where a.pt_mon = 201705
+group by b.P_STD_ORG_CODE
+      ,c.STD_ORG_NAME
+      ,a.CATEGORY_TYPE_ID
+      ,a.CATEGORY_TYPE_NAME
+    
+2017-09-04 00:49:24,055 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 00:49:24,444 [INFO] {hqltools.py:50} Query sql is:
+insert into table st_diff_category_type_summary PARTITION(pt_mon = 201705)       
+select '10'
+      ,'江苏有线'
+      ,a.CATEGORY_TYPE_ID
+      ,a.CATEGORY_TYPE_NAME
+      ,sum(a.DR_USER_COUNT)
+      ,sum(a.DR_COUNT)
+      ,sum(a.LB_USER_COUNT)
+      ,sum(a.LB_COUNT)
+      ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date
+from st_diff_category_type_summary a
+where length(OWN_CORP_STD_ORG_CODE) = 6
+and a.pt_mon = 201705
+group by a.CATEGORY_TYPE_ID
+      ,a.CATEGORY_TYPE_NAME
+    
+2017-09-04 00:49:56,715 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 00:49:56,741 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/ST_DIFF_CATEGORY_TYPE_SUMMARY_20170601.lock
+2017-09-04 00:49:56,861 [INFO] {hqltools.py:362} 程序开始执行
+2017-09-04 00:49:57,254 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table st_diff_movie_dr_summary PARTITION(pt_mon = 201705)
+         select a.OWN_CORP_STD_ORG_CODE
+                  ,b.STD_ORG_NAME
+                  ,a.CONTENT_ID --节目ID
+                  ,c.MOVASSETNA --节目名称
+                  ,count(distinct case when a.DATA_SOURCE_CD like '%DR_ISMP%' then user_id else null end)
+                  ,sum(case when a.DATA_SOURCE_CD like '%DR_ISMP%' then 1 else 0 end)
+                  ,count(distinct case when a.DATA_SOURCE_CD = 'VOD' then user_id else null end)
+                  ,sum(case when a.DATA_SOURCE_CD = 'VOD' then 1 else 0 end)
+                  ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date--ETL处理时间
+           from dwd_dr_ismp_yyyymm a
+           left join dwd_dim_std_organize b
+             on a.OWN_CORP_STD_ORG_CODE = b.STD_ORG_CODE
+            and b.pt_mon = 201705
+           left join dwd_vod_movie_master c
+             on a.CONTENT_ID = c.MOVASSETID
+            and c.pt_mon = 201705
+           where a.pt_mon = 201705
+           group by a.OWN_CORP_STD_ORG_CODE
+                  ,b.STD_ORG_NAME
+                  ,a.CONTENT_ID
+                  ,c.MOVASSETNA
+            
+2017-09-04 00:56:53,137 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 00:56:53,263 [INFO] {hqltools.py:50} Query sql is:
+insert into table st_diff_movie_dr_summary PARTITION(pt_mon = 201705)       
+select b.P_STD_ORG_CODE
+      ,c.STD_ORG_NAME
+      ,a.MOVIE_ID
+      ,a.MOVIE_NAME
+      ,sum(a.DR_USER_COUNT)
+      ,sum(a.DR_COUNT)
+      ,sum(a.LB_USER_COUNT)
+      ,sum(a.LB_COUNT)
+      ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date
+from st_diff_movie_dr_summary a
+inner join dwd_dim_std_organize b
+on a.OWN_CORP_STD_ORG_CODE = b.STD_ORG_CODE
+and b.pt_mon= 201705
+left join dwd_dim_std_organize c
+on b.P_STD_ORG_CODE = c.STD_ORG_CODE
+and c.pt_mon= 201705
+where a.pt_mon = 201705
+group by b.P_STD_ORG_CODE
+      ,c.STD_ORG_NAME
+      ,a.MOVIE_ID
+      ,a.MOVIE_NAME
+    
+2017-09-04 00:57:34,245 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 00:57:34,344 [INFO] {hqltools.py:50} Query sql is:
+insert into table st_diff_movie_dr_summary PARTITION(pt_mon = 201705)       
+select '10'
+      ,'江苏有线'
+      ,a.MOVIE_ID
+      ,a.MOVIE_NAME
+      ,sum(a.DR_USER_COUNT)
+      ,sum(a.DR_COUNT)
+      ,sum(a.LB_USER_COUNT)
+      ,sum(a.LB_COUNT)
+      ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date
+from st_diff_movie_dr_summary a
+where length(OWN_CORP_STD_ORG_CODE) = 6
+and a.pt_mon = 201705
+group by a.MOVIE_ID
+      ,a.MOVIE_NAME
+    
+2017-09-04 00:58:07,613 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 00:58:07,627 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/ST_DIFF_MOVIE_DR_SUMMARY_20170601.lock
+2017-09-04 00:58:07,702 [INFO] {hqltools.py:362} 程序开始执行
+2017-09-04 00:58:08,181 [INFO] {hqltools.py:50} Query sql is:
+create table if not exists tmp_st_diff_num_dr_summary1
+            (
+             own_corp_std_org_code   string,
+             user_id                 string,
+             dr_count                int,
+             lb_count                int
+            )
+            stored as rcfile
+            LOCATION '/user/hive/TEMP/tmp_st_diff_num_dr_summary1'
+            
+2017-09-04 00:58:08,201 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 00:58:08,285 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table tmp_st_diff_num_dr_summary1
+select OWN_CORP_STD_ORG_CODE
+,user_id
+,sum(case when a.DATA_SOURCE_CD like '%DR_ISMP%' then 1 else 0 end) dr_count
+,sum(case when a.DATA_SOURCE_CD = 'VOD' then 1 else 0 end) lb_count
+from dwd_dr_ismp_yyyymm a
+where pt_mon= 201705
+group by OWN_CORP_STD_ORG_CODE
+,user_id
+    
+2017-09-04 01:00:24,092 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 01:00:24,141 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table st_diff_num_dr_summary PARTITION(pt_mon = 201705)       
+select a.OWN_CORP_STD_ORG_CODE
+      ,b.STD_ORG_NAME
+      ,a.DR_COUNT_TYPE
+      ,sum(a.DR_USER_COUNT)
+      ,sum(a.LB_USER_COUNT)
+      ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date
+from (
+--点播用户数
+select OWN_CORP_STD_ORG_CODE
+      ,(case when dr_count >0 and dr_count<=3 then '1-3次'
+            when dr_count >3 and dr_count<=5 then '3-5次'
+            when dr_count >5 and dr_count<=10 then '5-10次'
+            when dr_count >10  then '大于10次'
+         else 'null' end) as DR_COUNT_TYPE
+      ,count(1) as DR_USER_COUNT--点播用户数 
+      ,0 as LB_USER_COUNT--回看用户数 
+from tmp_st_diff_num_dr_summary1 t
+where dr_count > 0
+group by OWN_CORP_STD_ORG_CODE
+      ,(case when dr_count >0 and dr_count<=3 then '1-3次'
+            when dr_count >3 and dr_count<=5 then '3-5次'
+            when dr_count >5 and dr_count<=10 then '5-10次'
+            when dr_count >10  then '大于10次'
+         else 'null' end)
+union all 
+--回看用户数
+select OWN_CORP_STD_ORG_CODE
+      ,(case when lb_count >0 and lb_count<=3 then '1-3次'
+            when lb_count >3 and lb_count<=5 then '3-5次'
+            when lb_count >5 and lb_count<=10 then '5-10次'
+            when lb_count >10  then '大于10次'
+         else 'null' end) as DR_COUNT_TYPE
+      ,0 as DR_USER_COUNT--点播用户数
+      ,count(1) as LB_USER_COUNT--回看用户数 
+from tmp_st_diff_num_dr_summary1 t
+where lb_count > 0
+group by OWN_CORP_STD_ORG_CODE
+      ,(case when lb_count >0 and lb_count<=3 then '1-3次'
+            when lb_count >3 and lb_count<=5 then '3-5次'
+            when lb_count >5 and lb_count<=10 then '5-10次'
+            when lb_count >10  then '大于10次'
+         else 'null' end)
+) a
+left join dwd_dim_std_organize b
+on a.OWN_CORP_STD_ORG_CODE = b.STD_ORG_CODE
+and b.pt_mon= 201705
+group by a.OWN_CORP_STD_ORG_CODE
+      ,b.STD_ORG_NAME
+      ,a.DR_COUNT_TYPE
+    
+2017-09-04 01:02:57,434 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 01:02:57,546 [INFO] {hqltools.py:50} Query sql is:
+insert into table st_diff_num_dr_summary PARTITION(pt_mon = 201705)       
+select b.P_STD_ORG_CODE
+      ,c.STD_ORG_NAME
+      ,a.DR_COUNT_TYPE
+      ,sum(a.DR_USER_COUNT)
+      ,sum(a.LB_USER_COUNT)
+      ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date
+from st_diff_num_dr_summary a
+inner join dwd_dim_std_organize b
+on a.OWN_CORP_STD_ORG_CODE = b.STD_ORG_CODE
+and b.pt_mon= 201705
+left join dwd_dim_std_organize c
+on b.P_STD_ORG_CODE = c.STD_ORG_CODE
+and c.pt_mon= 201705
+where a.pt_mon = 201705
+group by b.P_STD_ORG_CODE
+      ,c.STD_ORG_NAME
+      ,a.DR_COUNT_TYPE
+    
+2017-09-04 01:03:26,005 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 01:03:26,118 [INFO] {hqltools.py:50} Query sql is:
+insert into table st_diff_num_dr_summary PARTITION(pt_mon = 201705)       
+select '10'
+      ,'江苏有线'
+      ,a.DR_COUNT_TYPE
+      ,sum(a.DR_USER_COUNT)
+      ,sum(a.LB_USER_COUNT)
+      ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date
+from st_diff_num_dr_summary a
+where length(OWN_CORP_STD_ORG_CODE) = 6
+and a.pt_mon = 201705
+group by a.DR_COUNT_TYPE
+    
+2017-09-04 01:03:49,611 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 01:03:49,628 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/ST_DIFF_NUM_DR_SUMMARY_20170601.lock
+2017-09-04 01:03:49,836 [INFO] {hqltools.py:362} 程序开始执行
+2017-09-04 01:03:50,285 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table st_diff_time_dr_summary PARTITION(pt_mon = 201705)       
+select a.OWN_CORP_STD_ORG_CODE
+       ,b.STD_ORG_NAME
+       ,'99'
+       ,'00:00-23:59'
+       ,count(distinct case when a.DATA_SOURCE_CD like '%DR_ISMP%' then user_id else null end)
+       ,sum(case when a.DATA_SOURCE_CD like '%DR_ISMP%' then 1 else 0 end)
+       ,count(distinct case when a.DATA_SOURCE_CD = 'VOD' then user_id else null end)
+       ,sum(case when a.DATA_SOURCE_CD = 'VOD' then 1 else 0 end)
+       ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date--ETL处理时间
+from dwd_dr_ismp_yyyymm a
+left join dwd_dim_std_organize b
+  on a.OWN_CORP_STD_ORG_CODE = b.STD_ORG_CODE
+ and b.pt_mon = 201705
+where a.pt_mon = 201705
+group by a.OWN_CORP_STD_ORG_CODE
+       ,b.STD_ORG_NAME
+    
+2017-09-04 01:05:33,548 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 01:05:33,596 [INFO] {hqltools.py:50} Query sql is:
+insert into table st_diff_time_dr_summary PARTITION(pt_mon = 201705)  
+select t1.OWN_CORP_STD_ORG_CODE
+       ,t1.STD_ORG_NAME
+       ,t2.std_times_code
+       ,t2.std_times_name
+       ,count(distinct case when t1.DATA_SOURCE_CD = 'DR' then user_id else null end)
+       ,sum(case when t1.DATA_SOURCE_CD = 'DR' then 1 else 0 end)
+       ,count(distinct case when t1.DATA_SOURCE_CD = 'LB' then user_id else null end)
+       ,sum(case when t1.DATA_SOURCE_CD = 'LB' then 1 else 0 end)
+       ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date--ETL处理时间
+FROM 
+(
+select a.OWN_CORP_STD_ORG_CODE
+       ,b.STD_ORG_NAME
+       ,b.p_std_org_code
+       ,user_id
+       ,from_unixtime(unix_timestamp(START_TIME,'yyyy/M/D HH:mm:ss'),'HH') dr_hour
+       ,(case when a.DATA_SOURCE_CD like '%DR_ISMP%' then 'DR'
+             when a.DATA_SOURCE_CD = 'VOD' then 'LB'
+            else '' end) as DATA_SOURCE_CD
+from dwd_dr_ismp_yyyymm a
+left join dwd_dim_std_organize b
+  on a.OWN_CORP_STD_ORG_CODE = b.STD_ORG_CODE
+ and b.pt_mon = 201705
+where a.pt_mon = 201705
+)t1
+,dim_std_times t2
+where cast(t1.dr_hour as int) >= cast(t2.min_value as int)
+and cast(t1.dr_hour as int) < cast(t2.max_value as int)
+and t2.std_times_code in (0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,34,38)
+group by t1.OWN_CORP_STD_ORG_CODE
+       ,t1.STD_ORG_NAME
+       ,t2.std_times_code
+       ,t2.std_times_name
+
+    
+2017-09-04 01:09:16,301 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 01:09:16,384 [INFO] {hqltools.py:50} Query sql is:
+insert into table st_diff_time_dr_summary PARTITION(pt_mon = 201705)       
+select b.P_STD_ORG_CODE
+      ,c.STD_ORG_NAME
+      ,a.std_times_code
+      ,a.std_times_name
+      ,sum(a.DR_USER_COUNT)
+      ,sum(a.DR_COUNT)
+      ,sum(a.LB_USER_COUNT)
+      ,sum(a.LB_COUNT)
+      ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date
+from st_diff_time_dr_summary a
+inner join dwd_dim_std_organize b
+on a.OWN_CORP_STD_ORG_CODE = b.STD_ORG_CODE
+and b.pt_mon= 201705
+left join dwd_dim_std_organize c
+on b.P_STD_ORG_CODE = c.STD_ORG_CODE
+and c.pt_mon= 201705
+where a.pt_mon = 201705
+group by b.P_STD_ORG_CODE
+      ,c.STD_ORG_NAME
+      ,a.std_times_code
+      ,a.std_times_name
+    
+2017-09-04 01:09:53,797 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 01:09:53,879 [INFO] {hqltools.py:50} Query sql is:
+insert into table st_diff_time_dr_summary PARTITION(pt_mon = 201705)       
+select '10'
+      ,'江苏有线'
+      ,a.std_times_code
+      ,a.std_times_name
+      ,sum(a.DR_USER_COUNT)
+      ,sum(a.DR_COUNT)
+      ,sum(a.LB_USER_COUNT)
+      ,sum(a.LB_COUNT)
+      ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date
+from st_diff_time_dr_summary a
+where length(OWN_CORP_STD_ORG_CODE) = 6
+and a.pt_mon = 201705
+group by a.std_times_code
+      ,a.std_times_name
+    
+2017-09-04 01:10:40,118 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-04 01:10:40,123 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/ST_DIFF_TIME_DR_SUMMARY_20170601.lock

@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<BroadcastData code="1100000000" creationtime="20190611102403" version="2.0">
+<ProviderInfo id="CTI" name="深圳卫视"/>
+<SchedulerData type="PROGRAM"><Channel><ChannelText language="chi"><ChannelName>深圳卫视</ChannelName></ChannelText>
+<Event eventid="1" begintime="20190611000200" duration="005100" eventtype="00">
+<EventText language="chi">
+<Name>决胜制高点</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="2" begintime="20190611005300" duration="003300" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻(1495)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="3" begintime="20190611012600" duration="005000" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="4" begintime="20190611021600" duration="004000" eventtype="00">
+<EventText language="chi">
+<Name>爱国者(36)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="5" begintime="20190611025600" duration="004000" eventtype="00">
+<EventText language="chi">
+<Name>爱国者(37)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="6" begintime="20190611033600" duration="004000" eventtype="00">
+<EventText language="chi">
+<Name>爱国者(38)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="7" begintime="20190611041600" duration="004000" eventtype="00">
+<EventText language="chi">
+<Name>爱国者(39)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="8" begintime="20190611045600" duration="004200" eventtype="00">
+<EventText language="chi">
+<Name>爱国者(40)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="9" begintime="20190611053800" duration="003200" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻(1495)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="10" begintime="20190611061000" duration="005000" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="11" begintime="20190611070000" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>中华人民共和国国歌</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="12" begintime="20190611070100" duration="004400" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="13" begintime="20190611074500" duration="001700" eventtype="00">
+<EventText language="chi">
+<Name>专题栏目</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="14" begintime="20190611080200" duration="002600" eventtype="00">
+<EventText language="chi">
+<Name>百变马丁(29)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="15" begintime="20190611082800" duration="002600" eventtype="00">
+<EventText language="chi">
+<Name>百变马丁(30)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="16" begintime="20190611085400" duration="003600" eventtype="00">
+<EventText language="chi">
+<Name>激战江南(29)(21:25军情直播间)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="17" begintime="20190611093000" duration="004700" eventtype="00">
+<EventText language="chi">
+<Name>激战江南(30)(21:25军情直播间)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="18" begintime="20190611101700" duration="005000" eventtype="00">
+<EventText language="chi">
+<Name>激战江南(31)(21:25军情直播间)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="19" begintime="20190611110700" duration="004300" eventtype="00">
+<EventText language="chi">
+<Name>激战江南(32)(21:25军情直播间)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="20" begintime="20190611115000" duration="005400" eventtype="00">
+<EventText language="chi">
+<Name>正午30分</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="21" begintime="20190611124400" duration="004300" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻(1496)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="22" begintime="20190611132700" duration="005700" eventtype="00">
+<EventText language="chi">
+<Name>咱们相爱吧(44)(21:25军情直播间)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="23" begintime="20190611142400" duration="005700" eventtype="00">
+<EventText language="chi">
+<Name>咱们相爱吧(45)(21:25军情直播间)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="24" begintime="20190611152100" duration="005800" eventtype="00">
+<EventText language="chi">
+<Name>咱们相爱吧(46)(21:25军情直播间)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="25" begintime="20190611161900" duration="005900" eventtype="00">
+<EventText language="chi">
+<Name>咱们相爱吧(47)(21:25军情直播间)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="26" begintime="20190611171800" duration="004800" eventtype="00">
+<EventText language="chi">
+<Name>咱们相爱吧(48)(21:25军情直播间)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="27" begintime="20190611180600" duration="001900" eventtype="00">
+<EventText language="chi">
+<Name>商业栏目</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="28" begintime="20190611182500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>MV:我和我的祖国深圳版</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="29" begintime="20190611183000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>深视新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="30" begintime="20190611190000" duration="003800" eventtype="00">
+<EventText language="chi">
+<Name>转播中央台新闻联播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="31" begintime="20190611193800" duration="005400" eventtype="00">
+<EventText language="chi">
+<Name>逆流而上的你(10)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="32" begintime="20190611203200" duration="005300" eventtype="00">
+<EventText language="chi">
+<Name>逆流而上的你(11)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="33" begintime="20190611212500" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>军情直播间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="34" begintime="20190611222500" duration="010200" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="35" begintime="20190611232700" duration="013300" eventtype="00">
+<EventText language="chi">
+<Name>悦时尚</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="36" begintime="20190612010000" duration="005000" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="37" begintime="20190612015000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="38" begintime="20190612024500" duration="025500" eventtype="00">
+<EventText language="chi">
+<Name>怒火英雄</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="39" begintime="20190612054000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="40" begintime="20190612061000" duration="005000" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="41" begintime="20190612070000" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>中华人民共和国国歌</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="42" begintime="20190612070100" duration="005900" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="43" begintime="20190612080000" duration="005000" eventtype="00">
+<EventText language="chi">
+<Name>动画片</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="44" begintime="20190612085000" duration="022500" eventtype="00">
+<EventText language="chi">
+<Name>决战江南</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="45" begintime="20190612111500" duration="003500" eventtype="00">
+<EventText language="chi">
+<Name>上市公司说</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="46" begintime="20190612115000" duration="005300" eventtype="00">
+<EventText language="chi">
+<Name>正午30分</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="47" begintime="20190612124300" duration="003700" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="48" begintime="20190612132000" duration="051000" eventtype="00">
+<EventText language="chi">
+<Name>咱们相爱吧</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="49" begintime="20190612183000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>深视新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="50" begintime="20190612190000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>转播中央台新闻联播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="51" begintime="20190612193000" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>逆流而上的你(12)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="52" begintime="20190612203000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>逆流而上的你(13)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="53" begintime="20190612212500" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>关键洞察力</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="54" begintime="20190612222500" duration="010300" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="55" begintime="20190612232800" duration="003700" eventtype="00">
+<EventText language="chi">
+<Name>悦世界</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="56" begintime="20190613000500" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>关键洞察力</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="57" begintime="20190613010000" duration="005000" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="58" begintime="20190613015000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="59" begintime="20190613024500" duration="025500" eventtype="00">
+<EventText language="chi">
+<Name>怒火英雄</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="60" begintime="20190613054000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="61" begintime="20190613061000" duration="005000" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="62" begintime="20190613070000" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>中华人民共和国国歌</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="63" begintime="20190613070100" duration="005900" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="64" begintime="20190613080000" duration="005000" eventtype="00">
+<EventText language="chi">
+<Name>动画片</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="65" begintime="20190613085000" duration="030000" eventtype="00">
+<EventText language="chi">
+<Name>决战江南</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="66" begintime="20190613115000" duration="005300" eventtype="00">
+<EventText language="chi">
+<Name>正午30分</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="67" begintime="20190613124300" duration="003700" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="68" begintime="20190613132000" duration="051000" eventtype="00">
+<EventText language="chi">
+<Name>婚姻历险记</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="69" begintime="20190613183000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>深视新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="70" begintime="20190613190000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>转播中央台新闻联播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="71" begintime="20190613193000" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>逆流而上的你(14)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="72" begintime="20190613203000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>逆流而上的你(15)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="73" begintime="20190613212500" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>你好面试官</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="74" begintime="20190613222500" duration="010500" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="75" begintime="20190613233000" duration="004200" eventtype="00">
+<EventText language="chi">
+<Name>非常静距离</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="76" begintime="20190614001200" duration="004800" eventtype="00">
+<EventText language="chi">
+<Name>你好面试官</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="77" begintime="20190614010000" duration="043000" eventtype="00">
+<EventText language="chi">
+<Name>测试卡</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="78" begintime="20190614053000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="79" begintime="20190614060000" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="80" begintime="20190614070000" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>中华人民共和国国歌</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="81" begintime="20190614070100" duration="005900" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="82" begintime="20190614080000" duration="005000" eventtype="00">
+<EventText language="chi">
+<Name>动画片</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="83" begintime="20190614085000" duration="030000" eventtype="00">
+<EventText language="chi">
+<Name>决战江南</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="84" begintime="20190614115000" duration="005300" eventtype="00">
+<EventText language="chi">
+<Name>正午30分</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="85" begintime="20190614124300" duration="003700" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="86" begintime="20190614132000" duration="051000" eventtype="00">
+<EventText language="chi">
+<Name>婚姻历险记</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="87" begintime="20190614183000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>深视新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="88" begintime="20190614190000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>转播中央台新闻联播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="89" begintime="20190614193000" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>逆流而上的你(16)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="90" begintime="20190614203000" duration="013000" eventtype="00">
+<EventText language="chi">
+<Name>起舞吧!齐舞</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="91" begintime="20190614220000" duration="004000" eventtype="00">
+<EventText language="chi">
+<Name>齐舞小剧场</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="92" begintime="20190614224000" duration="010500" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="93" begintime="20190614234500" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>起舞吧!齐舞</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="94" begintime="20190615013000" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>勇士的荣耀</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="95" begintime="20190615023000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="96" begintime="20190615032500" duration="023500" eventtype="00">
+<EventText language="chi">
+<Name>怒火英雄</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="97" begintime="20190615060000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="98" begintime="20190615063000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="99" begintime="20190615070000" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>中华人民共和国国歌</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="100" begintime="20190615070100" duration="004900" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="101" begintime="20190615075000" duration="005000" eventtype="00">
+<EventText language="chi">
+<Name>决胜制高点</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="102" begintime="20190615084000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>辣妈学院</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="103" begintime="20190615093500" duration="020500" eventtype="00">
+<EventText language="chi">
+<Name>决战江南</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="104" begintime="20190615114000" duration="001000" eventtype="00">
+<EventText language="chi">
+<Name>宴遇美食荟</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="105" begintime="20190615115000" duration="005300" eventtype="00">
+<EventText language="chi">
+<Name>正午30分</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="106" begintime="20190615124300" duration="014200" eventtype="00">
+<EventText language="chi">
+<Name>起舞吧!齐舞</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="107" begintime="20190615142500" duration="040500" eventtype="00">
+<EventText language="chi">
+<Name>婚姻历险记</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="108" begintime="20190615183000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>深视新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="109" begintime="20190615190000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>转播中央台新闻联播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="110" begintime="20190615193000" duration="010500" eventtype="00">
+<EventText language="chi">
+<Name>逆流而上的你(17)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="111" begintime="20190615203500" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>逆流而上的你(18)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="112" begintime="20190615213000" duration="005000" eventtype="00">
+<EventText language="chi">
+<Name>非常静距离</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="113" begintime="20190615222000" duration="010500" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="114" begintime="20190615232500" duration="003500" eventtype="00">
+<EventText language="chi">
+<Name>上市公司说</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="115" begintime="20190616000000" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>勇士的荣耀</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="116" begintime="20190616010000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="117" begintime="20190616013000" duration="005000" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="118" begintime="20190616022000" duration="034000" eventtype="00">
+<EventText language="chi">
+<Name>怒火英雄</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="119" begintime="20190616060000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="120" begintime="20190616063000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>中国梦纪录片</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="121" begintime="20190616070000" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>中华人民共和国国歌</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="122" begintime="20190616070100" duration="005900" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="123" begintime="20190616080000" duration="005000" eventtype="00">
+<EventText language="chi">
+<Name>军情直播间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="124" begintime="20190616085000" duration="005000" eventtype="00">
+<EventText language="chi">
+<Name>辣妈学院</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="125" begintime="20190616094000" duration="013000" eventtype="00">
+<EventText language="chi">
+<Name>决战江南</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="126" begintime="20190616111000" duration="004000" eventtype="00">
+<EventText language="chi">
+<Name>温暖在身边</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="127" begintime="20190616115000" duration="005300" eventtype="00">
+<EventText language="chi">
+<Name>正午30分</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="128" begintime="20190616124300" duration="014700" eventtype="00">
+<EventText language="chi">
+<Name>起舞吧!齐舞</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="129" begintime="20190616143000" duration="014000" eventtype="00">
+<EventText language="chi">
+<Name>婚姻历险记</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="130" begintime="20190616161000" duration="011000" eventtype="00">
+<EventText language="chi">
+<Name>勇士的荣耀</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="131" begintime="20190616172000" duration="011000" eventtype="00">
+<EventText language="chi">
+<Name>辣妈学院</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="132" begintime="20190616183000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>深视新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="133" begintime="20190616190000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>转播中央台新闻联播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="134" begintime="20190616193000" duration="011500" eventtype="00">
+<EventText language="chi">
+<Name>逆流而上的你(19)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="135" begintime="20190616204500" duration="011500" eventtype="00">
+<EventText language="chi">
+<Name>逆流而上的你(20)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="136" begintime="20190616220000" duration="011000" eventtype="00">
+<EventText language="chi">
+<Name>勇士的荣耀</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="137" begintime="20190616231000" duration="010800" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="138" begintime="20190617001800" duration="003100" eventtype="00">
+<EventText language="chi">
+<Name>奇妙的民居</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="139" begintime="20190617004900" duration="003400" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="140" begintime="20190617012300" duration="004800" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="141" begintime="20190617021100" duration="034900" eventtype="00">
+<EventText language="chi">
+<Name>不夜场</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="142" begintime="20190617060000" duration="003100" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="143" begintime="20190617063100" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>专题节目</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="144" begintime="20190617070000" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>中华人民共和国国歌</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="145" begintime="20190617070100" duration="005900" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="146" begintime="20190617080000" duration="004700" eventtype="00">
+<EventText language="chi">
+<Name>动画片</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="147" begintime="20190617084700" duration="030300" eventtype="00">
+<EventText language="chi">
+<Name>精品剧场</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="148" begintime="20190617115000" duration="005300" eventtype="00">
+<EventText language="chi">
+<Name>正午30分</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="149" begintime="20190617124300" duration="004200" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="150" begintime="20190617132500" duration="050500" eventtype="00">
+<EventText language="chi">
+<Name>热播剧场</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="151" begintime="20190617183000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>深视新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="152" begintime="20190617190000" duration="003500" eventtype="00">
+<EventText language="chi">
+<Name>转播中央台新闻联播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="153" begintime="20190617193500" duration="015000" eventtype="00">
+<EventText language="chi">
+<Name>黄金剧场</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="154" begintime="20190617212500" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>决胜制高点</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="155" begintime="20190617222500" duration="010100" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="156" begintime="20190617232600" duration="003700" eventtype="00">
+<EventText language="chi">
+<Name>悦健康</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="157" begintime="20190618000300" duration="005000" eventtype="00">
+<EventText language="chi">
+<Name>决胜制高点</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="158" begintime="20190618005300" duration="003400" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="159" begintime="20190618012700" duration="004700" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="160" begintime="20190618021400" duration="032400" eventtype="00">
+<EventText language="chi">
+<Name>不夜场</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="161" begintime="20190618053800" duration="003300" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="162" begintime="20190618061100" duration="004900" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="163" begintime="20190618070000" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>中华人民共和国国歌</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="164" begintime="20190618070100" duration="005900" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="165" begintime="20190618080000" duration="004700" eventtype="00">
+<EventText language="chi">
+<Name>动画片</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="166" begintime="20190618084700" duration="030300" eventtype="00">
+<EventText language="chi">
+<Name>精品剧场</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="167" begintime="20190618115000" duration="005300" eventtype="00">
+<EventText language="chi">
+<Name>正午30分</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="168" begintime="20190618124300" duration="004200" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="169" begintime="20190618132500" duration="050500" eventtype="00">
+<EventText language="chi">
+<Name>热播剧场</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="170" begintime="20190618183000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>深视新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="171" begintime="20190618190000" duration="003500" eventtype="00">
+<EventText language="chi">
+<Name>转播中央台新闻联播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="172" begintime="20190618193500" duration="015000" eventtype="00">
+<EventText language="chi">
+<Name>黄金剧场</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="173" begintime="20190618212500" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>军情直播间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="174" begintime="20190618222500" duration="010200" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="175" begintime="20190618232700" duration="003500" eventtype="00">
+<EventText language="chi">
+<Name>悦时尚</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="176" begintime="20190619000200" duration="005800" eventtype="00">
+<EventText language="chi">
+<Name>勇士的荣耀</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="177" begintime="20190619010000" duration="003400" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="178" begintime="20190619013400" duration="004700" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="179" begintime="20190619022100" duration="031600" eventtype="00">
+<EventText language="chi">
+<Name>不夜场</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="180" begintime="20190619053700" duration="003300" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="181" begintime="20190619061000" duration="005000" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="182" begintime="20190619070000" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>中华人民共和国国歌</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="183" begintime="20190619070100" duration="005900" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="184" begintime="20190619080000" duration="005200" eventtype="00">
+<EventText language="chi">
+<Name>动画片</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="185" begintime="20190619085200" duration="022000" eventtype="00">
+<EventText language="chi">
+<Name>精品剧场</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="186" begintime="20190619111200" duration="003800" eventtype="00">
+<EventText language="chi">
+<Name>上市公司说</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="187" begintime="20190619115000" duration="005300" eventtype="00">
+<EventText language="chi">
+<Name>正午30分</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="188" begintime="20190619124300" duration="004100" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="189" begintime="20190619132400" duration="050600" eventtype="00">
+<EventText language="chi">
+<Name>热播剧场</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="190" begintime="20190619183000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>深视新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="191" begintime="20190619190000" duration="003500" eventtype="00">
+<EventText language="chi">
+<Name>转播中央台新闻联播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="192" begintime="20190619193500" duration="015100" eventtype="00">
+<EventText language="chi">
+<Name>黄金剧场</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="193" begintime="20190619212600" duration="005900" eventtype="00">
+<EventText language="chi">
+<Name>关键洞察力</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="194" begintime="20190619222500" duration="010200" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="195" begintime="20190619232700" duration="004600" eventtype="00">
+<EventText language="chi">
+<Name>悦世界</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="196" begintime="20190620001300" duration="005100" eventtype="00">
+<EventText language="chi">
+<Name>关键洞察力</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="197" begintime="20190620010400" duration="003500" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="198" begintime="20190620013900" duration="004900" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="199" begintime="20190620022800" duration="030700" eventtype="00">
+<EventText language="chi">
+<Name>不夜场</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="200" begintime="20190620053500" duration="003500" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="201" begintime="20190620061000" duration="005000" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="202" begintime="20190620070000" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>中华人民共和国国歌</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="203" begintime="20190620070100" duration="005900" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="204" begintime="20190620080000" duration="005200" eventtype="00">
+<EventText language="chi">
+<Name>动画片</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="205" begintime="20190620085200" duration="025800" eventtype="00">
+<EventText language="chi">
+<Name>精品剧场</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="206" begintime="20190620115000" duration="005200" eventtype="00">
+<EventText language="chi">
+<Name>正午30分</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="207" begintime="20190620124200" duration="004400" eventtype="00">
+<EventText language="chi">
+<Name>探秘时刻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="208" begintime="20190620132600" duration="050400" eventtype="00">
+<EventText language="chi">
+<Name>热播剧场</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="209" begintime="20190620183000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>深视新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="210" begintime="20190620190000" duration="003500" eventtype="00">
+<EventText language="chi">
+<Name>转播中央台新闻联播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="211" begintime="20190620193500" duration="015100" eventtype="00">
+<EventText language="chi">
+<Name>黄金剧场</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="212" begintime="20190620212600" duration="005900" eventtype="00">
+<EventText language="chi">
+<Name>你好面试官</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="213" begintime="20190620222500" duration="010200" eventtype="00">
+<EventText language="chi">
+<Name>直播港澳台</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="214" begintime="20190620232700" duration="030000" eventtype="00">
+<EventText language="chi">
+<Name>非常静距离</Name>
+<ShortDescription></ShortDescription></EventText></Event></Channel></SchedulerData>
+
+
+</BroadcastData>

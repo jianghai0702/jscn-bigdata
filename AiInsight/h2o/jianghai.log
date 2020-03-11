@@ -1,0 +1,60 @@
+[2019-11-14T10:22:22+0800]: ------------------------------------------------------------
+[2019-11-14T10:22:22+0800]: 同步开始
+[2019-11-14T10:22:22+0800]: hive库源表名：ST_USER_NETWORK_BEH_M
+[2019-11-14T10:22:22+0800]: rdbms目标库表名：ST_USER_NETWORK_BEH_M
+[2019-11-14T10:22:22+0800]: 同步数据日期（月）：201910
+[2019-11-14T10:22:22+0800]: ------------------------------------------------------------
+[2019-11-14T10:22:22+0800]: ------------------------------------------------------------
+[2019-11-14T10:22:22+0800]: 清理rdbms库表数据
+[2019-11-14T10:22:22+0800]: ------------------------------------------------------------
+[2019-11-14T10:22:22+0800]: ------------------------------------------------------------
+[2019-11-14T10:22:22+0800]: sqoop数据导入
+[2019-11-14T10:22:22+0800]: ------------------------------------------------------------
+[2019-11-14T10:22:22+0800]: /usr/bin/sqoop --options-file /AiInsight/sqoop/hive_export.txt --table ST_USER_NETWORK_BEH_M --hcatalog-database default --hcatalog-table ST_USER_NETWORK_BEH_M --hcatalog-partition-keys pt_mon --hcatalog-partition-values 201910
+Warning: /opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/bin/../lib/sqoop/../accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.
+[2019-11-14T10:22:59+0800]: ------------------------------------------------------------
+[2019-11-14T10:22:59+0800]: 同步开始
+[2019-11-14T10:22:59+0800]: hive库源表名：ST_CUST_FEAT_DTL_M
+[2019-11-14T10:22:59+0800]: rdbms目标库表名：ST_CUST_FEAT_DTL_M
+[2019-11-14T10:22:59+0800]: 同步数据日期（月）：201910
+[2019-11-14T10:22:59+0800]: ------------------------------------------------------------
+[2019-11-14T10:22:59+0800]: ------------------------------------------------------------
+[2019-11-14T10:22:59+0800]: 清理rdbms库表数据
+[2019-11-14T10:22:59+0800]: ------------------------------------------------------------
+[2019-11-14T10:22:59+0800]: ------------------------------------------------------------
+[2019-11-14T10:22:59+0800]: sqoop数据导入
+[2019-11-14T10:22:59+0800]: ------------------------------------------------------------
+[2019-11-14T10:22:59+0800]: /usr/bin/sqoop --options-file /AiInsight/sqoop/hive_export.txt --table ST_CUST_FEAT_DTL_M --hcatalog-database default --hcatalog-table ST_CUST_FEAT_DTL_M --hcatalog-partition-keys pt_mon --hcatalog-partition-values 201910
+Warning: /opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/bin/../lib/sqoop/../accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.
+[2019-11-14T10:23:50+0800]: ------------------------------------------------------------
+[2019-11-14T10:23:50+0800]: 同步开始
+[2019-11-14T10:23:50+0800]: hive库源表名：ST_ZG_ACCT
+[2019-11-14T10:23:50+0800]: rdbms目标库表名：ST_ZG_ACCT
+[2019-11-14T10:23:50+0800]: 同步数据日期（月）：201910
+[2019-11-14T10:23:50+0800]: ------------------------------------------------------------
+[2019-11-14T10:23:50+0800]: ------------------------------------------------------------
+[2019-11-14T10:23:50+0800]: 清理rdbms库表数据
+[2019-11-14T10:23:50+0800]: ------------------------------------------------------------
+[2019-11-14T10:23:50+0800]: ------------------------------------------------------------
+[2019-11-14T10:23:50+0800]: sqoop数据导入
+[2019-11-14T10:23:50+0800]: ------------------------------------------------------------
+[2019-11-14T10:23:50+0800]: /usr/bin/sqoop --options-file /AiInsight/sqoop/hive_export.txt --table ST_ZG_ACCT --hcatalog-database default --hcatalog-table ST_ZG_ACCT --hcatalog-partition-keys pt_mon --hcatalog-partition-values 201910
+Warning: /opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/bin/../lib/sqoop/../accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.
+[2019-11-14T10:24:28+0800]: ------------------------------------------------------------
+[2019-11-14T10:24:28+0800]: 同步开始
+[2019-11-14T10:24:28+0800]: hive库源表名：ST_USER_VIEW_BEH_M
+[2019-11-14T10:24:28+0800]: rdbms目标库表名：ST_USER_VIEW_BEH_M
+[2019-11-14T10:24:28+0800]: 同步数据日期（月）：201910
+[2019-11-14T10:24:28+0800]: ------------------------------------------------------------
+[2019-11-14T10:24:28+0800]: ------------------------------------------------------------
+[2019-11-14T10:24:28+0800]: 清理rdbms库表数据
+[2019-11-14T10:24:28+0800]: ------------------------------------------------------------
+[2019-11-14T10:24:28+0800]: ------------------------------------------------------------
+[2019-11-14T10:24:28+0800]: sqoop数据导入
+[2019-11-14T10:24:28+0800]: ------------------------------------------------------------
+[2019-11-14T10:24:28+0800]: /usr/bin/sqoop --options-file /AiInsight/sqoop/hive_export.txt --table ST_USER_VIEW_BEH_M --hcatalog-database default --hcatalog-table ST_USER_VIEW_BEH_M --hcatalog-partition-keys pt_mon --hcatalog-partition-values 201910
+Warning: /opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/bin/../lib/sqoop/../accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.

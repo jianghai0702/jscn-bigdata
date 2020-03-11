@@ -1,0 +1,132 @@
+[2019-01-09T07:00:02+0800]:[INFO]:网络状况
+[2019-01-09T07:00:02+0800]:[INFO]:------------------------------------------------------------
+PING bigdata.jscndata.com (118.25.80.57) 56(84) bytes of data.
+
+--- bigdata.jscndata.com ping statistics ---
+10 packets transmitted, 0 received, 100% packet loss, time 19004ms
+
+[2019-01-09T07:00:21+0800]:[INFO]:------------------------------------------------------------
+[2019-01-09T07:00:21+0800]:[INFO]:mysql运行状况
+[2019-01-09T07:00:21+0800]:[INFO]:------------------------------------------------------------
+ERROR 2003 (HY000): Can't connect to MySQL server on 'bigdata.jscndata.com' (110)
+[2019-01-09T07:10:01+0800]:[INFO]:网络状况
+[2019-01-09T07:10:01+0800]:[INFO]:------------------------------------------------------------
+PING bigdata.jscndata.com (118.25.80.57) 56(84) bytes of data.
+
+--- bigdata.jscndata.com ping statistics ---
+10 packets transmitted, 0 received, 100% packet loss, time 19004ms
+
+[2019-01-09T07:10:20+0800]:[INFO]:------------------------------------------------------------
+[2019-01-09T07:10:20+0800]:[INFO]:mysql运行状况
+[2019-01-09T07:10:20+0800]:[INFO]:------------------------------------------------------------
+ERROR 2003 (HY000): Can't connect to MySQL server on 'bigdata.jscndata.com' (110)
+[2019-01-09T07:20:01+0800]:[INFO]:网络状况
+[2019-01-09T07:20:01+0800]:[INFO]:------------------------------------------------------------
+PING bigdata.jscndata.com (118.25.80.57) 56(84) bytes of data.
+
+--- bigdata.jscndata.com ping statistics ---
+10 packets transmitted, 0 received, 100% packet loss, time 19000ms
+
+[2019-01-09T07:20:20+0800]:[INFO]:------------------------------------------------------------
+[2019-01-09T07:20:20+0800]:[INFO]:mysql运行状况
+[2019-01-09T07:20:20+0800]:[INFO]:------------------------------------------------------------
+ERROR 2003 (HY000): Can't connect to MySQL server on 'bigdata.jscndata.com' (110)
+[2019-01-09T07:30:01+0800]:[INFO]:网络状况
+[2019-01-09T07:30:01+0800]:[INFO]:------------------------------------------------------------
+PING bigdata.jscndata.com (118.25.80.57) 56(84) bytes of data.
+
+--- bigdata.jscndata.com ping statistics ---
+10 packets transmitted, 0 received, 100% packet loss, time 19001ms
+
+[2019-01-09T07:30:20+0800]:[INFO]:------------------------------------------------------------
+[2019-01-09T07:30:20+0800]:[INFO]:mysql运行状况
+[2019-01-09T07:30:20+0800]:[INFO]:------------------------------------------------------------
+ERROR 2003 (HY000): Can't connect to MySQL server on 'bigdata.jscndata.com' (110)
+[2019-01-09T07:40:01+0800]:[INFO]:网络状况
+[2019-01-09T07:40:01+0800]:[INFO]:------------------------------------------------------------
+PING bigdata.jscndata.com (118.25.80.57) 56(84) bytes of data.
+
+--- bigdata.jscndata.com ping statistics ---
+10 packets transmitted, 0 received, 100% packet loss, time 19000ms
+
+[2019-01-09T07:40:20+0800]:[INFO]:------------------------------------------------------------
+[2019-01-09T07:40:20+0800]:[INFO]:mysql运行状况
+[2019-01-09T07:40:20+0800]:[INFO]:------------------------------------------------------------
+ERROR 2003 (HY000): Can't connect to MySQL server on 'bigdata.jscndata.com' (110)
+[2019-01-09T07:50:01+0800]:[INFO]:网络状况
+[2019-01-09T07:50:01+0800]:[INFO]:------------------------------------------------------------
+PING bigdata.jscndata.com (118.25.80.57) 56(84) bytes of data.
+
+--- bigdata.jscndata.com ping statistics ---
+10 packets transmitted, 0 received, 100% packet loss, time 18999ms
+
+[2019-01-09T07:50:20+0800]:[INFO]:------------------------------------------------------------
+[2019-01-09T07:50:20+0800]:[INFO]:mysql运行状况
+[2019-01-09T07:50:20+0800]:[INFO]:------------------------------------------------------------
+ERROR 2003 (HY000): Can't connect to MySQL server on 'bigdata.jscndata.com' (110)
+[2019-01-09T08:00:01+0800]:[INFO]:网络状况
+[2019-01-09T08:00:01+0800]:[INFO]:------------------------------------------------------------
+PING bigdata.jscndata.com (118.25.80.57) 56(84) bytes of data.
+
+--- bigdata.jscndata.com ping statistics ---
+10 packets transmitted, 0 received, 100% packet loss, time 19000ms
+
+[2019-01-09T08:00:20+0800]:[INFO]:------------------------------------------------------------
+[2019-01-09T08:00:20+0800]:[INFO]:mysql运行状况
+[2019-01-09T08:00:20+0800]:[INFO]:------------------------------------------------------------
+ERROR 2003 (HY000): Can't connect to MySQL server on 'bigdata.jscndata.com' (110)
+[2019-01-09T08:10:01+0800]:[INFO]:网络状况
+[2019-01-09T08:10:01+0800]:[INFO]:------------------------------------------------------------
+PING bigdata.jscndata.com (118.25.80.57) 56(84) bytes of data.
+
+--- bigdata.jscndata.com ping statistics ---
+10 packets transmitted, 0 received, 100% packet loss, time 19002ms
+
+[2019-01-09T08:10:20+0800]:[INFO]:------------------------------------------------------------
+[2019-01-09T08:10:20+0800]:[INFO]:mysql运行状况
+[2019-01-09T08:10:20+0800]:[INFO]:------------------------------------------------------------
+ERROR 2003 (HY000): Can't connect to MySQL server on 'bigdata.jscndata.com' (110)
+[2019-01-09T08:20:01+0800]:[INFO]:网络状况
+[2019-01-09T08:20:01+0800]:[INFO]:------------------------------------------------------------
+PING bigdata.jscndata.com (118.25.80.57) 56(84) bytes of data.
+
+--- bigdata.jscndata.com ping statistics ---
+10 packets transmitted, 0 received, 100% packet loss, time 19000ms
+
+[2019-01-09T08:20:20+0800]:[INFO]:------------------------------------------------------------
+[2019-01-09T08:20:20+0800]:[INFO]:mysql运行状况
+[2019-01-09T08:20:20+0800]:[INFO]:------------------------------------------------------------
+ERROR 2003 (HY000): Can't connect to MySQL server on 'bigdata.jscndata.com' (110)
+[2019-01-09T08:30:01+0800]:[INFO]:网络状况
+[2019-01-09T08:30:01+0800]:[INFO]:------------------------------------------------------------
+PING bigdata.jscndata.com (118.25.80.57) 56(84) bytes of data.
+
+--- bigdata.jscndata.com ping statistics ---
+10 packets transmitted, 0 received, 100% packet loss, time 18999ms
+
+[2019-01-09T08:30:20+0800]:[INFO]:------------------------------------------------------------
+[2019-01-09T08:30:20+0800]:[INFO]:mysql运行状况
+[2019-01-09T08:30:20+0800]:[INFO]:------------------------------------------------------------
+ERROR 2003 (HY000): Can't connect to MySQL server on 'bigdata.jscndata.com' (110)
+[2019-01-09T08:40:01+0800]:[INFO]:网络状况
+[2019-01-09T08:40:01+0800]:[INFO]:------------------------------------------------------------
+PING bigdata.jscndata.com (118.25.80.57) 56(84) bytes of data.
+
+--- bigdata.jscndata.com ping statistics ---
+10 packets transmitted, 0 received, 100% packet loss, time 19000ms
+
+[2019-01-09T08:40:20+0800]:[INFO]:------------------------------------------------------------
+[2019-01-09T08:40:20+0800]:[INFO]:mysql运行状况
+[2019-01-09T08:40:20+0800]:[INFO]:------------------------------------------------------------
+ERROR 2003 (HY000): Can't connect to MySQL server on 'bigdata.jscndata.com' (110)
+[2019-01-09T08:50:01+0800]:[INFO]:网络状况
+[2019-01-09T08:50:01+0800]:[INFO]:------------------------------------------------------------
+PING bigdata.jscndata.com (118.25.80.57) 56(84) bytes of data.
+
+--- bigdata.jscndata.com ping statistics ---
+10 packets transmitted, 0 received, 100% packet loss, time 19000ms
+
+[2019-01-09T08:50:20+0800]:[INFO]:------------------------------------------------------------
+[2019-01-09T08:50:20+0800]:[INFO]:mysql运行状况
+[2019-01-09T08:50:20+0800]:[INFO]:------------------------------------------------------------
+ERROR 2003 (HY000): Can't connect to MySQL server on 'bigdata.jscndata.com' (110)

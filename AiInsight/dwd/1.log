@@ -1,0 +1,821 @@
+2017-09-13 01:36:18,668 [ERROR] {hqltools.py:367} 已存在正在运行的其它实例, 该实例主动退出...
+2017-09-13 01:36:18,668 [INFO] {hqltools.py:365} 程序开始执行
+2017-09-13 01:36:18,668 [INFO] {hqltools.py:365} 程序开始执行
+2017-09-13 01:36:18,668 [INFO] {hqltools.py:365} 程序开始执行
+2017-09-13 01:36:18,668 [ERROR] {hqltools.py:368} 如需人工干预请删除锁文件后重新执行. 删除命令: rm -f /AiInsight/logs/DWD_DNS_UP_STREAM_20170814.lock
+2017-09-13 01:36:19,114 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170814,pt_hour = 0)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 0
+            and t1.pt_time=20170814
+            
+2017-09-13 01:36:19,120 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_up_stream partition(pt_time=20170814,pt_hour = 0)            
+            select 
+               user_address as req_ans_flag , 
+               service_address as source_adress ,
+               analysis_address as service_address ,
+               user_port   as domain_name ,
+               domain_name  as  visit_time
+            from stg_dns_updown t1
+            where t1.user_address = 'query'
+            and t1.pt_hour = 0
+            and t1.pt_time=20170814
+            
+2017-09-13 01:36:19,126 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170813,pt_hour = 0)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 0
+            and t1.pt_time=20170813
+            
+2017-09-13 01:45:33,360 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 01:45:33,447 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_up_stream partition(pt_time=20170814,pt_hour = 1)            
+            select 
+               user_address as req_ans_flag , 
+               service_address as source_adress ,
+               analysis_address as service_address ,
+               user_port   as domain_name ,
+               domain_name  as  visit_time
+            from stg_dns_updown t1
+            where t1.user_address = 'query'
+            and t1.pt_hour = 1
+            and t1.pt_time=20170814
+            
+2017-09-13 01:46:38,383 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 01:46:38,725 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170813,pt_hour = 1)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 1
+            and t1.pt_time=20170813
+            
+2017-09-13 01:47:00,901 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 01:47:00,982 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170814,pt_hour = 1)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 1
+            and t1.pt_time=20170814
+            
+2017-09-13 01:52:41,166 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 01:52:41,241 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_up_stream partition(pt_time=20170814,pt_hour = 2)            
+            select 
+               user_address as req_ans_flag , 
+               service_address as source_adress ,
+               analysis_address as service_address ,
+               user_port   as domain_name ,
+               domain_name  as  visit_time
+            from stg_dns_updown t1
+            where t1.user_address = 'query'
+            and t1.pt_hour = 2
+            and t1.pt_time=20170814
+            
+2017-09-13 01:53:48,328 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 01:53:48,415 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170814,pt_hour = 2)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 2
+            and t1.pt_time=20170814
+            
+2017-09-13 01:55:09,698 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 01:55:09,782 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170813,pt_hour = 2)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 2
+            and t1.pt_time=20170813
+            
+2017-09-13 01:58:47,664 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 01:58:47,745 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_up_stream partition(pt_time=20170814,pt_hour = 3)            
+            select 
+               user_address as req_ans_flag , 
+               service_address as source_adress ,
+               analysis_address as service_address ,
+               user_port   as domain_name ,
+               domain_name  as  visit_time
+            from stg_dns_updown t1
+            where t1.user_address = 'query'
+            and t1.pt_hour = 3
+            and t1.pt_time=20170814
+            
+2017-09-13 02:01:08,721 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 02:01:08,849 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170814,pt_hour = 3)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 3
+            and t1.pt_time=20170814
+            
+2017-09-13 02:02:57,346 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 02:02:57,432 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170813,pt_hour = 3)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 3
+            and t1.pt_time=20170813
+            
+2017-09-13 02:04:39,183 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 02:04:39,270 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_up_stream partition(pt_time=20170814,pt_hour = 4)            
+            select 
+               user_address as req_ans_flag , 
+               service_address as source_adress ,
+               analysis_address as service_address ,
+               user_port   as domain_name ,
+               domain_name  as  visit_time
+            from stg_dns_updown t1
+            where t1.user_address = 'query'
+            and t1.pt_hour = 4
+            and t1.pt_time=20170814
+            
+2017-09-13 02:09:19,382 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 02:09:19,463 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170814,pt_hour = 4)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 4
+            and t1.pt_time=20170814
+            
+2017-09-13 02:10:24,839 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 02:10:24,919 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170813,pt_hour = 4)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 4
+            and t1.pt_time=20170813
+            
+2017-09-13 02:11:25,270 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 02:11:25,337 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_up_stream partition(pt_time=20170814,pt_hour = 5)            
+            select 
+               user_address as req_ans_flag , 
+               service_address as source_adress ,
+               analysis_address as service_address ,
+               user_port   as domain_name ,
+               domain_name  as  visit_time
+            from stg_dns_updown t1
+            where t1.user_address = 'query'
+            and t1.pt_hour = 5
+            and t1.pt_time=20170814
+            
+2017-09-13 02:15:51,284 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 02:15:51,362 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170814,pt_hour = 5)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 5
+            and t1.pt_time=20170814
+            
+2017-09-13 02:17:36,726 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 02:17:36,806 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170813,pt_hour = 5)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 5
+            and t1.pt_time=20170813
+            
+2017-09-13 02:17:58,265 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 02:17:58,348 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_up_stream partition(pt_time=20170814,pt_hour = 6)            
+            select 
+               user_address as req_ans_flag , 
+               service_address as source_adress ,
+               analysis_address as service_address ,
+               user_port   as domain_name ,
+               domain_name  as  visit_time
+            from stg_dns_updown t1
+            where t1.user_address = 'query'
+            and t1.pt_hour = 6
+            and t1.pt_time=20170814
+            
+2017-09-13 02:23:18,316 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 02:23:18,392 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170814,pt_hour = 6)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 6
+            and t1.pt_time=20170814
+            
+2017-09-13 02:26:13,746 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 02:26:13,833 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_up_stream partition(pt_time=20170814,pt_hour = 7)            
+            select 
+               user_address as req_ans_flag , 
+               service_address as source_adress ,
+               analysis_address as service_address ,
+               user_port   as domain_name ,
+               domain_name  as  visit_time
+            from stg_dns_updown t1
+            where t1.user_address = 'query'
+            and t1.pt_hour = 7
+            and t1.pt_time=20170814
+            
+2017-09-13 02:33:11,254 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 02:33:11,351 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170814,pt_hour = 7)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 7
+            and t1.pt_time=20170814
+            
+2017-09-13 02:35:38,703 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 02:35:38,779 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_up_stream partition(pt_time=20170814,pt_hour = 8)            
+            select 
+               user_address as req_ans_flag , 
+               service_address as source_adress ,
+               analysis_address as service_address ,
+               user_port   as domain_name ,
+               domain_name  as  visit_time
+            from stg_dns_updown t1
+            where t1.user_address = 'query'
+            and t1.pt_hour = 8
+            and t1.pt_time=20170814
+            
+2017-09-13 02:39:04,866 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 02:39:04,945 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170813,pt_hour = 6)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 6
+            and t1.pt_time=20170813
+            
+2017-09-13 02:44:09,148 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 02:44:09,235 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170814,pt_hour = 8)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 8
+            and t1.pt_time=20170814
+            
+2017-09-13 02:46:12,284 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 02:46:12,359 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_up_stream partition(pt_time=20170814,pt_hour = 9)            
+            select 
+               user_address as req_ans_flag , 
+               service_address as source_adress ,
+               analysis_address as service_address ,
+               user_port   as domain_name ,
+               domain_name  as  visit_time
+            from stg_dns_updown t1
+            where t1.user_address = 'query'
+            and t1.pt_hour = 9
+            and t1.pt_time=20170814
+            
+2017-09-13 02:56:39,126 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 02:56:39,213 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170814,pt_hour = 9)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 9
+            and t1.pt_time=20170814
+            
+2017-09-13 02:57:56,773 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 02:57:56,843 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_up_stream partition(pt_time=20170814,pt_hour = 10)            
+            select 
+               user_address as req_ans_flag , 
+               service_address as source_adress ,
+               analysis_address as service_address ,
+               user_port   as domain_name ,
+               domain_name  as  visit_time
+            from stg_dns_updown t1
+            where t1.user_address = 'query'
+            and t1.pt_hour = 10
+            and t1.pt_time=20170814
+            
+2017-09-13 03:06:56,252 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 03:06:56,503 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170813,pt_hour = 7)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 7
+            and t1.pt_time=20170813
+            
+2017-09-13 03:10:02,363 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 03:10:02,448 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_up_stream partition(pt_time=20170814,pt_hour = 11)            
+            select 
+               user_address as req_ans_flag , 
+               service_address as source_adress ,
+               analysis_address as service_address ,
+               user_port   as domain_name ,
+               domain_name  as  visit_time
+            from stg_dns_updown t1
+            where t1.user_address = 'query'
+            and t1.pt_hour = 11
+            and t1.pt_time=20170814
+            
+2017-09-13 03:10:20,722 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 03:10:20,809 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170814,pt_hour = 10)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 10
+            and t1.pt_time=20170814
+            
+2017-09-13 03:18:46,435 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 03:18:46,511 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170813,pt_hour = 8)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 8
+            and t1.pt_time=20170813
+            
+2017-09-13 03:22:13,338 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 03:22:13,419 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_up_stream partition(pt_time=20170814,pt_hour = 12)            
+            select 
+               user_address as req_ans_flag , 
+               service_address as source_adress ,
+               analysis_address as service_address ,
+               user_port   as domain_name ,
+               domain_name  as  visit_time
+            from stg_dns_updown t1
+            where t1.user_address = 'query'
+            and t1.pt_hour = 12
+            and t1.pt_time=20170814
+            
+2017-09-13 03:24:23,914 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 03:24:23,991 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170814,pt_hour = 11)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 11
+            and t1.pt_time=20170814
+            
+2017-09-13 03:32:09,261 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 03:32:09,358 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170813,pt_hour = 9)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 9
+            and t1.pt_time=20170813
+            
+2017-09-13 03:39:07,119 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 03:39:07,207 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170814,pt_hour = 12)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 12
+            and t1.pt_time=20170814
+            
+2017-09-13 03:46:35,280 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 03:46:35,355 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170813,pt_hour = 10)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 10
+            and t1.pt_time=20170813
+            
+2017-09-13 04:01:56,041 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 04:01:56,109 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170813,pt_hour = 11)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 11
+            and t1.pt_time=20170813
+            
+2017-09-13 04:12:10,347 [ERROR] {hqltools.py:55} 程序执行过程中发生异常, 错误信息如下:
+'Error while processing statement: FAILED: Execution Error, return code 2 from org.apache.hadoop.hive.ql.exec.mr.MapRedTask'
+2017-09-13 04:12:10,364 [ERROR] {hqltools.py:58} 程序正在退出. 删除锁文件  /AiInsight/logs/DWD_DNS_UP_STREAM_20170815.lock
+2017-09-13 04:17:01,180 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 04:17:01,265 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170813,pt_hour = 12)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 12
+            and t1.pt_time=20170813
+            
+2017-09-13 04:32:25,950 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 04:32:26,166 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170813,pt_hour = 13)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 13
+            and t1.pt_time=20170813
+            
+2017-09-13 04:37:13,579 [ERROR] {hqltools.py:55} 程序执行过程中发生异常, 错误信息如下:
+'Error while processing statement: FAILED: Execution Error, return code 2 from org.apache.hadoop.hive.ql.exec.mr.MapRedTask'
+2017-09-13 04:37:13,626 [ERROR] {hqltools.py:58} 程序正在退出. 删除锁文件  /AiInsight/logs/DWD_DNS_DOWN_STREAM_20170815.lock
+2017-09-13 04:47:23,517 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 04:47:23,594 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170813,pt_hour = 14)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 14
+            and t1.pt_time=20170813
+            
+2017-09-13 05:01:22,258 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 05:01:22,320 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170813,pt_hour = 15)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 15
+            and t1.pt_time=20170813
+            
+2017-09-13 05:15:20,381 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 05:15:20,462 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170813,pt_hour = 16)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 16
+            and t1.pt_time=20170813
+            
+2017-09-13 05:29:54,628 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 05:29:54,682 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170813,pt_hour = 17)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 17
+            and t1.pt_time=20170813
+            
+2017-09-13 05:44:05,656 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 05:44:05,940 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170813,pt_hour = 18)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 18
+            and t1.pt_time=20170813
+            
+2017-09-13 05:58:44,321 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 05:58:44,772 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170813,pt_hour = 19)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 19
+            and t1.pt_time=20170813
+            
+2017-09-13 06:14:46,619 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 06:14:46,677 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170813,pt_hour = 20)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 20
+            and t1.pt_time=20170813
+            
+2017-09-13 06:32:05,536 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 06:32:05,659 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170813,pt_hour = 21)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 21
+            and t1.pt_time=20170813
+            
+2017-09-13 06:49:23,973 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 06:49:24,058 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170813,pt_hour = 22)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 22
+            and t1.pt_time=20170813
+            
+2017-09-13 07:04:09,747 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 07:04:10,026 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwd_dns_down_stream partition(pt_time=20170813,pt_hour = 23)            
+            select 
+               user_address     ,
+               service_address  ,
+               analysis_address ,
+               user_port        ,
+               domain_name      ,
+               query_type       ,
+               query_time       ,
+               answer_code      
+            from stg_dns_updown t1
+            where t1.user_address <> 'query'
+            and t1.pt_hour = 23
+            and t1.pt_time=20170813
+            
+2017-09-13 07:16:12,467 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-13 07:16:12,545 [INFO] {hqltools.py:387} 程序执行成功. 删除锁文件 /AiInsight/logs/DWD_DNS_DOWN_STREAM_20170814.lock

@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<BroadcastData code="1100000000" creationtime="20190611102454" version="2.0">
+<ProviderInfo id="CTI" name="测试频道五"/>
+<SchedulerData type="PROGRAM"><Channel><ChannelText language="chi"><ChannelName>测试频道五</ChannelName></ChannelText>
+<Event eventid="1" begintime="20080204000000" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>晓亮</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="2" begintime="20080204014500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="3" begintime="20080204015000" duration="013300" eventtype="00">
+<EventText language="chi">
+<Name>海的颜色</Name>
+<ShortDescription>节目简介	34岁的宫明是某杂志社的美术总监，爱人艾小婉是一名讲授中国文学史的高校教师。近来宫明一直在做一个同样的梦，一位穿红色连衣裙的长发少女和他肩并肩，一起站在海边看海……</ShortDescription></EventText></Event>
+<Event eventid="4" begintime="20080204032300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="5" begintime="20080204032500" duration="013300" eventtype="00">
+<EventText language="chi">
+<Name>双生花</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="6" begintime="20080204045800" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="7" begintime="20080204050000" duration="014300" eventtype="00">
+<EventText language="chi">
+<Name>情关难过</Name>
+<ShortDescription>节目一级分类	电影/戏剧</ShortDescription></EventText></Event>
+<Event eventid="8" begintime="20080204064300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="9" begintime="20080204064500" duration="013300" eventtype="00">
+<EventText language="chi">
+<Name>远方(电视电影)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="10" begintime="20080204081800" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="11" begintime="20080204082000" duration="013400" eventtype="00">
+<EventText language="chi">
+<Name>卡米拉</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="12" begintime="20080204095400" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="13" begintime="20080204095500" duration="013300" eventtype="00">
+<EventText language="chi">
+<Name>我的家在哪里</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="14" begintime="20080204112800" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="15" begintime="20080204113000" duration="012400" eventtype="00">
+<EventText language="chi">
+<Name>急速狂奔</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="16" begintime="20080204125400" duration="000600" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="17" begintime="20080204130000" duration="013300" eventtype="00">
+<EventText language="chi">
+<Name>天生一对</Name>
+<ShortDescription>节目一级分类	电影/戏剧</ShortDescription></EventText></Event>
+<Event eventid="18" begintime="20080204143300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="19" begintime="20080204143500" duration="012900" eventtype="00">
+<EventText language="chi">
+<Name>好男好女</Name>
+<ShortDescription>节目简介	译制片,即dubbedfilm。它是直接把对白或解说从一种语言译成另一种语言,重新配音复制的影视剧,可使不懂原版片语言的观众听懂和了解原来片中的内容。经典的配音,能给精彩的国外电影增色不少。</ShortDescription></EventText></Event>
+<Event eventid="20" begintime="20080204160400" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="21" begintime="20080204160500" duration="012800" eventtype="00">
+<EventText language="chi">
+<Name>非常道</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="22" begintime="20080204173300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="23" begintime="20080204173500" duration="013900" eventtype="00">
+<EventText language="chi">
+<Name>神奇的石头</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="24" begintime="20080204191400" duration="000600" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="25" begintime="20080204192000" duration="013700" eventtype="00">
+<EventText language="chi">
+<Name>我的教师生涯</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="26" begintime="20080204205700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="27" begintime="20080204210000" duration="012300" eventtype="00">
+<EventText language="chi">
+<Name>冲动是天使</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="28" begintime="20080204222300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="29" begintime="20080204222500" duration="014800" eventtype="00">
+<EventText language="chi">
+<Name>空战英豪</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="30" begintime="20080205001300" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>结束</Name>
+<ShortDescription>播出日期	2008/02/05</ShortDescription></EventText></Event>
+<Event eventid="31" begintime="20080205001400" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="32" begintime="20080205001500" duration="012800" eventtype="00">
+<EventText language="chi">
+<Name>我的香格里拉</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="33" begintime="20080205014300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="34" begintime="20080205014500" duration="013700" eventtype="00">
+<EventText language="chi">
+<Name>连环局</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="35" begintime="20080205032200" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="36" begintime="20080205032500" duration="012300" eventtype="00">
+<EventText language="chi">
+<Name>小精灵艾罗依</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="37" begintime="20080205044800" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="38" begintime="20080205045000" duration="013100" eventtype="00">
+<EventText language="chi">
+<Name>戚家军</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="39" begintime="20080205062100" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="40" begintime="20080205062500" duration="012600" eventtype="00">
+<EventText language="chi">
+<Name>泰山与好莱坞冒险</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="41" begintime="20080205075100" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="42" begintime="20080205075500" duration="013200" eventtype="00">
+<EventText language="chi">
+<Name>阿欧桑</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="43" begintime="20080205092700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="44" begintime="20080205093000" duration="013100" eventtype="00">
+<EventText language="chi">
+<Name>I.Q情缘</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="45" begintime="20080205110100" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="46" begintime="20080205110500" duration="012900" eventtype="00">
+<EventText language="chi">
+<Name>北京的哥</Name>
+<ShortDescription>节目一级分类	电影/戏剧</ShortDescription></EventText></Event>
+<Event eventid="47" begintime="20080205123400" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="48" begintime="20080205123500" duration="012900" eventtype="00">
+<EventText language="chi">
+<Name>花豹少女队</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="49" begintime="20080205140400" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="50" begintime="20080205140500" duration="013100" eventtype="00">
+<EventText language="chi">
+<Name>雄风少年</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="51" begintime="20080205153600" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="52" begintime="20080205154000" duration="021300" eventtype="00">
+<EventText language="chi">
+<Name>天地无限</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="53" begintime="20080205175300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="54" begintime="20080205175500" duration="013200" eventtype="00">
+<EventText language="chi">
+<Name>失踪的双碑</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="55" begintime="20080205192700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="56" begintime="20080205193000" duration="012900" eventtype="00">
+<EventText language="chi">
+<Name>塔里木河的呼唤</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="57" begintime="20080205205900" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="58" begintime="20080205210000" duration="012700" eventtype="00">
+<EventText language="chi">
+<Name>高山上的恋人</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="59" begintime="20080205222700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="60" begintime="20080205223000" duration="012900" eventtype="00">
+<EventText language="chi">
+<Name>相亲奇遇</Name>
+<ShortDescription>节目简介	电影故事片是所有文化艺术创作中最容易调动人的激情、最受人们欢迎的艺术创作形式之一。它能丰富人的日常文化生活和梦想。本频道播出优秀故事片,贴近生活、贴近人心,以深厚的文化底蕴讲述生活与梦想。</ShortDescription></EventText></Event>
+<Event eventid="61" begintime="20080205235900" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>结束</Name>
+<ShortDescription>播出日期	2008/02/06</ShortDescription></EventText></Event>
+<Event eventid="62" begintime="20080206000000" duration="012700" eventtype="00">
+<EventText language="chi">
+<Name>发财喜洋洋</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="63" begintime="20080206012700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="64" begintime="20080206013000" duration="012900" eventtype="00">
+<EventText language="chi">
+<Name>妄想</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="65" begintime="20080206025900" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="66" begintime="20080206030000" duration="012200" eventtype="00">
+<EventText language="chi">
+<Name>贝卡西娜</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="67" begintime="20080206042200" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="68" begintime="20080206042500" duration="012900" eventtype="00">
+<EventText language="chi">
+<Name>金山鸿雁</Name>
+<ShortDescription>节目简介	电影故事片是所有文化艺术创作中最容易调动人的激情、最受人们欢迎的艺术创作形式之一。它能丰富人的日常文化生活和梦想。本频道播出优秀故事片,贴近生活、贴近人心,以深厚的文化底蕴讲述生活与梦想。</ShortDescription></EventText></Event>
+<Event eventid="69" begintime="20080206055400" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="70" begintime="20080206055500" duration="021300" eventtype="00">
+<EventText language="chi">
+<Name>天地无限</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="71" begintime="20080206080800" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="72" begintime="20080206081000" duration="014400" eventtype="00">
+<EventText language="chi">
+<Name>重生</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="73" begintime="20080206095400" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="74" begintime="20080206095500" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>晓亮</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="75" begintime="20080206114000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="76" begintime="20080206114500" duration="013000" eventtype="00">
+<EventText language="chi">
+<Name>小小少林</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="77" begintime="20080206131500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="78" begintime="20080206132000" duration="013400" eventtype="00">
+<EventText language="chi">
+<Name>界河一方</Name>
+<ShortDescription>节目简介	电影故事片是所有文化艺术创作中最容易调动人的激情、最受人们欢迎的艺术创作形式之一。它能丰富人的日常文化生活和梦想。本频道播出优秀故事片,贴近生活、贴近人心,以深厚的文化底蕴讲述生活与梦想。</ShortDescription></EventText></Event>
+<Event eventid="79" begintime="20080206145400" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="80" begintime="20080206145500" duration="024100" eventtype="00">
+<EventText language="chi">
+<Name>寡妇特工</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="81" begintime="20080206173600" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="82" begintime="20080206174000" duration="013300" eventtype="00">
+<EventText language="chi">
+<Name>非完美交易</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="83" begintime="20080206191300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="84" begintime="20080206191500" duration="014400" eventtype="00">
+<EventText language="chi">
+<Name>情关难过</Name>
+<ShortDescription>节目一级分类	电影/戏剧</ShortDescription></EventText></Event>
+<Event eventid="85" begintime="20080206205900" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="86" begintime="20080206210000" duration="014100" eventtype="00">
+<EventText language="chi">
+<Name>飞行日志</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="87" begintime="20080206224100" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="88" begintime="20080206224500" duration="012600" eventtype="00">
+<EventText language="chi">
+<Name>晋州女人</Name>
+<ShortDescription>节目简介	电影故事片是所有文化艺术创作中最容易调动人的激情、最受人们欢迎的艺术创作形式之一。它能丰富人的日常文化生活和梦想。本频道播出优秀故事片,贴近生活、贴近人心,以深厚的文化底蕴讲述生活与梦想。</ShortDescription></EventText></Event>
+<Event eventid="89" begintime="20080207001100" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>结束</Name>
+<ShortDescription>播出日期	2008/02/07</ShortDescription></EventText></Event>
+<Event eventid="90" begintime="20080207001200" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="91" begintime="20080207001500" duration="013100" eventtype="00">
+<EventText language="chi">
+<Name>老乐的执迷不悟</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="92" begintime="20080207014600" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="93" begintime="20080207015000" duration="013300" eventtype="00">
+<EventText language="chi">
+<Name>海的颜色</Name>
+<ShortDescription>节目简介	34岁的宫明是某杂志社的美术总监，爱人艾小婉是一名讲授中国文学史的高校教师。近来宫明一直在做一个同样的梦，一位穿红色连衣裙的长发少女和他肩并肩，一起站在海边看海……</ShortDescription></EventText></Event>
+<Event eventid="94" begintime="20080207032300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="95" begintime="20080207032500" duration="013500" eventtype="00">
+<EventText language="chi">
+<Name>春蚕(电视电影)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="96" begintime="20080207050000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="97" begintime="20080207050500" duration="014300" eventtype="00">
+<EventText language="chi">
+<Name>一吻定江山</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="98" begintime="20080207064800" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="99" begintime="20080207065000" duration="012800" eventtype="00">
+<EventText language="chi">
+<Name>我的香格里拉</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="100" begintime="20080207081800" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="101" begintime="20080207082000" duration="013900" eventtype="00">
+<EventText language="chi">
+<Name>神奇的石头</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="102" begintime="20080207095900" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="103" begintime="20080207100000" duration="013300" eventtype="00">
+<EventText language="chi">
+<Name>神秘的紫砂壶</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="104" begintime="20080207113300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="105" begintime="20080207113500" duration="012400" eventtype="00">
+<EventText language="chi">
+<Name>圣诞童话</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="106" begintime="20080207125900" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="107" begintime="20080207130000" duration="012300" eventtype="00">
+<EventText language="chi">
+<Name>冲动是天使</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="108" begintime="20080207142300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="109" begintime="20080207142500" duration="012600" eventtype="00">
+<EventText language="chi">
+<Name>323航班空难调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="110" begintime="20080207155100" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="111" begintime="20080207155500" duration="013300" eventtype="00">
+<EventText language="chi">
+<Name>远方(电视电影)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="112" begintime="20080207172800" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="113" begintime="20080207173000" duration="015400" eventtype="00">
+<EventText language="chi">
+<Name>流行教母</Name>
+<ShortDescription>节目一级分类	电影/戏剧</ShortDescription></EventText></Event>
+<Event eventid="114" begintime="20080207192400" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="115" begintime="20080207192500" duration="013400" eventtype="00">
+<EventText language="chi">
+<Name>双生花</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="116" begintime="20080207205900" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="117" begintime="20080207210000" duration="015400" eventtype="00">
+<EventText language="chi">
+<Name>哈尔的移动城堡</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="118" begintime="20080207225400" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="119" begintime="20080207225500" duration="013500" eventtype="00">
+<EventText language="chi">
+<Name>连环局</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="120" begintime="20080208003000" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>结束</Name>
+<ShortDescription>播出日期	2008/02/08</ShortDescription></EventText></Event>
+<Event eventid="121" begintime="20080208003100" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="122" begintime="20080208003500" duration="013100" eventtype="00">
+<EventText language="chi">
+<Name>上善若水</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="123" begintime="20080208020600" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="124" begintime="20080208021000" duration="013300" eventtype="00">
+<EventText language="chi">
+<Name>天生一对</Name>
+<ShortDescription>节目一级分类	电影/戏剧</ShortDescription></EventText></Event>
+<Event eventid="125" begintime="20080208034300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="126" begintime="20080208034500" duration="012300" eventtype="00">
+<EventText language="chi">
+<Name>小精灵艾罗依</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="127" begintime="20080208050800" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="128" begintime="20080208051000" duration="012900" eventtype="00">
+<EventText language="chi">
+<Name>相亲奇遇</Name>
+<ShortDescription>节目简介	电影故事片是所有文化艺术创作中最容易调动人的激情、最受人们欢迎的艺术创作形式之一。它能丰富人的日常文化生活和梦想。本频道播出优秀故事片,贴近生活、贴近人心,以深厚的文化底蕴讲述生活与梦想。</ShortDescription></EventText></Event>
+<Event eventid="129" begintime="20080208063900" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="130" begintime="20080208064000" duration="012900" eventtype="00">
+<EventText language="chi">
+<Name>花豹少女队</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="131" begintime="20080208080900" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="132" begintime="20080208081000" duration="013200" eventtype="00">
+<EventText language="chi">
+<Name>失踪的双碑</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="133" begintime="20080208094200" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="134" begintime="20080208094500" duration="012700" eventtype="00">
+<EventText language="chi">
+<Name>高山上的恋人</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="135" begintime="20080208111200" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="136" begintime="20080208111500" duration="013100" eventtype="00">
+<EventText language="chi">
+<Name>戚家军</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="137" begintime="20080208124600" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="138" begintime="20080208125000" duration="012300" eventtype="00">
+<EventText language="chi">
+<Name>泰山与第六感</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="139" begintime="20080208141300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="140" begintime="20080208141500" duration="012900" eventtype="00">
+<EventText language="chi">
+<Name>北京的哥</Name>
+<ShortDescription>节目一级分类	电影/戏剧</ShortDescription></EventText></Event>
+<Event eventid="141" begintime="20080208154400" duration="000600" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="142" begintime="20080208155000" duration="021100" eventtype="00">
+<EventText language="chi">
+<Name>幽影迷踪</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="143" begintime="20080208180100" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="144" begintime="20080208180500" duration="012900" eventtype="00">
+<EventText language="chi">
+<Name>塔里木河的呼唤</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="145" begintime="20080208193400" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="146" begintime="20080208193500" duration="012100" eventtype="00">
+<EventText language="chi">
+<Name>高卢勇士之美洲历险</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="147" begintime="20080208205600" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="148" begintime="20080208210000" duration="014100" eventtype="00">
+<EventText language="chi">
+<Name>门徒</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="149" begintime="20080208224100" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="150" begintime="20080208224500" duration="015600" eventtype="00">
+<EventText language="chi">
+<Name>十面埋伏</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	《十面埋伏》是张艺谋的第二部武侠巨制,经历了一番狂轰滥炸般的炒作后闪亮登场,票房一路攀红。唯美的镜头、惊险巧妙的武打场面,还有一份荡气回肠的爱情故事。</ShortDescription></EventText></Event>
+<Event eventid="151" begintime="20080209004100" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>结束</Name>
+<ShortDescription>播出日期	2008/02/09</ShortDescription></EventText></Event>
+<Event eventid="152" begintime="20080209004200" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="153" begintime="20080209004500" duration="014300" eventtype="00">
+<EventText language="chi">
+<Name>明明</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="154" begintime="20080209022800" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="155" begintime="20080209023000" duration="012800" eventtype="00">
+<EventText language="chi">
+<Name>非常道</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="156" begintime="20080209035800" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="157" begintime="20080209040000" duration="021200" eventtype="00">
+<EventText language="chi">
+<Name>天地无限</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="158" begintime="20080209061200" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="159" begintime="20080209061500" duration="013000" eventtype="00">
+<EventText language="chi">
+<Name>金山鸿雁</Name>
+<ShortDescription>节目简介	电影故事片是所有文化艺术创作中最容易调动人的激情、最受人们欢迎的艺术创作形式之一。它能丰富人的日常文化生活和梦想。本频道播出优秀故事片,贴近生活、贴近人心,以深厚的文化底蕴讲述生活与梦想。</ShortDescription></EventText></Event>
+<Event eventid="160" begintime="20080209074500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="161" begintime="20080209075000" duration="012300" eventtype="00">
+<EventText language="chi">
+<Name>泰山与第六感</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="162" begintime="20080209091300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="163" begintime="20080209091500" duration="012900" eventtype="00">
+<EventText language="chi">
+<Name>妄想</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="164" begintime="20080209104400" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="165" begintime="20080209104500" duration="025200" eventtype="00">
+<EventText language="chi">
+<Name>英雄末路</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="166" begintime="20080209133700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="167" begintime="20080209134000" duration="012700" eventtype="00">
+<EventText language="chi">
+<Name>晋州女人</Name>
+<ShortDescription>节目简介	电影故事片是所有文化艺术创作中最容易调动人的激情、最受人们欢迎的艺术创作形式之一。它能丰富人的日常文化生活和梦想。本频道播出优秀故事片,贴近生活、贴近人心,以深厚的文化底蕴讲述生活与梦想。</ShortDescription></EventText></Event>
+<Event eventid="168" begintime="20080209150700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="169" begintime="20080209151000" duration="013300" eventtype="00">
+<EventText language="chi">
+<Name>非完美交易</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="170" begintime="20080209164300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="171" begintime="20080209164500" duration="024000" eventtype="00">
+<EventText language="chi">
+<Name>寡妇特工</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="172" begintime="20080209192500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="173" begintime="20080209193000" duration="012800" eventtype="00">
+<EventText language="chi">
+<Name>相亲奇遇</Name>
+<ShortDescription>节目简介	电影故事片是所有文化艺术创作中最容易调动人的激情、最受人们欢迎的艺术创作形式之一。它能丰富人的日常文化生活和梦想。本频道播出优秀故事片,贴近生活、贴近人心,以深厚的文化底蕴讲述生活与梦想。</ShortDescription></EventText></Event>
+<Event eventid="174" begintime="20080209205800" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="175" begintime="20080209210000" duration="013000" eventtype="00">
+<EventText language="chi">
+<Name>洪水屠城</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="176" begintime="20080209223000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="177" begintime="20080209223500" duration="014000" eventtype="00">
+<EventText language="chi">
+<Name>飞行日志</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="178" begintime="20080210001500" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>结束</Name>
+<ShortDescription>播出日期	2008/02/10</ShortDescription></EventText></Event>
+<Event eventid="179" begintime="20080210001600" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="180" begintime="20080210002000" duration="013300" eventtype="00">
+<EventText language="chi">
+<Name>海的颜色</Name>
+<ShortDescription>节目简介	34岁的宫明是某杂志社的美术总监，爱人艾小婉是一名讲授中国文学史的高校教师。近来宫明一直在做一个同样的梦，一位穿红色连衣裙的长发少女和他肩并肩，一起站在海边看海……</ShortDescription></EventText></Event>
+<Event eventid="181" begintime="20080210015300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="182" begintime="20080210015500" duration="014400" eventtype="00">
+<EventText language="chi">
+<Name>重生(电视电影)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="183" begintime="20080210033900" duration="000600" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="184" begintime="20080210034500" duration="013900" eventtype="00">
+<EventText language="chi">
+<Name>神奇的石头</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="185" begintime="20080210052400" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="186" begintime="20080210052500" duration="013300" eventtype="00">
+<EventText language="chi">
+<Name>我的家在哪里</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="187" begintime="20080210065800" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="188" begintime="20080210070000" duration="012600" eventtype="00">
+<EventText language="chi">
+<Name>323航班空难调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="189" begintime="20080210082600" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="190" begintime="20080210083000" duration="013600" eventtype="00">
+<EventText language="chi">
+<Name>连环局</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="191" begintime="20080210100600" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="192" begintime="20080210101000" duration="012600" eventtype="00">
+<EventText language="chi">
+<Name>阿尔戈英雄传</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="193" begintime="20080210113600" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="194" begintime="20080210114000" duration="012600" eventtype="00">
+<EventText language="chi">
+<Name>阿尔戈英雄传</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="195" begintime="20080210130600" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="196" begintime="20080210131000" duration="013300" eventtype="00">
+<EventText language="chi">
+<Name>远方(电视电影)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="197" begintime="20080210144300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="198" begintime="20080210144500" duration="012300" eventtype="00">
+<EventText language="chi">
+<Name>冲动是天使</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="199" begintime="20080210160800" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="200" begintime="20080210161000" duration="012800" eventtype="00">
+<EventText language="chi">
+<Name>红高粱</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	本片以崭新的艺术形式,描绘了中国20、30年代一伙农民古朴、野性的生活和他们与侵略者浴血奋战的过程。影片的剧情构成极具戏剧性,通过人物塑造赞美生命的自由。爱就真爱,恨就真恨;大爱大恨,大生大死。</ShortDescription></EventText></Event>
+<Event eventid="201" begintime="20080210173800" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="202" begintime="20080210174000" duration="013100" eventtype="00">
+<EventText language="chi">
+<Name>雄风少年</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="203" begintime="20080210191100" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="204" begintime="20080210191500" duration="014300" eventtype="00">
+<EventText language="chi">
+<Name>一吻定江山</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="205" begintime="20080210205800" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="206" begintime="20080210210000" duration="013100" eventtype="00">
+<EventText language="chi">
+<Name>天堂口</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="207" begintime="20080210223100" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电影情报站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="208" begintime="20080210223500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>上善若水</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="209" begintime="20080210232000" duration="030000" eventtype="00">
+<EventText language="chi">
+<Name>结束</Name>
+<ShortDescription></ShortDescription></EventText></Event></Channel></SchedulerData>
+
+
+</BroadcastData>

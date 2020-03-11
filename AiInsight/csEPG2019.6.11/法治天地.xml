@@ -1,0 +1,1911 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<BroadcastData code="1100000000" creationtime="20190611102437" version="2.0">
+<ProviderInfo id="CTI" name="法治天地"/>
+<SchedulerData type="PROGRAM"><Channel><ChannelText language="chi"><ChannelName>法治天地</ChannelName></ChannelText>
+<Event eventid="1" begintime="20190611000000" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播精编版(794)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="2" begintime="20190611002500" duration="001000" eventtype="00">
+<EventText language="chi">
+<Name>律政俏佳人(2)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="3" begintime="20190611003500" duration="003900" eventtype="00">
+<EventText language="chi">
+<Name>恩人是贼</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="4" begintime="20190611011400" duration="004100" eventtype="00">
+<EventText language="chi">
+<Name>毒计</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="5" begintime="20190611015500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅰ(5)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="6" begintime="20190611020000" duration="001000" eventtype="00">
+<EventText language="chi">
+<Name>首届上海检察风云演说会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="7" begintime="20190611021000" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>禁毒视窗(247):所医联动</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="8" begintime="20190611023000" duration="033000" eventtype="00">
+<EventText language="chi">
+<Name>停机检修</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="9" begintime="20190611060000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅰ(2)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="10" begintime="20190611060500" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>律师界Ⅱ(6)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="11" begintime="20190611062500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>律政俏佳人(2)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="12" begintime="20190611063000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="13" begintime="20190611070000" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>禁毒视窗(247):所医联动</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="14" begintime="20190611072000" duration="001000" eventtype="00">
+<EventText language="chi">
+<Name>首届上海检察风云演说会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="15" begintime="20190611073000" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="16" begintime="20190611075000" duration="001000" eventtype="00">
+<EventText language="chi">
+<Name>法眼看生活(13)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="17" begintime="20190611080000" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>律师界Ⅱ(6)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="18" begintime="20190611082000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>律政俏佳人(4)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="19" begintime="20190611082500" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="20" begintime="20190611085500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅱ(2)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="21" begintime="20190611090000" duration="003900" eventtype="00">
+<EventText language="chi">
+<Name>恩人是贼</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="22" begintime="20190611093900" duration="004100" eventtype="00">
+<EventText language="chi">
+<Name>毒计</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="23" begintime="20190611102000" duration="001000" eventtype="00">
+<EventText language="chi">
+<Name>首届上海检察风云演说会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="24" begintime="20190611103000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="25" begintime="20190611110000" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>禁毒视窗(247):所医联动</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="26" begintime="20190611112000" duration="001000" eventtype="00">
+<EventText language="chi">
+<Name>法眼看生活(13)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="27" begintime="20190611113000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>法治新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="28" begintime="20190611120000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="29" begintime="20190611123000" duration="002300" eventtype="00">
+<EventText language="chi">
+<Name>律师界Ⅱ(6)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="30" begintime="20190611125300" duration="000700" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅲ(1)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="31" begintime="20190611130000" duration="001000" eventtype="00">
+<EventText language="chi">
+<Name>法眼看生活(13)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="32" begintime="20190611131000" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="33" begintime="20190611133500" duration="003900" eventtype="00">
+<EventText language="chi">
+<Name>恩人是贼</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="34" begintime="20190611141400" duration="003800" eventtype="00">
+<EventText language="chi">
+<Name>毒计</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="35" begintime="20190611145200" duration="000800" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅲ(2)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="36" begintime="20190611150000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="37" begintime="20190611153000" duration="002300" eventtype="00">
+<EventText language="chi">
+<Name>禁毒视窗(247):所医联动</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="38" begintime="20190611155300" duration="000700" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅲ(3)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="39" begintime="20190611160000" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="40" begintime="20190611162000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>法眼看生活(13)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="41" begintime="20190611163500" duration="003900" eventtype="00">
+<EventText language="chi">
+<Name>恩人是贼</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="42" begintime="20190611171400" duration="003800" eventtype="00">
+<EventText language="chi">
+<Name>毒计</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="43" begintime="20190611175200" duration="000800" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅲ(4)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="44" begintime="20190611180000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="45" begintime="20190611183000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>法治新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="46" begintime="20190611190000" duration="000600" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅲ(5)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="47" begintime="20190611190600" duration="001000" eventtype="00">
+<EventText language="chi">
+<Name>首届上海检察风云演说会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="48" begintime="20190611191600" duration="003500" eventtype="00">
+<EventText language="chi">
+<Name>清水衙门的秘密</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="49" begintime="20190611195100" duration="003800" eventtype="00">
+<EventText language="chi">
+<Name>车祸之谜</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="50" begintime="20190611202900" duration="000600" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅲ(7)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="51" begintime="20190611203500" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>平安上海(44):不堪的直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="52" begintime="20190611210000" duration="001000" eventtype="00">
+<EventText language="chi">
+<Name>法眼看生活(13)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="53" begintime="20190611211000" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="54" begintime="20190611213000" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂(811):孙洪林</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="55" begintime="20190611215000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>律政俏佳人(2)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="56" begintime="20190611215500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅱ(10)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="57" begintime="20190611220000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="58" begintime="20190611223000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>法治新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="59" begintime="20190611230000" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>平安上海(44):不堪的直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="60" begintime="20190611232500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>律政俏佳人(9)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="61" begintime="20190611233000" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="62" begintime="20190611235000" duration="001000" eventtype="00">
+<EventText language="chi">
+<Name>法眼看生活(13)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="63" begintime="20190612000000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="64" begintime="20190612003000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>律政俏佳人(10)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="65" begintime="20190612003500" duration="001200" eventtype="00">
+<EventText language="chi">
+<Name>首届上海检察风云演说会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="66" begintime="20190612004700" duration="003500" eventtype="00">
+<EventText language="chi">
+<Name>清水衙门的秘密</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="67" begintime="20190612012200" duration="003800" eventtype="00">
+<EventText language="chi">
+<Name>车祸之谜</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="68" begintime="20190612020000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>律政俏佳人(4)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="69" begintime="20190612020500" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂(811):孙洪林</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="70" begintime="20190612022500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅱ(3)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="71" begintime="20190612023000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="72" begintime="20190612030000" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>平安上海(44):不堪的直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="73" begintime="20190612032500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>律政俏佳人(5)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="74" begintime="20190612033000" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="75" begintime="20190612035000" duration="000900" eventtype="00">
+<EventText language="chi">
+<Name>首届上海检察风云演说会:林</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="76" begintime="20190612035900" duration="000600" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅲ(1)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="77" begintime="20190612040500" duration="003500" eventtype="00">
+<EventText language="chi">
+<Name>清水衙门的秘密</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="78" begintime="20190612044000" duration="004100" eventtype="00">
+<EventText language="chi">
+<Name>车祸之谜</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="79" begintime="20190612052100" duration="000900" eventtype="00">
+<EventText language="chi">
+<Name>首届上海检察风云演说会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="80" begintime="20190612053000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="81" begintime="20190612060000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>律政俏佳人(4)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="82" begintime="20190612060500" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>平安上海(44):不堪的直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="83" begintime="20190612063000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="84" begintime="20190612070000" duration="002100" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="85" begintime="20190612072100" duration="000900" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅲ(2)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="86" begintime="20190612073000" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="87" begintime="20190612075000" duration="001000" eventtype="00">
+<EventText language="chi">
+<Name>法眼看生活(13)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="88" begintime="20190612080000" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>平安上海(44):不堪的直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="89" begintime="20190612082500" duration="003300" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="90" begintime="20190612085800" duration="000900" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅲ(2)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="91" begintime="20190612090700" duration="003500" eventtype="00">
+<EventText language="chi">
+<Name>清水衙门的秘密</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="92" begintime="20190612094200" duration="003800" eventtype="00">
+<EventText language="chi">
+<Name>车祸之谜</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="93" begintime="20190612102000" duration="001000" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅲ(3)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="94" begintime="20190612103000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="95" begintime="20190612110000" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="96" begintime="20190612112000" duration="001000" eventtype="00">
+<EventText language="chi">
+<Name>法眼看生活(13)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="97" begintime="20190612113000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>法治新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="98" begintime="20190612120000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="99" begintime="20190612123000" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>平安上海(44):不堪的直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="100" begintime="20190612125500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>律政俏佳人(4)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="101" begintime="20190612130000" duration="001000" eventtype="00">
+<EventText language="chi">
+<Name>法眼看生活(13)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="102" begintime="20190612131000" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="103" begintime="20190612133000" duration="000600" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅲ(4)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="104" begintime="20190612133600" duration="003500" eventtype="00">
+<EventText language="chi">
+<Name>清水衙门的秘密</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="105" begintime="20190612141100" duration="003800" eventtype="00">
+<EventText language="chi">
+<Name>车祸之谜</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="106" begintime="20190612144900" duration="000600" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅲ(5)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="107" begintime="20190612145500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>律政俏佳人(4)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="108" begintime="20190612150000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="109" begintime="20190612153000" duration="002400" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="110" begintime="20190612155400" duration="000600" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅲ(7)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="111" begintime="20190612160000" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="112" begintime="20190612162000" duration="001000" eventtype="00">
+<EventText language="chi">
+<Name>法眼看生活(13)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="113" begintime="20190612163000" duration="000600" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅲ(8)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="114" begintime="20190612163600" duration="003500" eventtype="00">
+<EventText language="chi">
+<Name>清水衙门的秘密</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="115" begintime="20190612171100" duration="003800" eventtype="00">
+<EventText language="chi">
+<Name>车祸之谜</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="116" begintime="20190612174900" duration="000600" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅲ(9)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="117" begintime="20190612175500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>律政俏佳人(10)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="118" begintime="20190612180000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="119" begintime="20190612183000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>法治新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="120" begintime="20190612190000" duration="000900" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅲ(10)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="121" begintime="20190612190900" duration="004200" eventtype="00">
+<EventText language="chi">
+<Name>触电之后</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="122" begintime="20190612195100" duration="004400" eventtype="00">
+<EventText language="chi">
+<Name>亲生父子</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="123" begintime="20190612203500" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>走进人大(71)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="124" begintime="20190612210000" duration="001000" eventtype="00">
+<EventText language="chi">
+<Name>法眼看生活(13)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="125" begintime="20190612211000" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="126" begintime="20190612213000" duration="002300" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="127" begintime="20190612215300" duration="000700" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅲ(10)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="128" begintime="20190612220000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="129" begintime="20190612223000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>法治新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="130" begintime="20190612230000" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>走进人大(71)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="131" begintime="20190612232500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>律政俏佳人(9)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="132" begintime="20190612233000" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="133" begintime="20190612235000" duration="001100" eventtype="00">
+<EventText language="chi">
+<Name>法眼看生活(13)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="134" begintime="20190613000100" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="135" begintime="20190613003100" duration="013800" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="136" begintime="20190613020900" duration="001900" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="137" begintime="20190613022800" duration="003400" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="138" begintime="20190613030200" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="139" begintime="20190613032700" duration="002600" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="140" begintime="20190613035300" duration="003100" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="141" begintime="20190613042400" duration="014100" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="142" begintime="20190613060500" duration="003600" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="143" begintime="20190613064100" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="144" begintime="20190613071100" duration="001900" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="145" begintime="20190613073000" duration="003200" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="146" begintime="20190613080200" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="147" begintime="20190613083100" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="148" begintime="20190613090000" duration="003200" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="149" begintime="20190613093200" duration="013700" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="150" begintime="20190613110900" duration="003300" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="151" begintime="20190613114200" duration="001800" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="152" begintime="20190613120000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="153" begintime="20190613123000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="154" begintime="20190613130000" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电力公益微电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="155" begintime="20190613130300" duration="002400" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="156" begintime="20190613132700" duration="003100" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="157" begintime="20190613135800" duration="013800" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="158" begintime="20190613153600" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="159" begintime="20190613160600" duration="002400" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="160" begintime="20190613163000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="161" begintime="20190613170000" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电力公益微电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="162" begintime="20190613170300" duration="005300" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="163" begintime="20190613175600" duration="001600" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="164" begintime="20190613181200" duration="002400" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="165" begintime="20190613183600" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="166" begintime="20190613190300" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="167" begintime="20190613193000" duration="003300" eventtype="00">
+<EventText language="chi">
+<Name>法治新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="168" begintime="20190613200300" duration="013900" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="169" begintime="20190613214200" duration="001400" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="170" begintime="20190613215600" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电力公益微电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="171" begintime="20190613220000" duration="003400" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="172" begintime="20190613223400" duration="002600" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="173" begintime="20190613230000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="174" begintime="20190613233000" duration="003100" eventtype="00">
+<EventText language="chi">
+<Name>法治新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="175" begintime="20190614000100" duration="003300" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="176" begintime="20190614003400" duration="013900" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="177" begintime="20190614021300" duration="001800" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="178" begintime="20190614023100" duration="003800" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="179" begintime="20190614030900" duration="002400" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="180" begintime="20190614033300" duration="003300" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="181" begintime="20190614040600" duration="002800" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="182" begintime="20190614043400" duration="013900" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="183" begintime="20190614061300" duration="003300" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="184" begintime="20190614064600" duration="002800" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="185" begintime="20190614071400" duration="002100" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="186" begintime="20190614073500" duration="003100" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="187" begintime="20190614080600" duration="002600" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="188" begintime="20190614083200" duration="002800" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="189" begintime="20190614090000" duration="003400" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="190" begintime="20190614093400" duration="013800" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="191" begintime="20190614111200" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="192" begintime="20190614114200" duration="001800" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="193" begintime="20190614120000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="194" begintime="20190614123000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="195" begintime="20190614130000" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电力公益微电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="196" begintime="20190614130300" duration="002600" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="197" begintime="20190614132900" duration="002800" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="198" begintime="20190614135700" duration="014000" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="199" begintime="20190614153700" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="200" begintime="20190614160700" duration="002300" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="201" begintime="20190614163000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="202" begintime="20190614170000" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电力公益微电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="203" begintime="20190614170300" duration="004900" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="204" begintime="20190614175200" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="205" begintime="20190614180700" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="206" begintime="20190614183400" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="207" begintime="20190614190400" duration="002600" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="208" begintime="20190614193000" duration="003500" eventtype="00">
+<EventText language="chi">
+<Name>法治新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="209" begintime="20190614200500" duration="013400" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="210" begintime="20190614213900" duration="001400" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="211" begintime="20190614215300" duration="000700" eventtype="00">
+<EventText language="chi">
+<Name>电力公益微电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="212" begintime="20190614220000" duration="003200" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="213" begintime="20190614223200" duration="002800" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="214" begintime="20190614230000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="215" begintime="20190614233000" duration="003100" eventtype="00">
+<EventText language="chi">
+<Name>法治新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="216" begintime="20190615000100" duration="003400" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="217" begintime="20190615003500" duration="013800" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="218" begintime="20190615021300" duration="001800" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="219" begintime="20190615023100" duration="003400" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="220" begintime="20190615030500" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="221" begintime="20190615033000" duration="003300" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="222" begintime="20190615040300" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="223" begintime="20190615043200" duration="013300" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="224" begintime="20190615060500" duration="003600" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="225" begintime="20190615064100" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="226" begintime="20190615071000" duration="002200" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="227" begintime="20190615073200" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="228" begintime="20190615080200" duration="002400" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="229" begintime="20190615082600" duration="010800" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="230" begintime="20190615093400" duration="013600" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="231" begintime="20190615111000" duration="003100" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="232" begintime="20190615114100" duration="001900" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="233" begintime="20190615120000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="234" begintime="20190615123000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="235" begintime="20190615130000" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电力公益微电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="236" begintime="20190615130300" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="237" begintime="20190615133200" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="238" begintime="20190615140200" duration="013400" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="239" begintime="20190615153600" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="240" begintime="20190615160600" duration="002400" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="241" begintime="20190615163000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="242" begintime="20190615170000" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电力公益微电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="243" begintime="20190615170300" duration="004700" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="244" begintime="20190615175000" duration="001800" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="245" begintime="20190615180800" duration="002400" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="246" begintime="20190615183200" duration="003200" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="247" begintime="20190615190400" duration="002600" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="248" begintime="20190615193000" duration="003600" eventtype="00">
+<EventText language="chi">
+<Name>法治新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="249" begintime="20190615200600" duration="013600" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="250" begintime="20190615214200" duration="001400" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="251" begintime="20190615215600" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电力公益微电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="252" begintime="20190615220000" duration="003500" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="253" begintime="20190615223500" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>检察官说法</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="254" begintime="20190615230000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="255" begintime="20190615233000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>法治新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="256" begintime="20190616000000" duration="003100" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="257" begintime="20190616003100" duration="004700" eventtype="00">
+<EventText language="chi">
+<Name>袅袅炊烟(上)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="258" begintime="20190616011800" duration="004700" eventtype="00">
+<EventText language="chi">
+<Name>袅袅炊烟(下)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="259" begintime="20190616020500" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="260" begintime="20190616022500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅰ(6)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="261" begintime="20190616023000" duration="003500" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="262" begintime="20190616030500" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播精编版</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="263" begintime="20190616033000" duration="002600" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="264" begintime="20190616035600" duration="004700" eventtype="00">
+<EventText language="chi">
+<Name>袅袅炊烟(上)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="265" begintime="20190616044300" duration="004700" eventtype="00">
+<EventText language="chi">
+<Name>袅袅炊烟(下)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="266" begintime="20190616053000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="267" begintime="20190616060000" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播精编版</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="268" begintime="20190616062500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>律政俏佳人(8)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="269" begintime="20190616063000" duration="003100" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="270" begintime="20190616070100" duration="000900" eventtype="00">
+<EventText language="chi">
+<Name>首届上海检察风云演说会:谷晓丽</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="271" begintime="20190616071000" duration="001100" eventtype="00">
+<EventText language="chi">
+<Name>法官说案</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="272" begintime="20190616072100" duration="000900" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅲ(1)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="273" begintime="20190616073000" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="274" begintime="20190616075000" duration="001000" eventtype="00">
+<EventText language="chi">
+<Name>法眼看生活(12)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="275" begintime="20190616080000" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播精编版</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="276" begintime="20190616082500" duration="003300" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="277" begintime="20190616085800" duration="004700" eventtype="00">
+<EventText language="chi">
+<Name>袅袅炊烟(上)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="278" begintime="20190616094500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>袅袅炊烟(下)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="279" begintime="20190616103000" duration="003100" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="280" begintime="20190616110100" duration="000900" eventtype="00">
+<EventText language="chi">
+<Name>首届上海检察风云演说会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="281" begintime="20190616111000" duration="001000" eventtype="00">
+<EventText language="chi">
+<Name>法官说案</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="282" begintime="20190616112000" duration="001000" eventtype="00">
+<EventText language="chi">
+<Name>法眼看生活(12)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="283" begintime="20190616113000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>蜂巢课Ⅰ:你不了解的陌生电话</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="284" begintime="20190616114500" duration="000600" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅲ(2)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="285" begintime="20190616115100" duration="000900" eventtype="00">
+<EventText language="chi">
+<Name>律政俏佳人(7)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="286" begintime="20190616120000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="287" begintime="20190616123000" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播精编版</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="288" begintime="20190616125500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>律政俏佳人(6)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="289" begintime="20190616130000" duration="001000" eventtype="00">
+<EventText language="chi">
+<Name>法眼看生活(12)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="290" begintime="20190616131000" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="291" begintime="20190616133000" duration="004700" eventtype="00">
+<EventText language="chi">
+<Name>袅袅炊烟(上)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="292" begintime="20190616141700" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>袅袅炊烟(下)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="293" begintime="20190616150200" duration="003300" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="294" begintime="20190616153500" duration="001000" eventtype="00">
+<EventText language="chi">
+<Name>法官说案</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="295" begintime="20190616154500" duration="000600" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅲ(1)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="296" begintime="20190616155100" duration="000700" eventtype="00">
+<EventText language="chi">
+<Name>律政俏佳人(7)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="297" begintime="20190616155800" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="298" begintime="20190616161800" duration="001000" eventtype="00">
+<EventText language="chi">
+<Name>法眼看生活(12)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="299" begintime="20190616162800" duration="004700" eventtype="00">
+<EventText language="chi">
+<Name>袅袅炊烟(上)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="300" begintime="20190616171500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>袅袅炊烟(下)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="301" begintime="20190616180000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="302" begintime="20190616183000" duration="003400" eventtype="00">
+<EventText language="chi">
+<Name>蜂巢课Ⅰ:这才是正宗的监狱风云</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="303" begintime="20190616190400" duration="004300" eventtype="00">
+<EventText language="chi">
+<Name>悔婚(上)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="304" begintime="20190616194700" duration="004800" eventtype="00">
+<EventText language="chi">
+<Name>悔婚(下)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="305" begintime="20190616203500" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>律师界Ⅲ(3)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="306" begintime="20190616205500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>律政俏佳人(10)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="307" begintime="20190616210000" duration="001000" eventtype="00">
+<EventText language="chi">
+<Name>法眼看生活(12)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="308" begintime="20190616211000" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="309" begintime="20190616213000" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>走进人大(71)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="310" begintime="20190616215500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>老交警与新司机Ⅱ(9)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="311" begintime="20190616220000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="312" begintime="20190616223000" duration="003500" eventtype="00">
+<EventText language="chi">
+<Name>蜂巢课Ⅰ:这才是正宗的监狱风云</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="313" begintime="20190616230500" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>律师界Ⅲ(3)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="314" begintime="20190616232500" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="315" begintime="20190616234500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>律政俏佳人(9)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="316" begintime="20190616235000" duration="001100" eventtype="00">
+<EventText language="chi">
+<Name>法眼看生活(12)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="317" begintime="20190617000100" duration="002600" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="318" begintime="20190617002700" duration="014400" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="319" begintime="20190617021100" duration="001900" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="320" begintime="20190617023000" duration="004000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="321" begintime="20190617031000" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>百姓英雄</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="322" begintime="20190617033500" duration="003300" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="323" begintime="20190617040800" duration="002600" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="324" begintime="20190617043400" duration="013900" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="325" begintime="20190617061300" duration="003500" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="326" begintime="20190617064800" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="327" begintime="20190617071700" duration="002100" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="328" begintime="20190617073800" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="329" begintime="20190617080700" duration="002400" eventtype="00">
+<EventText language="chi">
+<Name>百姓英雄</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="330" begintime="20190617083100" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="331" begintime="20190617090000" duration="003200" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="332" begintime="20190617093200" duration="014000" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="333" begintime="20190617111200" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="334" begintime="20190617114100" duration="001900" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="335" begintime="20190617120000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="336" begintime="20190617123000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="337" begintime="20190617130000" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电力公益微电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="338" begintime="20190617130300" duration="002400" eventtype="00">
+<EventText language="chi">
+<Name>百姓英雄</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="339" begintime="20190617132700" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="340" begintime="20190617135600" duration="013900" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="341" begintime="20190617153500" duration="003100" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="342" begintime="20190617160600" duration="002400" eventtype="00">
+<EventText language="chi">
+<Name>百姓英雄</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="343" begintime="20190617163000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="344" begintime="20190617170000" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电力公益微电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="345" begintime="20190617170300" duration="005100" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="346" begintime="20190617175400" duration="001600" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="347" begintime="20190617181000" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>百姓英雄</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="348" begintime="20190617183500" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="349" begintime="20190617190400" duration="002600" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="350" begintime="20190617193000" duration="003400" eventtype="00">
+<EventText language="chi">
+<Name>法治新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="351" begintime="20190617200400" duration="013900" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="352" begintime="20190617214300" duration="001400" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="353" begintime="20190617215700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电力公益微电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="354" begintime="20190617220000" duration="003400" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="355" begintime="20190617223400" duration="002600" eventtype="00">
+<EventText language="chi">
+<Name>禁毒视窗</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="356" begintime="20190617230000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="357" begintime="20190617233000" duration="003800" eventtype="00">
+<EventText language="chi">
+<Name>法治新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="358" begintime="20190618000800" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="359" begintime="20190618003800" duration="013800" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="360" begintime="20190618021600" duration="001400" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="361" begintime="20190618023000" duration="033700" eventtype="00">
+<EventText language="chi">
+<Name>停机检修</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="362" begintime="20190618060700" duration="003600" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="363" begintime="20190618064300" duration="003200" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="364" begintime="20190618071500" duration="002100" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="365" begintime="20190618073600" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="366" begintime="20190618080500" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="367" begintime="20190618083200" duration="002800" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="368" begintime="20190618090000" duration="003300" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="369" begintime="20190618093300" duration="013800" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="370" begintime="20190618111100" duration="002800" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="371" begintime="20190618113900" duration="002100" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="372" begintime="20190618120000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="373" begintime="20190618123000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="374" begintime="20190618130000" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电力公益微电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="375" begintime="20190618130300" duration="002300" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="376" begintime="20190618132600" duration="002800" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="377" begintime="20190618135400" duration="013900" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="378" begintime="20190618153300" duration="003200" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="379" begintime="20190618160500" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="380" begintime="20190618163000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="381" begintime="20190618170000" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电力公益微电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="382" begintime="20190618170300" duration="005300" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="383" begintime="20190618175600" duration="001700" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="384" begintime="20190618181300" duration="002200" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="385" begintime="20190618183500" duration="002800" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="386" begintime="20190618190300" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="387" begintime="20190618193000" duration="003200" eventtype="00">
+<EventText language="chi">
+<Name>法治新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="388" begintime="20190618200200" duration="014100" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="389" begintime="20190618214300" duration="001400" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="390" begintime="20190618215700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电力公益微电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="391" begintime="20190618220000" duration="003200" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="392" begintime="20190618223200" duration="002800" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="393" begintime="20190618230000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="394" begintime="20190618233000" duration="003300" eventtype="00">
+<EventText language="chi">
+<Name>法治新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="395" begintime="20190619000300" duration="002800" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="396" begintime="20190619003100" duration="014200" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="397" begintime="20190619021300" duration="002200" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="398" begintime="20190619023500" duration="003300" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="399" begintime="20190619030800" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="400" begintime="20190619033300" duration="003500" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="401" begintime="20190619040800" duration="002800" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="402" begintime="20190619043600" duration="014000" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="403" begintime="20190619061600" duration="003700" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="404" begintime="20190619065300" duration="002600" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="405" begintime="20190619071900" duration="002000" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="406" begintime="20190619073900" duration="002800" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="407" begintime="20190619080700" duration="002600" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="408" begintime="20190619083300" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="409" begintime="20190619090000" duration="003300" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="410" begintime="20190619093300" duration="013900" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="411" begintime="20190619111200" duration="001900" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="412" begintime="20190619113100" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="413" begintime="20190619120000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="414" begintime="20190619123000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="415" begintime="20190619130000" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电力公益微电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="416" begintime="20190619130300" duration="002300" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="417" begintime="20190619132600" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="418" begintime="20190619135600" duration="014400" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="419" begintime="20190619154000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="420" begintime="20190619160700" duration="002300" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="421" begintime="20190619163000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="422" begintime="20190619170000" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电力公益微电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="423" begintime="20190619170300" duration="005300" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="424" begintime="20190619175600" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="425" begintime="20190619181100" duration="002400" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="426" begintime="20190619183500" duration="002800" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="427" begintime="20190619190300" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="428" begintime="20190619193000" duration="003400" eventtype="00">
+<EventText language="chi">
+<Name>法治新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="429" begintime="20190619200400" duration="013800" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="430" begintime="20190619214200" duration="001400" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="431" begintime="20190619215600" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电力公益微电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="432" begintime="20190619220000" duration="003100" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="433" begintime="20190619223100" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="434" begintime="20190619230000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="435" begintime="20190619233000" duration="003100" eventtype="00">
+<EventText language="chi">
+<Name>法治新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="436" begintime="20190620000100" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="437" begintime="20190620003100" duration="013800" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="438" begintime="20190620020900" duration="001900" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="439" begintime="20190620022800" duration="003400" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="440" begintime="20190620030200" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="441" begintime="20190620032700" duration="002600" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="442" begintime="20190620035300" duration="003100" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="443" begintime="20190620042400" duration="014100" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="444" begintime="20190620060500" duration="003600" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="445" begintime="20190620064100" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="446" begintime="20190620071100" duration="001900" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="447" begintime="20190620073000" duration="003200" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="448" begintime="20190620080200" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="449" begintime="20190620083100" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="450" begintime="20190620090000" duration="003200" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="451" begintime="20190620093200" duration="013700" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="452" begintime="20190620110900" duration="003300" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="453" begintime="20190620114200" duration="001800" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="454" begintime="20190620120000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="455" begintime="20190620123000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="456" begintime="20190620130000" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电力公益微电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="457" begintime="20190620130300" duration="002400" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="458" begintime="20190620132700" duration="003100" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="459" begintime="20190620135800" duration="013800" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="460" begintime="20190620153600" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="461" begintime="20190620160600" duration="002400" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="462" begintime="20190620163000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="463" begintime="20190620170000" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>电力公益微电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="464" begintime="20190620170300" duration="005300" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="465" begintime="20190620175600" duration="001600" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="466" begintime="20190620181200" duration="002400" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="467" begintime="20190620183600" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="468" begintime="20190620190300" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>记者调查</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="469" begintime="20190620193000" duration="003300" eventtype="00">
+<EventText language="chi">
+<Name>法治新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="470" begintime="20190620200300" duration="013900" eventtype="00">
+<EventText language="chi">
+<Name>人间事</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="471" begintime="20190620214200" duration="001400" eventtype="00">
+<EventText language="chi">
+<Name>法治中国</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="472" begintime="20190620215600" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>电力公益微电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="473" begintime="20190620220000" duration="003400" eventtype="00">
+<EventText language="chi">
+<Name>和大律师面对面</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="474" begintime="20190620223400" duration="002600" eventtype="00">
+<EventText language="chi">
+<Name>律师讲堂</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="475" begintime="20190620230000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>庭审直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="476" begintime="20190620233000" duration="030000" eventtype="00">
+<EventText language="chi">
+<Name>法治新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event></Channel></SchedulerData>
+
+
+</BroadcastData>

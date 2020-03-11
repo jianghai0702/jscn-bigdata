@@ -1,0 +1,120 @@
+2018-01-02 19:27:01,262 [INFO] {offerRecTableDdl.py:49} 套餐推荐特征表定义...
+2018-01-02 19:27:01,263 [INFO] {hiveUtils.py:78} Executive sql is:
+ drop table tmp_offerrec_offers_dims
+2018-01-02 19:27:01,271 [INFO] {hiveUtils.py:80} Successful implementation of this sql
+2018-01-02 19:27:01,272 [INFO] {hiveUtils.py:78} Executive sql is:
+
+                    drop table tmp_valid_ord_offer
+2018-01-02 19:27:01,279 [INFO] {hiveUtils.py:80} Successful implementation of this sql
+2018-01-02 19:27:01,279 [INFO] {hiveUtils.py:78} Executive sql is:
+
+                    drop table tmp_valid_ord_prod
+2018-01-02 19:27:01,286 [INFO] {hiveUtils.py:80} Successful implementation of this sql
+2018-01-02 19:27:01,287 [INFO] {hiveUtils.py:78} Executive sql is:
+
+                    drop table tmp_oferrec_offers
+2018-01-02 19:27:01,294 [INFO] {hiveUtils.py:80} Successful implementation of this sql
+2018-01-02 19:27:01,294 [INFO] {hiveUtils.py:78} Executive sql is:
+
+                    drop table tmp_offerrec_review
+2018-01-02 19:27:01,302 [INFO] {hiveUtils.py:80} Successful implementation of this sql
+2018-01-02 19:27:01,302 [INFO] {hiveUtils.py:78} Executive sql is:
+
+                    drop table tmp_offerrec_tv
+2018-01-02 19:27:01,309 [INFO] {hiveUtils.py:80} Successful implementation of this sql
+2018-01-02 19:27:01,309 [INFO] {hiveUtils.py:78} Executive sql is:
+
+                    drop table tmp_offerrec_review
+2018-01-02 19:27:01,316 [INFO] {hiveUtils.py:80} Successful implementation of this sql
+2018-01-02 19:27:01,317 [INFO] {hiveUtils.py:78} Executive sql is:
+
+                    drop table tmp_offerrec_vod
+               
+2018-01-02 19:27:01,324 [INFO] {hiveUtils.py:80} Successful implementation of this sql
+2018-01-02 19:27:01,324 [INFO] {hiveUtils.py:67} Executive sql is:
+create table if not exists tmp_offerrec_offers_dims
+                           (
+                               OFFER_ID             STRING,
+                            )
+                            stored as orcfile
+                            LOCATION '/user/hive/TEMP/tmp_offerrec_offers_dims'
+                
+2018-01-02 19:27:01,328 [ERROR] {hiveUtils.py:71} 程序执行过程中发生异常, 错误信息如下
+"Error while compiling statement: FAILED: ParseException line 4:28 cannot recognize input near ')' 'stored' 'as' in column specification"
+2018-01-02 19:27:01,328 [INFO] {hiveUtils.py:67} Executive sql is:
+create table if not exists tmp_valid_ord_offer
+                       (
+                             OFFER_ID             STRING,
+                             OFFER_INST_ID        STRING,
+                             CREATE_DATE          STRING
+                          )
+                          stored as orcfile
+                          LOCATION '/user/hive/TEMP/tmp_valid_ord_offer'
+                        
+2018-01-02 19:27:01,412 [INFO] {hiveUtils.py:69} Successful implementation of this sql
+2018-01-02 19:27:01,412 [INFO] {hiveUtils.py:67} Executive sql is:
+create table if not exists tmp_valid_ord_prod
+                         (
+                                prod_inst_id             STRING,
+                                srvpkg_id                STRING,
+                                OFFER_INST_ID            STRING
+                             )
+                             stored as orcfile
+                             LOCATION '/user/hive/TEMP/tmp_valid_ord_prod'
+                           
+2018-01-02 19:27:01,591 [INFO] {hiveUtils.py:69} Successful implementation of this sql
+2018-01-02 19:27:01,612 [ERROR] {hiveUtils.py:71} 程序执行过程中发生异常, 错误信息如下
+"Error while compiling statement: FAILED: ParseException line 6:27 mismatched input 'creste_date' expecting ) near 'STRING' in create table statement"
+2018-01-02 19:27:01,613 [INFO] {hiveUtils.py:67} Executive sql is:
+create table if not exists tmp_offerrec_vod
+                       (
+                           prod_inst_id           string,
+                           VOD_NUM           string,
+                           VOD_DAYS          string,
+                           VOD_FEE           string
+                        )
+                        stored as orcfile
+                        LOCATION '/user/hive/TEMP/tmp_offerrec_vod'
+                        
+2018-01-02 19:27:01,734 [INFO] {hiveUtils.py:69} Successful implementation of this sql
+2018-01-02 19:27:01,734 [INFO] {hiveUtils.py:67} Executive sql is:
+create table if not exists tmp_offerrec_tv
+                     (
+                         prod_inst_id      string,
+                         TV_NUM            string,
+                         TV_TIME           string,
+                         TV_DAYS           string
+                      )
+                      stored as orcfile
+                      LOCATION '/user/hive/TEMP/tmp_offerrec_tv'
+                      
+2018-01-02 19:27:01,913 [INFO] {hiveUtils.py:69} Successful implementation of this sql
+2018-01-02 19:27:01,913 [INFO] {hiveUtils.py:67} Executive sql is:
+create table if not exists tmp_offerrec_review
+                    (
+                        prod_inst_id         string,
+                        REVIEW_NUM           string,
+                        REVIEW_DAYS          string
+                     )
+                     stored as orcfile
+                     LOCATION '/user/hive/TEMP/tmp_offerrec_review'
+                     
+2018-01-02 19:27:02,066 [INFO] {hiveUtils.py:69} Successful implementation of this sql
+2018-01-02 19:27:02,066 [INFO] {hiveUtils.py:67} Executive sql is:
+create table if not exists dwa_offer_rec_character (    
+                             PROD_INST_ID           string,
+                             OFFER_ID               string,        
+                             prod_id                string,
+                             tv_nums                string,
+                             tv_days                string,
+                             vod_num                string,
+                             vod_days               string,
+                             vod_fee                string,
+                             review_days            string,
+                             review_num             string,
+                             ETL_DATE               string
+                        ) PARTITIONED BY (pt_mon string)
+                          STORED AS RCFILE
+                          LOCATION '/user/hive/warehouse/test.db/dwa_offer_rec_character'
+                      
+2018-01-02 19:27:02,237 [INFO] {hiveUtils.py:69} Successful implementation of this sql

@@ -1,0 +1,143 @@
+=============TIME==============
+PROESS_DATE:20191101
+SITE_NAME:iptv
+ETL_MONTH:201910
+ETL_TIME:20191001
+=============END==============
+=============CONFIG==============
+SOURCE_DB_IP:111.208.88.1
+SOURCE_DB_PORT:1521
+SOURCE_DB_IS_ORACLE:TRUE
+SOURCE_DB_DRIVER:oracle.jdbc.driver.OracleDriver
+SOURCE_DB_URL:jdbc:oracle:thin:@111.208.88.1:1521/jsbi
+SOURCE_DB_USER:SJGS
+SOURCE_DB_PASSWORD:sjgs123
+SOURCE_DB:jsbi
+SOURCE_DB_TABLE:DWD.DWD_DR_ISMP_201910
+
+DATASOURCE_DB:-
+DATASOURCE_DB_TABLE:dwd_dr_ismp
+DATASOURCE_HDFS_DIR:/asiainfo/jscn_bigdata/iptv/other/datasource/dwd_dr_ismp
+DATASOURCE_LINUX_DIR:/AiInsight/jscn_bigdata/iptv/other/datasource/dwd_dr_ismp
+=============END==============
+Warning: /opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/bin/../lib/sqoop/../accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.
+19/11/17 00:26:24 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6-cdh5.6.1
+19/11/17 00:26:24 WARN tool.BaseSqoopTool: Setting your password on the command-line is insecure. Consider using -P instead.
+19/11/17 00:26:24 INFO oracle.OraOopManagerFactory: Data Connector for Oracle and Hadoop is disabled.
+19/11/17 00:26:24 INFO manager.SqlManager: Using default fetchSize of 1000
+19/11/17 00:26:24 INFO tool.CodeGenTool: Beginning code generation
+19/11/17 00:26:24 INFO tool.CodeGenTool: Will generate java class as codegen_DWD.DWD_DR_ISMP_201910
+19/11/17 00:26:35 INFO manager.OracleManager: Time zone has been set to GMT
+19/11/17 00:26:35 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM DWD.DWD_DR_ISMP_201910 t WHERE 1=0
+19/11/17 00:26:35 INFO orm.CompilationManager: HADOOP_MAPRED_HOME is /opt/cloudera/parcels/CDH/lib/hadoop-mapreduce
+注: /tmp/sqoop-hdfs/compile/97ed587b5d4ef7feb67fe2137cd3f3dc/codegen_DWD/DWD_DR_ISMP_201910.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+19/11/17 00:26:37 INFO orm.CompilationManager: Writing jar file: /tmp/sqoop-hdfs/compile/97ed587b5d4ef7feb67fe2137cd3f3dc/codegen_DWD.DWD_DR_ISMP_201910.jar
+19/11/17 00:26:38 INFO tool.ImportTool: Destination directory /asiainfo/jscn_bigdata/iptv/other/datasource/dwd_dr_ismp/201910 deleted.
+19/11/17 00:26:38 INFO manager.OracleManager: Time zone has been set to GMT
+19/11/17 00:26:39 INFO manager.OracleManager: Time zone has been set to GMT
+19/11/17 00:26:39 INFO mapreduce.ImportJobBase: Beginning import of DWD.DWD_DR_ISMP_201910
+19/11/17 00:26:39 INFO Configuration.deprecation: mapred.jar is deprecated. Instead, use mapreduce.job.jar
+19/11/17 00:26:39 INFO manager.OracleManager: Time zone has been set to GMT
+19/11/17 00:26:39 INFO manager.OracleManager: Time zone has been set to GMT
+19/11/17 00:26:39 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM DWD.DWD_DR_ISMP_201910 t WHERE 1=0
+19/11/17 00:26:39 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM DWD.DWD_DR_ISMP_201910 t WHERE 1=0
+19/11/17 00:26:40 INFO Configuration.deprecation: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+19/11/17 00:26:54 INFO db.DBInputFormat: Using read commited transaction isolation
+19/11/17 00:26:54 INFO mapreduce.JobSubmitter: number of splits:1
+19/11/17 00:26:54 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1573229425244_0507
+19/11/17 00:26:54 INFO impl.YarnClientImpl: Submitted application application_1573229425244_0507
+19/11/17 00:26:54 INFO mapreduce.Job: The url to track the job: http://jsgd6:8088/proxy/application_1573229425244_0507/
+19/11/17 00:26:54 INFO mapreduce.Job: Running job: job_1573229425244_0507
+19/11/17 00:26:59 INFO mapreduce.Job: Job job_1573229425244_0507 running in uber mode : false
+19/11/17 00:26:59 INFO mapreduce.Job:  map 0% reduce 0%
+19/11/17 00:28:02 INFO mapreduce.Job: Task Id : attempt_1573229425244_0507_m_000000_0, Status : FAILED
+Error: java.lang.RuntimeException: java.lang.RuntimeException: java.sql.SQLRecoverableException: IO 错误: The Network Adapter could not establish the connection
+	at org.apache.sqoop.mapreduce.db.DBInputFormat.setConf(DBInputFormat.java:167)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:73)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:133)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:749)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:164)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1707)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:158)
+Caused by: java.lang.RuntimeException: java.sql.SQLRecoverableException: IO 错误: The Network Adapter could not establish the connection
+	at org.apache.sqoop.mapreduce.db.DBInputFormat.getConnection(DBInputFormat.java:220)
+	at org.apache.sqoop.mapreduce.db.DBInputFormat.setConf(DBInputFormat.java:165)
+	... 9 more
+Caused by: java.sql.SQLRecoverableException: IO 错误: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:489)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:553)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:254)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:528)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at org.apache.sqoop.mapreduce.db.DBConfiguration.getConnection(DBConfiguration.java:302)
+	at org.apache.sqoop.mapreduce.db.DBInputFormat.getConnection(DBInputFormat.java:213)
+	... 10 more
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:439)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:454)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:693)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:251)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1140)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:340)
+	... 18 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:149)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:133)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:405)
+	... 23 more
+
+19/11/17 02:49:39 INFO mapreduce.Job:  map 100% reduce 0%
+19/11/17 02:49:39 INFO mapreduce.Job: Job job_1573229425244_0507 completed successfully
+19/11/17 02:49:39 INFO mapreduce.Job: Counters: 31
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=154090
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=91900
+		HDFS: Number of bytes written=2677473533
+		HDFS: Number of read operations=68
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=10
+	Job Counters 
+		Failed map tasks=1
+		Launched map tasks=2
+		Other local map tasks=2
+		Total time spent by all maps in occupied slots (ms)=17112360
+		Total time spent by all reduces in occupied slots (ms)=0
+		Total time spent by all map tasks (ms)=8556180
+		Total vcore-seconds taken by all map tasks=17112360
+		Total megabyte-seconds taken by all map tasks=17523056640
+	Map-Reduce Framework
+		Map input records=52457641
+		Map output records=52457641
+		Input split bytes=87
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=107119
+		CPU time spent (ms)=9029540
+		Physical memory (bytes) snapshot=1762869248
+		Virtual memory (bytes) snapshot=3513761792
+		Total committed heap usage (bytes)=1462239232
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=0
+19/11/17 02:49:39 INFO mapreduce.ImportJobBase: Transferred 2.4936 GB in 8,578.8616 seconds (304.7864 KB/sec)
+19/11/17 02:49:39 INFO mapreduce.ImportJobBase: Retrieved 52457641 records.
+copyToLocal: `/AiInsight/jscn_bigdata/iptv/other/datasource/dwd_dr_ismp/201910': No such file or directory

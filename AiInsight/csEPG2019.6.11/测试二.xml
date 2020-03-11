@@ -1,0 +1,2379 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<BroadcastData code="1100000000" creationtime="20190611102457" version="2.0">
+<ProviderInfo id="CTI" name="测试二"/>
+<SchedulerData type="PROGRAM"><Channel><ChannelText language="chi"><ChannelName>测试二</ChannelName></ChannelText>
+<Event eventid="1" begintime="20170104000100" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>凤凰子夜快车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="2" begintime="20170104003000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>时事辩论会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="3" begintime="20170104010000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="4" begintime="20170104012700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="5" begintime="20170104013000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>金石财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="6" begintime="20170104020000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="7" begintime="20170104022700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="8" begintime="20170104023000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰财经日报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="9" begintime="20170104030000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="10" begintime="20170104032700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="11" begintime="20170104033000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>总编辑时间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="12" begintime="20170104040000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈(327)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="13" begintime="20170104041500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>天下被网罗</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="14" begintime="20170104050000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="15" begintime="20170104052700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="16" begintime="20170104053000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="17" begintime="20170104060000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="18" begintime="20170104062700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="19" begintime="20170104063000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>时事辩论会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="20" begintime="20170104070000" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰早班车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="21" begintime="20170104080000" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>华闻大直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="22" begintime="20170104084500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈(327)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="23" begintime="20170104090000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="24" begintime="20170104092700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="25" begintime="20170104093000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>金石财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="26" begintime="20170104100000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="27" begintime="20170104102700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="28" begintime="20170104103000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>总编辑时间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="29" begintime="20170104110000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="30" begintime="20170104115500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="31" begintime="20170104120000" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰午间特快</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="32" begintime="20170104122500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="33" begintime="20170104123000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>时事辩论会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="34" begintime="20170104130000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="35" begintime="20170104131500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>天下被网罗</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="36" begintime="20170104140000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="37" begintime="20170104145500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="38" begintime="20170104150000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="39" begintime="20170104155500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="40" begintime="20170104160000" duration="004000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="41" begintime="20170104164000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="42" begintime="20170104164500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈(328)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="43" begintime="20170104170000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="44" begintime="20170104172700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="45" begintime="20170104173000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>金石财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="46" begintime="20170104180000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="47" begintime="20170104182700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="48" begintime="20170104183000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="49" begintime="20170104190000" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>华闻大直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="50" begintime="20170104194500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈(328)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="51" begintime="20170104200000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="52" begintime="20170104202700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="53" begintime="20170104203000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰财经日报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="54" begintime="20170104210000" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>时事直通车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="55" begintime="20170104220000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>总编辑时间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="56" begintime="20170104223000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="57" begintime="20170104230000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="58" begintime="20170104231500" duration="004600" eventtype="00">
+<EventText language="chi">
+<Name>天下被网罗</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="59" begintime="20170105000100" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>凤凰子夜快车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="60" begintime="20170105003000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>时事辩论会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="61" begintime="20170105010000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="62" begintime="20170105012700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="63" begintime="20170105013000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>金石财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="64" begintime="20170105020000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="65" begintime="20170105022700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="66" begintime="20170105023000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰财经日报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="67" begintime="20170105030000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="68" begintime="20170105032700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="69" begintime="20170105033000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>总编辑时间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="70" begintime="20170105040000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈(328)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="71" begintime="20170105041500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>天下被网罗</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="72" begintime="20170105050000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="73" begintime="20170105052700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="74" begintime="20170105053000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="75" begintime="20170105060000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="76" begintime="20170105062700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="77" begintime="20170105063000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>时事辩论会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="78" begintime="20170105070000" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰早班车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="79" begintime="20170105080000" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>华闻大直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="80" begintime="20170105084500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈(328)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="81" begintime="20170105090000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="82" begintime="20170105092700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="83" begintime="20170105093000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>金石财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="84" begintime="20170105100000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="85" begintime="20170105102700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="86" begintime="20170105103000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>总编辑时间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="87" begintime="20170105110000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="88" begintime="20170105115500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="89" begintime="20170105120000" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰午间特快</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="90" begintime="20170105122500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="91" begintime="20170105123000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>时事辩论会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="92" begintime="20170105130000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="93" begintime="20170105131500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>天下被网罗</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="94" begintime="20170105140000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="95" begintime="20170105145500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="96" begintime="20170105150000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="97" begintime="20170105155500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="98" begintime="20170105160000" duration="004000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="99" begintime="20170105164000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="100" begintime="20170105164500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈(329)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="101" begintime="20170105170000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="102" begintime="20170105172700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="103" begintime="20170105173000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>金石财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="104" begintime="20170105180000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="105" begintime="20170105182700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="106" begintime="20170105183000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="107" begintime="20170105190000" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>华闻大直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="108" begintime="20170105194500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈(329)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="109" begintime="20170105200000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="110" begintime="20170105202700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="111" begintime="20170105203000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰财经日报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="112" begintime="20170105210000" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>时事直通车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="113" begintime="20170105220000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>总编辑时间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="114" begintime="20170105223000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="115" begintime="20170105230000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="116" begintime="20170105231500" duration="004600" eventtype="00">
+<EventText language="chi">
+<Name>天下被网罗</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="117" begintime="20170106000100" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>凤凰子夜快车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="118" begintime="20170106003000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>时事辩论会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="119" begintime="20170106010000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="120" begintime="20170106012700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="121" begintime="20170106013000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>金石财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="122" begintime="20170106020000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="123" begintime="20170106022700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="124" begintime="20170106023000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰财经日报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="125" begintime="20170106030000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="126" begintime="20170106032700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="127" begintime="20170106033000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>总编辑时间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="128" begintime="20170106040000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈(329)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="129" begintime="20170106041500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>天下被网罗</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="130" begintime="20170106050000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="131" begintime="20170106052700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="132" begintime="20170106053000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="133" begintime="20170106060000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="134" begintime="20170106062700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="135" begintime="20170106063000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>时事辩论会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="136" begintime="20170106070000" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰早班车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="137" begintime="20170106080000" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>华闻大直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="138" begintime="20170106084500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈(329)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="139" begintime="20170106090000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="140" begintime="20170106092700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="141" begintime="20170106093000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>金石财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="142" begintime="20170106100000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="143" begintime="20170106102700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="144" begintime="20170106103000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>总编辑时间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="145" begintime="20170106110000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="146" begintime="20170106115500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="147" begintime="20170106120000" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰午间特快</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="148" begintime="20170106122500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="149" begintime="20170106123000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>时事辩论会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="150" begintime="20170106130000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="151" begintime="20170106131500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>天下被网罗</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="152" begintime="20170106140000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="153" begintime="20170106145500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="154" begintime="20170106150000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="155" begintime="20170106155500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="156" begintime="20170106160000" duration="004000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="157" begintime="20170106164000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="158" begintime="20170106164500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈(330)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="159" begintime="20170106170000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="160" begintime="20170106172700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="161" begintime="20170106173000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>金石财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="162" begintime="20170106180000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="163" begintime="20170106182700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="164" begintime="20170106183000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="165" begintime="20170106190000" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>华闻大直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="166" begintime="20170106194500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈(330)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="167" begintime="20170106200000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="168" begintime="20170106202700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="169" begintime="20170106203000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰财经日报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="170" begintime="20170106210000" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>时事直通车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="171" begintime="20170106220000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>总编辑时间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="172" begintime="20170106223000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="173" begintime="20170106230000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="174" begintime="20170106231500" duration="004600" eventtype="00">
+<EventText language="chi">
+<Name>天下被网罗</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="175" begintime="20170107000100" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>凤凰子夜快车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="176" begintime="20170107003000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>时事辩论会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="177" begintime="20170107010000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="178" begintime="20170107012700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="179" begintime="20170107013000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>金石财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="180" begintime="20170107020000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="181" begintime="20170107022700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="182" begintime="20170107023000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰财经日报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="183" begintime="20170107030000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="184" begintime="20170107032700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="185" begintime="20170107033000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>总编辑时间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="186" begintime="20170107040000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈(330)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="187" begintime="20170107041500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>天下被网罗</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="188" begintime="20170107050000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="189" begintime="20170107052700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="190" begintime="20170107053000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="191" begintime="20170107060000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="192" begintime="20170107062700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="193" begintime="20170107063000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>时事辩论会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="194" begintime="20170107070000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>周末晨早播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="195" begintime="20170107072700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="196" begintime="20170107073000" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>周末晨早播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="197" begintime="20170107075500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="198" begintime="20170107080000" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>华闻大直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="199" begintime="20170107084500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈(330)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="200" begintime="20170107090000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="201" begintime="20170107092700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="202" begintime="20170107093000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>金石财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="203" begintime="20170107100000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="204" begintime="20170107102700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="205" begintime="20170107103000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>总编辑时间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="206" begintime="20170107110000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="207" begintime="20170107115500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="208" begintime="20170107120000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>周末正午播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="209" begintime="20170107123000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>财智菁英汇(367)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="210" begintime="20170107130000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="211" begintime="20170107131500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>天下被网罗</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="212" begintime="20170107140000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="213" begintime="20170107142700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="214" begintime="20170107143000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="215" begintime="20170107145700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="216" begintime="20170107150000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="217" begintime="20170107152700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="218" begintime="20170107153000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>记者再报告(75)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="219" begintime="20170107160000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="220" begintime="20170107162700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="221" begintime="20170107163000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>香港新视点(88)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="222" begintime="20170107170000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="223" begintime="20170107171500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>周末龙门阵(197)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="224" begintime="20170107180000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="225" begintime="20170107182700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="226" begintime="20170107183000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="227" begintime="20170107190000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>华闻大直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="228" begintime="20170107191500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈(329)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="229" begintime="20170107193000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>投资收藏(15)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="230" begintime="20170107200000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="231" begintime="20170107202700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="232" begintime="20170107203000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>财智菁英汇(367)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="233" begintime="20170107210000" duration="004000" eventtype="00">
+<EventText language="chi">
+<Name>时事直通车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="234" begintime="20170107214000" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>中国深度财经(263)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="235" begintime="20170107222500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="236" begintime="20170107223000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="237" begintime="20170107230000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="238" begintime="20170107231500" duration="004600" eventtype="00">
+<EventText language="chi">
+<Name>台湾一周重点(515)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="239" begintime="20170108000100" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>周末子夜播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="240" begintime="20170108003000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>财智菁英汇(367)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="241" begintime="20170108010000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="242" begintime="20170108012700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="243" begintime="20170108013000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>投资收藏(15)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="244" begintime="20170108020000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="245" begintime="20170108022700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="246" begintime="20170108023000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>香港新视点(88)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="247" begintime="20170108030000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="248" begintime="20170108032700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="249" begintime="20170108033000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="250" begintime="20170108035700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="251" begintime="20170108040000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈(329)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="252" begintime="20170108041500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>台湾一周重点(515)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="253" begintime="20170108050000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="254" begintime="20170108052700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="255" begintime="20170108053000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="256" begintime="20170108060000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="257" begintime="20170108062700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="258" begintime="20170108063000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>记者再报告(75)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="259" begintime="20170108070000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>周末晨早播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="260" begintime="20170108072700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="261" begintime="20170108073000" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>周末晨早播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="262" begintime="20170108075500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="263" begintime="20170108080000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>华闻大直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="264" begintime="20170108081500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>台湾一周重点(515)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="265" begintime="20170108090000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="266" begintime="20170108092700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="267" begintime="20170108093000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>投资收藏(15)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="268" begintime="20170108100000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="269" begintime="20170108102700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="270" begintime="20170108103000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>记者再报告(75)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="271" begintime="20170108110000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="272" begintime="20170108112700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="273" begintime="20170108113000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>香港新视点(88)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="274" begintime="20170108120000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>周末正午播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="275" begintime="20170108123000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>大政商道(315)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="276" begintime="20170108130000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="277" begintime="20170108133000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>筑梦天下(435)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="278" begintime="20170108140000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="279" begintime="20170108142700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="280" begintime="20170108143000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>香港新视点(88)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="281" begintime="20170108150000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="282" begintime="20170108152700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="283" begintime="20170108153000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>记者再报告(75)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="284" begintime="20170108160000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="285" begintime="20170108162700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="286" begintime="20170108163000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>问答神州(520)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="287" begintime="20170108170000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="288" begintime="20170108171500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>中国深度财经(263)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="289" begintime="20170108180000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="290" begintime="20170108182700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="291" begintime="20170108183000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="292" begintime="20170108190000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>华闻大直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="293" begintime="20170108191500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>大新闻大历史(54)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="294" begintime="20170108200000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="295" begintime="20170108202700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="296" begintime="20170108203000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>大政商道(315)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="297" begintime="20170108210000" duration="004000" eventtype="00">
+<EventText language="chi">
+<Name>时事直通车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="298" begintime="20170108214000" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>周末龙门阵(197)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="299" begintime="20170108222500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="300" begintime="20170108223000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="301" begintime="20170108230000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="302" begintime="20170108232700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="303" begintime="20170108233000" duration="003100" eventtype="00">
+<EventText language="chi">
+<Name>问答神州(520)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="304" begintime="20170109000100" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>周末子夜播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="305" begintime="20170109003000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>大政商道</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="306" begintime="20170109010000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="307" begintime="20170109012700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="308" begintime="20170109013000" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>大新闻大历史</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="309" begintime="20170109021500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="310" begintime="20170109023000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="311" begintime="20170109025700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="312" begintime="20170109030000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="313" begintime="20170109032700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="314" begintime="20170109033000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>记者再报告</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="315" begintime="20170109040000" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>周末龙门阵</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="316" begintime="20170109044500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="317" begintime="20170109050000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="318" begintime="20170109052700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="319" begintime="20170109053000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="320" begintime="20170109060000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="321" begintime="20170109062700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="322" begintime="20170109063000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="323" begintime="20170109065700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="324" begintime="20170109070000" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰早班车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="325" begintime="20170109080000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>华闻大直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="326" begintime="20170109081500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>中国深度财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="327" begintime="20170109090000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="328" begintime="20170109091500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>大新闻大历史</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="329" begintime="20170109100000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="330" begintime="20170109105500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="331" begintime="20170109110000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="332" begintime="20170109112700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="333" begintime="20170109113000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>问答神州</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="334" begintime="20170109120000" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰午间特快</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="335" begintime="20170109122500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="336" begintime="20170109123000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>时事辩论会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="337" begintime="20170109130000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="338" begintime="20170109131500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>周末龙门阵</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="339" begintime="20170109140000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="340" begintime="20170109145500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="341" begintime="20170109150000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="342" begintime="20170109155500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="343" begintime="20170109160000" duration="004000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="344" begintime="20170109164000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="345" begintime="20170109164500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="346" begintime="20170109170000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="347" begintime="20170109172700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="348" begintime="20170109173000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>金石财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="349" begintime="20170109180000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="350" begintime="20170109182700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="351" begintime="20170109183000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="352" begintime="20170109190000" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>华闻大直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="353" begintime="20170109194500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="354" begintime="20170109200000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="355" begintime="20170109202700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="356" begintime="20170109203000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰财经日报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="357" begintime="20170109210000" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>时事直通车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="358" begintime="20170109220000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>总编辑时间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="359" begintime="20170109223000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="360" begintime="20170109230000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="361" begintime="20170109231500" duration="004600" eventtype="00">
+<EventText language="chi">
+<Name>天下被网罗</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="362" begintime="20170110000100" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>凤凰子夜快车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="363" begintime="20170110003000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>时事辩论会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="364" begintime="20170110010000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="365" begintime="20170110012700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="366" begintime="20170110013000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>金石财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="367" begintime="20170110020000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="368" begintime="20170110022700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="369" begintime="20170110023000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰财经日报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="370" begintime="20170110030000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="371" begintime="20170110032700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="372" begintime="20170110033000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>总编辑时间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="373" begintime="20170110040000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="374" begintime="20170110041500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>天下被网罗</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="375" begintime="20170110050000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="376" begintime="20170110052700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="377" begintime="20170110053000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="378" begintime="20170110060000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="379" begintime="20170110062700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="380" begintime="20170110063000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>时事辩论会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="381" begintime="20170110070000" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰早班车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="382" begintime="20170110080000" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>华闻大直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="383" begintime="20170110084500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="384" begintime="20170110090000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="385" begintime="20170110092700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="386" begintime="20170110093000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>金石财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="387" begintime="20170110100000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="388" begintime="20170110102700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="389" begintime="20170110103000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>总编辑时间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="390" begintime="20170110110000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="391" begintime="20170110115500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="392" begintime="20170110120000" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰午间特快</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="393" begintime="20170110122500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="394" begintime="20170110123000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>时事辩论会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="395" begintime="20170110130000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="396" begintime="20170110131500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>天下被网罗</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="397" begintime="20170110140000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="398" begintime="20170110145500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="399" begintime="20170110150000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="400" begintime="20170110155500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="401" begintime="20170110160000" duration="004000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="402" begintime="20170110164000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="403" begintime="20170110164500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="404" begintime="20170110170000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="405" begintime="20170110172700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="406" begintime="20170110173000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>金石财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="407" begintime="20170110180000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="408" begintime="20170110182700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="409" begintime="20170110183000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="410" begintime="20170110190000" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>华闻大直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="411" begintime="20170110194500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="412" begintime="20170110200000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="413" begintime="20170110202700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="414" begintime="20170110203000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰财经日报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="415" begintime="20170110210000" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>时事直通车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="416" begintime="20170110220000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>总编辑时间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="417" begintime="20170110223000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="418" begintime="20170110230000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="419" begintime="20170110231500" duration="004600" eventtype="00">
+<EventText language="chi">
+<Name>天下被网罗</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="420" begintime="20170111000100" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>凤凰子夜快车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="421" begintime="20170111003000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>时事辩论会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="422" begintime="20170111010000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="423" begintime="20170111012700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="424" begintime="20170111013000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>金石财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="425" begintime="20170111020000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="426" begintime="20170111022700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="427" begintime="20170111023000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰财经日报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="428" begintime="20170111030000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="429" begintime="20170111032700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="430" begintime="20170111033000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>总编辑时间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="431" begintime="20170111040000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="432" begintime="20170111041500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>天下被网罗</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="433" begintime="20170111050000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="434" begintime="20170111052700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="435" begintime="20170111053000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="436" begintime="20170111060000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="437" begintime="20170111062700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="438" begintime="20170111063000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>时事辩论会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="439" begintime="20170111070000" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰早班车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="440" begintime="20170111080000" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>华闻大直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="441" begintime="20170111084500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="442" begintime="20170111090000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="443" begintime="20170111092700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="444" begintime="20170111093000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>金石财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="445" begintime="20170111100000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="446" begintime="20170111102700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="447" begintime="20170111103000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>总编辑时间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="448" begintime="20170111110000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="449" begintime="20170111115500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="450" begintime="20170111120000" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰午间特快</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="451" begintime="20170111122500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="452" begintime="20170111123000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>时事辩论会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="453" begintime="20170111130000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="454" begintime="20170111131500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>天下被网罗</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="455" begintime="20170111140000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="456" begintime="20170111145500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="457" begintime="20170111150000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="458" begintime="20170111155500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="459" begintime="20170111160000" duration="004000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="460" begintime="20170111164000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="461" begintime="20170111164500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="462" begintime="20170111170000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="463" begintime="20170111172700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="464" begintime="20170111173000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>金石财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="465" begintime="20170111180000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="466" begintime="20170111182700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="467" begintime="20170111183000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="468" begintime="20170111190000" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>华闻大直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="469" begintime="20170111194500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="470" begintime="20170111200000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="471" begintime="20170111202700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="472" begintime="20170111203000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰财经日报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="473" begintime="20170111210000" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>时事直通车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="474" begintime="20170111220000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>总编辑时间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="475" begintime="20170111223000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="476" begintime="20170111230000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="477" begintime="20170111231500" duration="004600" eventtype="00">
+<EventText language="chi">
+<Name>天下被网罗</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="478" begintime="20170112000100" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>凤凰子夜快车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="479" begintime="20170112003000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>时事辩论会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="480" begintime="20170112010000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="481" begintime="20170112012700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="482" begintime="20170112013000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>金石财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="483" begintime="20170112020000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="484" begintime="20170112022700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="485" begintime="20170112023000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰财经日报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="486" begintime="20170112030000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="487" begintime="20170112032700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="488" begintime="20170112033000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>总编辑时间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="489" begintime="20170112040000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="490" begintime="20170112041500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>天下被网罗</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="491" begintime="20170112050000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="492" begintime="20170112052700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="493" begintime="20170112053000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="494" begintime="20170112060000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="495" begintime="20170112062700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="496" begintime="20170112063000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>时事辩论会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="497" begintime="20170112070000" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰早班车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="498" begintime="20170112080000" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>华闻大直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="499" begintime="20170112084500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="500" begintime="20170112090000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="501" begintime="20170112092700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="502" begintime="20170112093000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>金石财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="503" begintime="20170112100000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="504" begintime="20170112102700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="505" begintime="20170112103000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>总编辑时间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="506" begintime="20170112110000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="507" begintime="20170112115500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="508" begintime="20170112120000" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰午间特快</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="509" begintime="20170112122500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="510" begintime="20170112123000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>时事辩论会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="511" begintime="20170112130000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="512" begintime="20170112131500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>天下被网罗</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="513" begintime="20170112140000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="514" begintime="20170112145500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="515" begintime="20170112150000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="516" begintime="20170112155500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="517" begintime="20170112160000" duration="004000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="518" begintime="20170112164000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="519" begintime="20170112164500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="520" begintime="20170112170000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="521" begintime="20170112172700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="522" begintime="20170112173000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>金石财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="523" begintime="20170112180000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="524" begintime="20170112182700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="525" begintime="20170112183000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="526" begintime="20170112190000" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>华闻大直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="527" begintime="20170112194500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="528" begintime="20170112200000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="529" begintime="20170112202700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="530" begintime="20170112203000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰财经日报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="531" begintime="20170112210000" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>时事直通车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="532" begintime="20170112220000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>总编辑时间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="533" begintime="20170112223000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="534" begintime="20170112230000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="535" begintime="20170112231500" duration="004600" eventtype="00">
+<EventText language="chi">
+<Name>天下被网罗</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="536" begintime="20170113000100" duration="002900" eventtype="00">
+<EventText language="chi">
+<Name>凤凰子夜快车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="537" begintime="20170113003000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>时事辩论会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="538" begintime="20170113010000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="539" begintime="20170113012700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="540" begintime="20170113013000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>金石财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="541" begintime="20170113020000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="542" begintime="20170113022700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="543" begintime="20170113023000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰财经日报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="544" begintime="20170113030000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="545" begintime="20170113032700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="546" begintime="20170113033000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>总编辑时间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="547" begintime="20170113040000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="548" begintime="20170113041500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>天下被网罗</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="549" begintime="20170113050000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="550" begintime="20170113052700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="551" begintime="20170113053000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="552" begintime="20170113060000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="553" begintime="20170113062700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="554" begintime="20170113063000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>时事辩论会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="555" begintime="20170113070000" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰早班车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="556" begintime="20170113080000" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>华闻大直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="557" begintime="20170113084500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="558" begintime="20170113090000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="559" begintime="20170113092700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="560" begintime="20170113093000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>金石财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="561" begintime="20170113100000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="562" begintime="20170113102700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="563" begintime="20170113103000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>总编辑时间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="564" begintime="20170113110000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="565" begintime="20170113115500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="566" begintime="20170113120000" duration="002500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰午间特快</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="567" begintime="20170113122500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="568" begintime="20170113123000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>时事辩论会</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="569" begintime="20170113130000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="570" begintime="20170113131500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>天下被网罗</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="571" begintime="20170113140000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="572" begintime="20170113145500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="573" begintime="20170113150000" duration="005500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="574" begintime="20170113155500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="575" begintime="20170113160000" duration="004000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="576" begintime="20170113164000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="577" begintime="20170113164500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="578" begintime="20170113170000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰正点播报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="579" begintime="20170113172700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="580" begintime="20170113173000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>金石财经</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="581" begintime="20170113180000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="582" begintime="20170113182700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="583" begintime="20170113183000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="584" begintime="20170113190000" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>华闻大直播</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="585" begintime="20170113194500" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>新闻朋友圈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="586" begintime="20170113200000" duration="002700" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="587" begintime="20170113202700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>凤凰气象站</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="588" begintime="20170113203000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>凤凰财经日报</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="589" begintime="20170113210000" duration="010000" eventtype="00">
+<EventText language="chi">
+<Name>时事直通车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="590" begintime="20170113220000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>总编辑时间</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="591" begintime="20170113223000" duration="003000" eventtype="00">
+<EventText language="chi">
+<Name>新闻今日谈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="592" begintime="20170113230000" duration="001500" eventtype="00">
+<EventText language="chi">
+<Name>凤凰焦点新闻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="593" begintime="20170113231500" duration="030000" eventtype="00">
+<EventText language="chi">
+<Name>天下被网罗</Name>
+<ShortDescription></ShortDescription></EventText></Event></Channel></SchedulerData>
+
+
+</BroadcastData>

@@ -1,0 +1,252 @@
+nohup: 忽略输入
+2017-09-14 09:42:44,741 [INFO] {hqltools.py:365} 程序开始执行
+2017-09-14 09:42:45,133 [INFO] {hqltools.py:50} Query sql is:
+create table if not exists s_tmp_dwa_dns_up_stream_d1
+            (
+                acct_start_time    string
+                ,acct_stop_time    string
+                ,client_ip_address string
+                ,user_name         string
+            )
+            stored as rcfile
+            LOCATION '/user/hive/TEMP/s_tmp_dwa_dns_up_stream_d1'
+            
+2017-09-14 09:42:45,165 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 09:42:45,198 [INFO] {hqltools.py:50} Query sql is:
+create table if not exists s_tmp_dwa_dns_up_stream_d2
+            (
+                visit_time    int
+                ,source_adress    string
+            )
+            stored as rcfile
+            LOCATION '/user/hive/TEMP/s_tmp_dwa_dns_up_stream_d2'
+            
+2017-09-14 09:42:45,209 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 09:42:45,246 [INFO] {hqltools.py:50} Query sql is:
+create table if not exists s_tmp_dwa_dns_up_stream_d3
+            (
+                LOGIN_NAME           STRING,
+                COUNT                INT
+            )
+            stored as rcfile
+            LOCATION '/user/hive/TEMP/s_tmp_dwa_dns_up_stream_d3'
+            
+2017-09-14 09:42:45,257 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 09:42:45,289 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_dns_up_stream_d1
+    select from_unixtime(unix_timestamp(acct_start_time),'yyyyMMddHHmmss') as acct_start_time
+         ,from_unixtime(unix_timestamp(acct_stop_time),'yyyyMMddHHmmss') as acct_stop_time
+         ,client_ip_address
+         ,user_name
+     from dwd_dr_brd_expend
+    where pt_time = 20170801
+     
+2017-09-14 09:43:20,572 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 09:43:20,669 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_dns_up_stream_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_start_time order by acct_stop_time desc) rn
+                from s_tmp_dwa_dns_up_stream_d1 t
+                 ) t
+        where rn = 1
+            
+2017-09-14 09:43:50,859 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 09:43:50,957 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_dns_up_stream_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_stop_time order by acct_start_time asc) rn
+                from s_tmp_dwa_dns_up_stream_d1 t
+                 ) t
+        where rn = 1
+            
+2017-09-14 09:44:18,450 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 09:44:18,548 [INFO] {hqltools.py:50} Query sql is:
+truncate table s_tmp_dwa_dns_up_stream_d3 
+         
+2017-09-14 09:44:18,594 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 09:44:18,629 [INFO] {hqltools.py:50} Query sql is:
+insert into table s_tmp_dwa_dns_up_stream_d3
+      select
+         t1.user_name AS login_name
+         ,count(1)
+       from s_tmp_dwa_dns_up_stream_d1 t1 --在线记录
+           ,(select * from dwd_dns_up_stream where pt_time=20170801 and pt_hour % 3 = 0 )t2 --上行数据
+      where t2.source_adress = t1.client_ip_address
+        and t1.acct_start_time <= t2.visit_time
+        and t1.acct_stop_time >= t2.visit_time
+      group by t1.user_name
+       
+2017-09-14 09:57:06,143 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 09:57:06,205 [INFO] {hqltools.py:50} Query sql is:
+insert into table s_tmp_dwa_dns_up_stream_d3
+      select
+         t1.user_name AS login_name
+         ,count(1)
+       from s_tmp_dwa_dns_up_stream_d1 t1 --在线记录
+           ,(select * from dwd_dns_up_stream where pt_time=20170801 and pt_hour % 3 = 1 )t2 --上行数据
+      where t2.source_adress = t1.client_ip_address
+        and t1.acct_start_time <= t2.visit_time
+        and t1.acct_stop_time >= t2.visit_time
+      group by t1.user_name
+       
+2017-09-14 10:09:46,896 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 10:09:46,960 [INFO] {hqltools.py:50} Query sql is:
+insert into table s_tmp_dwa_dns_up_stream_d3
+      select
+         t1.user_name AS login_name
+         ,count(1)
+       from s_tmp_dwa_dns_up_stream_d1 t1 --在线记录
+           ,(select * from dwd_dns_up_stream where pt_time=20170801 and pt_hour % 3 = 2 )t2 --上行数据
+      where t2.source_adress = t1.client_ip_address
+        and t1.acct_start_time <= t2.visit_time
+        and t1.acct_stop_time >= t2.visit_time
+      group by t1.user_name
+       
+2017-09-14 10:20:45,327 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 10:20:45,403 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_dns_up_stream_d partition(pt_time=20170801,etl_time=20170801)
+    select login_name,sum(count),'' from s_tmp_dwa_dns_up_stream_d3 group by login_name
+     
+2017-09-14 10:21:11,199 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 10:21:11,388 [INFO] {hqltools.py:50} Query sql is:
+truncate table s_tmp_dwa_dns_up_stream_d3 
+2017-09-14 10:21:11,509 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 10:21:11,570 [INFO] {hqltools.py:50} Query sql is:
+insert into table s_tmp_dwa_dns_up_stream_d3
+      select
+         t1.user_name AS login_name
+         ,count(1)
+       from s_tmp_dwa_dns_up_stream_d1 t1 --在线记录
+           ,(select * from dwd_dns_up_stream where pt_time=20170731 and pt_hour % 3 = 0 )t2 --上行数据
+      where t2.source_adress = t1.client_ip_address
+        and t1.acct_start_time <= t2.visit_time
+        and t1.acct_stop_time >= t2.visit_time
+      group by t1.user_name
+       
+2017-09-14 10:21:59,102 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 10:21:59,188 [INFO] {hqltools.py:50} Query sql is:
+insert into table s_tmp_dwa_dns_up_stream_d3
+      select
+         t1.user_name AS login_name
+         ,count(1)
+       from s_tmp_dwa_dns_up_stream_d1 t1 --在线记录
+           ,(select * from dwd_dns_up_stream where pt_time=20170731 and pt_hour % 3 = 1 )t2 --上行数据
+      where t2.source_adress = t1.client_ip_address
+        and t1.acct_start_time <= t2.visit_time
+        and t1.acct_stop_time >= t2.visit_time
+      group by t1.user_name
+       
+2017-09-14 10:22:46,628 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 10:22:46,725 [INFO] {hqltools.py:50} Query sql is:
+insert into table s_tmp_dwa_dns_up_stream_d3
+      select
+         t1.user_name AS login_name
+         ,count(1)
+       from s_tmp_dwa_dns_up_stream_d1 t1 --在线记录
+           ,(select * from dwd_dns_up_stream where pt_time=20170731 and pt_hour % 3 = 2 )t2 --上行数据
+      where t2.source_adress = t1.client_ip_address
+        and t1.acct_start_time <= t2.visit_time
+        and t1.acct_stop_time >= t2.visit_time
+      group by t1.user_name
+       
+2017-09-14 10:23:28,893 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 10:23:28,988 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_dns_up_stream_d partition(pt_time=20170731,etl_time=20170801)
+    select login_name,sum(count),'' from s_tmp_dwa_dns_up_stream_d3 group by login_name
+     
+2017-09-14 10:23:54,619 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 10:23:54,708 [INFO] {hqltools.py:50} Query sql is:
+truncate table s_tmp_dwa_dns_up_stream_d3 
+2017-09-14 10:23:54,759 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 10:23:54,806 [INFO] {hqltools.py:50} Query sql is:
+insert into table s_tmp_dwa_dns_up_stream_d3
+      select
+         t1.user_name AS login_name
+         ,count(1)
+       from s_tmp_dwa_dns_up_stream_d1 t1 --在线记录
+           ,(select * from dwd_dns_up_stream where pt_time=20170730 and pt_hour % 3 = 0 )t2 --上行数据
+      where t2.source_adress = t1.client_ip_address
+        and t1.acct_start_time <= t2.visit_time
+        and t1.acct_stop_time >= t2.visit_time
+      group by t1.user_name
+       
+2017-09-14 10:24:37,206 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 10:24:37,283 [INFO] {hqltools.py:50} Query sql is:
+insert into table s_tmp_dwa_dns_up_stream_d3
+      select
+         t1.user_name AS login_name
+         ,count(1)
+       from s_tmp_dwa_dns_up_stream_d1 t1 --在线记录
+           ,(select * from dwd_dns_up_stream where pt_time=20170730 and pt_hour % 3 = 1 )t2 --上行数据
+      where t2.source_adress = t1.client_ip_address
+        and t1.acct_start_time <= t2.visit_time
+        and t1.acct_stop_time >= t2.visit_time
+      group by t1.user_name
+       
+2017-09-14 10:25:23,209 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 10:25:23,304 [INFO] {hqltools.py:50} Query sql is:
+insert into table s_tmp_dwa_dns_up_stream_d3
+      select
+         t1.user_name AS login_name
+         ,count(1)
+       from s_tmp_dwa_dns_up_stream_d1 t1 --在线记录
+           ,(select * from dwd_dns_up_stream where pt_time=20170730 and pt_hour % 3 = 2 )t2 --上行数据
+      where t2.source_adress = t1.client_ip_address
+        and t1.acct_start_time <= t2.visit_time
+        and t1.acct_stop_time >= t2.visit_time
+      group by t1.user_name
+       
+2017-09-14 10:26:06,199 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 10:26:06,683 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_dns_up_stream_d partition(pt_time=20170730,etl_time=20170801)
+    select login_name,sum(count),'' from s_tmp_dwa_dns_up_stream_d3 group by login_name
+     
+2017-09-14 10:26:29,522 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 10:26:29,605 [INFO] {hqltools.py:50} Query sql is:
+truncate table s_tmp_dwa_dns_up_stream_d3 
+2017-09-14 10:26:29,670 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 10:26:29,705 [INFO] {hqltools.py:50} Query sql is:
+insert into table s_tmp_dwa_dns_up_stream_d3
+      select
+         t1.user_name AS login_name
+         ,count(1)
+       from s_tmp_dwa_dns_up_stream_d1 t1 --在线记录
+           ,(select * from dwd_dns_up_stream where pt_time=20170729 and pt_hour % 3 = 0 )t2 --上行数据
+      where t2.source_adress = t1.client_ip_address
+        and t1.acct_start_time <= t2.visit_time
+        and t1.acct_stop_time >= t2.visit_time
+      group by t1.user_name
+       
+2017-09-14 10:27:24,536 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 10:27:24,629 [INFO] {hqltools.py:50} Query sql is:
+insert into table s_tmp_dwa_dns_up_stream_d3
+      select
+         t1.user_name AS login_name
+         ,count(1)
+       from s_tmp_dwa_dns_up_stream_d1 t1 --在线记录
+           ,(select * from dwd_dns_up_stream where pt_time=20170729 and pt_hour % 3 = 1 )t2 --上行数据
+      where t2.source_adress = t1.client_ip_address
+        and t1.acct_start_time <= t2.visit_time
+        and t1.acct_stop_time >= t2.visit_time
+      group by t1.user_name
+       
+2017-09-14 10:28:16,653 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 10:28:16,750 [INFO] {hqltools.py:50} Query sql is:
+insert into table s_tmp_dwa_dns_up_stream_d3
+      select
+         t1.user_name AS login_name
+         ,count(1)
+       from s_tmp_dwa_dns_up_stream_d1 t1 --在线记录
+           ,(select * from dwd_dns_up_stream where pt_time=20170729 and pt_hour % 3 = 2 )t2 --上行数据
+      where t2.source_adress = t1.client_ip_address
+        and t1.acct_start_time <= t2.visit_time
+        and t1.acct_stop_time >= t2.visit_time
+      group by t1.user_name
+       
+2017-09-14 10:29:10,153 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 10:29:10,244 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_dns_up_stream_d partition(pt_time=20170729,etl_time=20170801)
+    select login_name,sum(count),'' from s_tmp_dwa_dns_up_stream_d3 group by login_name
+     
+2017-09-14 10:29:35,772 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-14 10:29:35,782 [INFO] {hqltools.py:387} 程序执行成功. 删除锁文件 /AiInsight/logs/DWA_DNS_UP_STREAM_D_20170802.lock

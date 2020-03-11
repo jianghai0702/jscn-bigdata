@@ -1,0 +1,625 @@
+20170628
+201706
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:35:05,331 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.439 seconds, Fetched: 33 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:35:16,326 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.421 seconds, Fetched: 630 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:35:27,324 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.423 seconds, Fetched: 33 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:35:38,266 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.432 seconds, Fetched: 31 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:35:49,262 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.434 seconds, Fetched: 76 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:36:00,327 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.476 seconds, Fetched: 16 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:36:18,794 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 1.604 seconds, Fetched: 9 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:36:30,188 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 7.64 seconds
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:36:58,826 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.452 seconds
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:37:30,553 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.461 seconds
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:37:41,788 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.447 seconds, Fetched: 6 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:37:52,786 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.668 seconds, Fetched: 76 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:38:12,532 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 3.412 seconds, Fetched: 62 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:38:30,725 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.83 seconds, Fetched: 10 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:39:00,889 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 5.302 seconds, Fetched: 190 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:39:24,657 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.412 seconds
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:39:36,557 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.442 seconds, Fetched: 65 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:39:47,553 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.449 seconds, Fetched: 2 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:40:06,614 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.581 seconds, Fetched: 13 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:40:21,628 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.828 seconds, Fetched: 167 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:40:55,602 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 4.813 seconds, Fetched: 20 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:41:19,268 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.343 seconds
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:41:32,259 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.468 seconds, Fetched: 1 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:41:47,543 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.592 seconds, Fetched: 322 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:42:03,928 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 6.891 seconds
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:42:30,496 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 1.889 seconds, Fetched: 29 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:43:01,576 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 3.117 seconds, Fetched: 9 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:43:16,138 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.437 seconds, Fetched: 289 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:43:27,183 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.42 seconds, Fetched: 11 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:43:38,128 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.414 seconds, Fetched: 106 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:43:49,087 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.422 seconds
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:44:00,101 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.422 seconds, Fetched: 3 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:44:11,117 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.425 seconds
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:44:22,092 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.348 seconds
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:44:32,798 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.348 seconds
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:44:43,508 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.489 seconds, Fetched: 1 row(s)
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:44:54,535 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.37 seconds
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:45:05,284 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.395 seconds
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:45:16,041 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.336 seconds
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:45:26,714 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.321 seconds
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:45:37,438 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.328 seconds
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:45:48,184 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.344 seconds
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:45:58,878 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.337 seconds
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:46:09,808 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.359 seconds
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+2017-08-28 01:46:20,533 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512M; support was removed in 8.0
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/jars/hive-common-1.1.0-cdh5.6.1.jar!/hive-log4j.properties
+OK
+Time taken: 2.345 seconds
+
+SQL*Plus: Release 11.2.0.4.0 Production on Mon Aug 28 01:46:26 2017
+
+Copyright (c) 1982, 2013, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> SQL> SQL> BEGIN p_delete_local_data_m(to_date('201706','yyyymm')); END;
+
+      *
+ERROR at line 1:
+ORA-06550: line 1, column 7:
+PLS-00201: identifier 'P_DELETE_LOCAL_DATA_M' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+
+
+Elapsed: 00:00:00.00
+SQL> Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:26 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 22
+Commit point reached - logical record count 33
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:26 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 52
+Commit point reached - logical record count 104
+Commit point reached - logical record count 156
+Commit point reached - logical record count 208
+Commit point reached - logical record count 260
+Commit point reached - logical record count 312
+Commit point reached - logical record count 364
+Commit point reached - logical record count 416
+Commit point reached - logical record count 468
+Commit point reached - logical record count 520
+Commit point reached - logical record count 572
+Commit point reached - logical record count 624
+Commit point reached - logical record count 630
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:27 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 33
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:27 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 31
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:27 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 58
+Commit point reached - logical record count 76
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:27 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 16
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:27 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 9
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:27 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:27 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:27 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:27 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 6
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:27 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 64
+Commit point reached - logical record count 76
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:27 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 62
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:27 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 10
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:27 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 64
+Commit point reached - logical record count 128
+Commit point reached - logical record count 190
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:28 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:28 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 64
+Commit point reached - logical record count 65
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:28 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 2
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:28 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 13
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:28 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 64
+Commit point reached - logical record count 128
+Commit point reached - logical record count 167
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:28 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 20
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:28 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:28 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 1
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:28 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 64
+Commit point reached - logical record count 128
+Commit point reached - logical record count 192
+Commit point reached - logical record count 256
+Commit point reached - logical record count 320
+Commit point reached - logical record count 322
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:28 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:28 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 29
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:28 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 9
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:28 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 64
+Commit point reached - logical record count 128
+Commit point reached - logical record count 192
+Commit point reached - logical record count 256
+Commit point reached - logical record count 289
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:28 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 11
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:28 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 64
+Commit point reached - logical record count 106
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:28 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:28 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 3
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:29 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:29 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:29 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:29 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Commit point reached - logical record count 1
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:29 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:29 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:29 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:29 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:29 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:29 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:29 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:29 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+SQL*Loader-350: Syntax error at line 7.
+Expecting "," or ")", found "OWN_CORP_STD_ORG_NAME".
+    OWN_CORP_STD_ORG_NAME 
+    ^
+
+SQL*Loader: Release 11.2.0.4.0 - Production on Mon Aug 28 01:46:29 2017
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+

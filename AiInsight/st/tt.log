@@ -1,0 +1,39 @@
+nohup: 忽略输入
+2017-09-16 20:15:30,856 [INFO] {hqltools.py:365} 程序开始执行
+2017-09-16 20:15:31,278 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table st_dns_response_failure_m partition(pt_mon = 201708)
+    select
+       t2.OWN_CORP_STD_ORG_CODE    --标准归属分公司编码
+       ,t3.STD_ORG_NAME    --标准归属分公司名称
+       ,t1.ANSWER_CODE     --应答代码 
+       ,'' ANSWER_NAME     --应答含义 
+       ,sum(COUNT) RESPONSE_COUNT              --失败次数
+       ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date  
+    from dwa_dns_down_stream_d t1 
+   inner join dwa_fact_rpt_ins_prod_mon t2
+      on t1.login_name = t2.login_name
+    left join dim_std_organize t3
+      on t2.own_corp_std_org_code=t3.std_org_code
+   where t2.pt_mon = 201708
+     and substr(t1.pt_time,1,6) = 201708
+     and t1.ANSWER_CODE <> '0'
+   group by t2.OWN_CORP_STD_ORG_CODE
+            ,t3.STD_ORG_NAME
+            ,t1.ANSWER_CODE
+     
+2017-09-16 20:16:42,492 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-16 20:16:42,567 [INFO] {hqltools.py:50} Query sql is:
+insert into table st_dns_response_failure_m partition(pt_mon = 201708)
+select 
+        '10'    --标准归属分公司编码
+       ,'江苏有线'    --标准归属分公司名称
+       ,'下行减上行差异次数' ANSWER_CODE     --应答代码 
+       ,'' ANSWER_NAME     --应答含义 
+       ,t1.count-t2.count RESPONSE_COUNT              --失败次数
+       ,from_unixtime(unix_timestamp(),'yyyy-MM-dd HH:mm:ss') etl_date  
+from (select count(1) as count from dwd_dns_up_stream where substr(pt_time,1,6) = 201708 and pt_time >20170802) t1 --上行
+    ,(select count(1) as count from dwd_dns_down_stream where substr(pt_time,1,6) = 201708 and pt_time >20170802) t2 --下行
+
+  
+2017-09-16 21:52:30,298 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-09-16 21:52:30,323 [INFO] {hqltools.py:387} 程序执行成功. 删除锁文件 /AiInsight/logs/ST_DNS_RESPONSE_FAILURE_M_20170901.lock

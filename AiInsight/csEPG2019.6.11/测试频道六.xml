@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<BroadcastData code="1100000000" creationtime="20190611102454" version="2.0">
+<ProviderInfo id="CTI" name="测试频道六"/>
+<SchedulerData type="PROGRAM"><Channel><ChannelText language="chi"><ChannelName>测试频道六</ChannelName></ChannelText>
+<Event eventid="1" begintime="20080204005400" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="2" begintime="20080204005500" duration="013100" eventtype="00">
+<EventText language="chi">
+<Name>智勇和尚</Name>
+<ShortDescription>节目简介	明朝熹宗年间,东厂特务机关由宦官魏忠贤任指挥。东林党忠良贤士、吏部文郎顾宪成等人因上谏册立太子而被罢官。顾宪成回到江南老家创办了一所东林书院,常于闲谈之时难忘忧国忧民的情愫……</ShortDescription></EventText></Event>
+<Event eventid="3" begintime="20080204022600" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="4" begintime="20080204023000" duration="013500" eventtype="00">
+<EventText language="chi">
+<Name>天生神探之千年咒</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="5" begintime="20080204040500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="6" begintime="20080204041000" duration="012900" eventtype="00">
+<EventText language="chi">
+<Name>幻影战士</Name>
+<ShortDescription>节目简介	电影频道是以宣传电影、培养电影观众和传播影视文化为宗旨的专业频道。每天播出九部风格迥异的中外电影和各类动画片、美术片、科教片、纪录片、戏曲片、专题片等;积极支持国产优秀电影拍摄和宣传。</ShortDescription></EventText></Event>
+<Event eventid="7" begintime="20080204053900" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="8" begintime="20080204054000" duration="012500" eventtype="00">
+<EventText language="chi">
+<Name>游方和尚</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="9" begintime="20080204070500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="10" begintime="20080204071000" duration="013500" eventtype="00">
+<EventText language="chi">
+<Name>曾克林出关</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	日本投降后,为抢占先机建立根据地,遵照党中央的指示,八路军冀热辽军区16军分区司令员曾克林率部挺进东北,赢得了苏军的支持,歼灭了敌伪残部,顺利完成了党中央的战略部署。</ShortDescription></EventText></Event>
+<Event eventid="11" begintime="20080204084500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="12" begintime="20080204085000" duration="021800" eventtype="00">
+<EventText language="chi">
+<Name>敌后武工队</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	1942年,冀中平原。日本宪兵和汉奸、伪警察血洗东王庄。武工队员们在队长魏强的带领下巧计夜袭,扫平侵袭队,击毙汉奸哈巴狗。最后炸毁了宪兵队总部,为乡亲们报了仇,大长了人民抗日的士气。</ShortDescription></EventText></Event>
+<Event eventid="13" begintime="20080204110800" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="14" begintime="20080204111000" duration="012600" eventtype="00">
+<EventText language="chi">
+<Name>侠骨风流</Name>
+<ShortDescription>节目简介	隋朝末年,朝廷腐败,民不聊生,铁匠尉迟恭毅然加入李建成队伍,自知误入贼窝,最终听从了李世民的劝,协助李世民南征北战,为建立大唐王国立下汗马功劳。</ShortDescription></EventText></Event>
+<Event eventid="15" begintime="20080204123600" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="16" begintime="20080204124000" duration="012700" eventtype="00">
+<EventText language="chi">
+<Name>霹雳凤凰</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	在一间封闭的教室里,十几个女孩将成为新一代的女特警,但她们的教官却是一个几乎永远没有笑容的硬派男人--徐刚。经过艰苦的训练,这支英雄女子特警队被授予"霹雳凤凰"的称号。</ShortDescription></EventText></Event>
+<Event eventid="17" begintime="20080204140700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="18" begintime="20080204141000" duration="013000" eventtype="00">
+<EventText language="chi">
+<Name>大醉侠</Name>
+<ShortDescription>节目简介	金燕子做官的兄长被山贼掳走作人质,于是女扮男装往救之,虽有一身好武艺,仍多次遇险。幸得大醉侠加以援手,因此引起大醉侠一段江湖恩怨。</ShortDescription></EventText></Event>
+<Event eventid="19" begintime="20080204154000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="20" begintime="20080204154500" duration="012400" eventtype="00">
+<EventText language="chi">
+<Name>命夺黄金图</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	清末,守备大人派出金海清等壮士勘探金矿并绘就了黄金图。贪婪的管带储云龙伙同日本人不停追杀众人,想把图据为己有。海清等人以命相拼,终于回到守备府前,不料,道台竟也与日本人勾结,企图占有黄金图……</ShortDescription></EventText></Event>
+<Event eventid="21" begintime="20080204170900" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="22" begintime="20080204171000" duration="012800" eventtype="00">
+<EventText language="chi">
+<Name>狂龙逞英豪</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	清末的偏僻小县城龙镇,土毛子为向洋人讨赏而四处搜罗古玩珍宝。小衙内龙大少吹牛说见到了真龙,却引来了寻宝的洋毛子,险遭杀身之祸,幸得侠女山妹相救。醒悟后的龙大少率领众乡亲与入侵者展开大搏杀……</ShortDescription></EventText></Event>
+<Event eventid="23" begintime="20080204183800" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="24" begintime="20080204184000" duration="011600" eventtype="00">
+<EventText language="chi">
+<Name>雪国情仇</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	明万历年间,朝廷为统治关外,颁发了数以百计的印信,得一印信便可成为一城之主。为此将军德昌不惜杀死城主、血洗渥伦城,抢夺两封印信。不料它们又被反战乱求和平的雪姑、德果夺走……</ShortDescription></EventText></Event>
+<Event eventid="25" begintime="20080204195600" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="26" begintime="20080204200000" duration="013100" eventtype="00">
+<EventText language="chi">
+<Name>风尘三千里</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	辛亥时期,张起云参加革命军特别行动小组,到西北接受10万银元捐款,遭到恶霸董世英袭击受伤,被独行侠黑驼头救出。最终,他们巧布骆驼阵,杀死董世英和刘少爷,夺回银元,为革命军补充了军饷。</ShortDescription></EventText></Event>
+<Event eventid="27" begintime="20080204213100" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="28" begintime="20080204213500" duration="012500" eventtype="00">
+<EventText language="chi">
+<Name>乱世英豪</Name>
+<ShortDescription>节目简介	30年代初,在金角镇住着程毅一家人,儿子程生,以及两个妹妹程娥、程小碧。一天趁程毅和小碧上山给村民看病之时,一伙冒充和尚的匪徒闯进了程家,说是要找寺里丢失的一个金佛……</ShortDescription></EventText></Event>
+<Event eventid="29" begintime="20080204230000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="30" begintime="20080204230500" duration="015000" eventtype="00">
+<EventText language="chi">
+<Name>烈火雄心</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="31" begintime="20080205005500" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>结束</Name>
+<ShortDescription>播出日期	2008/02/05</ShortDescription></EventText></Event>
+<Event eventid="32" begintime="20080205005600" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="33" begintime="20080205010000" duration="013300" eventtype="00">
+<EventText language="chi">
+<Name>舞狮人传奇</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	舞狮者陈剑虹为妻报仇杀了地主邢梦龙,夺回家传狮子玉佩。他把儿子虎仔寄养师弟家,从此浪迹江湖。20年后,陈剑虹和自己失散的两个孩子一起,与贩毒的公司老板邢雅甫展开血战……</ShortDescription></EventText></Event>
+<Event eventid="34" begintime="20080205023300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="35" begintime="20080205023500" duration="012900" eventtype="00">
+<EventText language="chi">
+<Name>真味小厨王</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	为了赢得“中国厨神选拔赛”,“正宗真味馆”的主理人龙一使尽各种暗招,阻挠百年老店“真味馆”参赛。此时,少林寺12岁的试味小和尚光仔云游四海来到“真味馆”,与“真味馆”的主理人东叔交上了朋友……</ShortDescription></EventText></Event>
+<Event eventid="36" begintime="20080205040400" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="37" begintime="20080205040500" duration="013400" eventtype="00">
+<EventText language="chi">
+<Name>大圣娶亲</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	故事发生在500年前。至尊宝被月光宝盒带回到五百年前,巧遇紫霞仙子。紫霞仙子曾有一誓言,拔出她紫青宝剑的人就是她的意中人。不想宝剑被至尊宝拔出……</ShortDescription></EventText></Event>
+<Event eventid="38" begintime="20080205053900" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="39" begintime="20080205054000" duration="013500" eventtype="00">
+<EventText language="chi">
+<Name>义侠勇闯上海滩</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	青年医生唐山因为制止黑帮头目于老七欺侮百姓与于结下冤仇。不久,多起儿童失踪,于借机嫁祸唐。唐在朋友华的帮助下发现了英人雷博士以活人做试验,指使于杀人的罪行。唐与于同伙决一死战,雷开枪自杀。</ShortDescription></EventText></Event>
+<Event eventid="40" begintime="20080205071500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="41" begintime="20080205072000" duration="011900" eventtype="00">
+<EventText language="chi">
+<Name>天湖女侠</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	电影故事片是所有文化艺术创作中最容易调动人的激情、最受人们欢迎的艺术创作形式之一。它能丰富人的日常文化生活和梦想。本频道播出优秀故事片,贴近生活、贴近人心,以深厚的文化底蕴讲述生活与梦想。</ShortDescription></EventText></Event>
+<Event eventid="42" begintime="20080205083900" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="43" begintime="20080205084000" duration="013400" eventtype="00">
+<EventText language="chi">
+<Name>风尘女侠吕四娘</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	侠女吕四娘和仇英杀死昏君后到蓬莱齐云山隐居。12年后仇英发现仇人马龙,四娘暴露了隐居身份,屡遇清兵追杀。四娘、吻妹和仇英终于铲除了孽徒马龙和王显,最后四娘承袭师祖衣钵,投身空门。</ShortDescription></EventText></Event>
+<Event eventid="44" begintime="20080205101400" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="45" begintime="20080205101500" duration="013400" eventtype="00">
+<EventText language="chi">
+<Name>神鞭</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	清末天津,混混玻璃花被傻二打败。为报此仇,玻璃花请来各路武林高手助战,不想却都败在傻二辫下,人送傻二美称“神鞭”。庚子年,八国联军侵华,傻二加入义和团英勇杀敌。他丢掉了辫子,另创新路。</ShortDescription></EventText></Event>
+<Event eventid="46" begintime="20080205114900" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="47" begintime="20080205115000" duration="012700" eventtype="00">
+<EventText language="chi">
+<Name>私人保镖</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="48" begintime="20080205131700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="49" begintime="20080205132000" duration="012400" eventtype="00">
+<EventText language="chi">
+<Name>花翎飞盗</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	讲述了一个发生在清朝末年的居官为盗的故事。</ShortDescription></EventText></Event>
+<Event eventid="50" begintime="20080205144400" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="51" begintime="20080205144500" duration="015600" eventtype="00">
+<EventText language="chi">
+<Name>少林寺</Name>
+<ShortDescription>节目简介	少林寺绝世武功,各方志士纷纷拜师学武,而清廷却视少林寺为眼中钉。方世玉、胡惠乾为报杀父之仇,也来寺中习武。当武艺学成后,便去闯云寺为父亲报仇,这时却发现清兵开始对少林寺展开偷袭行动。</ShortDescription></EventText></Event>
+<Event eventid="52" begintime="20080205164100" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="53" begintime="20080205164500" duration="013600" eventtype="00">
+<EventText language="chi">
+<Name>俏罗成</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	影片讲述了罗成率罗家兵起义瓦岗山。反抗朝廷前后的一段鲜为人知的故事。引出了罗成与紫姻、线娘、俊姑三位姑娘的感情纠葛。刻画出罗成是一位有血、有肉、有情、有义的英雄好汉。</ShortDescription></EventText></Event>
+<Event eventid="54" begintime="20080205182100" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="55" begintime="20080205182500" duration="012900" eventtype="00">
+<EventText language="chi">
+<Name>神州小剑侠</Name>
+<ShortDescription>节目简介	在400多年前的西南大山里,居住着以天山族为首的侗、苗、瑶、傣各族山民。一天,人们正在为堡主之子卡洛的满月举行庆典。不料,官兵打进城来。原来是堡主之弟洪虎,勾结官府篡位夺权……</ShortDescription></EventText></Event>
+<Event eventid="56" begintime="20080205195400" duration="000600" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="57" begintime="20080205200000" duration="013700" eventtype="00">
+<EventText language="chi">
+<Name>拿破仑战争(1)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="58" begintime="20080205213700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="59" begintime="20080205214000" duration="012100" eventtype="00">
+<EventText language="chi">
+<Name>剑吼长城东</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	“三光”大扫荡中,八路军冀东军分区副司令员鲍真率部在盘山地区与日军周旋,建立山区抗日根据地。鲍真为扩大抗日力量,与山匪马铁腿结盟,又拜访紫云观道长商讨抗日大计。</ShortDescription></EventText></Event>
+<Event eventid="60" begintime="20080205230100" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="61" begintime="20080205230500" duration="012300" eventtype="00">
+<EventText language="chi">
+<Name>义胆忠魂</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	廖添丁是台湾家喻户晓的传奇人物。他劫富济贫,常常暗中救济流离失所的受苦难民;他行侠仗义,果断处死刽子手以血祭恩师的亡灵;他锄强扶弱,对蹂躏不幸女子的色魔拳脚不饶;他被誉为黑暗年代的“台湾魂”。</ShortDescription></EventText></Event>
+<Event eventid="62" begintime="20080206002800" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>结束</Name>
+<ShortDescription>播出日期	2008/02/06</ShortDescription></EventText></Event>
+<Event eventid="63" begintime="20080206002900" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="64" begintime="20080206003000" duration="013000" eventtype="00">
+<EventText language="chi">
+<Name>秋之舞</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="65" begintime="20080206020000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="66" begintime="20080206020500" duration="014000" eventtype="00">
+<EventText language="chi">
+<Name>绝境逢生</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	影片反映了二次大战期间,中美军民与日本法西斯作斗争的故事。反映了中美军民英勇无畏的精神和气概。</ShortDescription></EventText></Event>
+<Event eventid="67" begintime="20080206034500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="68" begintime="20080206035000" duration="012800" eventtype="00">
+<EventText language="chi">
+<Name>假大侠</Name>
+<ShortDescription>节目简介	影片讲述了八国联军入侵天津时,以卖火烧为生的章避火救了义士霍青山,从此霍青山暗中帮助章避火,使他成为了一个见义勇为的侠士,生活发生了巨大变化。然而,洋人开始了拔除这个眼中钉的计划……</ShortDescription></EventText></Event>
+<Event eventid="69" begintime="20080206051800" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="70" begintime="20080206052000" duration="013000" eventtype="00">
+<EventText language="chi">
+<Name>南北雄狮</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	明末,两广总督王泮决定举行“狮王争霸”大赛。柳氏武馆柳小龙和周继志狮队组合的夺标呼声至高。但周继志还深陷在亡兄之痛中自暴自弃。王泮之女铃儿和周的恋人蓉蓉说服他一起苦练,并最终夺得大赛魁首。</ShortDescription></EventText></Event>
+<Event eventid="71" begintime="20080206065000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="72" begintime="20080206065500" duration="012600" eventtype="00">
+<EventText language="chi">
+<Name>军列杀出重围</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	1945年隆冬,日本战败,为防国民党军队企图乘机占领东北,我抗联将大批缴获的日军武器装备运往前线。小分队队长姚东林率队押运001次军列,与残余日军和山匪展开激战,最终胜利完成了押运任务。</ShortDescription></EventText></Event>
+<Event eventid="73" begintime="20080206082100" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="74" begintime="20080206082500" duration="012700" eventtype="00">
+<EventText language="chi">
+<Name>飓风行动</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	1990年,国外某犯罪集团企图窃取坠落我国某地的一块陨石,我公安干警与之展开斗争,最终拿获了犯罪分子。</ShortDescription></EventText></Event>
+<Event eventid="75" begintime="20080206095200" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="76" begintime="20080206095500" duration="012600" eventtype="00">
+<EventText language="chi">
+<Name>傣女情恨</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	1911年初,辛亥革命即将席卷全国,一笔南洋华侨捐赠云南滕越起义的经费秘密送入云南边境,即刻引起了清廷的注意。一场血与火的争夺大战就此展开。</ShortDescription></EventText></Event>
+<Event eventid="77" begintime="20080206112100" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="78" begintime="20080206112500" duration="012500" eventtype="00">
+<EventText language="chi">
+<Name>浪子燕青</Name>
+<ShortDescription>节目简介	宋末,宋江在梁山聚集一批好汉。他们杀富济贫,深得人心。宋徽宗派兵讨伐,但官兵屡战屡败。于是朝廷准备招安,但高俅设计引诱宋江等好汉下山打擂,以便抓住宋江,围剿梁山。结果以失败告终。</ShortDescription></EventText></Event>
+<Event eventid="79" begintime="20080206125000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="80" begintime="20080206125500" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>京都球侠</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	清末,欧洲球队队长哈里带领球员辱羞中国百姓及官员,并与清廷签下球赛之约。周天为此找到六个身怀绝技的汉子组成了青龙队,在关键时刻挺身而出,大破洋人。事后周天拒绝詹尼的搭救,从容赴死。</ShortDescription></EventText></Event>
+<Event eventid="81" begintime="20080206144000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="82" begintime="20080206144500" duration="013200" eventtype="00">
+<EventText language="chi">
+<Name>功夫小子闯情关</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	清朝末年,太极高手杨崇武欲求平安退出江湖。他告诉儿子必须刻苦读书,少出去惹事,但他的儿子学文从小受父亲影响,酷爱武术,经常偷偷习武……</ShortDescription></EventText></Event>
+<Event eventid="83" begintime="20080206161700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="84" begintime="20080206162000" duration="015100" eventtype="00">
+<EventText language="chi">
+<Name>好莱坞重案组</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	乔葛维伦是个经验老到的洛城警探,同时还兼职做地产经纪,他被分到和年轻的葛登一起搭档办案,葛登也有个副业,是个野心勃勃的小演员,两人的合作制造出许多笑点。</ShortDescription></EventText></Event>
+<Event eventid="85" begintime="20080206181100" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="86" begintime="20080206181500" duration="014300" eventtype="00">
+<EventText language="chi">
+<Name>大捷</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	国民党23路军新编第三团的大多数成员是临时拉来的老百姓。在日军与1761团的夹击下,新三团全军覆没。幸存者段仁义、唐杰克、欧阳贵在“狙击日军有功”的授勋仪式上,拔枪向总司令韩培戈开火……</ShortDescription></EventText></Event>
+<Event eventid="87" begintime="20080206195800" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="88" begintime="20080206200000" duration="013200" eventtype="00">
+<EventText language="chi">
+<Name>拿破仑战争(2)</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="89" begintime="20080206213200" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="90" begintime="20080206213500" duration="013000" eventtype="00">
+<EventText language="chi">
+<Name>哪吒</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	在纣王的统治下人民饱受压迫,哪吒打抱不平却屡屡闯祸,父子最终水火不容。为救百姓和全家,哪吒不惜削骨还父,削肉还母,此举感动了神仙使其复活,并赐给他两件宝物,解救受苦百姓。</ShortDescription></EventText></Event>
+<Event eventid="91" begintime="20080206230500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="92" begintime="20080206231000" duration="012300" eventtype="00">
+<EventText language="chi">
+<Name>黑色闪电</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	抗日战争时期,新四军侦察员秦姣、铁功等人与盟军上尉情报官斯特朗和国民党谍报员陈浩密切合作,绑架了"神风特攻队"秘密基地的设计者宫崎孝男,圆满完成了获取日军"神风特攻队"秘密基地的图纸的任务。</ShortDescription></EventText></Event>
+<Event eventid="93" begintime="20080207003300" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>结束</Name>
+<ShortDescription>播出日期	2008/02/07</ShortDescription></EventText></Event>
+<Event eventid="94" begintime="20080207003400" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="95" begintime="20080207003500" duration="013000" eventtype="00">
+<EventText language="chi">
+<Name>白龙剑</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	描写清嘉庆年间,农民起义军白莲教首领刘之协被杀后,其女继承遗志,寻找白莲教圣物“白龙剑”,举行兴教抗清的故事。</ShortDescription></EventText></Event>
+<Event eventid="96" begintime="20080207020500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="97" begintime="20080207021000" duration="014000" eventtype="00">
+<EventText language="chi">
+<Name>武林志</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	电影故事片是所有文化艺术创作中最容易调动人的激情、最受人们欢迎的艺术创作形式之一。它能丰富人的日常文化生活和梦想。本频道播出优秀故事片,贴近生活、贴近人心,以深厚的文化底蕴讲述生活与梦想。</ShortDescription></EventText></Event>
+<Event eventid="98" begintime="20080207035000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="99" begintime="20080207035500" duration="012400" eventtype="00">
+<EventText language="chi">
+<Name>怪侠</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	怪侠“白兰花”为百姓打抱不平得罪了知县孙念祖和巡抚,被班头钱豹追捕。不想无辜的林彩娘一家却被当成“白兰花”抓进了大牢。“白兰花”为救他们甘愿束手就擒。之后,他又施计逃狱,将贪官杀死。</ShortDescription></EventText></Event>
+<Event eventid="100" begintime="20080207051900" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="101" begintime="20080207052000" duration="012700" eventtype="00">
+<EventText language="chi">
+<Name>断命文身</Name>
+<ShortDescription>节目简介	1915年,袁世凯与日本签订了丧权辱国的“二十一条”。追随孙中山的革命党人、精忠武馆馆长崔文禧,率人截获一批日本军火并将军火埋藏起来,绘制了图纸。并将此图绘制在武馆馆标及五个徒弟和女儿身上……</ShortDescription></EventText></Event>
+<Event eventid="102" begintime="20080207064700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="103" begintime="20080207065000" duration="012100" eventtype="00">
+<EventText language="chi">
+<Name>小飞侠</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	生活在维多利亚时代的女孩云蒂,整天被一个呆板顽固的父亲,扼杀她童年的快乐和梦想。约翰和米高,也遭受着同样的痛苦,他们梦想着有一天,能够学会在天上飞,这样他们就可以飞离令他们讨厌的家了。</ShortDescription></EventText></Event>
+<Event eventid="104" begintime="20080207081100" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="105" begintime="20080207081500" duration="012800" eventtype="00">
+<EventText language="chi">
+<Name>龙闯中原</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	民国初年,日本帝国主义为了侵略中国,企图瓦解中国传统武术在民间的影响力,以“女妖”川岛芳子为主谋开始实施侵华“先锋计划”。咏春拳传人石龙历经艰险,创立截拳的武学理论,挫败了敌人的阴谋。</ShortDescription></EventText></Event>
+<Event eventid="106" begintime="20080207094300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="107" begintime="20080207094500" duration="012800" eventtype="00">
+<EventText language="chi">
+<Name>红姑寨恩仇记</Name>
+<ShortDescription>节目简介	明朝末年,江湖艺人出身的民间女子红姑所在的郭家杂技大班浪迹江湖,漂流四方,途中他们遭到前兵部尚书霍老太爷得意门生--副总兵追杀,班主郭师傅率郭家班抵抗,幸得霍公忆相救,才得以脱险……</ShortDescription></EventText></Event>
+<Event eventid="108" begintime="20080207111300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="109" begintime="20080207111500" duration="013400" eventtype="00">
+<EventText language="chi">
+<Name>东邪西毒</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	欧阳锋在兄长成婚的那天离家出走,因为嫂子是他最爱的女人。他隐居在沙漠小镇,经营着一家旅店,专为结识往来的过客,也做着为他人寻找杀手的生意,其中也过往穿插了一些人与事……</ShortDescription></EventText></Event>
+<Event eventid="110" begintime="20080207124900" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="111" begintime="20080207125000" duration="012700" eventtype="00">
+<EventText language="chi">
+<Name>天朝国库之谜</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	"考古学家马良潜心研究发现:太平天国国库掩埋在"千柱屋"的第一千根屋柱下。岂料,马良的研究被国民党、日本人、青龙帮等察觉,马良星夜前往千柱古屋……</ShortDescription></EventText></Event>
+<Event eventid="112" begintime="20080207141700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="113" begintime="20080207142000" duration="022600" eventtype="00">
+<EventText language="chi">
+<Name>七剑</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	1600年,满清虽已入关,但中原武林仍隐藏着不少反抗力量,晦明大师尽遣四大弟子随傅青主、武元英和韩志邦下山,并把毕生修炼成的七把宝剑分赠七人,展开“七剑下天山”的武林传奇。</ShortDescription></EventText></Event>
+<Event eventid="114" begintime="20080207164600" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="115" begintime="20080207165000" duration="012700" eventtype="00">
+<EventText language="chi">
+<Name>霹雳凤凰</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	在一间封闭的教室里,十几个女孩将成为新一代的女特警,但她们的教官却是一个几乎永远没有笑容的硬派男人--徐刚。经过艰苦的训练,这支英雄女子特警队被授予"霹雳凤凰"的称号。</ShortDescription></EventText></Event>
+<Event eventid="116" begintime="20080207181700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="117" begintime="20080207182000" duration="013500" eventtype="00">
+<EventText language="chi">
+<Name>传国密诏</Name>
+<ShortDescription>节目简介	大明王朝崩溃前夕,崇祯帝立下传国诏书交给太子朱慈粮,嘱他逃往南京,希冀旧臣遗老保他登基。太监王承恩托侄子王之明保护太子连夜化装逃出皇宫。一路上,各方刺客为夺取诏书不时来行刺。</ShortDescription></EventText></Event>
+<Event eventid="118" begintime="20080207195500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="119" begintime="20080207200000" duration="020200" eventtype="00">
+<EventText language="chi">
+<Name>风云雄霸天下</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	武林第一大帮会"天下会"帮主雄霸为使霸业永存,铲除异己,广收门徒,将被其杀害的两位武林高手的儿子步惊云和聂风招为入室弟子。10年后,年老多疑的雄霸却借女儿孔慈婚嫁之事离间二人,阴谋分而除之……</ShortDescription></EventText></Event>
+<Event eventid="120" begintime="20080207220200" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="121" begintime="20080207220500" duration="014100" eventtype="00">
+<EventText language="chi">
+<Name>销魂刀</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	明末,好几个投降朝廷的原李自成旧部都被销魂刀组织刺杀,一时吓得叛贼坐立不安。宛州提刑佥事尤国桢施离间计,使销魂刀内部裂痕顿生。高天笑打死尤国桢后,与已自杀的妻子并排躺在床上死去。</ShortDescription></EventText></Event>
+<Event eventid="122" begintime="20080207234600" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="123" begintime="20080207235000" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>曾克林出关</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	日本投降后,为抢占先机建立根据地,遵照党中央的指示,八路军冀热辽军区16军分区司令员曾克林率部挺进东北,赢得了苏军的支持,歼灭了敌伪残部,顺利完成了党中央的战略部署。</ShortDescription></EventText></Event>
+<Event eventid="124" begintime="20080208003500" duration="005000" eventtype="00">
+<EventText language="chi">
+<Name>结束</Name>
+<ShortDescription>播出日期	2008/02/08</ShortDescription></EventText></Event>
+<Event eventid="125" begintime="20080208012500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="126" begintime="20080208013000" duration="013300" eventtype="00">
+<EventText language="chi">
+<Name>淘金王</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	清末,新疆。侠客许天雄救了遭金厂老板巴占贵暗算的淘金王,受其临终拜托去寻找秘密金洞,然后赎回他的女儿金草。历尽周折后,淘金人终于得到了黄金。可生活并未因此幸福起来,无尽的苦难仍等待着他们。</ShortDescription></EventText></Event>
+<Event eventid="127" begintime="20080208030300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="128" begintime="20080208030500" duration="012700" eventtype="00">
+<EventText language="chi">
+<Name>黄金驿站</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	抗战时期,古城青州是中共地下党的联络站,曾为延安输送过大量的物质和人才。本片展现了1938年至1940年间,山东省地下党组织从敌占区招远金矿采集黄金,经青州秘密送往革命圣地延安的惊险历程。</ShortDescription></EventText></Event>
+<Event eventid="129" begintime="20080208043200" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="130" begintime="20080208043500" duration="012800" eventtype="00">
+<EventText language="chi">
+<Name>一代枪王</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	1900年,八国联军侵占北京,义和团首领程子青人称一代枪王,力主争取朝廷共同御敌,但清政府的坐观态度则使义和团处境日渐困难。德国公使克林德设计血洗“红灯照”,程子青独闯德国公使馆,击毙克林德。</ShortDescription></EventText></Event>
+<Event eventid="131" begintime="20080208060300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="132" begintime="20080208060500" duration="013400" eventtype="00">
+<EventText language="chi">
+<Name>神鞭</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	清末天津,混混玻璃花被傻二打败。为报此仇,玻璃花请来各路武林高手助战,不想却都败在傻二辫下,人送傻二美称“神鞭”。庚子年,八国联军侵华,傻二加入义和团英勇杀敌。他丢掉了辫子,另创新路。</ShortDescription></EventText></Event>
+<Event eventid="133" begintime="20080208073900" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="134" begintime="20080208074000" duration="013500" eventtype="00">
+<EventText language="chi">
+<Name>天生神探之千年咒</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="135" begintime="20080208091500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="136" begintime="20080208092000" duration="013100" eventtype="00">
+<EventText language="chi">
+<Name>风尘三千里</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	辛亥时期,张起云参加革命军特别行动小组,到西北接受10万银元捐款,遭到恶霸董世英袭击受伤,被独行侠黑驼头救出。最终,他们巧布骆驼阵,杀死董世英和刘少爷,夺回银元,为革命军补充了军饷。</ShortDescription></EventText></Event>
+<Event eventid="137" begintime="20080208105100" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="138" begintime="20080208105500" duration="013400" eventtype="00">
+<EventText language="chi">
+<Name>第五行动组Ⅲ:夜巴黎</Name>
+<ShortDescription>节目简介	日军偷袭珍珠港的消息传到上海,给驻上海的日军和家眷注射了一剂兴奋剂。利用宫本大佐得意忘形的机会,杨励、秋婷进入宫本大佐办公室,窃取日军特务在我后方搜集的新四军联络图和地下党组织名册……</ShortDescription></EventText></Event>
+<Event eventid="139" begintime="20080208122900" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="140" begintime="20080208123000" duration="012600" eventtype="00">
+<EventText language="chi">
+<Name>侠骨风流</Name>
+<ShortDescription>节目简介	隋朝末年,朝廷腐败,民不聊生,铁匠尉迟恭毅然加入李建成队伍,自知误入贼窝,最终听从了李世民的劝,协助李世民南征北战,为建立大唐王国立下汗马功劳。</ShortDescription></EventText></Event>
+<Event eventid="141" begintime="20080208135600" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="142" begintime="20080208140000" duration="013000" eventtype="00">
+<EventText language="chi">
+<Name>48小时闯天关</Name>
+<ShortDescription>节目一级分类	电影/戏剧</ShortDescription></EventText></Event>
+<Event eventid="143" begintime="20080208153000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="144" begintime="20080208153500" duration="012400" eventtype="00">
+<EventText language="chi">
+<Name>义胆忠魂</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	廖添丁是台湾家喻户晓的传奇人物。他劫富济贫,常常暗中救济流离失所的受苦难民;他行侠仗义,果断处死刽子手以血祭恩师的亡灵;他锄强扶弱,对蹂躏不幸女子的色魔拳脚不饶;他被誉为黑暗年代的“台湾魂”。</ShortDescription></EventText></Event>
+<Event eventid="145" begintime="20080208165900" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="146" begintime="20080208170000" duration="012900" eventtype="00">
+<EventText language="chi">
+<Name>生死赌门</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	解放前的天津,侯庆余、孟承宗和吴泰之三人从小投师习武,情同手足,学成后同在师傅镖局里任镖师。孟承宗押镖途中进赌场豪赌,镖物被劫,因此自杀身亡,临死前将儿子托付给师兄侯庆余……</ShortDescription></EventText></Event>
+<Event eventid="147" begintime="20080208182900" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="148" begintime="20080208183000" duration="012500" eventtype="00">
+<EventText language="chi">
+<Name>大内密探</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	身为保龙一族,零零发是"恭、喜、发、财"中武功最差的一个,所以始终不被皇上重用。后金国企图利用"天外飞仙"计划进占中原,零零发识破奸计,并拯救皇上于危难,亦自此加官晋爵。</ShortDescription></EventText></Event>
+<Event eventid="149" begintime="20080208195500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="150" begintime="20080208200000" duration="012900" eventtype="00">
+<EventText language="chi">
+<Name>少林英雄之方世玉洪熙官</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="151" begintime="20080208212900" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="152" begintime="20080208213000" duration="012400" eventtype="00">
+<EventText language="chi">
+<Name>飞刀</Name>
+<ShortDescription>节目简介	故事发生在1939年的古城扬州。一个飞刀艺人在仙女镇上和几个女子的悲欢离合。在恶势力和鬼子汉奸的欺压下,他们奋起反抗,生死关头,他们向新四军的队伍走去……</ShortDescription></EventText></Event>
+<Event eventid="153" begintime="20080208225400" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="154" begintime="20080208225500" duration="012700" eventtype="00">
+<EventText language="chi">
+<Name>怒海威龙</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	我南方某城,一起毒品走私案牵出了一个跨国假钞案。而这起案件里隐藏着一个菲律宾跨国犯罪集团。我公安机关立即派刑警杨队长前往菲律宾,中、港、菲三方合作,联手破获此案。</ShortDescription></EventText></Event>
+<Event eventid="155" begintime="20080209002200" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>结束</Name>
+<ShortDescription>播出日期	2008/02/09</ShortDescription></EventText></Event>
+<Event eventid="156" begintime="20080209002300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="157" begintime="20080209002500" duration="013000" eventtype="00">
+<EventText language="chi">
+<Name>无懈可击</Name>
+<ShortDescription>节目简介	麦可法拉戴是个刚丧妻的大学历史教授,与十岁的儿子居住在华盛顿特区近郊。他的妻子原是联邦调查员,在一次勤务中不幸丧生。父子陷入巨大的阴影中,直到一个充满活力的典型美国家庭搬到对街,才出现改观。</ShortDescription></EventText></Event>
+<Event eventid="158" begintime="20080209015500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="159" begintime="20080209020000" duration="012300" eventtype="00">
+<EventText language="chi">
+<Name>海狮敢死队</Name>
+<ShortDescription>节目简介	电影频道是以宣传电影、培养电影观众和传播影视文化为宗旨的专业频道。每天播出九部风格迥异的中外电影和各类动画片、美术片、科教片、纪录片、戏曲片、专题片等;积极支持国产优秀电影拍摄和宣传。</ShortDescription></EventText></Event>
+<Event eventid="160" begintime="20080209032300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="161" begintime="20080209032500" duration="013700" eventtype="00">
+<EventText language="chi">
+<Name>西门家族</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	激战后的战场上,一赤身少年突然被一将死之人抓住,说了声“我叫西门岳”便死去了。少年穿上死者的衣服,佩带好死者的弓箭,霎时长大,从此身不由己,成为西门岳灵魂的化身“黑箭”……</ShortDescription></EventText></Event>
+<Event eventid="162" begintime="20080209050200" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="163" begintime="20080209050500" duration="012500" eventtype="00">
+<EventText language="chi">
+<Name>犬王</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	本片描写了我抗日部队的一支军犬分队英勇作战,使日军谈狗色变,闻风丧胆,终被我军歼灭的故事。</ShortDescription></EventText></Event>
+<Event eventid="164" begintime="20080209063000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="165" begintime="20080209063500" duration="013600" eventtype="00">
+<EventText language="chi">
+<Name>义侠勇闯上海滩</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	青年医生唐山因为制止黑帮头目于老七欺侮百姓与于结下冤仇。不久,多起儿童失踪,于借机嫁祸唐。唐在朋友华的帮助下发现了英人雷博士以活人做试验,指使于杀人的罪行。唐与于同伙决一死战,雷开枪自杀。</ShortDescription></EventText></Event>
+<Event eventid="166" begintime="20080209081100" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="167" begintime="20080209081500" duration="012300" eventtype="00">
+<EventText language="chi">
+<Name>仗义英雄</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	抗日战争期间,海外侨胞向国内捐助一批抗日军饷,不慎途中遗失。共产党、国民党和日寇都派特遣队寻找。以周大川为首的新四军青云支队,团结国民党抗日上校严少杰,粉碎了日寇阴谋,保护了军饷。</ShortDescription></EventText></Event>
+<Event eventid="168" begintime="20080209093800" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="169" begintime="20080209094000" duration="013000" eventtype="00">
+<EventText language="chi">
+<Name>烽火佳人:天若有情Ⅲ</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	抗战初期,飞行少尉刘天伟独自遇上了日军机队,只得跳伞逃生。村姑小禾救了他,两人相爱了。刘天伟本打算带小禾离开,但小禾却因不识字错过了时间。在刘天伟执行死亡任务前夕,小禾突然出现在他的面前……</ShortDescription></EventText></Event>
+<Event eventid="170" begintime="20080209111000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="171" begintime="20080209111500" duration="012600" eventtype="00">
+<EventText language="chi">
+<Name>军列杀出重围</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	1945年隆冬,日本战败,为防国民党军队企图乘机占领东北,我抗联将大批缴获的日军武器装备运往前线。小分队队长姚东林率队押运001次军列,与残余日军和山匪展开激战,最终胜利完成了押运任务。</ShortDescription></EventText></Event>
+<Event eventid="172" begintime="20080209124100" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="173" begintime="20080209124500" duration="012500" eventtype="00">
+<EventText language="chi">
+<Name>乱世英豪</Name>
+<ShortDescription>节目简介	30年代初,在金角镇住着程毅一家人,儿子程生,以及两个妹妹程娥、程小碧。一天趁程毅和小碧上山给村民看病之时,一伙冒充和尚的匪徒闯进了程家,说是要找寺里丢失的一个金佛……</ShortDescription></EventText></Event>
+<Event eventid="174" begintime="20080209141000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="175" begintime="20080209141500" duration="013000" eventtype="00">
+<EventText language="chi">
+<Name>吕正操1942</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	讲述1942年吕正操率领冀中军民粉碎日寇发动"五一大扫荡"这段历史,歌颂了以吕正操为首的冀中军民同仇敌忾、不怕牺牲的大无畏的民族精神。</ShortDescription></EventText></Event>
+<Event eventid="176" begintime="20080209154500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="177" begintime="20080209155000" duration="013500" eventtype="00">
+<EventText language="chi">
+<Name>大圣娶亲</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	故事发生在500年前。至尊宝被月光宝盒带回到五百年前,巧遇紫霞仙子。紫霞仙子曾有一誓言,拔出她紫青宝剑的人就是她的意中人。不想宝剑被至尊宝拔出……</ShortDescription></EventText></Event>
+<Event eventid="178" begintime="20080209172500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="179" begintime="20080209173000" duration="022600" eventtype="00">
+<EventText language="chi">
+<Name>七剑</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	1600年,满清虽已入关,但中原武林仍隐藏着不少反抗力量,晦明大师尽遣四大弟子随傅青主、武元英和韩志邦下山,并把毕生修炼成的七把宝剑分赠七人,展开“七剑下天山”的武林传奇。</ShortDescription></EventText></Event>
+<Event eventid="180" begintime="20080209195600" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="181" begintime="20080209200000" duration="013400" eventtype="00">
+<EventText language="chi">
+<Name>韩城攻略</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	高级侦探林贵仁为了破获美国政府美金伪钞电版失窃案秘密来到香港,孤身深入黑帮偷出电版。不料因林贵仁被欧文算计,电版再次失窃。于是他立即赶赴韩国与欧文交手。这次,他有女飞贼JJ相助……</ShortDescription></EventText></Event>
+<Event eventid="182" begintime="20080209213400" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="183" begintime="20080209213500" duration="011600" eventtype="00">
+<EventText language="chi">
+<Name>雪国情仇</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	明万历年间,朝廷为统治关外,颁发了数以百计的印信,得一印信便可成为一城之主。为此将军德昌不惜杀死城主、血洗渥伦城,抢夺两封印信。不料它们又被反战乱求和平的雪姑、德果夺走……</ShortDescription></EventText></Event>
+<Event eventid="184" begintime="20080209225100" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="185" begintime="20080209225500" duration="013400" eventtype="00">
+<EventText language="chi">
+<Name>天生神探之双子座</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="186" begintime="20080210002900" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>结束</Name>
+<ShortDescription>播出日期	2008/02/10</ShortDescription></EventText></Event>
+<Event eventid="187" begintime="20080210003000" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="188" begintime="20080210003500" duration="012700" eventtype="00">
+<EventText language="chi">
+<Name>新龙门客栈</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	明末,东厂曹少钦假造圣旨杀害忠良杨宇轩,侠女邱莫言等人救出忠良后代,与杨将军部下周淮安会合于龙门客栈。但这个客栈老板金镶玉并非常人,她风情万种,杀人抢货肆无忌惮。她的加入使争夺更加危险……</ShortDescription></EventText></Event>
+<Event eventid="189" begintime="20080210020200" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="190" begintime="20080210020500" duration="021800" eventtype="00">
+<EventText language="chi">
+<Name>敌后武工队</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	1942年,冀中平原。日本宪兵和汉奸、伪警察血洗东王庄。武工队员们在队长魏强的带领下巧计夜袭,扫平侵袭队,击毙汉奸哈巴狗。最后炸毁了宪兵队总部,为乡亲们报了仇,大长了人民抗日的士气。</ShortDescription></EventText></Event>
+<Event eventid="191" begintime="20080210042300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="192" begintime="20080210042500" duration="014300" eventtype="00">
+<EventText language="chi">
+<Name>大捷</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	国民党23路军新编第三团的大多数成员是临时拉来的老百姓。在日军与1761团的夹击下,新三团全军覆没。幸存者段仁义、唐杰克、欧阳贵在“狙击日军有功”的授勋仪式上,拔枪向总司令韩培戈开火……</ShortDescription></EventText></Event>
+<Event eventid="193" begintime="20080210060800" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="194" begintime="20080210061000" duration="013300" eventtype="00">
+<EventText language="chi">
+<Name>淘金王</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	清末,新疆。侠客许天雄救了遭金厂老板巴占贵暗算的淘金王,受其临终拜托去寻找秘密金洞,然后赎回他的女儿金草。历尽周折后,淘金人终于得到了黄金。可生活并未因此幸福起来,无尽的苦难仍等待着他们。</ShortDescription></EventText></Event>
+<Event eventid="195" begintime="20080210074300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="196" begintime="20080210074500" duration="013900" eventtype="00">
+<EventText language="chi">
+<Name>草莽英雄</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	描写辛亥革命前夕,川南保路同志会长罗选青在同盟会员唐彬贤帮助下,团结各县袍哥帮会高举保路义旗,举行武装起义,进行如火如荼的反清斗争。</ShortDescription></EventText></Event>
+<Event eventid="197" begintime="20080210092400" duration="000100" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="198" begintime="20080210092500" duration="013700" eventtype="00">
+<EventText language="chi">
+<Name>碧血剑</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	明朝末年,皇上听信谗言,将英勇抗敌战功卓着的袁崇焕将军处死。孙仲寿为寻找袁家少主交付碧血剑而自毁双眼活了下来。同时,一个叫金蛇郎君的江湖人也在寻找温家堡人报仇,他有一把神剑―金蛇剑。</ShortDescription></EventText></Event>
+<Event eventid="199" begintime="20080210110200" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="200" begintime="20080210110500" duration="013000" eventtype="00">
+<EventText language="chi">
+<Name>大醉侠</Name>
+<ShortDescription>节目简介	金燕子做官的兄长被山贼掳走作人质,于是女扮男装往救之,虽有一身好武艺,仍多次遇险。幸得大醉侠加以援手,因此引起大醉侠一段江湖恩怨。</ShortDescription></EventText></Event>
+<Event eventid="201" begintime="20080210123500" duration="000500" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="202" begintime="20080210124000" duration="012700" eventtype="00">
+<EventText language="chi">
+<Name>末代响马</Name>
+<ShortDescription>节目简介	20世纪初,北方响马首领黑龙因遭到守备队的追击,只得将儿子交给师父李全义带走。15年后,为了向日本人和二鬼子讨还血债,黑龙与新任警备队长李念祖交上了手,不想念祖正是他失散了15年的儿子……</ShortDescription></EventText></Event>
+<Event eventid="203" begintime="20080210140700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="204" begintime="20080210141000" duration="012300" eventtype="00">
+<EventText language="chi">
+<Name>少侠奇缘</Name>
+<ShortDescription>节目简介	电影故事片是所有文化艺术创作中最容易调动人的激情、最受人们欢迎的艺术创作形式之一。它能丰富人的日常文化生活和梦想。本频道播出优秀故事片,贴近生活、贴近人心,以深厚的文化底蕴讲述生活与梦想。</ShortDescription></EventText></Event>
+<Event eventid="205" begintime="20080210153300" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="206" begintime="20080210153500" duration="012300" eventtype="00">
+<EventText language="chi">
+<Name>黑色闪电</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	抗日战争时期,新四军侦察员秦姣、铁功等人与盟军上尉情报官斯特朗和国民党谍报员陈浩密切合作,绑架了"神风特攻队"秘密基地的设计者宫崎孝男,圆满完成了获取日军"神风特攻队"秘密基地的图纸的任务。</ShortDescription></EventText></Event>
+<Event eventid="207" begintime="20080210165800" duration="000200" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="208" begintime="20080210170000" duration="012700" eventtype="00">
+<EventText language="chi">
+<Name>珠江恩仇记</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	20年代的广州,江湖黑帮势力明争暗斗。贫穷青年金城到广州投靠叔爷,碰上黑帮仇杀而卷入黑帮中,金城在黑帮中眼见帮会的仇杀。后来他认识了革命党人周泽,金城率堂会手下弃暗投明,护送周宏泽北上革命。</ShortDescription></EventText></Event>
+<Event eventid="209" begintime="20080210182700" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="210" begintime="20080210183000" duration="012400" eventtype="00">
+<EventText language="chi">
+<Name>怪侠</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	怪侠“白兰花”为百姓打抱不平得罪了知县孙念祖和巡抚,被班头钱豹追捕。不想无辜的林彩娘一家却被当成“白兰花”抓进了大牢。“白兰花”为救他们甘愿束手就擒。之后,他又施计逃狱,将贪官杀死。</ShortDescription></EventText></Event>
+<Event eventid="211" begintime="20080210195400" duration="000600" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="212" begintime="20080210200000" duration="021200" eventtype="00">
+<EventText language="chi">
+<Name>墨攻</Name>
+<ShortDescription>节目简介	影片讲述了赵国攻打梁城,势单力弱的梁城,请来以“廉爱非攻”为主张的,墨家学说智者革离帮助梁王对峙赵军,将“战”与“反战”的激烈矛盾,在王侯将相和黎民百姓之间演绎出一段惊心动魄的历史故事。</ShortDescription></EventText></Event>
+<Event eventid="213" begintime="20080210221200" duration="000300" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="214" begintime="20080210221500" duration="013600" eventtype="00">
+<EventText language="chi">
+<Name>俏罗成</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	影片讲述了罗成率罗家兵起义瓦岗山。反抗朝廷前后的一段鲜为人知的故事。引出了罗成与紫姻、线娘、俊姑三位姑娘的感情纠葛。刻画出罗成是一位有血、有肉、有情、有义的英雄好汉。</ShortDescription></EventText></Event>
+<Event eventid="215" begintime="20080210235100" duration="000400" eventtype="00">
+<EventText language="chi">
+<Name>动作导视</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="216" begintime="20080210235500" duration="004500" eventtype="00">
+<EventText language="chi">
+<Name>花翎飞盗</Name>
+<ShortDescription>节目一级分类	电影/戏剧
+	节目简介	讲述了一个发生在清朝末年的居官为盗的故事。</ShortDescription></EventText></Event>
+<Event eventid="217" begintime="20080211004000" duration="030000" eventtype="00">
+<EventText language="chi">
+<Name>结束</Name>
+<ShortDescription></ShortDescription></EventText></Event></Channel></SchedulerData>
+
+
+</BroadcastData>

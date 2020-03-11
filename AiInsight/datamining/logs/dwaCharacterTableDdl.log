@@ -1,0 +1,210 @@
+2018-01-18 12:54:34,916 [INFO] {hiveUtils.py:78} Executive sql is:
+ drop table if exists tmp_dwa_character_1
+2018-01-18 12:54:35,002 [INFO] {hiveUtils.py:80} Successful implementation of this sql
+2018-01-18 12:54:35,003 [INFO] {hiveUtils.py:78} Executive sql is:
+
+                    drop table if exists tmp_dwa_character_2
+2018-01-18 12:54:35,177 [INFO] {hiveUtils.py:80} Successful implementation of this sql
+2018-01-18 12:54:35,178 [INFO] {hiveUtils.py:78} Executive sql is:
+
+                    drop table if exists tmp_dwa_character_3
+2018-01-18 12:54:35,349 [INFO] {hiveUtils.py:80} Successful implementation of this sql
+2018-01-18 12:54:35,349 [INFO] {hiveUtils.py:78} Executive sql is:
+
+                    drop table if exists tmp_dwa_character_4
+2018-01-18 12:54:35,507 [INFO] {hiveUtils.py:80} Successful implementation of this sql
+2018-01-18 12:54:35,507 [INFO] {hiveUtils.py:78} Executive sql is:
+ 
+                    drop table if exists tmp_dwa_character_5
+2018-01-18 12:54:35,610 [INFO] {hiveUtils.py:80} Successful implementation of this sql
+2018-01-18 12:54:35,610 [INFO] {hiveUtils.py:78} Executive sql is:
+
+                    drop table if exists tmp_dwa_character_6
+2018-01-18 12:54:35,698 [INFO] {hiveUtils.py:80} Successful implementation of this sql
+2018-01-18 12:54:35,698 [INFO] {hiveUtils.py:78} Executive sql is:
+
+                    drop table if exists tmp_dwa_character_7
+2018-01-18 12:54:35,867 [INFO] {hiveUtils.py:80} Successful implementation of this sql
+2018-01-18 12:54:35,868 [INFO] {hiveUtils.py:78} Executive sql is:
+
+                    drop table if exists tmp_dwa_character_8
+2018-01-18 12:54:36,033 [INFO] {hiveUtils.py:80} Successful implementation of this sql
+2018-01-18 12:54:36,033 [INFO] {hiveUtils.py:78} Executive sql is:
+
+                    drop table if exists tmp_dwa_character_9
+                       
+2018-01-18 12:54:36,224 [INFO] {hiveUtils.py:80} Successful implementation of this sql
+2018-01-18 12:54:36,224 [INFO] {hiveUtils.py:67} Executive sql is:
+create table if not exists tmp_dwa_character_1 (
+                      CUST_ID          STRING,
+                      CUST_CODE        STRING,
+                      CUST_NAME        STRING,
+                      CORP_ORG_ID      STRING,
+                      CORP_ORG_NAME    STRING,
+                      CUST_LEVEL       STRING,
+                      CUST_TYPE        STRING,
+                      NET_AGE          STRING
+                    ) STORED AS RCFILE
+                     LOCATION '/user/hive/TEMP/tmp_dwa_character_1'
+                        
+2018-01-18 12:54:36,377 [INFO] {hiveUtils.py:69} Successful implementation of this sql
+2018-01-18 12:54:36,377 [INFO] {hiveUtils.py:67} Executive sql is:
+create table if not exists tmp_dwa_character_2 (
+                           CUST_ID           STRING,
+                           USER_CNT          STRING,
+                           ITV_USER_CNT      STRING,
+                           FEE_USR_CNT      STRING,
+                           dbitv_usr_cnt    STRING,
+                           ditv_usr_cnt     STRING,
+                           hdtv_usr_cnt     STRING,
+                           lan_usr_cnt      STRING
+                         ) STORED AS RCFILE
+                          LOCATION '/user/hive/TEMP/tmp_dwa_character_2'
+                    
+2018-01-18 12:54:36,559 [INFO] {hiveUtils.py:69} Successful implementation of this sql
+2018-01-18 12:54:36,560 [INFO] {hiveUtils.py:67} Executive sql is:
+create table if not exists tmp_dwa_character_3
+                   (
+                         OFFER_ID             STRING,
+                         OFFER_INST_ID        STRING,
+                         CREATE_DATE          STRING,
+                         expire_date          STRING
+                      )
+                      stored as orcfile
+                      LOCATION '/user/hive/TEMP/tmp_dwa_character_3'
+                    
+2018-01-18 12:54:36,713 [INFO] {hiveUtils.py:69} Successful implementation of this sql
+2018-01-18 12:54:36,713 [INFO] {hiveUtils.py:67} Executive sql is:
+create table if not exists tmp_dwa_character_4
+                   (
+                          prod_inst_id             STRING,
+                          srvpkg_id                STRING,
+                          offer_inst_id            STRING,
+                          prod_type                STRING,
+                          create_date              STRING,
+                          expire_date              STRING       
+                       )
+                       stored as orcfile
+                       LOCATION '/user/hive/TEMP/tmp_dwa_character_4'
+                     
+2018-01-18 12:54:36,906 [INFO] {hiveUtils.py:69} Successful implementation of this sql
+2018-01-18 12:54:36,906 [INFO] {hiveUtils.py:67} Executive sql is:
+create table if not exists tmp_dwa_character_9
+                  (
+                         prod_inst_id             STRING,
+                         offer_id                 STRING,
+                         prod_id                  STRING,
+                         prod_type                STRING,
+                         type_name                STRING,
+                         create_date_prod         STRING,
+                         expire_date_prod         STRING,
+                         create_date_offer        STRING,
+                         expire_date_offer        STRING
+                      )
+                      stored as orcfile
+                      LOCATION '/user/hive/TEMP/tmp_dwa_character_9'
+                             
+2018-01-18 12:54:37,104 [INFO] {hiveUtils.py:69} Successful implementation of this sql
+2018-01-18 12:54:37,104 [INFO] {hiveUtils.py:67} Executive sql is:
+create table if not exists tmp_dwa_character_6 (
+                            PROD_INST_ID       STRING,
+                            VOD_DAY_1M          STRING,
+                            VOD_NUM_1M          STRING,
+                            VOD_DAY_3M          STRING,
+                            VOD_NUM_3M          STRING,
+                            LAST_VOD_DATE      STRING
+                            ) STORED AS RCFILE
+                             LOCATION '/user/hive/TEMP/tmp_dwa_character_6'
+                             
+2018-01-18 12:54:37,272 [INFO] {hiveUtils.py:69} Successful implementation of this sql
+2018-01-18 12:54:37,272 [INFO] {hiveUtils.py:67} Executive sql is:
+create table if not exists tmp_dwa_character_7 (
+                         PROD_INST_ID       STRING,
+                         TV_DAY_1M          STRING,
+                         TV_NUM_1M          STRING,
+                         TV_DAY_3M          STRING,
+                         TV_NUM_3M          STRING,
+                         LAST_TV_DATE       STRING
+                       ) STORED AS RCFILE
+                        LOCATION '/user/hive/TEMP/tmp_dwa_character_7'
+                        
+2018-01-18 12:54:37,469 [INFO] {hiveUtils.py:69} Successful implementation of this sql
+2018-01-18 12:54:37,469 [INFO] {hiveUtils.py:67} Executive sql is:
+create table if not exists tmp_dwa_character_8 (
+                          PROD_INST_ID       STRING,
+                          REVIEW_DAY_1M      STRING,
+                          REVIEW_NUM_1M      STRING,
+                          REVIEW_DAY_3M      STRING,
+                          REVIEW_NUM_3M      STRING,
+                          LAST_REVIEW_DATE   STRING
+                        ) STORED AS RCFILE
+                         LOCATION '/user/hive/TEMP/tmp_dwa_character_8'
+                         
+2018-01-18 12:54:37,613 [INFO] {hiveUtils.py:69} Successful implementation of this sql
+2018-01-18 12:54:37,614 [INFO] {hiveUtils.py:67} Executive sql is:
+create table if not exists dwa_base_character_cust (
+                        CUST_ID          STRING,
+                        CUST_CODE        STRING,
+                        CUST_NAME        STRING,
+                        CORP_ORG_ID      STRING,
+                        CORP_ORG_NAME    STRING,
+                        CUST_LEVEL       STRING,
+                        CUST_TYPE        STRING,
+                        NET_AGE          STRING,
+                        USER_COUNT       STRING,
+                        ITV_USER_COUNT   STRING,
+                        FEE_USR_CNT      STRING,
+                        dbitv_usr_cnt    STRING,
+                        ditv_usr_cnt     STRING,
+                        hdtv_usr_cnt     STRING,
+                        lan_usr_cnt      STRING,
+                        DATA_SOURCE_CD   STRING,
+                        ETL_DATE         STRING
+                    ) PARTITIONED BY (PT_MON STRING)
+                     STORED AS RCFILE
+                     LOCATION '/user/hive/warehouse/test.db/dwa_base_character_cust'
+                        
+2018-01-18 12:54:37,752 [INFO] {hiveUtils.py:69} Successful implementation of this sql
+2018-01-18 12:54:37,753 [INFO] {hiveUtils.py:67} Executive sql is:
+create table if not exists dwa_base_character_usr
+                   (  
+                        PROD_INST_ID           string,
+                        BILL_ID                string,
+                        IS_MAIN                string,
+                        IS_SECOND              string,
+                        OFFER_ID               string,        
+                        prod_id                string,
+                        prod_type              string,
+                        type_name              string,
+                        create_date_prod       string,
+                        expire_date_prod       string,
+                        create_date_offer      string,
+                        expire_date_offer      string,
+                        BILL_AMOUNT_1M         string,
+                        BILL_AMOUNT_3M         string,
+                        VOD_DAY_1M             string,
+                        VOD_NUM_1M             string,
+                        VOD_DURATION_1M        string,
+                        VOD_AMOUNT_1M          string,
+                        VOD_DAY_3M             string,
+                        VOD_NUM_3M             string,
+                        VOD_DURATION_3M        string,
+                        VOD_AMOUNT_3M          string,
+                        LAST_VOD_DATE          string,
+                        TV_DAY_1M              string,
+                        TV_NUM_1M              string,
+                        TV_DAY_3M              string,
+                        TV_NUM_3M              string,
+                        LAST_TV_DATE           string,
+                        REVIEW_DAY_1M          string,
+                        REVIEW_NUM_1M          string,
+                        REVIEW_DAY_3M          string,
+                        REVIEW_NUM_3M          string,
+                        LAST_REVIEW_DATE       string,
+                        DATA_SOURCE_CD         string,
+                        ETL_DATE               string
+                   ) PARTITIONED BY (PT_MON STRING)
+                     STORED AS RCFILE
+                     LOCATION '/user/hive/warehouse/test.db/dwa_base_character_usr'
+                      
+2018-01-18 12:54:37,937 [INFO] {hiveUtils.py:69} Successful implementation of this sql

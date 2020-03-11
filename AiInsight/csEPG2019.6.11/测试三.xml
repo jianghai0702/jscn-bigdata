@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<BroadcastData code="1100000000" creationtime="20190611102500" version="2.0">
+<ProviderInfo id="CTI" name="测试三"/>
+<SchedulerData type="PROGRAM"><Channel><ChannelText language="chi"><ChannelName>测试三</ChannelName></ChannelText>
+<Event eventid="1" begintime="20170104011500" duration="021000" eventtype="00">
+<EventText language="chi">
+<Name>舞后</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="2" begintime="20170104032500" duration="013000" eventtype="00">
+<EventText language="chi">
+<Name>小小爱火花</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="3" begintime="20170104045500" duration="020500" eventtype="00">
+<EventText language="chi">
+<Name>奇怪的客人们</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="4" begintime="20170104070000" duration="013000" eventtype="00">
+<EventText language="chi">
+<Name>仲夏夜绮梦</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="5" begintime="20170104083000" duration="013000" eventtype="00">
+<EventText language="chi">
+<Name>全能超人汉考克</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="6" begintime="20170104100000" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>平行理论</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="7" begintime="20170104120000" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>爱与痛的边缘</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="8" begintime="20170104140000" duration="015500" eventtype="00">
+<EventText language="chi">
+<Name>杀手探戈</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="9" begintime="20170104155500" duration="020500" eventtype="00">
+<EventText language="chi">
+<Name>奇怪的客人们</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="10" begintime="20170104180000" duration="014000" eventtype="00">
+<EventText language="chi">
+<Name>拉里・克劳</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="11" begintime="20170104194000" duration="013500" eventtype="00">
+<EventText language="chi">
+<Name>全能超人汉考克</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="12" begintime="20170104211500" duration="021000" eventtype="00">
+<EventText language="chi">
+<Name>圣战骑士</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="13" begintime="20170104232500" duration="015000" eventtype="00">
+<EventText language="chi">
+<Name>暴风雨过后</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="14" begintime="20170105011500" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>金氏漂流记</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="15" begintime="20170105031500" duration="012500" eventtype="00">
+<EventText language="chi">
+<Name>爱与死</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="16" begintime="20170105044000" duration="015000" eventtype="00">
+<EventText language="chi">
+<Name>梦想阿根廷</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="17" begintime="20170105063000" duration="020500" eventtype="00">
+<EventText language="chi">
+<Name>非法交易</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="18" begintime="20170105083500" duration="012500" eventtype="00">
+<EventText language="chi">
+<Name>缘尽半生</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="19" begintime="20170105100000" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>蜘蛛侠</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="20" begintime="20170105120000" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>28天</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="21" begintime="20170105134500" duration="024000" eventtype="00">
+<EventText language="chi">
+<Name>血色将至</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="22" begintime="20170105162500" duration="013500" eventtype="00">
+<EventText language="chi">
+<Name>临时家庭演员</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="23" begintime="20170105180000" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>蜘蛛侠</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="24" begintime="20170105200000" duration="011500" eventtype="00">
+<EventText language="chi">
+<Name>禁锢</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="25" begintime="20170105211500" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>天降奇兵</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="26" begintime="20170105231500" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>玩叛游戏</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="27" begintime="20170106011500" duration="013500" eventtype="00">
+<EventText language="chi">
+<Name>荒野有情天</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="28" begintime="20170106025000" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>遗憾的都市</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="29" begintime="20170106045000" duration="012500" eventtype="00">
+<EventText language="chi">
+<Name>死亡真相</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="30" begintime="20170106061500" duration="021000" eventtype="00">
+<EventText language="chi">
+<Name>蜘蛛侠Ⅱ</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="31" begintime="20170106082500" duration="013500" eventtype="00">
+<EventText language="chi">
+<Name>临时家庭演员</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="32" begintime="20170106100000" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>纯情漫画</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="33" begintime="20170106120000" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>七磅</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="34" begintime="20170106140000" duration="015500" eventtype="00">
+<EventText language="chi">
+<Name>肮脏游戏</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="35" begintime="20170106155500" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>玩叛游戏</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="36" begintime="20170106174000" duration="014000" eventtype="00">
+<EventText language="chi">
+<Name>两周</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="37" begintime="20170106192000" duration="015500" eventtype="00">
+<EventText language="chi">
+<Name>天降奇兵</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="38" begintime="20170106211500" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>远大前程</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="39" begintime="20170106231500" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>赌命法则</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="40" begintime="20170107011500" duration="014000" eventtype="00">
+<EventText language="chi">
+<Name>杀手不眨眼</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="41" begintime="20170107025500" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>火车</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="42" begintime="20170107045500" duration="014000" eventtype="00">
+<EventText language="chi">
+<Name>查理・巴特利</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="43" begintime="20170107063500" duration="014000" eventtype="00">
+<EventText language="chi">
+<Name>两周</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="44" begintime="20170107081500" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>绑架老大</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="45" begintime="20170107100000" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>远大前程</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="46" begintime="20170107120000" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>我也是</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="47" begintime="20170107134500" duration="020500" eventtype="00">
+<EventText language="chi">
+<Name>摔跤大帝波杜布内</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="48" begintime="20170107155000" duration="015000" eventtype="00">
+<EventText language="chi">
+<Name>赌命法则</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="49" begintime="20170107174000" duration="015000" eventtype="00">
+<EventText language="chi">
+<Name>绑架老大</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="50" begintime="20170107193000" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>杀手不眨眼</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="51" begintime="20170107211500" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>泣血古巴</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="52" begintime="20170107231500" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>不可饶恕</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="53" begintime="20170108011500" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>罗曼蒂克</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="54" begintime="20170108031500" duration="013000" eventtype="00">
+<EventText language="chi">
+<Name>仲夏夜绮梦</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="55" begintime="20170108044500" duration="015500" eventtype="00">
+<EventText language="chi">
+<Name>父子情深</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="56" begintime="20170108064000" duration="014000" eventtype="00">
+<EventText language="chi">
+<Name>我也是</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="57" begintime="20170108082000" duration="013500" eventtype="00">
+<EventText language="chi">
+<Name>疯狂二十年华</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="58" begintime="20170108095500" duration="020500" eventtype="00">
+<EventText language="chi">
+<Name>不可饶恕</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="59" begintime="20170108120000" duration="015500" eventtype="00">
+<EventText language="chi">
+<Name>潘多拉之盒</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="60" begintime="20170108135500" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>驯鹿游戏</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="61" begintime="20170108154000" duration="022000" eventtype="00">
+<EventText language="chi">
+<Name>蜘蛛侠Ⅲ</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="62" begintime="20170108180000" duration="013000" eventtype="00">
+<EventText language="chi">
+<Name>仲夏夜绮梦</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="63" begintime="20170108193000" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>机票情缘</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="64" begintime="20170108211500" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>沙丘险地</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="65" begintime="20170108231500" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>犹大之吻</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="66" begintime="20170109011500" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="67" begintime="20170109030000" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="68" begintime="20170109044500" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="69" begintime="20170109063000" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="70" begintime="20170109081500" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="71" begintime="20170109100000" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="72" begintime="20170109120000" duration="021000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="73" begintime="20170109141000" duration="013500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="74" begintime="20170109154500" duration="014000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="75" begintime="20170109172500" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="76" begintime="20170109192500" duration="015000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="77" begintime="20170109211500" duration="020500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="78" begintime="20170109232000" duration="015500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="79" begintime="20170110011500" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="80" begintime="20170110030000" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="81" begintime="20170110044500" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="82" begintime="20170110063000" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="83" begintime="20170110081500" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="84" begintime="20170110100000" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="85" begintime="20170110120000" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="86" begintime="20170110134500" duration="022000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="87" begintime="20170110160500" duration="014000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="88" begintime="20170110174500" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="89" begintime="20170110193000" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="90" begintime="20170110211500" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="91" begintime="20170110231500" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="92" begintime="20170111011500" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="93" begintime="20170111030000" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="94" begintime="20170111044500" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="95" begintime="20170111063000" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="96" begintime="20170111081500" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="97" begintime="20170111100000" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="98" begintime="20170111120000" duration="023500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="99" begintime="20170111143500" duration="011500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="100" begintime="20170111155000" duration="014000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="101" begintime="20170111173000" duration="020500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="102" begintime="20170111193500" duration="014000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="103" begintime="20170111211500" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="104" begintime="20170111231500" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="105" begintime="20170112011500" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="106" begintime="20170112030000" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="107" begintime="20170112044500" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="108" begintime="20170112063000" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="109" begintime="20170112081500" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="110" begintime="20170112100000" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="111" begintime="20170112120000" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="112" begintime="20170112134500" duration="022000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="113" begintime="20170112160500" duration="021000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="114" begintime="20170112181500" duration="012500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="115" begintime="20170112194000" duration="013500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="116" begintime="20170112211500" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="117" begintime="20170112231500" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="118" begintime="20170113011500" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="119" begintime="20170113030000" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="120" begintime="20170113044500" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="121" begintime="20170113063000" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="122" begintime="20170113081500" duration="014500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="123" begintime="20170113100000" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="124" begintime="20170113120000" duration="015000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="125" begintime="20170113135000" duration="021000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="126" begintime="20170113160000" duration="012500" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="127" begintime="20170113172500" duration="021000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="128" begintime="20170113193500" duration="014000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="129" begintime="20170113211500" duration="020000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event>
+<Event eventid="130" begintime="20170113231500" duration="030000" eventtype="00">
+<EventText language="chi">
+<Name>电影</Name>
+<ShortDescription></ShortDescription></EventText></Event></Channel></SchedulerData>
+
+
+</BroadcastData>

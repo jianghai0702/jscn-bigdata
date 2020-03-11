@@ -1,0 +1,2656 @@
+2017-08-30 02:36:32,331 [INFO] {hqltools.py:362} 程序开始执行
+2017-08-30 02:36:32,716 [INFO] {hqltools.py:50} Query sql is:
+create table if not exists s_tmp_dwa_diff_online_media_user_d1
+            (
+                acct_start_time    int
+                ,acct_stop_time    int
+                ,client_ip_address string
+                ,user_name         string
+            )
+            stored as rcfile
+            LOCATION '/user/hive/TEMP/s_tmp_dwa_diff_online_media_user_d1'
+            
+2017-08-30 02:36:32,727 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:36:32,757 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+    select unix_timestamp(acct_start_time) as acct_start_time
+         ,unix_timestamp(acct_stop_time) as acct_stop_time
+         ,client_ip_address
+         ,user_name
+     from dwd_dr_brd_expend
+    where pt_time = 20170615
+     
+2017-08-30 02:36:54,027 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:36:54,122 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_start_time order by acct_stop_time desc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 02:37:23,665 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:37:23,761 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_stop_time order by acct_start_time asc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 02:37:53,370 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:37:53,470 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170615,etl_time=20170615)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170615
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:38:14,822 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:38:14,904 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170614,etl_time=20170615)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170614
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:38:36,297 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:38:36,381 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170613,etl_time=20170615)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170613
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:38:57,771 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:38:57,856 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170612,etl_time=20170615)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170612
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:39:19,155 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:39:19,162 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/DWA_DIFF_ONLINE_MEDIA_USER_D_20170616.lock
+2017-08-30 02:39:19,195 [INFO] {hqltools.py:362} 程序开始执行
+2017-08-30 02:39:19,565 [INFO] {hqltools.py:50} Query sql is:
+create table if not exists s_tmp_dwa_diff_online_media_user_d1
+            (
+                acct_start_time    int
+                ,acct_stop_time    int
+                ,client_ip_address string
+                ,user_name         string
+            )
+            stored as rcfile
+            LOCATION '/user/hive/TEMP/s_tmp_dwa_diff_online_media_user_d1'
+            
+2017-08-30 02:39:19,575 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:39:19,606 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+    select unix_timestamp(acct_start_time) as acct_start_time
+         ,unix_timestamp(acct_stop_time) as acct_stop_time
+         ,client_ip_address
+         ,user_name
+     from dwd_dr_brd_expend
+    where pt_time = 20170616
+     
+2017-08-30 02:39:51,945 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:39:52,040 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_start_time order by acct_stop_time desc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 02:40:20,547 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:40:20,647 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_stop_time order by acct_start_time asc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 02:40:48,976 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:40:49,076 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170616,etl_time=20170616)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170616
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:41:10,439 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:41:10,524 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170615,etl_time=20170616)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170615
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:41:31,834 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:41:31,918 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170614,etl_time=20170616)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170614
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:41:53,559 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:41:53,628 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170613,etl_time=20170616)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170613
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:42:15,037 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:42:15,047 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/DWA_DIFF_ONLINE_MEDIA_USER_D_20170617.lock
+2017-08-30 02:42:15,079 [INFO] {hqltools.py:362} 程序开始执行
+2017-08-30 02:42:15,449 [INFO] {hqltools.py:50} Query sql is:
+create table if not exists s_tmp_dwa_diff_online_media_user_d1
+            (
+                acct_start_time    int
+                ,acct_stop_time    int
+                ,client_ip_address string
+                ,user_name         string
+            )
+            stored as rcfile
+            LOCATION '/user/hive/TEMP/s_tmp_dwa_diff_online_media_user_d1'
+            
+2017-08-30 02:42:15,459 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:42:15,490 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+    select unix_timestamp(acct_start_time) as acct_start_time
+         ,unix_timestamp(acct_stop_time) as acct_stop_time
+         ,client_ip_address
+         ,user_name
+     from dwd_dr_brd_expend
+    where pt_time = 20170617
+     
+2017-08-30 02:42:35,788 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:42:35,883 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_start_time order by acct_stop_time desc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 02:43:05,346 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:43:05,442 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_stop_time order by acct_start_time asc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 02:43:33,912 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:43:34,012 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170617,etl_time=20170617)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170617
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:43:55,476 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:43:55,555 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170616,etl_time=20170617)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170616
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:44:16,844 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:44:16,928 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170615,etl_time=20170617)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170615
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:44:38,388 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:44:38,465 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170614,etl_time=20170617)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170614
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:44:59,948 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:44:59,960 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/DWA_DIFF_ONLINE_MEDIA_USER_D_20170618.lock
+2017-08-30 02:44:59,992 [INFO] {hqltools.py:362} 程序开始执行
+2017-08-30 02:45:00,363 [INFO] {hqltools.py:50} Query sql is:
+create table if not exists s_tmp_dwa_diff_online_media_user_d1
+            (
+                acct_start_time    int
+                ,acct_stop_time    int
+                ,client_ip_address string
+                ,user_name         string
+            )
+            stored as rcfile
+            LOCATION '/user/hive/TEMP/s_tmp_dwa_diff_online_media_user_d1'
+            
+2017-08-30 02:45:00,373 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:45:00,404 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+    select unix_timestamp(acct_start_time) as acct_start_time
+         ,unix_timestamp(acct_stop_time) as acct_stop_time
+         ,client_ip_address
+         ,user_name
+     from dwd_dr_brd_expend
+    where pt_time = 20170618
+     
+2017-08-30 02:45:21,619 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:45:21,714 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_start_time order by acct_stop_time desc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 02:45:51,393 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:45:51,493 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_stop_time order by acct_start_time asc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 02:46:19,862 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:46:19,961 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170618,etl_time=20170618)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170618
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:46:41,400 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:46:41,485 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170617,etl_time=20170618)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170617
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:47:02,901 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:47:02,983 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170616,etl_time=20170618)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170616
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:47:24,370 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:47:24,455 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170615,etl_time=20170618)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170615
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:47:45,871 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:47:45,881 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/DWA_DIFF_ONLINE_MEDIA_USER_D_20170619.lock
+2017-08-30 02:47:45,913 [INFO] {hqltools.py:362} 程序开始执行
+2017-08-30 02:47:46,285 [INFO] {hqltools.py:50} Query sql is:
+create table if not exists s_tmp_dwa_diff_online_media_user_d1
+            (
+                acct_start_time    int
+                ,acct_stop_time    int
+                ,client_ip_address string
+                ,user_name         string
+            )
+            stored as rcfile
+            LOCATION '/user/hive/TEMP/s_tmp_dwa_diff_online_media_user_d1'
+            
+2017-08-30 02:47:46,294 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:47:46,326 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+    select unix_timestamp(acct_start_time) as acct_start_time
+         ,unix_timestamp(acct_stop_time) as acct_stop_time
+         ,client_ip_address
+         ,user_name
+     from dwd_dr_brd_expend
+    where pt_time = 20170619
+     
+2017-08-30 02:48:19,694 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:48:19,788 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_start_time order by acct_stop_time desc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 02:48:49,214 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:48:49,314 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_stop_time order by acct_start_time asc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 02:49:17,810 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:49:17,909 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170619,etl_time=20170619)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170619
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:49:39,400 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:49:39,484 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170618,etl_time=20170619)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170618
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:50:00,887 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:50:00,972 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170617,etl_time=20170619)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170617
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:50:22,401 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:50:22,485 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170616,etl_time=20170619)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170616
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:50:43,901 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:50:43,912 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/DWA_DIFF_ONLINE_MEDIA_USER_D_20170620.lock
+2017-08-30 02:50:43,944 [INFO] {hqltools.py:362} 程序开始执行
+2017-08-30 02:50:44,322 [INFO] {hqltools.py:50} Query sql is:
+create table if not exists s_tmp_dwa_diff_online_media_user_d1
+            (
+                acct_start_time    int
+                ,acct_stop_time    int
+                ,client_ip_address string
+                ,user_name         string
+            )
+            stored as rcfile
+            LOCATION '/user/hive/TEMP/s_tmp_dwa_diff_online_media_user_d1'
+            
+2017-08-30 02:50:44,332 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:50:44,365 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+    select unix_timestamp(acct_start_time) as acct_start_time
+         ,unix_timestamp(acct_stop_time) as acct_stop_time
+         ,client_ip_address
+         ,user_name
+     from dwd_dr_brd_expend
+    where pt_time = 20170620
+     
+2017-08-30 02:51:17,885 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:51:17,979 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_start_time order by acct_stop_time desc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 02:51:47,446 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:51:47,546 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_stop_time order by acct_start_time asc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 02:52:16,928 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:52:17,028 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170620,etl_time=20170620)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170620
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:52:38,362 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:52:38,447 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170619,etl_time=20170620)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170619
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:52:59,847 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:52:59,932 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170618,etl_time=20170620)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170618
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:53:21,604 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:53:21,690 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170617,etl_time=20170620)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170617
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:53:43,079 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:53:43,092 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/DWA_DIFF_ONLINE_MEDIA_USER_D_20170621.lock
+2017-08-30 02:53:43,124 [INFO] {hqltools.py:362} 程序开始执行
+2017-08-30 02:53:43,497 [INFO] {hqltools.py:50} Query sql is:
+create table if not exists s_tmp_dwa_diff_online_media_user_d1
+            (
+                acct_start_time    int
+                ,acct_stop_time    int
+                ,client_ip_address string
+                ,user_name         string
+            )
+            stored as rcfile
+            LOCATION '/user/hive/TEMP/s_tmp_dwa_diff_online_media_user_d1'
+            
+2017-08-30 02:53:43,507 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:53:43,554 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+    select unix_timestamp(acct_start_time) as acct_start_time
+         ,unix_timestamp(acct_stop_time) as acct_stop_time
+         ,client_ip_address
+         ,user_name
+     from dwd_dr_brd_expend
+    where pt_time = 20170621
+     
+2017-08-30 02:54:16,023 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:54:16,118 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_start_time order by acct_stop_time desc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 02:54:46,632 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:54:46,732 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_stop_time order by acct_start_time asc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 02:55:16,162 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:55:16,258 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170621,etl_time=20170621)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170621
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:55:37,747 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:55:37,830 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170620,etl_time=20170621)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170620
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:55:59,407 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:55:59,491 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170619,etl_time=20170621)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170619
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:56:20,853 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:56:20,938 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170618,etl_time=20170621)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170618
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:56:42,311 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:56:42,329 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/DWA_DIFF_ONLINE_MEDIA_USER_D_20170622.lock
+2017-08-30 02:56:42,361 [INFO] {hqltools.py:362} 程序开始执行
+2017-08-30 02:56:42,735 [INFO] {hqltools.py:50} Query sql is:
+create table if not exists s_tmp_dwa_diff_online_media_user_d1
+            (
+                acct_start_time    int
+                ,acct_stop_time    int
+                ,client_ip_address string
+                ,user_name         string
+            )
+            stored as rcfile
+            LOCATION '/user/hive/TEMP/s_tmp_dwa_diff_online_media_user_d1'
+            
+2017-08-30 02:56:42,745 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:56:42,779 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+    select unix_timestamp(acct_start_time) as acct_start_time
+         ,unix_timestamp(acct_stop_time) as acct_stop_time
+         ,client_ip_address
+         ,user_name
+     from dwd_dr_brd_expend
+    where pt_time = 20170622
+     
+2017-08-30 02:57:03,105 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:57:03,198 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_start_time order by acct_stop_time desc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 02:57:33,688 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:57:33,786 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_stop_time order by acct_start_time asc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 02:58:02,210 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:58:02,309 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170622,etl_time=20170622)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170622
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:58:23,629 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:58:23,710 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170621,etl_time=20170622)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170621
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:58:45,328 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:58:45,408 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170620,etl_time=20170622)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170620
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:59:06,838 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:59:06,920 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170619,etl_time=20170622)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170619
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 02:59:28,456 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:59:28,468 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/DWA_DIFF_ONLINE_MEDIA_USER_D_20170623.lock
+2017-08-30 02:59:28,500 [INFO] {hqltools.py:362} 程序开始执行
+2017-08-30 02:59:28,874 [INFO] {hqltools.py:50} Query sql is:
+create table if not exists s_tmp_dwa_diff_online_media_user_d1
+            (
+                acct_start_time    int
+                ,acct_stop_time    int
+                ,client_ip_address string
+                ,user_name         string
+            )
+            stored as rcfile
+            LOCATION '/user/hive/TEMP/s_tmp_dwa_diff_online_media_user_d1'
+            
+2017-08-30 02:59:28,884 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:59:28,918 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+    select unix_timestamp(acct_start_time) as acct_start_time
+         ,unix_timestamp(acct_stop_time) as acct_stop_time
+         ,client_ip_address
+         ,user_name
+     from dwd_dr_brd_expend
+    where pt_time = 20170623
+     
+2017-08-30 02:59:49,073 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 02:59:49,165 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_start_time order by acct_stop_time desc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 03:00:18,569 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:00:18,662 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_stop_time order by acct_start_time asc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 03:00:47,293 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:00:47,392 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170623,etl_time=20170623)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170623
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:01:09,094 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:01:09,170 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170622,etl_time=20170623)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170622
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:01:30,710 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:01:30,808 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170621,etl_time=20170623)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170621
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:01:52,222 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:01:52,305 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170620,etl_time=20170623)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170620
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:02:13,914 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:02:13,931 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/DWA_DIFF_ONLINE_MEDIA_USER_D_20170624.lock
+2017-08-30 03:02:13,963 [INFO] {hqltools.py:362} 程序开始执行
+2017-08-30 03:02:14,337 [INFO] {hqltools.py:50} Query sql is:
+create table if not exists s_tmp_dwa_diff_online_media_user_d1
+            (
+                acct_start_time    int
+                ,acct_stop_time    int
+                ,client_ip_address string
+                ,user_name         string
+            )
+            stored as rcfile
+            LOCATION '/user/hive/TEMP/s_tmp_dwa_diff_online_media_user_d1'
+            
+2017-08-30 03:02:14,346 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:02:14,378 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+    select unix_timestamp(acct_start_time) as acct_start_time
+         ,unix_timestamp(acct_stop_time) as acct_stop_time
+         ,client_ip_address
+         ,user_name
+     from dwd_dr_brd_expend
+    where pt_time = 20170624
+     
+2017-08-30 03:02:45,726 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:02:45,819 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_start_time order by acct_stop_time desc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 03:03:14,253 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:03:14,352 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_stop_time order by acct_start_time asc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 03:03:42,780 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:03:42,879 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170624,etl_time=20170624)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170624
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:04:04,239 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:04:04,322 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170623,etl_time=20170624)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170623
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:04:25,646 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:04:25,730 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170622,etl_time=20170624)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170622
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:04:47,092 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:04:47,176 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170621,etl_time=20170624)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170621
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:05:08,692 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:05:08,705 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/DWA_DIFF_ONLINE_MEDIA_USER_D_20170625.lock
+2017-08-30 03:05:08,737 [INFO] {hqltools.py:362} 程序开始执行
+2017-08-30 03:05:09,108 [INFO] {hqltools.py:50} Query sql is:
+create table if not exists s_tmp_dwa_diff_online_media_user_d1
+            (
+                acct_start_time    int
+                ,acct_stop_time    int
+                ,client_ip_address string
+                ,user_name         string
+            )
+            stored as rcfile
+            LOCATION '/user/hive/TEMP/s_tmp_dwa_diff_online_media_user_d1'
+            
+2017-08-30 03:05:09,118 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:05:09,151 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+    select unix_timestamp(acct_start_time) as acct_start_time
+         ,unix_timestamp(acct_stop_time) as acct_stop_time
+         ,client_ip_address
+         ,user_name
+     from dwd_dr_brd_expend
+    where pt_time = 20170625
+     
+2017-08-30 03:05:29,356 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:05:29,448 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_start_time order by acct_stop_time desc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 03:05:57,909 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:05:58,008 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_stop_time order by acct_start_time asc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 03:06:26,484 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:06:26,577 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170625,etl_time=20170625)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170625
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:06:47,949 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:06:48,032 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170624,etl_time=20170625)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170624
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:07:09,512 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:07:09,591 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170623,etl_time=20170625)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170623
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:07:31,077 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:07:31,161 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170622,etl_time=20170625)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170622
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:07:52,588 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:07:52,595 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/DWA_DIFF_ONLINE_MEDIA_USER_D_20170626.lock
+2017-08-30 03:07:52,628 [INFO] {hqltools.py:362} 程序开始执行
+2017-08-30 03:07:53,005 [INFO] {hqltools.py:50} Query sql is:
+create table if not exists s_tmp_dwa_diff_online_media_user_d1
+            (
+                acct_start_time    int
+                ,acct_stop_time    int
+                ,client_ip_address string
+                ,user_name         string
+            )
+            stored as rcfile
+            LOCATION '/user/hive/TEMP/s_tmp_dwa_diff_online_media_user_d1'
+            
+2017-08-30 03:07:53,015 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:07:53,053 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+    select unix_timestamp(acct_start_time) as acct_start_time
+         ,unix_timestamp(acct_stop_time) as acct_stop_time
+         ,client_ip_address
+         ,user_name
+     from dwd_dr_brd_expend
+    where pt_time = 20170626
+     
+2017-08-30 03:08:13,469 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:08:13,563 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_start_time order by acct_stop_time desc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 03:08:41,956 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:08:42,055 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_stop_time order by acct_start_time asc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 03:09:10,473 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:09:10,570 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170626,etl_time=20170626)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170626
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:09:32,177 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:09:32,261 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170625,etl_time=20170626)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170625
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:09:53,643 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:09:53,723 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170624,etl_time=20170626)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170624
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:10:15,163 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:10:15,246 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170623,etl_time=20170626)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170623
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:10:36,782 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:10:36,794 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/DWA_DIFF_ONLINE_MEDIA_USER_D_20170627.lock
+2017-08-30 03:10:36,826 [INFO] {hqltools.py:362} 程序开始执行
+2017-08-30 03:10:37,200 [INFO] {hqltools.py:50} Query sql is:
+create table if not exists s_tmp_dwa_diff_online_media_user_d1
+            (
+                acct_start_time    int
+                ,acct_stop_time    int
+                ,client_ip_address string
+                ,user_name         string
+            )
+            stored as rcfile
+            LOCATION '/user/hive/TEMP/s_tmp_dwa_diff_online_media_user_d1'
+            
+2017-08-30 03:10:37,210 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:10:37,241 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+    select unix_timestamp(acct_start_time) as acct_start_time
+         ,unix_timestamp(acct_stop_time) as acct_stop_time
+         ,client_ip_address
+         ,user_name
+     from dwd_dr_brd_expend
+    where pt_time = 20170627
+     
+2017-08-30 03:10:57,380 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:10:57,473 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_start_time order by acct_stop_time desc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 03:11:26,865 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:11:26,964 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_stop_time order by acct_start_time asc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 03:11:55,368 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:11:55,467 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170627,etl_time=20170627)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170627
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:12:16,853 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:12:16,935 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170626,etl_time=20170627)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170626
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:12:38,541 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:12:38,624 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170625,etl_time=20170627)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170625
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:13:00,039 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:13:00,120 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170624,etl_time=20170627)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170624
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:13:21,553 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:13:21,563 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/DWA_DIFF_ONLINE_MEDIA_USER_D_20170628.lock
+2017-08-30 03:13:21,595 [INFO] {hqltools.py:362} 程序开始执行
+2017-08-30 03:13:21,965 [INFO] {hqltools.py:50} Query sql is:
+create table if not exists s_tmp_dwa_diff_online_media_user_d1
+            (
+                acct_start_time    int
+                ,acct_stop_time    int
+                ,client_ip_address string
+                ,user_name         string
+            )
+            stored as rcfile
+            LOCATION '/user/hive/TEMP/s_tmp_dwa_diff_online_media_user_d1'
+            
+2017-08-30 03:13:21,974 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:13:22,006 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+    select unix_timestamp(acct_start_time) as acct_start_time
+         ,unix_timestamp(acct_stop_time) as acct_stop_time
+         ,client_ip_address
+         ,user_name
+     from dwd_dr_brd_expend
+    where pt_time = 20170628
+     
+2017-08-30 03:13:53,152 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:13:53,246 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_start_time order by acct_stop_time desc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 03:14:21,588 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:14:21,687 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_stop_time order by acct_start_time asc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 03:14:50,221 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:14:50,319 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170628,etl_time=20170628)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170628
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:15:11,687 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:15:11,770 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170627,etl_time=20170628)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170627
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:15:33,175 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:15:33,259 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170626,etl_time=20170628)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170626
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:15:54,756 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:15:54,834 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170625,etl_time=20170628)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170625
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:16:16,361 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:16:16,372 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/DWA_DIFF_ONLINE_MEDIA_USER_D_20170629.lock
+2017-08-30 03:16:16,404 [INFO] {hqltools.py:362} 程序开始执行
+2017-08-30 03:16:16,772 [INFO] {hqltools.py:50} Query sql is:
+create table if not exists s_tmp_dwa_diff_online_media_user_d1
+            (
+                acct_start_time    int
+                ,acct_stop_time    int
+                ,client_ip_address string
+                ,user_name         string
+            )
+            stored as rcfile
+            LOCATION '/user/hive/TEMP/s_tmp_dwa_diff_online_media_user_d1'
+            
+2017-08-30 03:16:16,782 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:16:16,817 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+    select unix_timestamp(acct_start_time) as acct_start_time
+         ,unix_timestamp(acct_stop_time) as acct_stop_time
+         ,client_ip_address
+         ,user_name
+     from dwd_dr_brd_expend
+    where pt_time = 20170629
+     
+2017-08-30 03:16:37,094 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:16:37,184 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_start_time order by acct_stop_time desc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 03:17:06,723 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:17:06,822 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_stop_time order by acct_start_time asc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 03:17:35,170 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:17:35,269 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170629,etl_time=20170629)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170629
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:17:56,684 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:17:56,755 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170628,etl_time=20170629)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170628
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:18:18,137 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:18:18,221 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170627,etl_time=20170629)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170627
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:18:39,614 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:18:39,693 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170626,etl_time=20170629)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170626
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:19:01,205 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:19:01,216 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/DWA_DIFF_ONLINE_MEDIA_USER_D_20170630.lock
+2017-08-30 03:19:01,248 [INFO] {hqltools.py:362} 程序开始执行
+2017-08-30 03:19:01,631 [INFO] {hqltools.py:50} Query sql is:
+create table if not exists s_tmp_dwa_diff_online_media_user_d1
+            (
+                acct_start_time    int
+                ,acct_stop_time    int
+                ,client_ip_address string
+                ,user_name         string
+            )
+            stored as rcfile
+            LOCATION '/user/hive/TEMP/s_tmp_dwa_diff_online_media_user_d1'
+            
+2017-08-30 03:19:01,640 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:19:01,675 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+    select unix_timestamp(acct_start_time) as acct_start_time
+         ,unix_timestamp(acct_stop_time) as acct_stop_time
+         ,client_ip_address
+         ,user_name
+     from dwd_dr_brd_expend
+    where pt_time = 20170630
+     
+2017-08-30 03:19:35,241 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:19:35,329 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_start_time order by acct_stop_time desc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 03:20:04,235 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:20:04,333 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table s_tmp_dwa_diff_online_media_user_d1
+      select acct_start_time,acct_stop_time,client_ip_address,user_name
+        from (select t.*,row_number()over(partition by user_name,acct_stop_time order by acct_start_time asc) rn
+                from s_tmp_dwa_diff_online_media_user_d1 t
+                 ) t
+        where rn = 1
+            
+2017-08-30 03:20:32,978 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:20:33,070 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170630,etl_time=20170630)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170630
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:22:30,709 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:22:30,749 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170629,etl_time=20170630)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170629
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:22:52,166 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:22:52,243 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170628,etl_time=20170630)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170628
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:23:13,852 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:23:13,916 [INFO] {hqltools.py:50} Query sql is:
+insert overwrite table dwa_diff_online_media_user_d partition(pt_time=20170627,etl_time=20170630)
+    select
+       t2.domain_name as std_online_media_code
+       ,'' as std_online_media_name
+       ,t2.std_device_cate_code
+       ,'' as std_device_cate_name
+       ,hour(from_unixtime(cast(t2.access_time as int)))
+       ,t1.user_name as login_name
+       ,from_unixtime(cast(t2.access_time as int))
+       ,from_unixtime(cast(t1.acct_start_time as int))
+       ,from_unixtime(cast(t1.acct_stop_time as int))
+       ,from_unixtime(unix_timestamp()) etl_date
+     from s_tmp_dwa_diff_online_media_user_d1 t1 --在线记录
+         ,(select access_time
+                 ,source_ip
+                 ,domain_name
+                 ,(case when user_agent like '%Android%' then 'android'
+                        when user_agent like '%Windows NT%' then 'windows'
+                        when user_agent like '%iPhone%' then 'iphone'
+                        when user_agent like '%iPad%' then 'ipad'
+                        when user_agent like '%Mac%' then 'mac'
+                     else '' end ) std_device_cate_code
+             from dwd_uplink_data
+            where pt_time = 20170627
+           ) t2 --上行数据
+    where t2.source_ip = t1.client_ip_address
+      and t1.acct_start_time <= t2.access_time
+      and t1.acct_stop_time >= t2.access_time
+     
+2017-08-30 03:23:35,251 [INFO] {hqltools.py:52} Successful implementation of this Sql
+2017-08-30 03:23:35,261 [INFO] {hqltools.py:384} 程序执行成功. 删除锁文件 /AiInsight/logs/DWA_DIFF_ONLINE_MEDIA_USER_D_20170701.lock
