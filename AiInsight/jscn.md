@@ -1,12 +1,129 @@
 #### 第一章 集群信息
 
-###### 1.1 服务器
+###### 1.1 VPN设置
 
-###### 1.2 数据库
+```
+vpn 地址： 122.193.8.206
+vpn 账号： jscn-YaXIn
+vpn 密码： jsCndETAT@I90dItT@!@2018I06
+```
+
+###### 1.2 服务器
+
+| 主机   | IP            | GATEWAY      | 登录方式 | 用户名/密码                             |
+| ------ | ------------- | ------------ | -------- | --------------------------------------- |
+| jsgd4  | 111.208.67.21 | 111.208.67.1 | ssh2     | root/JSCN2016!@#$                       |
+| jsgd5  | 111.208.67.22 | 111.208.67.1 | ssh2     | root/JSCN2016!@#$                       |
+| jsgd6  | 111.208.67.23 | 111.208.67.1 | ssh2     | root/JSCN2016!@#$                       |
+| jsgd7  | 111.208.67.24 | 111.208.67.1 | ssh2     | root/JSCN2016!@#$                       |
+| jsgd18 | 111.208.67.18 | 111.208.67.1 | ssh2     | root/JSCN2016!@#$                       |
+| jsgd20 | 111.208.67.20 | 111.208.67.1 | ssh2     | root/JSCN2016!@#$                       |
+| jsgd25 | 111.208.67.25 | 111.208.67.1 | ssh2     | root/JSCN2016!@#$                       |
+| jsgd27 | 111.208.67.27 | 111.208.67.1 | ssh2     | root/JSCN2016!@#$    oracle/JSCN2017)(* |
+| jsgd29 | 111.208.67.29 | 111.208.67.1 | ssh2     | root/JSCN2016!@#$                       |
+| jsgd30 | 111.208.67.30 | 111.208.67.1 | ssh2     | root/JSCN2016!@#$                       |
+| jsgd2  | 111.208.67.19 | 111.208.67.1 | ssh2     | root/JSCN2016!@#$                       |
+
+###### 1.3 SVN信息
+
+```
+地址:svn://10.10.100.151/boss2/BISRD/Project/JiangSu-Data/AiInsight
+```
+
+###### 1.4 CDH集群
+
+```
+地址:http://111.208.67.23:7180/cmf/home 
+账号:admin
+密码:admin
+```
+
+###### 1.5 Mysql数据库
+
+| 数据库主机                | 数据库名            | 用户                                              | 密码 |
+| ------------------------- | ------------------- | ------------------------------------------------- | ---- |
+| 111.208.67.27 （jsgd27）  | SERVICE_NAME = orcl | "system/Abc1234，st/st dim/dim，portal/Portal123" |      |
+| 111.208.67.27 （jsgd27）  | st,portal           | "st/st，portal/portal"                            |      |
+| bigdata.jscndata.com:4289 | st,portal           | "st/st，portal/portal"                            |      |
+
+###### 1.6 拨测数据API生成
+
+```
+地址：http://getdata.bonree.com/CreateUrl/create.jsp
+```
+
+###### 1.7 主机服务
+
+| 主机   | IP            | 内存(GB) | 磁盘 | 服务项                                                       |
+| ------ | ------------- | -------- | ---- | ------------------------------------------------------------ |
+| jsgd4  | 111.208.67.21 | 32GB     | 2T   | HiveServer2,NodeManager,调度AZKABAN,,ftp                     |
+| jsgd5  | 111.208.67.22 | 64GB     | 600G | JournalNode,NodeManager,采集                                 |
+| jsgd6  | 111.208.67.23 | 64GB     | 600G | NameNode,JournalNode,ZooKeeper Server,Resource Manager ,sqoop ,hive |
+| jsgd7  | 111.208.67.24 | 64GB     | 600G | NameNode,JournalNode,Resource Manager                        |
+| jsgd18 | 111.208.67.18 | 32GB     | 19T  | DataNode,ZooKeeper Server,NodeManager                        |
+| jsgd20 | 111.208.67.20 | 32GB     | 21T  | DataNode,NodeManager,ftp(流控)                               |
+| jsgd25 | 111.208.67.25 | 32GB     | 21T  | DataNode,ZooKeeper Server,NodeManager                        |
+| jsgd27 | 111.208.67.27 | 32GB     | 21T  | oracle,数据备份,mysql                                        |
+| jsgd29 | 111.208.67.29 | 32GB     | 21T  | DataNode,NodeManager                                         |
+| jsgd30 | 111.208.67.30 | 32GB     | 21T  | DataNode,NodeManager                                         |
+| jsgd2  | 111.208.67.19 | 32GB     | 21T  |                                                              |
+
+##### 
 
 
 
-#### 第二章 操作层ODS
+
+
+#### 第二章 操作层STG
+
+###### 2.1 日志采集
+
+```
+auth日志采集：
+	- 第一步：通过ftp将每天的日志传输到21号机的/home/ftpuser/auth
+	- 第二步：在22号机/opt/dolphin/auth_log中配置flume采集/home/ftpuser/auth中的日志，并存储到22号机的/opt/data/auth/stg_brd_auth_log/中
+	- 第三步：运行21号机/AiInsight/stg/中的脚本，将22号机的/opt/data/auth/stg_brd_auth_log/中的日志临时复制一份过来，存储在/AiInsight/download/中
+	- 第四步：通过21号机的脚本将存储在/AiInsight/download/中的日志加载到hive表
+```
+
+
+
+###### stg_arpu
+
+```
+#!/bin/bash
+#######################################################
+#定义变量
+#######################################################
+#模块名称
+folder="jsbi"
+#目标库名
+target_database="default"
+#目标表名
+target_table_name="stg_arpu"
+#源数据库表名（必须大写）
+source_table_name="REP.KD_ARPU_2019"
+#######################################################
+#脚本开始
+##########################################g#############
+#运行日期
+( echo $1 | grep "\<[0-9]\{8\}\>" -q ) && { v_cycle=$1; }
+[ ! $v_cycle ] && { v_cycle=`cat /AiInsight/config/pyparameter`; }
+#数据日期
+etl_cycle=$(date -d "$v_cycle -1 month" +%Y%m)  # 上月
+data_cycle=$(date -d "${etl_cycle}01 +1 month -1 day" +%Y%m%d)  #上月最后一天
+
+echo ${etl_cycle}
+echo ${data_cycle}
+#加载数据到目标表中
+su - hdfs <<EOF
+/usr/bin/sqoop  --options-file /AiInsight/sqoop/hive_import.txt  --table ${source_table_name}  --hive-table  ${target_database}.${target_table_name} --hive-partition-key pt_mon --hive-partition-value "${etl_cycle}"
+
+exit;
+EOF
+```
+
+
 
 
 
@@ -30,9 +147,19 @@
 
 
 
+
+
 #### 第八章 可视化大屏
 
-###### 7.1 江苏省广电宽带用户分布地图
+###### 8.1 可视化大屏信息
+
+```
+地址:http://111.208.67.19/#/home 
+账号:admin
+密码:!Aa123qaz
+```
+
+###### 8.2 江苏省广电宽带用户分布地图
 
 ```
 --  --   地图颜色深度数据 有效用户数
@@ -49,7 +176,7 @@ select   t.area area,                   -- 地市名称
 order by valid_user_cnt DESC ;
 ```
 
-###### 7.2 ARPU值分析
+###### 8.3 ARPU值分析
 
 ```
 --   arpu值分析
@@ -827,9 +954,59 @@ END
 
 
 
-
-
-
-
 #### 第十章 Azkaban调度
+
+###### 10.1 azkaban信息
+
+```
+地址:https://111.208.67.21:8443/index 
+账号:azkaban
+密码:admin@azkaban
+```
+
+
+
+#### 第十一章 Flume配置
+
+###### 11.1 auth日志采集
+
+```
+flume:
+39243 Application -f flume.conf -n myAgent
+脚本：nohup flume-ng agent  --conf /opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/lib/flume-ng/conf  -f flume.conf  --classpath dolphin-dal-dcnode-wrapper-0.0.1-SNAPSHOT.jar  -n myAgent  -Dflume.root.logger=INFO,console  &
+
+java:
+40987 jar --staticFlag=true --taskScheduleCron=0 20 05 * * ? --taskRunningType=schedule
+脚本：nohup java -Xms1g -Xmx1g -XX:+UseConcMarkSweepGC -XX:+UseCMSCompactAtFullCollection -XX:CMSInitiatingOccupancyFraction=60 -XX:+CMSParallelRemarkEnabled -XX:SoftRefLRUPolicyMSPerMB=0 -XX:+CMSClassUnloadingEnabled -XX:SurvivorRatio=8 -XX:+DisableExplicitGC -verbose:gc -XX:+PrintGCDetails -XX:-OmitStackTraceInFastThrow  -Djava.security.egd=file:/dev/./urandom -jar dolphin-dal-dcnode-wrapper-0.0.1-SNAPSHOT.jar  --staticFlag=true --taskScheduleCron="0 20 05 * * ?" --taskRunningType=schedule  &
+```
+
+###### 11.2 auth_online日志采集
+
+```
+flume:
+41571 Application -f flume.conf -n myAgent_auth_online
+脚本：nohup flume-ng agent  --conf /opt/cloudera/parcels/CDH-5.6.1-1.cdh5.6.1.p0.3/lib/flume-ng/conf  -f flume.conf  --classpath dolphin-dal-dcnode-wrapper-0.0.1-SNAPSHOT.jar  -n myAgent_auth_online  -Dflume.root.logger=INFO,console  &
+
+java:
+41430 jar --config_service_url=10.1.235.193:8500 --dcnode.id=22a12f35-a972-4a6e-a710-34277242441d --staticFlag=true --taskScheduleCron=0 30 05 * * ? --taskRunningType=schedule
+nohup java -Xms1g -Xmx1g -XX:+UseConcMarkSweepGC -XX:+UseCMSCompactAtFullCollection -XX:CMSInitiatingOccupancyFraction=60 -XX:+CMSParallelRemarkEnabled -XX:SoftRefLRUPolicyMSPerMB=0 -XX:+CMSClassUnloadingEnabled -XX:SurvivorRatio=8 -XX:+DisableExplicitGC -verbose:gc -XX:+PrintGCDetails -XX:-OmitStackTraceInFastThrow  -Djava.security.egd=file:/dev/./urandom -jar dolphin-dal-dcnode-wrapper-0.0.1-SNAPSHOT.jar --config_service_url=10.1.235.193:8500 --dcnode.id=22a12f35-a972-4a6e-a710-34277242441d  --staticFlag=true --taskScheduleCron="0 30 05 * * ?" --taskRunningType=schedule  &
+```
+
+
+
+
+
+#### 第十二章 FTP设置
+
+```
+
+```
+
+
+
+#### 第十三章 Crontab设置
+
+```
+
+```
 
