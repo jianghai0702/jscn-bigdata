@@ -11208,20 +11208,6 @@ LOCATION '/asiainfo/hive/ST/st_user_network_beh_m';
 
 
 
-###### st_arpu
-
-```
-
-```
-
-###### st_user_onlinerate_m
-
-```
-
-```
-
-
-
 
 
 
@@ -14589,22 +14575,22 @@ END
 
 ###### 10.2 调度列表
 
-| 调度                | 项目              | 执行周期 | 参数             | 描述               |      |
-| ------------------- | ----------------- | -------- | ---------------- | ------------------ | ---- |
-| setparameter        | timesetting       | day      |                  |                    |      |
-| D_INC_SYNC_LAN_USER | jscn_everyday     | day      |                  |                    |      |
-| D_INC_SYNC_APP_LOG  | D_SYNC_APP_OG     | day      |                  |                    |      |
-| D_SCHEDULER         | jscn_everyday     | day      |                  |                    |      |
-| D_TENCENT_h2o       | jscn_everyday     | day      |                  |                    |      |
-| data_to_gz          | d2z               | day      |                  |                    |      |
-| liukong_new         | liukong_h2o       | day      |                  |                    |      |
-| USERS_SYNC_J2M      | jscn_everyday     | day      |                  |                    |      |
-|                     |                   |          |                  |                    |      |
-| M_BOSS_REPORT_H2O   | user_profile      | month    |                  |                    |      |
-| M_BOSS_h2o          | jscn_everyday     | month    |                  |                    |      |
-| M_SCHEDULER_h2o     | jscn_everyday     | month    |                  |                    |      |
-| M_H2O_ONLINE_ARPU   | M_ARPU_ONLINERATE | month    | pdate = 20200201 | 计算在线率和arpu值 |      |
-| M_USER_PROFILE_H2O  | user_profile      | month    |                  |                    |      |
+| 调度                | 项目              | 执行周期 |                                    | 参数             | 描述                                   | 序号：依赖               |
+| ------------------- | ----------------- | -------- | ---------------------------------- | ---------------- | -------------------------------------- | ------------------------ |
+| setparameter        | timesetting       | day      | 2020-01-01 00:10:00=>10 0 * * *    |                  |                                        |                          |
+| D_INC_SYNC_LAN_USER | jscn_everyday     | day      | 2020-01-01 16:00:00=>0 16 * * *    |                  |                                        |                          |
+| D_INC_SYNC_APP_LOG  | D_SYNC_APP_OG     | day      | 2020-01-01 01:08:00=>8 1 * * *     |                  |                                        |                          |
+| D_SCHEDULER         | jscn_everyday     | day      | 2020-01-01 22:10:00=>10 22 * * *   |                  |                                        |                          |
+| D_TENCENT_h2o       | jscn_everyday     | day      | 2020-01-01 04:04:00=>04 04 * * *   |                  |                                        |                          |
+| data_to_gz          | d2z               | day      | 2020-01-01 12:00:00=>0 12 * * *    |                  |                                        |                          |
+| liukong_new         | liukong_h2o       | day      | 2020-01-01 05:30:00=>30 5 * * *    |                  |                                        |                          |
+| USERS_SYNC_J2M      | jscn_everyday     | day      | 2020-01-01 01:00:00=>0 1 * * *     |                  |                                        |                          |
+|                     |                   |          |                                    |                  |                                        |                          |
+| M_BOSS_REPORT_H2O   | user_profile      | month    | 2020-01-03 03:00:00=>0 3 3  * *    | pdate = 20200203 | boss经营分析报告                       | 2                        |
+| M_BOSS_h2o          | jscn_everyday     | month    | 2020-01-04 01:43:00=>43 1 4  * *   |                  |                                        | 4                        |
+| M_SCHEDULER_h2o     | jscn_everyday     | month    | 2020-01-01 22:00:00=>0 22 1  * *   |                  |                                        | 1                        |
+| M_H2O_ONLINE_ARPU   | M_ARPU_ONLINERATE | month    | 2020-01-12 11:30:00=>30 11 12  * * | pdate = 20200201 | 计算在线率和arpu值依赖BOSS经营分析日志 | 5：依赖M_BOSS_REPORT_H2O |
+| M_USER_PROFILE_H2O  | user_profile      | month    | 2020-01-03 20:00:00=>0 20 3 * *    |                  |                                        | 3                        |
 
 
 
@@ -14869,7 +14855,14 @@ data_to_gz
 ###### 10.13 调度 - liukong_new
 
 ```
-
+D_STG_TBL_PART_APP_LOG
+D_STG_TBL_AS_SUM_REPORT_ALL
+D_STG_TBL_TRAFFIC
+D_STG_TBL_DNAME_TOPN
+D_ST_TBL_TRAFFIC_SUMMARY
+D_ST_AS_SUM_REPORT
+D_ST_DNAME_TOPN
+liukong_new
 ```
 
 
