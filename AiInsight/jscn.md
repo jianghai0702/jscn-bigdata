@@ -11226,6 +11226,7 @@ LOCATION '/asiainfo/hive/ST/st_user_network_beh_m';
 地址:http://111.208.67.19/#/home 
 账号:admin
 密码:!Aa123qaz
+密码2：Abc123
 ```
 
 ###### 8.2 江苏省广电宽带用户分布地图
@@ -14575,22 +14576,24 @@ END
 
 ###### 10.2 调度列表
 
-| 调度                | 项目              | 执行周期 |                                    | 参数             | 描述                                   | 序号：依赖               |
-| ------------------- | ----------------- | -------- | ---------------------------------- | ---------------- | -------------------------------------- | ------------------------ |
-| setparameter        | timesetting       | day      | 2020-01-01 00:10:00=>10 0 * * *    |                  |                                        |                          |
-| D_INC_SYNC_LAN_USER | jscn_everyday     | day      | 2020-01-01 16:00:00=>0 16 * * *    |                  |                                        |                          |
-| D_INC_SYNC_APP_LOG  | D_SYNC_APP_OG     | day      | 2020-01-01 01:08:00=>8 1 * * *     |                  |                                        |                          |
-| D_SCHEDULER         | jscn_everyday     | day      | 2020-01-01 22:10:00=>10 22 * * *   |                  |                                        |                          |
-| D_TENCENT_h2o       | jscn_everyday     | day      | 2020-01-01 04:04:00=>04 04 * * *   |                  |                                        |                          |
-| data_to_gz          | d2z               | day      | 2020-01-01 12:00:00=>0 12 * * *    |                  |                                        |                          |
-| liukong_new         | liukong_h2o       | day      | 2020-01-01 05:30:00=>30 5 * * *    |                  |                                        |                          |
-| USERS_SYNC_J2M      | jscn_everyday     | day      | 2020-01-01 01:00:00=>0 1 * * *     |                  |                                        |                          |
-|                     |                   |          |                                    |                  |                                        |                          |
-| M_BOSS_REPORT_H2O   | user_profile      | month    | 2020-01-03 03:00:00=>0 3 3  * *    | pdate = 20200203 | boss经营分析报告                       | 2                        |
-| M_BOSS_h2o          | jscn_everyday     | month    | 2020-01-04 01:43:00=>43 1 4  * *   |                  |                                        | 4                        |
-| M_SCHEDULER_h2o     | jscn_everyday     | month    | 2020-01-01 22:00:00=>0 22 1  * *   |                  |                                        | 1                        |
-| M_H2O_ONLINE_ARPU   | M_ARPU_ONLINERATE | month    | 2020-01-12 11:30:00=>30 11 12  * * | pdate = 20200201 | 计算在线率和arpu值依赖BOSS经营分析日志 | 5：依赖M_BOSS_REPORT_H2O |
-| M_USER_PROFILE_H2O  | user_profile      | month    | 2020-01-03 20:00:00=>0 20 3 * *    |                  |                                        | 3                        |
+| 调度                | 项目              | 执行周期 |                                    | 参数                            | 描述                                     | 序号：依赖               |
+| ------------------- | ----------------- | -------- | ---------------------------------- | ------------------------------- | ---------------------------------------- | ------------------------ |
+| setparameter        | timesetting       | day      | 2020-01-01 00:10:00=>10 0 * * *    |                                 | 设置dt日期格式为yyyyMMdd,例20200201      |                          |
+| D_INC_SYNC_LAN_USER | jscn_everyday     | day      | 2020-01-01 16:00:00=>0 16 * * *    |                                 |                                          |                          |
+| D_INC_SYNC_APP_LOG  | D_SYNC_APP_OG     | day      | 2020-01-01 01:08:00=>8 1 * * *     |                                 |                                          |                          |
+| D_SCHEDULER         | jscn_everyday     | day      | 2020-01-01 22:10:00=>10 22 * * *   |                                 | 处理auth，dr，dns，network，browse等数据 |                          |
+| D_TENCENT_h2o       | jscn_everyday     | day      | 2020-01-01 04:04:00=>04 04 * * *   |                                 |                                          |                          |
+| data_to_gz          | d2z               | day      | 2020-01-01 12:00:00=>0 12 * * *    |                                 |                                          |                          |
+| liukong_new         | liukong_h2o       | day      | 2020-01-01 05:30:00=>30 5 * * *    |                                 |                                          |                          |
+| USERS_SYNC_J2M      | jscn_everyday     | day      | 2020-01-01 01:00:00=>0 1 * * *     | 无参数                          | 同步大屏数据到移动端数据库               |                          |
+| collection_end      | collectionFix     | -        | -                                  | (startT=20200201,endT=20200206) | 批量采集数据auth，auth_online等          |                          |
+| collection_end      | collection        | day      | 2020-03-01 13:10:00=>10 13 * * *   | (ct=20200201)                   | 每天采集数据auth，auth_online等          |                          |
+|                     |                   |          |                                    |                                 |                                          |                          |
+| M_BOSS_REPORT_H2O   | user_profile      | month    | 2020-01-03 03:00:00=>0 3 3  * *    | (pdate = 20200203)              | boss经营分析报告                         | 2                        |
+| M_BOSS_h2o          | jscn_everyday     | month    | 2020-01-04 01:43:00=>43 1 4  * *   |                                 |                                          | 4                        |
+| M_SCHEDULER_h2o     | jscn_everyday     | month    | 2020-01-01 22:00:00=>0 22 1  * *   |                                 | 处理auth，dr，dns，network，browse等数据 | 1                        |
+| M_H2O_ONLINE_ARPU   | M_ARPU_ONLINERATE | month    | 2020-01-12 11:30:00=>30 11 12  * * | (pdate = 20200201)              | 计算在线率和arpu值依赖BOSS经营分析日志   | 5：依赖M_BOSS_REPORT_H2O |
+| M_USER_PROFILE_H2O  | user_profile      | month    | 2020-01-03 20:00:00=>0 20 3 * *    |                                 |                                          | 3                        |
 
 
 
@@ -14911,5 +14914,32 @@ nohup java -Xms1g -Xmx1g -XX:+UseConcMarkSweepGC -XX:+UseCMSCompactAtFullCollect
 
 ```
 
+```
+
+
+
+#### 第十四章 交接文档
+
+```
+1.前端大屏数据模型设计及数据更新
+《KPI前端可视化模型设计.html》 大屏数据每月需手动更新：
+    甲方每月更新用户数据表datasource1,更新在线率数据。
+    甲方每月提供流量数据、流量数据，需要手动入库到tmp_mix_flow(混合流量)、tmp_self_flow(自购流量)。
+    甲方每月提供内网流量占比
+    最后执行存过update_kpi_data(update_month,internal_flow_rate),更新大屏数据。
+
+2.同步数据到移动app端数据库(同步配置表为SYNC_TABLE)：
+	更新之前update配置表sync_table的is_sync置为1，sync_dt改成要同步数据的月份。
+	ssh至jsgd4，执行脚本 sh /AiInsight/others/data_sync_jsgd2mobile.sh
+	pc端到app端的账号同步。 azkaban里面的USERS_SYNC_J2M调度流程负责每天定时同步pc端的账号信息到app端。 手动执行USERS_SYNC_J2M调度可即时同步账号信息
+	
+	-- 修改视图last_update_month时间
+    CREATE OR REPLACE VIEW last_update_month AS SELECT '2020-01' AS update_month;
+    -- 更新日期
+    UPDATE sync_table t SET t.sync_dt = '2020' WHERE t.table_name = 't_mubiao'; 
+    UPDATE sync_table t SET t.sync_dt = '2020-02' WHERE t.table_name != 't_mubiao'; 
+	
+3.未完成需求
+	根据各账户每月销账金额计算总arpu金额，宽带arpu金额。
 ```
 

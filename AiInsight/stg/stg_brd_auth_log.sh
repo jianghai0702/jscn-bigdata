@@ -19,7 +19,7 @@ etl_cycle1=`date -d "$v_cycle -15 day " +%Y%m%d`
 #修改日志：sunwj 由于22服务器配置的脚本 fix_brd_auth_log.sh 已经执行了入库操作 因此 脚本暂时不做任何操作
 
 #生成目录
-load_dir="${folder}/${target_table_name}/${v_cycle}"
+load_dir="${folder}/${target_table_name}/${etl_cycle}"
 mkdir -p /AiInsight/downloads/${load_dir}
 #从19复制文件
 

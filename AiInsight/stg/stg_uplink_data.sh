@@ -44,7 +44,7 @@ done
 
 if [[ -f /home/ftpuser/bak/swxw/stg/before/${etl_cycle}/nodata ]] ;then
     echo "${etl_cycle}无数据"
-    exit 1
+    exit 0
 fi
 
 echo "数据成功复制到21服务器"
